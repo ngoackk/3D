@@ -32,7 +32,7 @@
             login() {
                  Users.login({username: this.username, password: this.password}).then(response=>{
                      console.log(response)
-                     this.$router.pus('/tasks')
+                     this.$router.push('/tasks')
                  }).catch(error=>{
                      console.error(error)
                  })

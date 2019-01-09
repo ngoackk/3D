@@ -13102,7 +13102,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].login({ username: this.username, password: this.password }).then(function (response) {
                 console.log(response);
-                _this.$router.pus('/tasks');
+                _this.$router.push('/tasks');
             }).catch(function (error) {
                 console.error(error);
             });
