@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -16,15 +15,26 @@ import VueRouter from 'vue-router'
 // These can be imported from other files
 let Todo = require('./components/Todo.vue');
 let Login = require('./components/Login.vue');
+let Home = require('./components/Home.vue');
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
 // either be an actual component constructor created via
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
-const routes = [
-  { path: '/tasks', component: Todo },
-  { path: '/login', component: Login }
+const routes = [{
+    path: '/tasks',
+    component: Todo
+  },
+  {
+    path: '/login',
+    component: Login
+  },
+  {
+    path: '/home',
+    component: Home
+  }
+
 ]
 
 // 3. Create the router instance and pass the `routes` option
@@ -43,9 +53,9 @@ Vue.component('create-task', require('./components/CreateTask.vue'));
 // Make sure to inject the router with the router option to make the
 // whole app router-aware.
 window.onload = function () {
-    const app = new Vue({
-      router
-    }).$mount('#app');
+  const app = new Vue({
+    router
+  }).$mount('#app');
 }
 
 router.push('/tasks');
