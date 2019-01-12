@@ -13220,11 +13220,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -13255,6 +13250,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__apis_api__ = __webpack_require__(10);
+//
 //
 //
 //
@@ -43639,7 +43635,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\CreateTask.vue"
+Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\CreateTask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] CreateTask.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43673,7 +43669,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
+Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43707,7 +43703,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
+Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43741,7 +43737,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Navigation.vue"
+Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Navigation.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Navigation.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43775,7 +43771,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Todo.vue"
+Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Todo.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Todo.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43878,7 +43874,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.getUserData
     }
-  }, [_vm._v("Check me")])])])
+  }, [_vm._v("Check me")])]), _vm._v(" "), _c('i', {
+    staticClass: "fa fa-calendar"
+  })])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "form-group form-check"
@@ -43955,122 +43953,35 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     attrs: {
       "id": "deviceready"
     }
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._v("\n    " + _vm._s(_vm.User.Name) + "\n    "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.User.Name),
-      expression: "User.Name"
-    }],
-    domProps: {
-      "value": (_vm.User.Name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.User, "Name", $event.target.value)
-      }
-    }
-  }), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "text-align": "center",
-      "width": "100%"
-    }
-  }, [_vm._m(1), _vm._v(" "), _c('table', {
-    staticClass: "table table-bordered"
-  }, [_c('tr', [_vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('td', {
-    attrs: {
-      "colspan": "1"
-    }
-  }, [_c('div', [_c('buton', {
-    staticClass: "btn btn-info",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('div', [_c('img', {
-    attrs: {
-      "src": "img/result.png",
-      "alt": "Kết quả học tập",
-      "height": "45"
-    }
-  })]), _vm._v(" "), _c('div', [_vm._v("Kết quả")])])], 1)])]), _vm._v(" "), _c('tr', [_c('td', [_c('div', [_c('buton', {
-    staticClass: "btn btn-info",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('div', [_c('img', {
-    attrs: {
-      "src": "img/1gate.png",
-      "alt": "Một cửa",
-      "height": "45"
-    }
-  })]), _vm._v(" "), _c('div', [_vm._v("Một cửa")])])], 1)]), _vm._v(" "), _c('td', {
-    attrs: {
-      "colspan": "1"
-    }
-  }, [_c('div', [_c('buton', {
-    staticClass: "btn btn-info",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('div', [_c('img', {
-    attrs: {
-      "src": "img/survey.png",
-      "alt": "Khảo sát",
-      "height": "45"
-    }
-  })]), _vm._v(" "), _c('div', [_vm._v("Khảo sát")])])], 1)]), _vm._v(" "), _c('td', [_c('div', [_c('buton', {
-    staticClass: "btn btn-info",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('div', [_c('img', {
-    attrs: {
-      "src": "img/taichinh.png",
-      "alt": "Tài chính",
-      "height": "45"
-    }
-  })]), _vm._v(" "), _c('div', [_vm._v("Tài chính")])])], 1)])])])]), _vm._v(" "), _c('p', {
-    staticClass: "event listening"
-  }, [_vm._v("Đang kết nối thiết bị")]), _vm._v(" "), _c('p', {
-    staticClass: "event received"
-  })])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('table', {
+  }, [_c('table', {
     staticClass: "logo"
-  }, [_c('tr', [_c('td', [_c('button', {
-    staticClass: "btn_menu",
-    attrs: {
-      "type": "button",
-      "id": "menubutton"
-    }
-  }, [_c('div', [_c('img', {
-    attrs: {
-      "src": "img/menu.png",
-      "width": "100%"
-    }
-  })])])]), _vm._v(" "), _c('td', [_c('img', {
+  }, [_c('tr', [_c('td'), _vm._v(" "), _c('td', [_c('img', {
     attrs: {
       "src": "img/logo.png",
       "alt": "Tin nhắn",
       "height": "80"
     }
-  })]), _vm._v(" "), _c('td', [_c('div', [_vm._v("TRƯỜNG ĐẠI HỌC KIẾN TRÚC HÀ NỘI")]), _vm._v(" "), _c('div', [_vm._v("HANOI ARCHITECHTURE UNIVERSITY")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('img', {
+  })]), _vm._v(" "), _c('td', [_c('div', [_vm._v("TRƯỜNG ĐẠI HỌC KIẾN TRÚC HÀ NỘI")]), _vm._v(" "), _c('div', [_vm._v("HANOI ARCHITECHTURE UNIVERSITY")])])])])]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "text-align": "center",
+      "width": "100%"
+    }
+  }, [_c('div', [_c('img', {
     attrs: {
       "src": "img/banner.jpg",
       "width": "100%"
     }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', [_c('div', [_c('button', {
+  })]), _vm._v(" "), _c('table', {
+    staticClass: "table table-bordered"
+  }, [_c('tr', [_c('td', [_c('div', [_c('button', {
     staticClass: "btn btn-info",
     attrs: {
       "type": "button"
@@ -44081,9 +43992,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "alt": "Tin nhắn",
       "height": "45"
     }
-  })]), _vm._v(" "), _c('div', [_vm._v("Tin nhắn")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
+  })]), _vm._v(" "), _c('div', [_vm._v("Tin nhắn")])])])]), _vm._v(" "), _c('td', {
     attrs: {
       "colspan": "1"
     }
@@ -44098,9 +44007,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "alt": "Lịch học / Lịch thi",
       "height": "45"
     }
-  })]), _vm._v(" "), _c('div', [_vm._v("Lịch học")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
+  })]), _vm._v(" "), _c('div', [_vm._v("Lịch học")])])])]), _vm._v(" "), _c('td', {
     attrs: {
       "colspan": "1"
     }
@@ -44115,7 +44022,63 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "alt": "Lịch học / Lịch thi",
       "height": "45"
     }
-  })]), _vm._v(" "), _c('div', [_vm._v("Lịch học")])])])])
+  })]), _vm._v(" "), _c('div', [_vm._v("Lịch học")])])])]), _vm._v(" "), _c('td', {
+    attrs: {
+      "colspan": "1"
+    }
+  }, [_c('div', [_c('button', {
+    staticClass: "btn btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "img/result.png",
+      "alt": "Kết quả học tập",
+      "height": "45"
+    }
+  })]), _vm._v(" "), _c('div', [_vm._v("Kết quả")])])])])]), _vm._v(" "), _c('tr', [_c('td', [_c('div', [_c('button', {
+    staticClass: "btn btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "img/1gate.png",
+      "alt": "Một cửa",
+      "height": "45"
+    }
+  })]), _vm._v(" "), _c('div', [_vm._v("Một cửa")])])])]), _vm._v(" "), _c('td', {
+    attrs: {
+      "colspan": "1"
+    }
+  }, [_c('div', [_c('button', {
+    staticClass: "btn btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "img/survey.png",
+      "alt": "Khảo sát",
+      "height": "45"
+    }
+  })]), _vm._v(" "), _c('div', [_vm._v("Khảo sát")])])])]), _vm._v(" "), _c('td', [_c('div', [_c('button', {
+    staticClass: "btn btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "img/taichinh.png",
+      "alt": "Tài chính",
+      "height": "45"
+    }
+  })]), _vm._v(" "), _c('div', [_vm._v("Tài chính")])])])])])])]), _vm._v(" "), _c('p', {
+    staticClass: "event listening"
+  }, [_vm._v("Đang kết nối thiết bị")]), _vm._v(" "), _c('p', {
+    staticClass: "event received"
+  })])
 }]}
 module.exports.render._withStripped = true
 if (false) {

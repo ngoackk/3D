@@ -33,6 +33,7 @@
       <button @click="login" class="btn btn-primary">Submit</button>
       <button @click="getUserData" class="btn btn-primary">Check me</button>
     </form>
+    <i class="fa fa-calendar"></i>
   </div>
 </template>
 <script>

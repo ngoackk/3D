@@ -1,16 +1,11 @@
 <template>
   <div id="deviceready">
-    <div class="header">
-      {{User.Name}}
-      <input v-model="User.Name">
+    <div class="header">     
+    
       <table class="logo">
         <tr>
           <td>
-            <button type="button" class="btn_menu" id="menubutton">
-              <div>
-                <img src="img/menu.png" width="100%">
-              </div>
-            </button>
+            
           </td>
           <td>
             <img src="img/logo.png" alt="Tin nhắn" height="80">
@@ -61,12 +56,12 @@
           </td>
           <td colspan="1">
             <div>
-              <buton type="button" class="btn btn-info">
+              <button type="button" class="btn btn-info">
                 <div>
                   <img src="img/result.png" alt="Kết quả học tập" height="45">
                 </div>
                 <div>Kết quả</div>
-              </buton>
+              </button>
             </div>
           </td>
         </tr>
@@ -74,32 +69,32 @@
         <tr>
           <td>
             <div>
-              <buton type="button" class="btn btn-info">
+              <button type="button" class="btn btn-info">
                 <div>
                   <img src="img/1gate.png" alt="Một cửa" height="45">
                 </div>
                 <div>Một cửa</div>
-              </buton>
+              </button>
             </div>
           </td>
           <td colspan="1">
             <div>
-              <buton type="button" class="btn btn-info">
+              <button type="button" class="btn btn-info">
                 <div>
                   <img src="img/survey.png" alt="Khảo sát" height="45">
                 </div>
                 <div>Khảo sát</div>
-              </buton>
+              </button>
             </div>
           </td>
           <td>
             <div>
-              <buton type="button" class="btn btn-info">
+              <button type="button" class="btn btn-info">
                 <div>
                   <img src="img/taichinh.png" alt="Tài chính" height="45">
                 </div>
                 <div>Tài chính</div>
-              </buton>
+              </button>
             </div>
           </td>
         </tr>
