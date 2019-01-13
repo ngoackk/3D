@@ -15,27 +15,41 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
-        <router-link to="/tasks">Creat task</router-link>
-        <router-link to="/login">Login</router-link>
-        <router-link to="/home">My</router-link>
+       <router-link to="/home">Home</router-link>
+       
+      
+       
+       
+        
+       
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav"></ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">                   
           <li class="nav-item">
-            <router-link to="/active_accout">label</router-link>
+           <router-link to="/calendar">Calendar</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" @click="goto">aaaa</a>
+             <router-link to="/messenger">Messenger</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+             <router-link to="/result">Result</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+             <router-link to="/finance">Finance</router-link>
+          </li>
+          <li class="nav-item">
+             <router-link to="/one-gate">One Gate</router-link>
+            
+          </li>
+           <li class="nav-item">
+             <router-link to="/survey">Survey</router-link>
+          </li>
+           <li class="nav-item">
+               <router-link to="/login">Logout</router-link>
+        
           </li>
         </ul>
       </div>

@@ -16,6 +16,12 @@ import VueRouter from 'vue-router'
 let Todo = require('./components/Todo.vue');
 let Login = require('./components/Login.vue');
 let Home = require('./components/Home.vue');
+let Finance = require('./components/Finance');
+let Result = require('./components/Result');
+let Calendar = require('./components/Calendar');
+let Survey = require('./components/Survey');
+let Messenger = require('./components/Messenger');
+let OneGate = require('./components/OneGate');
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -34,7 +40,40 @@ const routes = [{
     path: '/home',
     component: Home
   }
+  ,
+  {
+    path: '/one-gate',
+    component: OneGate
+  }
 
+  ,
+  {
+    path: '/calendar',
+    component: Calendar
+  }
+
+  ,
+  {
+    path: '/survey',
+    component: Survey
+  }
+
+  ,
+  {
+    path: '/messenger',
+    component: Messenger
+  }
+  ,
+  {
+    path: '/finance',
+    component: Finance
+  }
+
+  ,
+  {
+    path: '/result',
+    component: Result
+  }
 ]
 
 // 3. Create the router instance and pass the `routes` option
