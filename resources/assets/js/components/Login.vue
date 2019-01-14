@@ -46,7 +46,9 @@ export default {
       rememberme: false
     };
   },
-
+  mounted(){
+    this.logout();
+  },
   methods: {
     loginSubmit() {
          this.$store.dispatch('user/login', this.form)
@@ -60,11 +62,28 @@ export default {
       unauthorized() {
         this.$notify({group: 'alerts', text: this.$t('users.sessions.invalid')})
       },
+    logout(){
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('user');
+    },  
     login() {
       Users.login({ email: this.email, password: this.password })
         .then(response => {
           console.log(response);
-          this.$router.push("/");
+          if(response.data){
+            localStorage.setItem('access_token', response.data.access_token);
+            Data.search('users', '1').then(user=>{
+              console.log(user);
+               localStorage.setItem("user", JSON.stringify(user));
+               this.$router.push("/");
+            }).catch(err=>{
+               console.error(err);
+            })
+           
+          } else {
+            console.error(response);
+          }
+          
         })
         .catch(error => {
           console.error(error);
