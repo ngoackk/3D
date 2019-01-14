@@ -6,6 +6,11 @@ import DefaultContainer from '../containers/DefaultContainer'
 
 // Views
 import Dashboard from '../views/Dashboard'
+import Finance from '../components/Finance'
+import Calendar from '../components/Calendar'
+import Survey from '../components/Survey'
+import OneGate from '../components/OneGate'
+import Messenger from '../components/Messenger'
 
 import Colors from '../views/theme/Colors'
 import Typography from '../views/theme/Typography'
@@ -74,9 +79,39 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: Dashboard
-        },
+        }, 
         {
-          path: 'theme',
+          path: 'messenger',
+          name: 'Messenger',
+          component: Messenger
+        },  
+        {
+          path: 'one-gate',
+          name: 'OneGate',
+          component: OneGate
+        },       
+        {
+          path: 'calendar',
+          name: 'Calendar',
+          component: Calendar
+        },   
+        {
+          path: 'finance',
+          name: 'Finance',
+          component: Finance
+        },    
+        {
+          path: 'messenger',
+          name: 'Messenger',
+          component: Messenger
+        },     
+        {
+          path: 'survey',
+          name: 'Survey',
+          component: Survey
+        },          
+        {
+          path: 'Info',
           redirect: '/theme/colors',
           name: 'Theme',
           component: {

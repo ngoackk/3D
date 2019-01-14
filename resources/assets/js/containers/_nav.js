@@ -1,7 +1,7 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
+      name: 'Trang chủ',
       url: '/dashboard',
       icon: 'icon-speedometer',
       badge: {
@@ -19,13 +19,13 @@ export default {
       }
     },
     {
-      name: 'Colors',
-      url: '/theme/colors',
+      name: 'Nhắn tin',
+      url: '/messenger',
       icon: 'icon-drop'
     },
     {
-      name: 'Typography',
-      url: '/theme/typography',
+      name: 'Bình chọn',
+      url: '/survey',
       icon: 'icon-pencil'
     },
     {
@@ -39,13 +39,13 @@ export default {
     },
     {
       name: 'Tài chính',
-      url: '/base',
+      url: '/finance',
       icon: 'icon-puzzle',
       
     },
     {
       name: 'Lịch biểu',
-      url: '/buttons',
+      url: '/calendar',
       icon: 'icon-cursor',
        
     }, 
@@ -54,25 +54,16 @@ export default {
       name: 'Tải khoản',     
     },
     {
-      name: 'Login',
+      name: 'Đăng xuất',
       url: '/pages/login',
       icon: 'icon-star'
     },
     {
-      name: 'Register',
+      name: 'Đăng ký',
       url: '/pages/register',
       icon: 'icon-star'
-    },
-    {
-      name: 'Error 404',
-      url: '/pages/404',
-      icon: 'icon-star'
-    },
-    {
-      name: 'Error 500',
-      url: '/pages/500',
-      icon: 'icon-star'
     }
+     
     
   ]
 }
