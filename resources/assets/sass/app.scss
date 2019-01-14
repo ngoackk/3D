@@ -1,11 +1,11 @@
-
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-// Variables
+// If you want to override variables do it here
 @import "variables";
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
 
-#app { padding-top: 70px }
+// If you want to add something do it here
+@import "custom";
+
+// ie fixes
+@import "ie-fix";

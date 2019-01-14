@@ -1,5 +1,5 @@
 <template>
-  <div id="deviceready">
+  <div   class="app" id="deviceready">
     <div class="header">     
     
       <table class="logo">
