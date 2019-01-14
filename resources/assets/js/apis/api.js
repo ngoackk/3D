@@ -4,7 +4,7 @@ export const Users = {
     login(crendential) {
       return new Promise((resolve, reject) => {
         console.log(crendential);
-        axios.post("http://crm-std.mn.com.vn/xRequest.ashx", crendential).then((response) => {
+        axios.post("http://localhost:3001/auth/login", crendential).then((response) => {
             console.log(response);
             resolve(response)
         }).catch((error) => {

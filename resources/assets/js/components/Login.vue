@@ -1,10 +1,10 @@
 <template>
   <div class="container login">
-    <form id="loginForm" @submit.prevent="loginSubmit" method="post">
+    <form id="loginForm" @submit.prevent="login" method="post">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input
-          v-model="username"
+          v-model="email"
           type="email"
           class="form-control"
           id="exampleInputEmail1"
@@ -41,23 +41,27 @@ import { Users, Data } from "../apis/api";
 export default {
   data() {
     return {
-      username: "tom@example.com",
-      password: "test1234"
+      email: "tom@example.com",
+      password: "test1234",
+      rememberme: false
     };
   },
 
   methods: {
-      loginSubmit() {
-      
+    loginSubmit() {
+         this.$store.dispatch('user/login', this.form)
+        .then(this.success)
+        .catch(this.unauthorized)
       },
       success() {
-        
+        this.$notify({group: 'alerts', text: this.$t('users.sessions.valid')})
+        this.$router.push('/');
       },
       unauthorized() {
-       
+        this.$notify({group: 'alerts', text: this.$t('users.sessions.invalid')})
       },
     login() {
-      Users.login({ username: this.username, password: this.password })
+      Users.login({ email: this.email, password: this.password })
         .then(response => {
           console.log(response);
           this.$router.push("/");

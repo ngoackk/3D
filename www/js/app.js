@@ -8282,7 +8282,7 @@ var Users = {
   login: function login(crendential) {
     return new Promise(function (resolve, reject) {
       console.log(crendential);
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post("http://crm-std.mn.com.vn/xRequest.ashx", crendential).then(function (response) {
+      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post("http://localhost:3001/auth/login", crendential).then(function (response) {
         console.log(response);
         resolve(response);
       }).catch(function (error) {
@@ -26157,20 +26157,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      username: "tom@example.com",
-      password: "test1234"
+      email: "tom@example.com",
+      password: "test1234",
+      rememberme: false
     };
   },
 
 
   methods: {
-    loginSubmit: function loginSubmit() {},
-    success: function success() {},
-    unauthorized: function unauthorized() {},
+    loginSubmit: function loginSubmit() {
+      this.$store.dispatch('user/login', this.form).then(this.success).catch(this.unauthorized);
+    },
+    success: function success() {
+      this.$notify({ group: 'alerts', text: this.$t('users.sessions.valid') });
+      this.$router.push('/');
+    },
+    unauthorized: function unauthorized() {
+      this.$notify({ group: 'alerts', text: this.$t('users.sessions.invalid') });
+    },
     login: function login() {
       var _this = this;
 
-      __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].login({ username: this.username, password: this.password }).then(function (response) {
+      __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].login({ email: this.email, password: this.password }).then(function (response) {
         console.log(response);
         _this.$router.push("/");
       }).catch(function (error) {
@@ -43778,7 +43786,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        return _vm.loginSubmit($event)
+        return _vm.login($event)
       }
     }
   }, [_c('div', {
@@ -43791,8 +43799,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.username),
-      expression: "username"
+      value: (_vm.email),
+      expression: "email"
     }],
     staticClass: "form-control",
     attrs: {
@@ -43802,12 +43810,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "Enter email"
     },
     domProps: {
-      "value": (_vm.username)
+      "value": (_vm.email)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.username = $event.target.value
+        _vm.email = $event.target.value
       }
     }
   }), _vm._v(" "), _c('small', {
