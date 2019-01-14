@@ -1,6 +1,6 @@
 <template>
   <div class="container login">
-    <form id="loginForm">
+    <form id="loginForm" @submit.prevent="loginSubmit" method="post">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input
@@ -41,17 +41,26 @@ import { Users, Data } from "../apis/api";
 export default {
   data() {
     return {
-      username: "phamtuanchip@yahoo.de",
-      password: "123456789"
+      username: "tom@example.com",
+      password: "test1234"
     };
   },
 
   methods: {
+      loginSubmit() {
+      
+      },
+      success() {
+        
+      },
+      unauthorized() {
+       
+      },
     login() {
       Users.login({ username: this.username, password: this.password })
         .then(response => {
           console.log(response);
-          this.$router.push("/tasks");
+          this.$router.push("/");
         })
         .catch(error => {
           console.error(error);

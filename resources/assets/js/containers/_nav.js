@@ -67,7 +67,12 @@ export default {
       name: 'Đăng ký',
       url: '/pages/register',
       icon: 'icon-star'
-    }
+    },
+    {
+      name: 'Kiểm thử',
+      url: '/login2',
+      icon: 'icon-star'
+    },
      
     
   ]

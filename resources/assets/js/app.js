@@ -8,6 +8,7 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './Mobile'
 import router from './router'
+import store from '../js/store'
 
 // todo
 // cssVars()
@@ -19,6 +20,7 @@ window.onload = function (){
   new Vue({
     //el: '#app',
     router,
+    store,
     template: '<App/>',
     components: {
       App

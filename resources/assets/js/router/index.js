@@ -12,6 +12,7 @@ import Calendar from '../components/Calendar'
 import Survey from '../components/Survey'
 import OneGate from '../components/OneGate'
 import Messenger from '../components/Messenger'
+import Login2 from '../components/Login'
 
 // import Dashboard from '../views/Dashboard'
 // import Colors from '../views/theme/Colors'
@@ -112,6 +113,12 @@ export default new Router({
           name: 'Survey',
           component: Survey
         }, 
+        {
+          path: 'login2',
+          name: 'Login2',
+          component: Login2
+        }, 
+        
       ]
     },     
     {
