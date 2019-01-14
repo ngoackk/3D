@@ -2,7 +2,7 @@ export default {
   items: [
     {
       name: 'Trang chủ',
-      url: '/dashboard',
+      url: '/home',
       icon: 'icon-speedometer',
       badge: {
         variant: 'primary',
@@ -19,7 +19,12 @@ export default {
       }
     },
     {
-      name: 'Nhắn tin',
+      name: 'Một cửa',
+      url: '/one-gate',
+      icon: 'icon-drop'
+    },
+    {
+      name: 'Tin nhắn',
       url: '/messenger',
       icon: 'icon-drop'
     },
