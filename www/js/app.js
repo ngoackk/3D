@@ -12201,7 +12201,7 @@ var routes = [{
   path: '/login',
   component: Login
 }, {
-  path: '/home',
+  path: '/',
   component: Home
 }, {
   path: '/one-gate',
@@ -12244,7 +12244,7 @@ window.onload = function () {
   }).$mount('#app');
 };
 
-router.push('/tasks');
+//router.push('/tasks');
 // app.initialize();
 
 /***/ }),
@@ -43749,7 +43749,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Calendar.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Calendar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Calendar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43783,7 +43783,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\CreateTask.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\CreateTask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] CreateTask.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43817,7 +43817,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Finance.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Finance.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Finance.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43851,7 +43851,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43885,7 +43885,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43919,7 +43919,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Messenger.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Messenger.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Messenger.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43953,7 +43953,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Navigation.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Navigation.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Navigation.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43987,7 +43987,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\OneGate.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\OneGate.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] OneGate.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44021,7 +44021,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Result.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Result.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Result.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44055,7 +44055,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Survey.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Survey.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Survey.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44089,7 +44089,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Todo.vue"
+Component.options.__file = "c:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Todo.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Todo.vue: functional components are not supported with templates, they should use render functions.")}
 

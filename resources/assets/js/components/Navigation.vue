@@ -15,7 +15,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-       <router-link to="/home">Home</router-link>
+       <router-link to="/">Home</router-link>
        
       
        

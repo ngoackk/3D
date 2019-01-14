@@ -37,7 +37,7 @@ const routes = [{
     component: Login
   },
   {
-    path: '/home',
+    path: '/',
     component: Home
   }
   ,
@@ -97,5 +97,5 @@ window.onload = function () {
   }).$mount('#app');
 }
 
-router.push('/tasks');
+//router.push('/tasks');
 // app.initialize();
