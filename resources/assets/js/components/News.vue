@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-4 alpha">
+     
         <div style="border:1px solid #dcdcdc;border-top:5px solid #ffd800">
             <div class="box-header">
                 <span><i class="fa fa-suitcase fa-1x" aria-hidden="true"></i>&nbsp;Tin tức mới nhất</span>
@@ -8,7 +8,7 @@
     <div class="media" style="height:82px">
         <div class="pull-left">
             <a class="" href="https://tinchi.hau.edu.vn/Common/ChiTietTin/79">
-                    <img width="64" height="64" style="border:none" src="/FileManager/img/WebsiteTemplateIcon.png">
+                    <img width="64" height="64" style="border:none" src="https://tinchi.hau.edu.vn/FileManager/img/WebsiteTemplateIcon.png">
             </a>
         </div>
 
@@ -91,5 +91,5 @@
                 <a href="https://tinchi.hau.edu.vn/ThongTin/ThongBao?CatID=5">Xem tất cả</a>
             </div>
         </div>
-    </div>
+     
 </template>

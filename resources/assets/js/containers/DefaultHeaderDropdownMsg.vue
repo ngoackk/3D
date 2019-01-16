@@ -7,7 +7,7 @@
       
     </template>
     <template slot="dropdown">       
-      <div class="p-3">
+      <div class="">
         <b-dropdown-item class="message">
           <div class="py-3 mr-3 float-left">
             <div class="avatar">
@@ -20,9 +20,9 @@
             <small class="text-muted float-right mt-1">1:52 PM</small>
           </div>
           <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          <small class="text-truncate text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
         </b-dropdown-item>
-        <hr>
+       
         <b-dropdown-item class="message">
           <div class="py-3 mr-3 float-left">
             <div class="avatar">
@@ -35,9 +35,9 @@
             <small class="text-muted float-right mt-1">1:52 PM</small>
           </div>
           <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          <small class="text-truncate text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
         </b-dropdown-item>
-        <hr>
+       
         <b-dropdown-item class="message">
           <div class="py-3 mr-3 float-left">
             <div class="avatar">
@@ -50,9 +50,9 @@
             <small class="text-muted float-right mt-1">1:52 PM</small>
           </div>
           <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          <small class="text-truncate text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
         </b-dropdown-item>
-        <hr>
+        
         <b-dropdown-item class="message">
           <div class="py-3 mr-3 float-left">
             <div class="avatar">
@@ -65,9 +65,9 @@
             <small class="text-muted float-right mt-1">1:52 PM</small>
           </div>
           <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          <small class="text-truncate text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
         </b-dropdown-item>
-        <hr>
+       
         <b-dropdown-item class="message">
           <div class="py-3 mr-3 float-left">
             <div class="avatar">
@@ -80,7 +80,7 @@
             <small class="text-muted float-right mt-1">1:52 PM</small>
           </div>
           <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          <small class="text-truncate text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
         </b-dropdown-item>
       </div>
     </template>

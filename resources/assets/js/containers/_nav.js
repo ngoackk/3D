@@ -30,6 +30,7 @@ export default {
       url: '/messenger',
       icon: 'fa fa-comments'
     },
+   
     {
       name: 'Khảo sát',
       url: '/survey',
@@ -82,6 +83,11 @@ export default {
       name: 'Tin tức',
       url: '/news',
       icon: 'fa fa-newspaper-o'
+    },
+    {
+      name: 'Thông báo',
+      url: '/inform',
+      icon: 'fa fa-comments'
     },
     {
       name: 'Kiểm thử',

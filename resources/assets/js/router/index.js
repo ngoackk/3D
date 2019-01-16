@@ -16,6 +16,7 @@ import Messenger from '../components/Messenger'
 import Login2 from '../components/Login'
 import Profile from '../components/Profile'
 import News from '../components/News'
+import Inform from '../components/inform'
 import ChangePass from '../components/ChangePass'
  
 // Views - Pages
@@ -72,6 +73,11 @@ export default new Router({
           path: 'news',
           name: 'News',
           component: News
+        },
+        {
+          path: 'inform',
+          name: 'Inform',
+          component: Inform
         },
         {
           path: 'survey',
