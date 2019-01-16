@@ -87,7 +87,7 @@ export default {
     {
       name: 'Thông báo',
       url: '/inform',
-      icon: 'fa fa-comments'
+      icon: 'fa fa-info-circle'
     },
     {
       name: 'Kiểm thử',
