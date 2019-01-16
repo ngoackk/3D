@@ -28268,7 +28268,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   }, {
     name: 'Thông báo',
     url: '/inform',
-    icon: 'fa fa-comments'
+    icon: 'fa fa-info-circle'
   }, {
     name: 'Kiểm thử',
     url: '/login2',
