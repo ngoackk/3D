@@ -1,12 +1,9 @@
 <template>
-  <div   class="app" id="deviceready">
-    <div class="header">     
-    
+  <div class="app" id="deviceready">
+    <div class="header">
       <table class="logo">
         <tr>
-          <td>
-            
-          </td>
+          <td></td>
           <td>
             <img src="img/logo.png" alt="Tin nhắn" height="80">
           </td>
@@ -26,7 +23,7 @@
         <tr>
           <td>
             <div>
-              <button  @click="goto('/messenger')" type="button" class="btn btn-info">
+              <button @click="goto('/messenger')" type="button" class="btn btn-info">
                 <div>
                   <img src="img/mess.png" alt="Tin nhắn" height="45">
                 </div>
@@ -36,7 +33,7 @@
           </td>
           <td colspan="1">
             <div>
-              <button  @click="goto('/calendar')"  type="button" class="btn btn-info button1">
+              <button @click="goto('/calendar')" type="button" class="btn btn-info button1">
                 <div>
                   <img src="img/calenda_rong.png" alt="Lịch học / Lịch thi" height="45">
                 </div>
@@ -69,7 +66,7 @@
         <tr>
           <td>
             <div>
-              <button  @click="goto('/one-gate')"  type="button" class="btn btn-info">
+              <button @click="goto('/one-gate')" type="button" class="btn btn-info">
                 <div>
                   <img src="img/1gate.png" alt="Một cửa" height="45">
                 </div>
@@ -121,7 +118,7 @@ export default {
     this.User.Name = "pham";
   },
   methods: {
-    goto(url){
+    goto(url) {
       this.$router.push(url);
     },
     mt1() {},

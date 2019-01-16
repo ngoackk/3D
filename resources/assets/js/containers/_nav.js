@@ -1,6 +1,5 @@
 export default {
-  items: [
-    {
+  items: [{
       name: 'Trang chủ',
       url: '/home',
       icon: 'icon-speedometer',
@@ -29,7 +28,7 @@ export default {
       icon: 'icon-drop'
     },
     {
-      name: 'Bình chọn',
+      name: 'Khảo sát',
       url: '/survey',
       icon: 'icon-pencil'
     },
@@ -46,17 +45,17 @@ export default {
       name: 'Tài chính',
       url: '/finance',
       icon: 'icon-puzzle',
-      
+
     },
     {
       name: 'Lịch biểu',
       url: '/calendar',
       icon: 'icon-cursor',
-       
-    }, 
+
+    },
     {
       title: true,
-      name: 'Tải khoản',     
+      name: 'Tải khoản',
     },
     {
       name: 'Đăng xuất',
@@ -73,7 +72,7 @@ export default {
       url: '/login2',
       icon: 'icon-star'
     },
-     
-    
+
+
   ]
 }

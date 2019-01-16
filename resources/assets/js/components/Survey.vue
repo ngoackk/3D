@@ -1,8 +1,8 @@
 <template>
-    <div>Servey</div>
+  <div>
+    <img src="img/survey.png " width="25">>Khảo sát
+  </div>
 </template>
 <script>
-export default {
-    
-}
+export default {};
 </script>

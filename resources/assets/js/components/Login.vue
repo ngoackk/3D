@@ -41,49 +41,53 @@ import { Users, Data } from "../apis/api";
 export default {
   data() {
     return {
-      email: "tom@example.com",
+      email: "vinhpq99@gmail.com",
       password: "test1234",
       rememberme: false
     };
   },
-  mounted(){
+  mounted() {
     this.logout();
   },
   methods: {
     loginSubmit() {
-         this.$store.dispatch('user/login', this.form)
+      this.$store
+        .dispatch("user/login", this.form)
         .then(this.success)
-        .catch(this.unauthorized)
-      },
-      success() {
-        this.$notify({group: 'alerts', text: this.$t('users.sessions.valid')})
-        this.$router.push('/');
-      },
-      unauthorized() {
-        this.$notify({group: 'alerts', text: this.$t('users.sessions.invalid')})
-      },
-    logout(){
-      localStorage.removeItem('access_token');
-      localStorage.removeItem('user');
-    },  
+        .catch(this.unauthorized);
+    },
+    success() {
+      this.$notify({ group: "alerts", text: this.$t("users.sessions.valid") });
+      this.$router.push("/");
+    },
+    unauthorized() {
+      this.$notify({
+        group: "alerts",
+        text: this.$t("users.sessions.invalid")
+      });
+    },
+    logout() {
+      localStorage.removeItem("access_token");
+      localStorage.removeItem("user");
+    },
     login() {
       Users.login({ email: this.email, password: this.password })
         .then(response => {
           console.log(response);
-          if(response.data){
-            localStorage.setItem('access_token', response.data.access_token);
-            Data.search('users', '1').then(user=>{
-              console.log(user);
-               localStorage.setItem("user", JSON.stringify(user));
-               this.$router.push("/");
-            }).catch(err=>{
-               console.error(err);
-            })
-           
+          if (response.data) {
+            localStorage.setItem("access_token", response.data.access_token);
+            Data.search("users", "1")
+              .then(user => {
+                console.log(user);
+                localStorage.setItem("user", JSON.stringify(user));
+                this.$router.push("/");
+              })
+              .catch(err => {
+                console.error(err);
+              });
           } else {
             console.error(response);
           }
-          
         })
         .catch(error => {
           console.error(error);

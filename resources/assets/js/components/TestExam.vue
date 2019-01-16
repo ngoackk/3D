@@ -1,5 +1,5 @@
 <template>
-  <div>Một cửa</div>
+  <div>Lịch thi</div>
 </template>
 <script>
 export default {};

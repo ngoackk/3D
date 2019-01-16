@@ -1,5 +1,5 @@
 <template>
-    <div>Calendar</div>
+    <div>Lịch học</div>
 </template>
 <script>
 export default {

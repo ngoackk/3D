@@ -8,7 +8,8 @@ import DefaultContainer from '../containers/DefaultContainer'
 
 import Home from '../components/Home'
 import Finance from '../components/Finance'
-import Calendar from '../components/Calendar'
+import StudyPlan from '../components/StudyPlan'
+import TestExam from '../components/TestExam'
 import Survey from '../components/Survey'
 import OneGate from '../components/OneGate'
 import Messenger from '../components/Messenger'
@@ -70,66 +71,72 @@ Vue.use(Router)
 export default new Router({
   mode: 'hash', // https://router.vuejs.org/api/#mode
   linkActiveClass: 'open active',
-  scrollBehavior: () => ({ y: 0 }),
-  routes: [
-    {
+  scrollBehavior: () => ({
+    y: 0
+  }),
+  routes: [{
       path: '/',
       redirect: '/home',
       name: 'Main',
       component: DefaultContainer,
-      children: [
-        {
+      children: [{
           path: 'home',
           name: 'Home',
           component: Home
-        }, 
+        },
         {
           path: 'messenger',
           name: 'Messenger',
           component: Messenger
-        },  
+        },
         {
           path: 'one-gate',
           name: 'OneGate',
           component: OneGate
-        },       
+        },
         {
-          path: 'calendar',
-          name: 'Calendar',
-          component: Calendar
-        },   
+          path: 'studyplan',
+          name: 'StudyPlan',
+          component: StudyPlan
+        },
+        {
+          path: 'testexam',
+          name: 'TestExam',
+          component: TestExam
+        },
         {
           path: 'finance',
           name: 'Finance',
           component: Finance
-        },    
+        },
         {
-          path: 'messenger',
-          name: 'Messenger',
+          path: 'news',
+          name: 'News',
           component: Messenger
-        },     
+        },
         {
           path: 'survey',
           name: 'Survey',
           component: Survey
-        }, 
+        },
         {
           path: 'login2',
           name: 'Login2',
           component: Login2
-        }, 
-        
+        },
+
       ]
-    },     
+    },
     {
       path: '/pages',
       redirect: '/pages/404',
       name: 'Pages',
       component: {
-        render (c) { return c('router-view') }
+        render(c) {
+          return c('router-view')
+        }
       },
-      children: [
-        {
+      children: [{
           path: '404',
           name: 'Page404',
           component: Page404

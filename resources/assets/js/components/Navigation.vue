@@ -10,46 +10,46 @@
           data-target="#bs-example-navbar-collapse-1"
           aria-expanded="false"
         >
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Thực đơn</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-       <router-link to="/">Home</router-link>
-       
-      
-       
-       
-        
-       
+        <router-link to="/">Trang chủ</router-link>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav"></ul>
-        <ul class="nav navbar-nav navbar-right">                   
+        <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
-           <router-link to="/calendar">Calendar</router-link>
-          </li>
-          <li class="nav-item">
-             <router-link to="/messenger">Messenger</router-link>
+            <router-link to="/studyplan">Lịch học</router-link>
           </li>
           <li class="nav-item">
-             <router-link to="/result">Result</router-link>
+            <router-link to="/testexam">Lịch thi</router-link>
           </li>
           <li class="nav-item">
-             <router-link to="/finance">Finance</router-link>
+            <router-link to="/survey">Khảo sát</router-link>
           </li>
           <li class="nav-item">
-             <router-link to="/one-gate">One Gate</router-link>
-            
+            <router-link to="/result">Kết quả học tập</router-link>
           </li>
-           <li class="nav-item">
-             <router-link to="/survey">Survey</router-link>
+          <li class="nav-item">
+            <router-link to="/messenger">Tin nhắn</router-link>
           </li>
-           <li class="nav-item">
-               <router-link to="/login">Logout</router-link>
-        
+          <li class="nav-item">
+            <router-link to="/messenger">Bản tin</router-link>
+          </li>
+
+          <li class="nav-item">
+            <router-link to="/one-gate">Một cửa</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/finance">Tài chính</router-link>
+          </li>
+
+          <li class="nav-item">
+            <router-link to="/login">Đăng xuất</router-link>
           </li>
         </ul>
       </div>

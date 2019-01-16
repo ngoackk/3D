@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Hybrid Cordova Vue Bootstraps</name>
+    <name>ESSOFT</name>
     <description>
-        A ToDo app using Cordova and Vue Bootstraps
+       Phần mềm quản lý đào tạo ESSOFT
     </description>
-    <author email="phamtuanchip@yahoo.de" href="https://github.com/phamtuanchip/hybrid_cordova">
-        Apache Cordova Team
+    <author email="phamtuanchip@yahoo.de" href="http://www.namvietjsc.edu.vn">
+        Công ty cổ phần giải pháp giáo dục - y tế Nam Việt
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -25,4 +25,5 @@
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <engine name="browser" spec="^5.0.4" />
+    <engine name="android" spec="^7.1.4" />
 </widget>
