@@ -4,8 +4,8 @@
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input
-          v-model="email"
-          type="email"
+          v-model="UserName"
+          type="text"
           class="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
@@ -19,7 +19,7 @@
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input
-          v-model="password"
+          v-model="Password"
           type="password"
           class="form-control"
           id="exampleInputPassword1"
@@ -32,8 +32,7 @@
       </div>
       <button @click="login" class="btn btn-primary">Submit</button>
       <button @click="getUserData" class="btn btn-primary">Check me</button>
-    </form>
-    <i class="fa fa-calendar"></i>
+    </form>    
   </div>
 </template>
 <script>
@@ -41,8 +40,9 @@ import { Users, Data } from "../apis/api";
 export default {
   data() {
     return {
-      email: "vinhpq99@gmail.com",
-      password: "test1234",
+      Role: 0,
+      UserName: "0123456789",
+      Password: "123456789",
       rememberme: false
     };
   },
@@ -71,7 +71,7 @@ export default {
       localStorage.removeItem("user");
     },
     login() {
-      Users.login({ email: this.email, password: this.password })
+      Users.login({ Role: this.Role, UserName: this.UserName, Password: this.Password })
         .then(response => {
           console.log(response);
           if (response.data) {

@@ -2,30 +2,33 @@ export default {
   items: [{
       name: 'Trang chủ',
       url: '/home',
-      icon: 'icon-speedometer',
-      badge: {
-        variant: 'primary',
-        text: 'NEW'
-      }
+      icon: 'fa fa-home',
+      // badge: {
+      //   variant: 'primary',
+      //   text: 'NEW'
+      // }
     },
     {
       title: true,
-      name: 'Thông tin',
-      class: '',
-      wrapper: {
-        element: '',
-        attributes: {}
-      }
+      name: 'Chương trình đào tạo',
+    },
+    {
+      title: true,
+      name: 'Đăng ký',
+    },
+    {
+      title: true,
+      name: 'Đánh giá',
     },
     {
       name: 'Một cửa',
       url: '/one-gate',
-      icon: 'icon-drop'
+      icon: 'fa fa-gavel'
     },
     {
       name: 'Tin nhắn',
       url: '/messenger',
-      icon: 'icon-drop'
+      icon: 'fa fa-comments'
     },
     {
       name: 'Khảo sát',
@@ -34,43 +37,56 @@ export default {
     },
     {
       title: true,
-      name: 'Hoạt động',
-      class: '',
-      wrapper: {
-        element: '',
-        attributes: {}
-      }
-    },
+      name: 'Thông tin cá nhân',
+      
+    },   
     {
-      name: 'Tài chính',
-      url: '/finance',
-      icon: 'icon-puzzle',
+      name: 'Lịch học',
+      url: '/studyplan',
+      icon: 'fa fa-calendar',
 
     },
     {
-      name: 'Lịch biểu',
-      url: '/calendar',
-      icon: 'icon-cursor',
+      name: 'Lịch thi',
+      url: '/testplan',
+      icon: 'fa fa-calendar-check-o',
+
+    },
+    {
+      name: 'Tài khoản',
+      url: '/profile',
+      icon: 'fa fa-user',
+
+    },
+    {
+      name: 'Mật khẩu',
+      url: '/change-pass',
+      icon: 'fa fa-key',
 
     },
     {
       title: true,
-      name: 'Tải khoản',
+      name: 'Tài chính',
     },
     {
-      name: 'Đăng xuất',
-      url: '/pages/login',
-      icon: 'icon-star'
+      name: 'Thông tin tài chính',
+      url: '/finance',
+      icon: 'fa fa-money',
+
     },
     {
-      name: 'Đăng ký',
-      url: '/pages/register',
-      icon: 'icon-star'
+      title: true,
+      name: 'Dịch vụ',
+    },
+    {
+      name: 'Tin tức',
+      url: '/news',
+      icon: 'fa fa-newspaper-o'
     },
     {
       name: 'Kiểm thử',
       url: '/login2',
-      icon: 'icon-star'
+      icon: 'fa fa-plug'
     },
 
 

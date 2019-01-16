@@ -1,17 +1,81 @@
 <template>
   <div>
-    <b-card
-      title="Card Title"
-      img-src="https://picsum.photos/600/300/?image=25"
-      img-alt="Image"
-      img-top
-      tag="article"
-      style="max-width: 20rem;"
-      class="mb-2"
-    >
-      <p class="card-text">Tổng số môn đã hoàn thành trách nhiệm tài chính</p>
-      <b-button href="#" variant="primary">Các môn chưa đóng tiền</b-button>
-    </b-card>
+      <div class="p-3">
+        <div class="message">
+          <div class="py-3  mr-3 float-left">
+            <div class="avatar">
+              <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              <b-badge variant="success" class="avatar-status"></b-badge>
+            </div>
+          </div>
+          <div>
+            <small class="text-muted">Lukasz Holeczek</small>
+            <small class="text-muted float-right mt-1">1:52 PM</small>
+          </div>
+          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+        </div>
+        <hr>
+        <div class="message">
+          <div class="py-3  mr-3 float-left">
+            <div class="avatar">
+              <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              <b-badge variant="danger" class="avatar-status"></b-badge>
+            </div>
+          </div>
+          <div>
+            <small class="text-muted">Lukasz Holeczek</small>
+            <small class="text-muted float-right mt-1">1:52 PM</small>
+          </div>
+          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+        </div>
+        <hr>
+        <div class="message">
+          <div class="py-3  mr-3 float-left">
+            <div class="avatar">
+              <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              <b-badge variant="info" class="avatar-status"></b-badge>
+            </div>
+          </div>
+          <div>
+            <small class="text-muted">Lukasz Holeczek</small>
+            <small class="text-muted float-right mt-1">1:52 PM</small>
+          </div>
+          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+        </div>
+        <hr>
+        <div class="message">
+          <div class="py-3  mr-3 float-left">
+            <div class="avatar">
+              <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              <b-badge variant="warning" class="avatar-status"></b-badge>
+            </div>
+          </div>
+          <div>
+            <small class="text-muted">Lukasz Holeczek</small>
+            <small class="text-muted float-right mt-1">1:52 PM</small>
+          </div>
+          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+        </div>
+        <hr>
+        <div class="message">
+          <div class="py-3  mr-3 float-left">
+            <div class="avatar">
+              <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              <b-badge variant="dark" class="avatar-status"></b-badge>
+            </div>
+          </div>
+          <div>
+            <small class="text-muted">Lukasz Holeczek</small>
+            <small class="text-muted float-right mt-1">1:52 PM</small>
+          </div>
+          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+        </div>
+      </div>
   </div>
 </template>
 <script>

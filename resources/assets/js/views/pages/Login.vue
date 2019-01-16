@@ -50,7 +50,7 @@ export default {
   name: 'Login',
   data(){
     return {
-      username: 'superadmin',
+      username: '121212121',
       password: "123456789"
     }
   },

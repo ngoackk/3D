@@ -25,16 +25,14 @@
         <b-nav-item class="px-3">Settings</b-nav-item>
       </b-navbar-nav>-->
       <b-navbar-nav class="ml-auto">
+       
         <!-- <b-nav-item class="d-md-down-none">
-          <i class="icon-bell"></i>
-          <b-badge pill variant="danger">5</b-badge>
-        </b-nav-item>
-        <b-nav-item class="d-md-down-none">
           <i class="icon-list"></i>
-        </b-nav-item>
-        <b-nav-item class="d-md-down-none">
+        </b-nav-item> -->
+        <!-- <b-nav-item class="d-md-down-none">
           <i class="icon-location-pin"></i>
-        </b-nav-item>-->
+        </b-nav-item> -->
+        <DefaultHeaderDropdownMsg />
         <DefaultHeaderDropdownAccnt/>
       </b-navbar-nav>
       <!-- <AsideToggler class="d-none d-lg-block" /> -->
@@ -91,6 +89,7 @@ import {
 } from "@coreui/vue";
 import DefaultAside from "./DefaultAside";
 import DefaultHeaderDropdownAccnt from "./DefaultHeaderDropdownAccnt";
+import DefaultHeaderDropdownMsg from "./DefaultHeaderDropdownMsg";
 
 export default {
   name: "DefaultContainer",
@@ -103,6 +102,7 @@ export default {
     // Breadcrumb,
     DefaultAside,
     DefaultHeaderDropdownAccnt,
+    DefaultHeaderDropdownMsg,
     SidebarForm,
     SidebarFooter,
     SidebarToggler,
