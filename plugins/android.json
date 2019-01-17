@@ -11,9 +11,5 @@
       "PACKAGE_NAME": "hau.namvietjsc.edu.vn"
     }
   },
-  "dependent_plugins": {
-    "cordova-plugin-browsersync": {
-      "PACKAGE_NAME": "hau.namvietjsc.edu.vn"
-    }
-  }
+  "dependent_plugins": {}
 }
