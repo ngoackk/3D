@@ -3,10 +3,10 @@
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile/>
       <b-link class="navbar-brand" to="#">
-        <img class="navbar-brand-full" src="img/logo.png" width="30" height="30" alt="hau.edu.vn">
+        <img class="navbar-brand-full" src="img/logo-f.png" width="30" height="30" alt="hau.edu.vn">
         <img
           class="navbar-brand-minimized"
-          src="img/logo.png"
+          src="img/logo-f.png"
           width="30"
           height="30"
           alt="hau.edu.vn"
@@ -18,7 +18,7 @@
         <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
         <b-nav-item class="px-3">Settings</b-nav-item>
       </b-navbar-nav>-->
-      <b-navbar-nav class="ml-auto">ĐẠI HỌC KIẾN TRÚC HÀ NỘI
+      <b-navbar-nav class="ml-auto"> <div class="title">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</div>
         <!-- <b-nav-item class="d-md-down-none">
           <i class="icon-list"></i>
         </b-nav-item>-->
@@ -53,7 +53,7 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <a href="https://hau.edu.vn">Đại học Kiến Trúc Hà nội</a>
+        <a href="https://hau.edu.vn">Đại học Kiến trúc Hà Nội</a>
         <span class="ml-1">&copy; 2018 .</span>
       </div>
       <div class="ml-auto">

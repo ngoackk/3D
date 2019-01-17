@@ -27063,6 +27063,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -39444,7 +39460,7 @@ exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(28)();
-exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n", ""]);
+exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n", ""]);
 
 /***/ }),
 /* 340 */
@@ -49326,15 +49342,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticStyle: {
-      "text-align": "center",
-      "width": "100%"
+      "height": "5px"
     }
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "row"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bgr_container"
   }, [_c('div', {
-    staticClass: "col"
-  }, [_c('div', [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "container"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "row justify-content-center"
+  }, [_c('div', {
+    staticClass: "col-xs-1"
+  }, [_c('button', {
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49343,10 +49362,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/studyplan')
       }
     }
-  }, [_vm._m(1), _vm._v(" "), _c('div', [_vm._v("Lịch học")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Lịch học")])])]), _vm._v(" "), _c('div', {
+    staticClass: "colxs-1"
   }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49355,10 +49376,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/testplan')
       }
     }
-  }, [_vm._m(2), _vm._v(" "), _c('div', [_vm._v("Lịch thi")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col"
+  }, [_vm._m(2), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Lịch thi")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-xs-1"
   }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49367,10 +49390,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/survey')
       }
     }
-  }, [_vm._m(3), _vm._v(" "), _c('div', [_vm._v("Khảo sát")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col"
+  }, [_vm._m(3), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Khảo sát")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-xs-1"
   }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49379,12 +49404,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/result')
       }
     }
-  }, [_vm._m(4), _vm._v(" "), _c('div', [_vm._v("Kết quả")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
+  }, [_vm._m(4), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Kết quả")])])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
+    staticClass: "row justify-content-center"
   }, [_c('div', {
-    staticClass: "col"
+    staticClass: "col-xs-1"
   }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49393,10 +49420,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/messenger')
       }
     }
-  }, [_vm._m(5), _vm._v(" "), _c('div', [_vm._v("Tin nhắn")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col"
+  }, [_vm._m(5), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Tin nhắn")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-xs-1"
   }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49405,10 +49434,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/news')
       }
     }
-  }, [_vm._m(6), _vm._v(" "), _c('div', [_vm._v("Bản tin")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col"
+  }, [_vm._m(6), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Bản tin")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-xs-1"
   }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49417,10 +49448,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/one-gate')
       }
     }
-  }, [_vm._m(7), _vm._v(" "), _c('div', [_vm._v("Một cửa")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col"
+  }, [_vm._m(7), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Một cửa")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-xs-1"
   }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "btn main",
     attrs: {
       "type": "button"
     },
@@ -49429,14 +49462,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goto('/finance')
       }
     }
-  }, [_vm._m(8), _vm._v(" "), _c('div', [_vm._v("Tài chính")])])])])])])
+  }, [_vm._m(8), _vm._v(" "), _c('div', {
+    staticClass: "title_color"
+  }, [_vm._v("Tài chính")])])])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('img', {
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-xs-12"
+  }, [_c('img', {
     attrs: {
       "src": "img/banner.jpg",
       "width": "100%"
     }
-  })])
+  })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('img', {
     attrs: {
@@ -49481,7 +49520,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', [_c('img', {
     attrs: {
       "src": "img/news.png",
-      "alt": "Tin nhắn",
+      "alt": "Bản tin",
       "height": "45"
     }
   })])
@@ -51201,7 +51240,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     staticClass: "navbar-brand-full",
     attrs: {
-      "src": "img/logo.png",
+      "src": "img/logo-f.png",
       "width": "30",
       "height": "30",
       "alt": "hau.edu.vn"
@@ -51209,7 +51248,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('img', {
     staticClass: "navbar-brand-minimized",
     attrs: {
-      "src": "img/logo.png",
+      "src": "img/logo-f.png",
       "width": "30",
       "height": "30",
       "alt": "hau.edu.vn"
@@ -51221,7 +51260,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('b-navbar-nav', {
     staticClass: "ml-auto"
-  }, [_vm._v("ĐẠI HỌC KIẾN TRÚC HÀ NỘI\n      "), _vm._v(" "), _c('DefaultHeaderDropdownMsg'), _vm._v(" "), _c('DefaultHeaderDropdownAccnt')], 1)], 1), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v("ĐẠI HỌC KIẾN TRÚC HÀ NỘI")]), _vm._v(" "), _c('DefaultHeaderDropdownMsg'), _vm._v(" "), _c('DefaultHeaderDropdownAccnt')], 1)], 1), _vm._v(" "), _c('div', {
     staticClass: "app-body"
   }, [_c('AppSidebar', {
     attrs: {
@@ -51243,7 +51284,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "https://hau.edu.vn"
     }
-  }, [_vm._v("Đại học Kiến Trúc Hà nội")]), _vm._v(" "), _c('span', {
+  }, [_vm._v("Đại học Kiến trúc Hà Nội")]), _vm._v(" "), _c('span', {
     staticClass: "ml-1"
   }, [_vm._v("© 2018 .")])]), _vm._v(" "), _c('div', {
     staticClass: "ml-auto"
