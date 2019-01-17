@@ -30,7 +30,7 @@ export default {
       url: '/messenger',
       icon: 'fa fa-comments'
     },
-   
+
     {
       name: 'Khảo sát',
       url: '/survey',
@@ -39,8 +39,8 @@ export default {
     {
       title: true,
       name: 'Thông tin cá nhân',
-      
-    },   
+
+    },
     {
       name: 'Lịch học',
       url: '/studyplan',
@@ -91,7 +91,7 @@ export default {
     },
     {
       name: 'Kiểm thử',
-      url: '/login2',
+      url: '/login',
       icon: 'fa fa-plug'
     },
 

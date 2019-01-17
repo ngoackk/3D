@@ -26,7 +26,7 @@
             <router-link to="/studyplan">Lịch học</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/testexam">Lịch thi</router-link>
+            <router-link to="/testplan">Lịch thi</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/survey">Khảo sát</router-link>
@@ -38,7 +38,7 @@
             <router-link to="/messenger">Tin nhắn</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/messenger">Bản tin</router-link>
+            <router-link to="/news">Bản tin</router-link>
           </li>
 
           <li class="nav-item">

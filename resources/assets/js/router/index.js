@@ -9,23 +9,23 @@ import DefaultContainer from '../containers/DefaultContainer'
 import Home from '../components/Home'
 import Finance from '../components/Finance'
 import StudyPlan from '../components/StudyPlan'
-import TestExam from '../components/TestExam'
+import TestPlan from '../components/TestPlan'
 import Survey from '../components/Survey'
 import OneGate from '../components/OneGate'
 import Messenger from '../components/Messenger'
-import Login2 from '../components/Login'
+import Login from '../components/Login'
 import Profile from '../components/Profile'
 import News from '../components/News'
 import Inform from '../components/inform'
 import ChangePass from '../components/ChangePass'
- 
+
 // Views - Pages
 import Page404 from '../views/pages/Page404'
 import Page500 from '../views/pages/Page500'
-import Login from '../views/pages/Login'
+
 import Register from '../views/pages/Register'
 // Users
- 
+
 Vue.use(Router)
 
 export default new Router({
@@ -61,8 +61,8 @@ export default new Router({
         },
         {
           path: 'testplan',
-          name: 'TestExam',
-          component: TestExam
+          name: 'TestPlan',
+          component: TestPlan
         },
         {
           path: 'finance',
@@ -94,12 +94,8 @@ export default new Router({
           name: 'ChangePass',
           component: ChangePass
         },
-        
-        {
-          path: 'login2',
-          name: 'Login2',
-          component: Login2
-        },
+
+
 
       ]
     },

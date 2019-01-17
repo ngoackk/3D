@@ -3,36 +3,29 @@
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile/>
       <b-link class="navbar-brand" to="#">
-        <img
-          class="navbar-brand-full"
-          src="img/logo-f.png"
-          width="30"
-          height="30"
-          alt="hau.edu.vn"
-        >
+        <img class="navbar-brand-full" src="img/logo.png" width="30" height="30" alt="hau.edu.vn">
         <img
           class="navbar-brand-minimized"
-          src="img/logo-f.png"
+          src="img/logo.png"
           width="30"
           height="30"
           alt="hau.edu.vn"
         >
-      </b-link>     
+      </b-link>
       <SidebarToggler class="d-md-down-none" display="lg"/>
       <!-- <b-navbar-nav class="d-md-down-none">
         <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
         <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
         <b-nav-item class="px-3">Settings</b-nav-item>
       </b-navbar-nav>-->
-      <b-navbar-nav class="ml-auto">
-        Đại học Kiến Trúc Hà nội
+      <b-navbar-nav class="ml-auto">ĐẠI HỌC KIẾN TRÚC HÀ NỘI
         <!-- <b-nav-item class="d-md-down-none">
           <i class="icon-list"></i>
-        </b-nav-item> -->
+        </b-nav-item>-->
         <!-- <b-nav-item class="d-md-down-none">
           <i class="icon-location-pin"></i>
-        </b-nav-item> -->
-        <DefaultHeaderDropdownMsg />
+        </b-nav-item>-->
+        <DefaultHeaderDropdownMsg/>
         <DefaultHeaderDropdownAccnt/>
       </b-navbar-nav>
       <!-- <AsideToggler class="d-none d-lg-block" /> -->
@@ -132,8 +125,8 @@ export default {
   .navbar-brand {
     margin: 0;
     top: 0;
-    left: 15%; 
-    width: 0px;   
+    left: 15%;
+    width: 0px;
   }
 }
 </style>

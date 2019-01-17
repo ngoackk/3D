@@ -16,7 +16,7 @@ import store from '../js/store'
 Vue.use(BootstrapVue)
 
 /* eslint-disable no-new */
-window.onload = function (){
+window.onload = function () {
   new Vue({
     //el: '#app',
     router,
@@ -26,5 +26,4 @@ window.onload = function (){
       App
     }
   }).$mount('#app');
-}
-
+};
