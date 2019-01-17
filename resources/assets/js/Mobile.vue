@@ -12,16 +12,6 @@ export default {
 
 <style lang="scss">
 // CoreUI Icons Set
-  @import '~@coreui/icons/css/coreui-icons.min.css';
-  /* Import Font Awesome Icons Set */
-  $fa-font-path: '../fonts/vendor/font-awesome/';
-  @import '~font-awesome/scss/font-awesome.scss';
-  /* Import Simple Line Icons Set */
-  $simple-line-font-path: '../fonts/vendor/simple-line-icons/';
-  @import '~simple-line-icons/scss/simple-line-icons.scss';
-  /* Import Flag Icons Set */
-  @import '~flag-icon-css/css/flag-icon.min.css';
-  /* Import Bootstrap Vue Styles */
-  @import '~bootstrap-vue/dist/bootstrap-vue.css';
-  // Import Main styles for this application
+  
+
 </style>
