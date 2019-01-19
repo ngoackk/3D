@@ -16,5 +16,9 @@ cordova run browser.
 npm run prod.
 cordova run browser.
 
+# Cordova CLI
+
+cordova run ios --buildFlag='-UseModernBuildSystem=0'
+cordova build ios --buildFlag='-UseModernBuildSystem=0'
 
 
