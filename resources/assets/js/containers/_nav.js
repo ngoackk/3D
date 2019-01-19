@@ -26,6 +26,11 @@ export default {
       icon: 'fa fa-gavel'
     },
     {
+      name: 'Sales',
+      url: '/sales',
+      icon: 'fa fa-comments'
+    },
+    {
       name: 'Tin nhắn',
       url: '/messenger',
       icon: 'fa fa-comments'

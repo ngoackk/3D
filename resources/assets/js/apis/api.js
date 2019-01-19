@@ -29,9 +29,14 @@ export const Data = {
       instance.get("https://tinchi.hau.edu.vn/DangNhap/Login/" + uri).then(response => {
         resolve(response.data)
       }).catch(err => {
-        resolve({Id: '1212212121', Username: 'Test', FullName: 'Nguyen Van A', Email: 'test@test'})
+        resolve({
+          Id: '1212212121',
+          Username: 'Test',
+          FullName: 'Nguyen Van A',
+          Email: 'test@test'
+        });
         //reject(err)
-      })
+      });
       // console.log(filter);
       // console.log(reject);
       //resolve(filter);

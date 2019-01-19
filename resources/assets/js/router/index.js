@@ -18,6 +18,9 @@ import Profile from '../components/Profile'
 import News from '../components/News'
 import Inform from '../components/inform'
 import ChangePass from '../components/ChangePass'
+import Result from '../components/Result'
+import Sales from '../components/Sales'
+
 
 // Views - Pages
 import Page404 from '../views/pages/Page404'
@@ -43,6 +46,11 @@ export default new Router({
           path: 'home',
           name: 'Home',
           component: Home
+        },
+        {
+          path: 'sales',
+          name: 'Sales',
+          component: Sales
         },
         {
           path: 'messenger',
@@ -95,7 +103,11 @@ export default new Router({
           component: ChangePass
         },
 
-
+        {
+          path: 'result',
+          name: 'Result',
+          component: Result
+        },
 
       ]
     },
@@ -131,4 +143,4 @@ export default new Router({
       ]
     }
   ]
-})
+});

@@ -18,7 +18,8 @@
         <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
         <b-nav-item class="px-3">Settings</b-nav-item>
       </b-navbar-nav>-->
-      <b-navbar-nav class="ml-auto"> <div class="title">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</div>
+      <b-navbar-nav class="ml-auto">
+        <div class="title">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</div>
         <!-- <b-nav-item class="d-md-down-none">
           <i class="icon-list"></i>
         </b-nav-item>-->

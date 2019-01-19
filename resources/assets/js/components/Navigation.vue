@@ -38,6 +38,9 @@
             <router-link to="/messenger">Tin nhắn</router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/sales">Sales</router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/news">Bản tin</router-link>
           </li>
 
