@@ -23,9 +23,19 @@ export default {
   },
   beforeMount() {
     this.columnDefs = [
-      { headerName: "Make", field: "make", sortable: true, filter: true },
-      { headerName: "Model", field: "model", sortable: true, filter: true },
-      { headerName: "Price", field: "price", sortable: true, filter: true }
+      { headerName: "Huyện", field: "Ten_huyen", sortable: true, filter: true },
+      {
+        headerName: "Mã tỉnh",
+        field: "DM_tinh_ID",
+        sortable: true,
+        filter: true
+      },
+      {
+        headerName: "Mã bản ghi",
+        field: "ID",
+        sortable: true,
+        filter: true
+      }
     ];
 
     // this.rowData = [
@@ -34,7 +44,7 @@ export default {
     //   { make: "Porsche", model: "Boxter", price: 72000 }
     // ];
 
-    fetch("https://api.myjson.com/bins/15psn9")
+    fetch("http://103.28.37.34:98/api/huyen")
       .then(result => result.json())
       .then(rowData => (this.rowData = rowData));
   }

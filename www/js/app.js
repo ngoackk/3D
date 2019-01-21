@@ -65606,7 +65606,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   beforeMount: function beforeMount() {
     var _this = this;
 
-    this.columnDefs = [{ headerName: "Make", field: "make", sortable: true, filter: true }, { headerName: "Model", field: "model", sortable: true, filter: true }, { headerName: "Price", field: "price", sortable: true, filter: true }];
+    this.columnDefs = [{ headerName: "Huyện", field: "Ten_huyen", sortable: true, filter: true }, {
+      headerName: "Mã tỉnh",
+      field: "DM_tinh_ID",
+      sortable: true,
+      filter: true
+    }, {
+      headerName: "Mã bản ghi",
+      field: "ID",
+      sortable: true,
+      filter: true
+    }];
 
     // this.rowData = [
     //   { make: "Toyota", model: "Celica", price: 35000 },
@@ -65614,7 +65624,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     //   { make: "Porsche", model: "Boxter", price: 72000 }
     // ];
 
-    fetch("https://api.myjson.com/bins/15psn9").then(function (result) {
+    fetch("http://103.28.37.34:98/api/huyen").then(function (result) {
       return result.json();
     }).then(function (rowData) {
       return _this.rowData = rowData;
@@ -77782,7 +77792,7 @@ exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container 
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "\n.app-header .navbar-brand[data-v-73e4a5f0] {\n  margin: 0;\n  top: 0;\n  left: 15%;\n  width: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.app-header .navbar-brand[data-v-73e4a5f0] {\n  margin: 0;\n  top: 0;\n  left: 15px;\n  width: 0px;\n}\n", ""]);
 
 /***/ }),
 /* 495 */
