@@ -23,19 +23,19 @@ export default {
   },
   beforeMount() {
     this.columnDefs = [
-      { headerName: "Huyện", field: "Ten_huyen", sortable: true, filter: true },
+      {
+        headerName: "Mã bản ghi",
+        field: "ID",
+        sortable: true,
+        filter: true
+      },
       {
         headerName: "Mã tỉnh",
         field: "DM_tinh_ID",
         sortable: true,
         filter: true
       },
-      {
-        headerName: "Mã bản ghi",
-        field: "ID",
-        sortable: true,
-        filter: true
-      }
+      { headerName: "Huyện", field: "Ten_huyen", sortable: true, filter: true }
     ];
 
     // this.rowData = [
