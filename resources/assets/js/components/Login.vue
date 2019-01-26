@@ -73,7 +73,7 @@ export default {
     login() {
       Users.studentLogin({ Role: this.Role, UserName: this.UserName, Password: this.Password })
         .then(result => {
-          console.log(result);
+          console.log(result.isSuccess);
          
           if (result.isSuccess) {
             //Luu token vao localStorage cua trinh duyet

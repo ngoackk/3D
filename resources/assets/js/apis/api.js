@@ -18,7 +18,7 @@ export const Users = {
           'Content-Type': 'application/json'
         }
       }).then(response => {
-        resolve(response)
+        resolve(response.json())
       }).catch(error => {
         reject(error)
       })
@@ -35,11 +35,11 @@ export const Users = {
           }
 
         })
-        .then(function (data) {
+        .then(data=> {
           console.log("Lấy dữ liệu thành công: ", data);
-          resolve(data)
+          resolve(data.json())
         })
-        .catch(function (error) {
+        .catch(error =>{
           console.log("Lấy dữ liệu thất bại: ", error);
           reject(error)
         });
