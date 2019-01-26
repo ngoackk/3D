@@ -26,6 +26,11 @@ export default {
       icon: 'fa fa-gavel'
     },
     {
+      name: 'Md5',
+      url: '/md5',
+      icon: 'fa fa-comments'
+    },
+    {
       name: 'Sales',
       url: '/sales',
       icon: 'fa fa-comments'

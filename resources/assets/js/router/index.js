@@ -20,6 +20,7 @@ import Inform from '../components/inform'
 import ChangePass from '../components/ChangePass'
 import Result from '../components/Result'
 import Sales from '../components/Sales'
+import Md5 from '../components/Md5'
 
 
 // Views - Pages
@@ -46,6 +47,11 @@ export default new Router({
           path: 'home',
           name: 'Home',
           component: Home
+        },
+        {
+          path: 'md5',
+          name: 'Md5',
+          component: Md5
         },
         {
           path: 'sales',
