@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="img/survey.png " width="25">>Khảo sát
+    Khảo sát
   </div>
 </template>
 <script>

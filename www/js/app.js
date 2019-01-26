@@ -65618,12 +65618,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       filter: true
     }, { headerName: "Huyện", field: "Ten_huyen", sortable: true, filter: true }];
 
-    // this.rowData = [
-    //   { make: "Toyota", model: "Celica", price: 35000 },
-    //   { make: "Ford", model: "Mondeo", price: 32000 },
-    //   { make: "Porsche", model: "Boxter", price: 72000 }
-    // ];
-
     fetch("http://103.28.37.34:98/api/huyen").then(function (result) {
       return result.json();
     }).then(function (rowData) {
@@ -77792,7 +77786,7 @@ exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container 
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margin: 0;\n  top: 0;\n  left: 15px;\n  width: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margin: 0;\n  top: 0;\n  left: 55px;\n  width: 0px;\n}\n", ""]);
 
 /***/ }),
 /* 495 */
@@ -81234,15 +81228,8 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('img', {
-    attrs: {
-      "src": "img/survey.png ",
-      "width": "25"
-    }
-  }), _vm._v(">Khảo sát\n")])
-}]}
+  return _c('div', [_vm._v("\n  Khảo sát\n")])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
