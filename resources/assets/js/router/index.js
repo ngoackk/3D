@@ -1,36 +1,37 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
 // Containers
-import DefaultContainer from '../containers/DefaultContainer'
+import DefaultContainer from '../containers/DefaultContainer';
 
 // Views
 
-import Home from '../components/Home'
-import Finance from '../components/Finance'
-import StudyPlan from '../components/StudyPlan'
-import TestPlan from '../components/TestPlan'
-import Survey from '../components/Survey'
-import OneGate from '../components/OneGate'
-import Messenger from '../components/Messenger'
-import Login from '../components/Login'
-import Profile from '../components/Profile'
-import News from '../components/News'
-import Inform from '../components/inform'
-import ChangePass from '../components/ChangePass'
-import Result from '../components/Result'
-import Sales from '../components/Sales'
-import Md5 from '../components/Md5'
+import Home from '../components/Home';
+import Finance from '../components/Finance';
+import StudyPlan from '../components/StudyPlan';
+import TestPlan from '../components/TestPlan';
+import Survey from '../components/Survey';
+import OneGate from '../components/OneGate';
+import Messenger from '../components/Messenger';
+import Login from '../components/Login';
+import Profile from '../components/Profile';
+import News from '../components/News';
+import Inform from '../components/inform';
+import ChangePass from '../components/ChangePass';
+import Result from '../components/Result';
+import Sales from '../components/Sales';
+import Md5 from '../components/Md5';
+import Haulogin from '../components/HauLogin';
 
 
 // Views - Pages
-import Page404 from '../views/pages/Page404'
-import Page500 from '../views/pages/Page500'
+import Page404 from '../views/pages/Page404';
+import Page500 from '../views/pages/Page500';
 
-import Register from '../views/pages/Register'
+import Register from '../views/pages/Register';
 // Users
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'hash', // https://router.vuejs.org/api/#mode
@@ -52,6 +53,11 @@ export default new Router({
           path: 'md5',
           name: 'Md5',
           component: Md5
+        },
+        {
+          path: 'haulogin',
+          name: 'Haulogin',
+          component: Haulogin
         },
         {
           path: 'sales',
@@ -123,7 +129,7 @@ export default new Router({
       name: 'Pages',
       component: {
         render(c) {
-          return c('router-view')
+          return c('router-view');
         }
       },
       children: [{

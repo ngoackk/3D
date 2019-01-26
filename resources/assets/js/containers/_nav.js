@@ -30,6 +30,11 @@ export default {
       url: '/md5',
       icon: 'fa fa-comments'
     },
+    // {
+    //   name: 'HauLogin',
+    //   url: '/HauLogin',
+    //   icon: 'fa fa-comments'
+    // },
     {
       name: 'Sales',
       url: '/sales',
@@ -107,4 +112,4 @@ export default {
 
 
   ]
-}
+};

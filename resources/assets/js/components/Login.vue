@@ -71,12 +71,15 @@ export default {
       localStorage.removeItem("user");
     },
     login() {
-      Users.login({ Role: this.Role, UserName: this.UserName, Password: this.Password })
-        .then(response => {
-          console.log(response);
-          if (response.data) {
-            localStorage.setItem("access_token", response.data.access_token);
-            Data.search("users", "1")
+      Users.studentLogin({ Role: this.Role, UserName: this.UserName, Password: this.Password })
+        .then(result => {
+          console.log(result);
+         
+          if (result.isSuccess) {
+            //Luu token vao localStorage cua trinh duyet
+            localStorage.setItem("access_token", result.message);
+            // goi ham lay du lieu nguoi dung
+            Users.getUserInfor()
               .then(user => {
                 console.log(user);
                 localStorage.setItem("user", JSON.stringify(user));
@@ -86,7 +89,7 @@ export default {
                 console.error(err);
               });
           } else {
-            console.error(response);
+            console.error(result);
           }
         })
         .catch(error => {
