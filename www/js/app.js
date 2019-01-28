@@ -65392,6 +65392,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -65428,7 +65468,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     login: function login() {
       var _this = this;
 
-      __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].login({ Role: this.Role, UserName: this.UserName, Password: this.Password }).then(function (response) {
+      __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].login({
+        Role: this.Role,
+        UserName: this.UserName,
+        Password: this.Password
+      }).then(function (response) {
         console.log(response);
         if (response.data) {
           localStorage.setItem("access_token", response.data.access_token);
@@ -80096,7 +80140,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\Mobile.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\Mobile.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Mobile.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80130,7 +80174,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\ChangePass.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\ChangePass.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChangePass.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80164,7 +80208,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Finance.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Finance.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Finance.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80198,7 +80242,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80232,7 +80276,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80266,7 +80310,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Messenger.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Messenger.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Messenger.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80300,7 +80344,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\News.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\News.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] News.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80334,7 +80378,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\OneGate.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\OneGate.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] OneGate.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80368,7 +80412,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Profile.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Profile.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Profile.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80402,7 +80446,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Result.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Result.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Result.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80436,7 +80480,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Sales.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Sales.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Sales.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80470,7 +80514,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\StudyPlan.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\StudyPlan.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] StudyPlan.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80504,7 +80548,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Survey.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\Survey.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Survey.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80538,7 +80582,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\TestPlan.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\TestPlan.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] TestPlan.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80572,7 +80616,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\inform.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\components\\inform.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] inform.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80606,7 +80650,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultAside.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultAside.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultAside.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80644,7 +80688,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultContainer.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultContainer.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultContainer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80678,7 +80722,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownAccnt.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownAccnt.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultHeaderDropdownAccnt.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80712,7 +80756,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownMsg.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownMsg.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultHeaderDropdownMsg.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80746,7 +80790,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page404.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page404.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page404.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80780,7 +80824,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page500.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page500.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page500.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -80814,7 +80858,7 @@ var Component = __webpack_require__(14)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Register.vue"
+Component.options.__file = "E:\\Project\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Register.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Register.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -81120,8 +81164,21 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "container login"
-  }, [_c('form', {
+    staticClass: "login"
+  }, [_c('link', {
+    attrs: {
+      "rel": "stylesheet",
+      "type": "text/css",
+      "href": "css/login.css"
+    }
+  }), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "container"
+  }, [_c('img', {
+    staticClass: "img-fluid mx-auto d-block",
+    attrs: {
+      "src": "/img/sanTruong.png"
+    }
+  }), _vm._v(" "), _c('form', {
     attrs: {
       "id": "loginForm",
       "method": "post"
@@ -81138,7 +81195,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "for": "exampleInputEmail1"
     }
-  }, [_vm._v("Email address")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Tài khoản")]), _vm._v(" "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -81150,7 +81207,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "text",
       "id": "exampleInputEmail1",
       "aria-describedby": "emailHelp",
-      "placeholder": "Enter email"
+      "placeholder": "Tài khoản"
     },
     domProps: {
       "value": (_vm.UserName)
@@ -81161,18 +81218,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.UserName = $event.target.value
       }
     }
-  }), _vm._v(" "), _c('small', {
-    staticClass: "form-text text-muted",
-    attrs: {
-      "id": "emailHelp"
-    }
-  }, [_vm._v("We'll never share your email with anyone else.")])]), _vm._v(" "), _c('div', {
+  })]), _vm._v(" "), _c('div', {
     staticClass: "form-group"
   }, [_c('label', {
     attrs: {
       "for": "exampleInputPassword1"
     }
-  }, [_vm._v("Password")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Mật khẩu")]), _vm._v(" "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -81183,7 +81235,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "password",
       "id": "exampleInputPassword1",
-      "placeholder": "Password"
+      "placeholder": "Mật khẩu"
     },
     domProps: {
       "value": (_vm.Password)
@@ -81194,18 +81246,72 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.Password = $event.target.value
       }
     }
-  })]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary",
+  })]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-primary btn-block",
     on: {
       "click": _vm.login
     }
-  }, [_vm._v("Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary",
-    on: {
-      "click": _vm.getUserData
+  }, [_vm._v("Đăng nhập")]), _vm._v(" "), _c('div', {
+    staticClass: "text-center"
+  }, [_c('button', {
+    directives: [{
+      name: "b-modal",
+      rawName: "v-b-modal.modal1",
+      modifiers: {
+        "modal1": true
+      }
+    }],
+    staticClass: "btn btn-link"
+  }, [_vm._v("[Quên mật khẩu sinh viên]")])]), _vm._v(" "), _c('b-modal', {
+    attrs: {
+      "id": "modal1",
+      "centered": "",
+      "title": "Lấy lại mật khẩu"
     }
-  }, [_vm._v("Check me")])])])
+  }, [_c('p', {
+    staticClass: "my-4"
+  }, [_vm._v("Mật khẩu mới sẽ được gửi vào mail bạn đã đăng ký với nhà trường!")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "txtMaSV",
+      "placeholder": "Mã sinh viên"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "w-100",
+    attrs: {
+      "slot": "modal-footer"
+    },
+    slot: "modal-footer"
+  }, [_c('b-btn', {
+    staticClass: "float-right btn-block",
+    attrs: {
+      "variant": "primary"
+    },
+    on: {
+      "click": function($event) {
+        _vm.show = false
+      }
+    }
+  }, [_vm._v("Lấy lại mật khẩu")])], 1)])], 1)]), _vm._v(" "), _vm._m(2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('nav', {
+    staticClass: "navbar bg-white justify-content-center fix-top"
+  }, [_c('a', {
+    staticClass: "navbar-brand",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('img', {
+    staticClass: "logo",
+    attrs: {
+      "src": "/img/logo-f.png",
+      "alt": "Logo"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "title"
+  }, [_vm._v("ĐẠI HỌC KIẾN TRÚC HÀ NỘI")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "form-group form-check"
   }, [_c('input', {
@@ -81219,7 +81325,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "for": "exampleCheck1"
     }
-  }, [_vm._v("Check me out")])])
+  }, [_vm._v("Lưu mật khẩu")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('nav', {
+    staticClass: "navbar bg-white fixed-bottom"
+  }, [_c('ul', {
+    staticClass: "nav"
+  }, [_c('li', {
+    staticClass: "nav-item"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("© 2018")])])]), _vm._v(" "), _c('ul', {
+    staticClass: "nav justify-content-end"
+  }, [_c('li', {
+    staticClass: "nav-item"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "http://namvietjsc.edu.vn"
+    }
+  }, [_vm._v("NAMVIET.JSC")])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
