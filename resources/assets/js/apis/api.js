@@ -7,8 +7,8 @@ export const Users = {
           userName: "60.58.01.02",
           password: "mhl9QmgbrLq8W8pV5u/lpQ==",
           deviceid: "ggsgfdgdg"
-        }
-      Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+        };
+      Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
 
       fetch(url, {
@@ -18,11 +18,11 @@ export const Users = {
           'Content-Type': 'application/json'
         }
       }).then(response => {
-        resolve(response.json())
+        resolve(response.json());
       }).catch(error => {
-        reject(error)
-      })
-    })
+        reject(error);
+      });
+    });
   },
   getUserInfor() {
     return new Promise((resolve, reject) => {
@@ -35,21 +35,23 @@ export const Users = {
           }
 
         })
-        .then(data=> {
-          console.log("Lấy dữ liệu thành công: ", data);
-          resolve(data.json())
+        .then(data => {
+          console.log("Lấy dữ liệu thành công ở Login fetch: ", data);
+          resolve(data.json());
+
+
         })
-        .catch(error =>{
-          console.log("Lấy dữ liệu thất bại: ", error);
-          reject(error)
+        .catch(error => {
+          console.log("Lấy dữ liệu thất bại ở Login fetch: ", error);
+          reject(error);
         });
-    })
+    });
   },
   login(crendential) {
     return new Promise((resolve, reject) => {
       console.log(crendential);
-      axios.post("https://tinchi.hau.edu.vn/DangNhap/Login", crendential).then((response) => {
-        console.log(response);
+      axios.post("http://103.28.37.34:806/api/login", crendential).then((response) => {
+        console.log("Dữ liệu trả về từ login(credential)", response);
         resolve(response);
       }).catch((error) => {
         console.log(error);
@@ -78,7 +80,7 @@ export const Data = {
           FullName: 'Nguyen Van A',
           Email: 'test@test'
         });
-        //reject(err)
+        reject(err);
       });
       // console.log(filter);
       // console.log(reject);

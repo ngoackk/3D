@@ -105,8 +105,8 @@ export default {
       icon: 'fa fa-info-circle'
     },
     {
-      name: 'Kiểm thử',
-      url: '/login',
+      name: 'Thông tin người dùng',
+      url: '/userprofile',
       icon: 'fa fa-plug'
     },
 

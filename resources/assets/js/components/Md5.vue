@@ -34,7 +34,7 @@ export default {
     // fetch("http://103.28.37.34:98/api/huyen")
     //   .then(result => result.json())
     //   .then(rowData => (this.rowData = rowData));
-    let token = localStrage.getItem("access_token")
+    let token = localStorage.getItem("access_token")
     fetch("http://103.28.37.34:806/api/Profile?accessToken="+ token, {
       method: "POST",
       headers: {
@@ -44,10 +44,10 @@ export default {
        
     })
       .then(function(data) {
-        console.log("Lấy dữ liệu thành công: ", data);
+        console.log("Lấy dữ liệu thành công từ MD5: ", data);
       })
       .catch(function(error) {
-        console.log("Lấy dữ liệu thất bại: ", error);
+        console.log("Lấy dữ liệu thất bại MD5: ", error);
       });
   }
 };

@@ -22,6 +22,7 @@ import Result from '../components/Result';
 import Sales from '../components/Sales';
 import Md5 from '../components/Md5';
 import Haulogin from '../components/HauLogin';
+import UserProfile from '../components/UserProfile';
 
 
 // Views - Pages
@@ -108,6 +109,11 @@ export default new Router({
           path: 'profile',
           name: 'Profile',
           component: Profile
+        },
+        {
+          path: 'userprofile',
+          name: 'UserProfile',
+          component: UserProfile
         },
         {
           path: 'change-pass',
