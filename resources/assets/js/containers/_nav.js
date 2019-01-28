@@ -26,16 +26,6 @@ export default {
       icon: 'fa fa-gavel'
     },
     {
-      name: 'Md5',
-      url: '/md5',
-      icon: 'fa fa-comments'
-    },
-    // {
-    //   name: 'HauLogin',
-    //   url: '/HauLogin',
-    //   icon: 'fa fa-comments'
-    // },
-    {
       name: 'Sales',
       url: '/sales',
       icon: 'fa fa-comments'
@@ -105,11 +95,11 @@ export default {
       icon: 'fa fa-info-circle'
     },
     {
-      name: 'Thông tin người dùng',
-      url: '/userprofile',
+      name: 'Kiểm thử',
+      url: '/login',
       icon: 'fa fa-plug'
     },
 
 
   ]
-};
+}

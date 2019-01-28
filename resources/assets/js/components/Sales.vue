@@ -38,6 +38,12 @@ export default {
       { headerName: "Huyện", field: "Ten_huyen", sortable: true, filter: true }
     ];
 
+    // this.rowData = [
+    //   { make: "Toyota", model: "Celica", price: 35000 },
+    //   { make: "Ford", model: "Mondeo", price: 32000 },
+    //   { make: "Porsche", model: "Boxter", price: 72000 }
+    // ];
+
     fetch("http://103.28.37.34:98/api/huyen")
       .then(result => result.json())
       .then(rowData => (this.rowData = rowData));
