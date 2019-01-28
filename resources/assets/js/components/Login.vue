@@ -97,7 +97,7 @@ export default {
         });
     },
     getUserData() {
-      Data.search({ key: "abc" })
+      Data.search({ key: "user" })
         .then(data => {
           alert("thanh cong" + data);
         })
