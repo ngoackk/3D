@@ -93,12 +93,7 @@ export default {
       name: 'Thông báo',
       url: '/inform',
       icon: 'fa fa-info-circle'
-    },
-    {
-      name: 'Kiểm thử',
-      url: '/login',
-      icon: 'fa fa-plug'
-    },
+    }    
 
 
   ]
