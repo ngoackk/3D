@@ -27,6 +27,8 @@ import Page404 from '../views/pages/Page404'
 import Page500 from '../views/pages/Page500'
 
 import Register from '../views/pages/Register'
+import { Session } from "../apis/auth.js";
+
 // Users
 
 Vue.use(Router)
@@ -41,6 +43,7 @@ export default new Router({
       path: '/',
       redirect: '/home',
       name: 'Main',
+      beforeEnter: Session.validate,
       component: DefaultContainer,
       children: [{
           path: 'home',
