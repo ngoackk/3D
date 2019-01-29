@@ -70,7 +70,8 @@ export default new Router({
         {
           path: 'testplan',
           name: 'TestPlan',
-          component: TestPlan
+          component: TestPlan,
+
         },
         {
           path: 'finance',

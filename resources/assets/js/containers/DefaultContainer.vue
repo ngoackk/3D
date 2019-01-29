@@ -20,6 +20,7 @@
       </b-navbar-nav>-->
       <b-navbar-nav class="ml-auto">
         <div class="title">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</div>
+        
         <!-- <b-nav-item class="d-md-down-none">
           <i class="icon-list"></i>
         </b-nav-item>-->
@@ -86,6 +87,9 @@ import DefaultHeaderDropdownAccnt from "./DefaultHeaderDropdownAccnt";
 import DefaultHeaderDropdownMsg from "./DefaultHeaderDropdownMsg";
 
 export default {
+  provide: {
+    currentUser: JSON.parse(localStorage.getItem("user"))
+  },
   name: "DefaultContainer",
   components: {
     AsideToggler,
@@ -110,6 +114,7 @@ export default {
     };
   },
   computed: {
+    
     name() {
       return this.$route.name;
     },

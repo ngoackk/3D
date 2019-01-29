@@ -80,9 +80,9 @@ import { Users, Data } from "../apis/api";
 export default {
   data() {
     return {
-      Role: 0,
-      UserName: "0123456789",
-      Password: "123456789",
+      //Role: 0,
+      UserName: "1351020142",
+      Password: "TH2UNbZTqe9iKdPGvefnDg==",
       rememberme: false
     };
   },
@@ -111,16 +111,16 @@ export default {
       localStorage.removeItem("user");
     },
     login() {
-      Users.login({
-        Role: this.Role,
+      Users.studentLogin({
+        //Role: this.Role,
         UserName: this.UserName,
         Password: this.Password
       })
         .then(response => {
           console.log(response);
-          if (response.data) {
-            localStorage.setItem("access_token", response.data.access_token);
-            Data.search("users", "1")
+          if (response.isSuccess) {
+            localStorage.setItem("access_token", response.message);
+            Users.getUserInfor()
               .then(user => {
                 console.log(user);
                 localStorage.setItem("user", JSON.stringify(user));

@@ -1,11 +1,11 @@
 export const Session = {
-    isValid(){
+    isValid() {
         return localStorage.get('access_token') != null;
     },
-    logedIn(){
-        return JSON.parse(localStorage.getItem('user') != null ? localStorage.getItem('user') : {}) 
+    logedIn() {
+        return JSON.parse(localStorage.getItem('user') != null ? localStorage.getItem('user') : {})
     }
 }
 export default {
-    Session    
+    Session
 };
