@@ -69,7 +69,7 @@
       </ul>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="http://namvietjsc.edu.vn">NAMVIET.JSC</a>
+         NAMVIET.JSC
         </li>
       </ul>
     </nav>
