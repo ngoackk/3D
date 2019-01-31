@@ -55,12 +55,12 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <a href="https://hau.edu.vn">Đại học Kiến trúc Hà Nội</a>
+        Đại học Kiến trúc Hà Nội
         <span class="ml-1">&copy; 2018 .</span>
       </div>
       <div class="ml-auto">
         <span class="mr-1">Powered by</span>
-        <a href="http://namvietjsc.edu.vn">NAMVIET.JSC</a>
+        NAMVIET.JSC
       </div>
     </TheFooter>
   </div>
