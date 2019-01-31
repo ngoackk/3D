@@ -1,8 +1,16 @@
 <template>
   <div>
-    Kết quả học tập:
-    {{this.bangdiem.length}}
-    <div v-for="p in bangdiem" :key="p.ID_mon">{{p}}</div>
+    <div class="col-md-4"><span class="title">KẾT QUẢ HỌC TẬP</span></div>
+    <!-- {{this.bangdiem.length}} -->
+    <!-- <div v-for="p in bangdiem" :key="p.ID_mon">{{p.Ten_hoc_phan}}</div> -->
+    <div class="col-md-4"><span class="subject">Tên môn học</span></div>
+    <div class="col-md-2">
+      <select class="form-control combobox" name="cmbMonHoc" id="cmbMonHoc">
+        <option value="-1">--- Chọn môn học ---</option>
+
+        <option v-for="p in bangdiem" :key="p.ID_mon">{{p.Ten_hoc_phan}}</option>
+      </select>
+    </div>
   </div>
 </template>
 <script>
@@ -14,7 +22,7 @@ export default {
     };
   },
   mounted() {
-    console.log("mounted");
+    //console.log("mounted");
     Users.callServer("LearningPoints")
       .then(points => {
         this.bangdiem = points;

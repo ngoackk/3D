@@ -71,12 +71,12 @@ export const Users = {
   },
   login(crendential) {
     return new Promise((resolve, reject) => {
-      console.log(crendential);
+      // console.log(crendential);
       axios.post("https://tinchi.hau.edu.vn/DangNhap/Login", crendential).then((response) => {
-        console.log(response);
+        // console.log(response);
         resolve(response);
       }).catch((error) => {
-        console.log(error);
+        // console.log(error);
         reject(error);
       });
 

@@ -38,4 +38,12 @@ export default {
   font-family: Arial;
   font-weight: bold;
 }
+.subject {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.img-avatar {
+  width: 50px;
+}
 </style>

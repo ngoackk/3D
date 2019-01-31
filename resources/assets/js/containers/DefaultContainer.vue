@@ -2,7 +2,7 @@
   <div class="app">
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile/>
-      <b-link class="navbar-brand" to="#">
+      <b-link class="navbar-brand" to="/home">
         <img class="navbar-brand-full" src="img/logo-f.png" width="30" height="30" alt="hau.edu.vn">
         <img
           class="navbar-brand-minimized"
@@ -20,7 +20,7 @@
       </b-navbar-nav>-->
       <b-navbar-nav class="ml-auto">
         <div class="title">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</div>
-        
+
         <!-- <b-nav-item class="d-md-down-none">
           <i class="icon-list"></i>
         </b-nav-item>-->
@@ -114,7 +114,6 @@ export default {
     };
   },
   computed: {
-    
     name() {
       return this.$route.name;
     },
@@ -131,7 +130,7 @@ export default {
   .navbar-brand {
     margin: 0;
     top: 0;
-    left: 15px;
+    left: 50px;
     width: 0px;
   }
 }

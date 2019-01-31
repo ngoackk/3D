@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 557);
+/******/ 	return __webpack_require__(__webpack_require__.s = 558);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10181,7 +10181,7 @@ exports.DragAndDropService = DragAndDropService;
 
 
 var bind = __webpack_require__(203);
-var isBuffer = __webpack_require__(496);
+var isBuffer = __webpack_require__(497);
 
 /*global toString:true*/
 
@@ -29859,7 +29859,7 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54), __webpack_require__(504).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54), __webpack_require__(505).setImmediate))
 
 /***/ }),
 /* 68 */
@@ -31756,9 +31756,9 @@ module.exports = {};
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clickaway__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clickaway__ = __webpack_require__(507);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clickaway___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_clickaway__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar__ = __webpack_require__(552);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Aside; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AsideToggler; });
@@ -39075,7 +39075,7 @@ module.exports = function (it) {
 
 "use strict";
 
-__webpack_require__(460);
+__webpack_require__(461);
 var redefine = __webpack_require__(64);
 var hide = __webpack_require__(53);
 var fails = __webpack_require__(84);
@@ -39187,8 +39187,8 @@ module.exports = function (it, key) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(26);
-var IE8_DOM_DEFINE = __webpack_require__(433);
-var toPrimitive = __webpack_require__(454);
+var IE8_DOM_DEFINE = __webpack_require__(434);
+var toPrimitive = __webpack_require__(455);
 var dP = Object.defineProperty;
 
 exports.f = __webpack_require__(83) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
@@ -39237,7 +39237,7 @@ module.exports = function (R, S) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(435);
+var IObject = __webpack_require__(436);
 var defined = __webpack_require__(45);
 module.exports = function (it) {
   return IObject(defined(it));
@@ -47838,12 +47838,12 @@ var Users = {
   },
   login: function login(crendential) {
     return new Promise(function (resolve, reject) {
-      console.log(crendential);
+      // console.log(crendential);
       __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post("https://tinchi.hau.edu.vn/DangNhap/Login", crendential).then(function (response) {
-        console.log(response);
+        // console.log(response);
         resolve(response);
       }).catch(function (error) {
-        console.log(error);
+        // console.log(error);
         reject(error);
       });
     });
@@ -48072,11 +48072,11 @@ function handleFocus(evt) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_plugins__ = __webpack_require__(5);
 
 
@@ -49754,7 +49754,7 @@ module.exports = false;
 "use strict";
 
 
-var regexpFlags = __webpack_require__(431);
+var regexpFlags = __webpack_require__(432);
 
 var nativeExec = RegExp.prototype.exec;
 // This always refers to the native implementation, because the
@@ -56655,7 +56655,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(341);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_toggle__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
@@ -57262,11 +57262,11 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(382);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown__ = __webpack_require__(384);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_plugins__ = __webpack_require__(5);
 
@@ -57417,7 +57417,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["a" /* vueUse
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(409);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -57441,7 +57441,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(415);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -57466,7 +57466,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(418);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(419);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listen_on_root__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_object__ = __webpack_require__(10);
@@ -58022,7 +58022,7 @@ var AttachmentMap = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_range__ = __webpack_require__(421);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_range__ = __webpack_require__(422);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_key_codes__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_dom__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_link_link__ = __webpack_require__(36);
@@ -58460,7 +58460,7 @@ var props = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_dom__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_ssr__ = __webpack_require__(422);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_ssr__ = __webpack_require__(423);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_observe_dom__ = __webpack_require__(80);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -59064,7 +59064,7 @@ module.exports = function (IS_INCLUDES) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(430);
+var speciesConstructor = __webpack_require__(431);
 
 module.exports = function (original, length) {
   return new (speciesConstructor(original))(length);
@@ -59171,9 +59171,9 @@ var $export = __webpack_require__(21);
 var redefine = __webpack_require__(64);
 var hide = __webpack_require__(53);
 var Iterators = __webpack_require__(85);
-var $iterCreate = __webpack_require__(438);
+var $iterCreate = __webpack_require__(439);
 var setToStringTag = __webpack_require__(162);
-var getPrototypeOf = __webpack_require__(444);
+var getPrototypeOf = __webpack_require__(445);
 var ITERATOR = __webpack_require__(16)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
@@ -59266,7 +59266,7 @@ module.exports.f = function (C) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(445);
+var $keys = __webpack_require__(446);
 var enumBugKeys = __webpack_require__(236);
 
 module.exports = Object.keys || function keys(O) {
@@ -59326,7 +59326,7 @@ module.exports = function (O, D) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(82);
-var invoke = __webpack_require__(434);
+var invoke = __webpack_require__(435);
 var html = __webpack_require__(238);
 var cel = __webpack_require__(158);
 var global = __webpack_require__(27);
@@ -59658,7 +59658,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(556)
+var listToStyles = __webpack_require__(557)
 
 /*
 type StyleObject = {
@@ -59865,19 +59865,19 @@ function applyToTag (styleElement, obj) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise__ = __webpack_require__(426);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise__ = __webpack_require__(427);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_string__ = __webpack_require__(427);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_string__ = __webpack_require__(428);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es7_array__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es7_array__ = __webpack_require__(429);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es7_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es7_array__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__ = __webpack_require__(417);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Mobile__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__ = __webpack_require__(418);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Mobile__ = __webpack_require__(508);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Mobile___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Mobile__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_store__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_store__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__js_store__);
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
@@ -63172,7 +63172,7 @@ var AgGridColumn = /** @class */ (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__ = __webpack_require__(553);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ag_grid_community__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ag_grid_community___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ag_grid_community__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__VueFrameworkComponentWrapper__ = __webpack_require__(281);
@@ -65540,11 +65540,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         UserName: this.UserName,
         Password: this.Password
       }).then(function (response) {
-        console.log(response);
+        // console.log(response);
         if (response.isSuccess) {
           localStorage.setItem("access_token", response.message);
           __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].getUserInfor().then(function (user) {
-            console.log(user);
+            //console.log(user);
             localStorage.setItem("user", JSON.stringify(user));
             _this.$router.push("/");
           }).catch(function (err) {
@@ -65577,82 +65577,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  inject: ["currentUser"],
+  data: function data() {
+    return {};
+  },
+
+  computed: {
+    Name: function Name() {
+      return this.currentUser["Ho_ten"];
+    }
+  }
+});
 
 /***/ }),
 /* 306 */
@@ -65682,1159 +65619,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   inject: ["currentUser"],
   data: function data() {
-    return {};
+    return {
+      imgCurrent: "http://103.28.37.34:806/FileManager/Upload/avata/anh1.jpg"
+    };
   },
-
   computed: {
     Name: function Name() {
       return this.currentUser["Ho_ten"];
@@ -66856,6 +65648,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -66867,7 +65667,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   mounted: function mounted() {
     var _this = this;
 
-    console.log("mounted");
+    //console.log("mounted");
     __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].callServer("LearningPoints").then(function (points) {
       _this.bangdiem = points;
       // this.bangdiem.push(points[0]);
@@ -67488,13 +66288,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__coreui_vue__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DefaultAside__ = __webpack_require__(522);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DefaultAside__ = __webpack_require__(523);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DefaultAside___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__DefaultAside__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt__ = __webpack_require__(524);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt__ = __webpack_require__(525);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__ = __webpack_require__(526);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__);
 //
 //
@@ -67644,6 +66444,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -67653,10 +66455,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     AppHeaderDropdown: __WEBPACK_IMPORTED_MODULE_0__coreui_vue__["l" /* HeaderDropdown */]
   },
   data: function data() {
-    return { itemsCount: 42 };
+    return {
+      itemsCount: 42,
+      imgLink: "http://103.28.37.34:806/FileManager/Upload/avata/anh1.jpg"
+    };
   },
   mounted: function mounted() {
-    console.log(this.currentUser);
+    //console.log(this.currentUser);
   },
 
   methods: {
@@ -67936,6 +66741,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Session; });
+var Session = {
+    validate: function validate(to, from, next) {
+        var result = {
+            success: localStorage.getItem('access_token') != null
+        };
+        if (!result.success) {
+            next({
+                path: '/pages/login',
+                query: { redirect: to.fullPath }
+            });
+        } else {
+            next();
+        }
+    },
+    logedIn: function logedIn() {
+        return JSON.parse(localStorage.getItem('user') != null ? localStorage.getItem('user') : {});
+    }
+};
+/* unused harmony default export */ var _unused_webpack_default_export = ({
+    Session: Session
+});
+
+/***/ }),
+/* 321 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
   items: [{
     name: 'Trang chủ',
@@ -68017,49 +66850,50 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(553);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer__ = __webpack_require__(524);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home__ = __webpack_require__(510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home__ = __webpack_require__(511);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Home__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Finance__ = __webpack_require__(509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Finance__ = __webpack_require__(510);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Finance___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_Finance__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_StudyPlan__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_StudyPlan__ = __webpack_require__(519);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_StudyPlan___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_StudyPlan__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_TestPlan__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_TestPlan__ = __webpack_require__(521);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_TestPlan___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_TestPlan__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Survey__ = __webpack_require__(519);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Survey__ = __webpack_require__(520);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Survey___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_Survey__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_OneGate__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_OneGate__ = __webpack_require__(515);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_OneGate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_OneGate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Messenger__ = __webpack_require__(512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Messenger__ = __webpack_require__(513);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Messenger___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_Messenger__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Login__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Login__ = __webpack_require__(512);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_Login__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Profile__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Profile__ = __webpack_require__(516);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Profile___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_Profile__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_News__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_News__ = __webpack_require__(514);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_News___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_News__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_inform__ = __webpack_require__(521);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_inform__ = __webpack_require__(522);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_inform___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_inform__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_ChangePass__ = __webpack_require__(508);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_ChangePass__ = __webpack_require__(509);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_ChangePass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_ChangePass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Result__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Result__ = __webpack_require__(517);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Result___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_Result__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Sales__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Sales__ = __webpack_require__(518);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Sales___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_Sales__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__views_pages_Page404__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__views_pages_Page404__ = __webpack_require__(527);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__views_pages_Page404___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__views_pages_Page404__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__views_pages_Page500__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__views_pages_Page500__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__views_pages_Page500___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__views_pages_Page500__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__views_pages_Register__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__views_pages_Register__ = __webpack_require__(529);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__views_pages_Register___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__views_pages_Register__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__apis_auth_js__ = __webpack_require__(320);
 
 
 
@@ -68088,6 +66922,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+
 // Users
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
@@ -68104,6 +66940,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
     path: '/',
     redirect: '/home',
     name: 'Main',
+    beforeEnter: __WEBPACK_IMPORTED_MODULE_20__apis_auth_js__["a" /* Session */].validate,
     component: __WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer___default.a,
     children: [{
       path: 'home',
@@ -68189,18 +67026,18 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 }));
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_button_close__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css__ = __webpack_require__(500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css__ = __webpack_require__(501);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__alert_css__);
 
 
@@ -68325,11 +67162,11 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 });
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(324);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68349,7 +67186,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68408,11 +67245,11 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a
 });
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68432,7 +67269,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68490,11 +67327,11 @@ var props = {
 });
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__breadcrumb_item__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb_link__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_plugins__ = __webpack_require__(5);
@@ -68520,7 +67357,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68573,11 +67410,11 @@ var props = {
 });
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68598,7 +67435,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68724,11 +67561,11 @@ var ITEM_SELECTOR = ['.btn:not(.disabled):not([disabled]):not(.dropdown-item)', 
 });
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68749,7 +67586,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68778,7 +67615,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68822,13 +67659,13 @@ var props = {
 });
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_prefix_prop_name__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_unprefix_prop_name__ = __webpack_require__(425);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_unprefix_prop_name__ = __webpack_require__(426);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_copyProps__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_pluck_props__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_object__ = __webpack_require__(10);
@@ -68916,16 +67753,16 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_object__["a
 });
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_header__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_body__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__card_footer__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__card_img__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68955,7 +67792,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69071,7 +67908,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69532,12 +68369,12 @@ var TransitionEndEvents = {
 });
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(338);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -69559,7 +68396,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69756,7 +68593,7 @@ var EVENT_TOGGLE = 'bv::toggle::collapse';
 });
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69786,7 +68623,7 @@ var props = {
 });
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69821,7 +68658,7 @@ var props = {
 });
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69859,7 +68696,7 @@ var props = {
 });
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69888,14 +68725,14 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /
 });
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_dropdown__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css__ = __webpack_require__(501);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css__ = __webpack_require__(502);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__dropdown_css__);
 
 
@@ -70024,7 +68861,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /
 });
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70071,11 +68908,11 @@ var props = {
 });
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -70095,7 +68932,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70215,12 +69052,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -70246,7 +69083,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70504,11 +69341,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -70529,7 +69366,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70833,11 +69670,11 @@ var SELECTOR = 'input:not(:disabled),textarea:not(:disabled),select:not(:disable
 });
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(353);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -70858,7 +69695,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70867,7 +69704,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form_size__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_state__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_array__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css__ = __webpack_require__(502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css__ = __webpack_require__(503);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__form_input_css__);
 
 
@@ -71020,11 +69857,11 @@ var TYPES = ['text', 'password', 'email', 'number', 'url', 'tel', 'search', 'ran
 });
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(355);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -71045,7 +69882,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71165,12 +70002,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -71194,7 +70031,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71311,11 +70148,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(359);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -71336,7 +70173,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71492,11 +70329,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(361);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -71517,7 +70354,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71527,12 +70364,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__layout_form_row__["a" /* default */]);
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_row__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_row__ = __webpack_require__(363);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__form_text__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_invalid_feedback__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__form_valid_feedback__ = __webpack_require__(215);
@@ -71564,7 +70401,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71756,12 +70593,12 @@ var THROTTLE = 100;
 });
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(365);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -71783,47 +70620,47 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__collapse__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(357);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(351);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(359);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(375);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(381);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__nav__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(387);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(398);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(406);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return __WEBPACK_IMPORTED_MODULE_0__alert__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Badge", function() { return __WEBPACK_IMPORTED_MODULE_1__badge__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Breadcrumb", function() { return __WEBPACK_IMPORTED_MODULE_2__breadcrumb__["a"]; });
@@ -71900,12 +70737,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_plugins__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_group__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_group__ = __webpack_require__(369);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__input_group_addon__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__input_group_prepend__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__input_group_append__ = __webpack_require__(217);
@@ -71937,7 +70774,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72023,11 +70860,11 @@ var props = {
 });
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(371);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -72047,7 +70884,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 370 */
+/* 371 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72154,13 +70991,13 @@ var props = {
 });
 
 /***/ }),
-/* 371 */
+/* 372 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_memoize__ = __webpack_require__(420);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_suffix_prop_name__ = __webpack_require__(424);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_memoize__ = __webpack_require__(421);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_suffix_prop_name__ = __webpack_require__(425);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_array__ = __webpack_require__(13);
 /* unused harmony export computeBkPtClass */
@@ -72307,13 +71144,13 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_object__["a
 });
 
 /***/ }),
-/* 372 */
+/* 373 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__container__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_row__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_plugins__ = __webpack_require__(5);
 
@@ -72340,7 +71177,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72406,7 +71243,7 @@ var props = {
 });
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72430,12 +71267,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -72457,7 +71294,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72523,7 +71360,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a
 });
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72560,11 +71397,11 @@ var props = {
 });
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(380);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__media_aside__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__media_body__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_plugins__ = __webpack_require__(5);
@@ -72590,7 +71427,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72650,11 +71487,11 @@ var props = {
 });
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_modal__ = __webpack_require__(224);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
@@ -72677,7 +71514,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73436,7 +72273,7 @@ var Selector = {
 });
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73463,7 +72300,7 @@ var Selector = {
 });
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73540,7 +72377,7 @@ var Selector = {
 });
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73567,7 +72404,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /
 });
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73595,7 +72432,7 @@ var props = {
 });
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73662,14 +72499,14 @@ var props = {
 });
 
 /***/ }),
-/* 387 */
+/* 388 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(389);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collapse__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown__ = __webpack_require__(148);
@@ -73705,7 +72542,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73749,7 +72586,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_object__["a
 });
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73791,7 +72628,7 @@ var props = {
 });
 
 /***/ }),
-/* 390 */
+/* 391 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73844,7 +72681,7 @@ var props = {
 });
 
 /***/ }),
-/* 391 */
+/* 392 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73903,11 +72740,11 @@ var props = {
 });
 
 /***/ }),
-/* 392 */
+/* 393 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(394);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -73927,7 +72764,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 393 */
+/* 394 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74021,11 +72858,11 @@ routerProps);
 });
 
 /***/ }),
-/* 394 */
+/* 395 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(396);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -74045,7 +72882,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 395 */
+/* 396 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74111,11 +72948,11 @@ var props = {
 });
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -74135,7 +72972,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 397 */
+/* 398 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74193,11 +73030,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 398 */
+/* 399 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__progress_bar__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
@@ -74220,7 +73057,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 399 */
+/* 400 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74296,11 +73133,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 400 */
+/* 401 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(402);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -74320,23 +73157,23 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 401 */
+/* 402 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase__ = __webpack_require__(499);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash_startcase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get__ = __webpack_require__(498);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash_get__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_loose_equal__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_stable_sort__ = __webpack_require__(423);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_stable_sort__ = __webpack_require__(424);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_key_codes__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warn__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__mixins_listen_on_root__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css__ = __webpack_require__(503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css__ = __webpack_require__(504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__table_css__);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -75268,12 +74105,12 @@ function processField(key, value) {
 });
 
 /***/ }),
-/* 402 */
+/* 403 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -75295,7 +74132,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 403 */
+/* 404 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75419,7 +74256,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 404 */
+/* 405 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75806,11 +74643,11 @@ var bTabButtonHelper = {
 });
 
 /***/ }),
-/* 405 */
+/* 406 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -75830,7 +74667,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 406 */
+/* 407 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75880,16 +74717,16 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 407 */
+/* 408 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modal__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(411);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(415);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(410);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Toggle", function() { return __WEBPACK_IMPORTED_MODULE_0__toggle__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Modal", function() { return __WEBPACK_IMPORTED_MODULE_1__modal__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Scrollspy", function() { return __WEBPACK_IMPORTED_MODULE_2__scrollspy__["a"]; });
@@ -75904,7 +74741,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 408 */
+/* 409 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75941,11 +74778,11 @@ var listenTypes = { click: true };
 });
 
 /***/ }),
-/* 409 */
+/* 410 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(411);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -75965,7 +74802,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 410 */
+/* 411 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76140,11 +74977,11 @@ function removeBVPO(el) {
 });
 
 /***/ }),
-/* 411 */
+/* 412 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(414);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -76164,7 +75001,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 412 */
+/* 413 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76653,11 +75490,11 @@ var ScrollSpy = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ScrollSpy);
 
 /***/ }),
-/* 413 */
+/* 414 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(413);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(10);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -76766,7 +75603,7 @@ function removeBVSS(el) {
 });
 
 /***/ }),
-/* 414 */
+/* 415 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76838,11 +75675,11 @@ var EVENT_STATE = 'bv::collapse::state';
 });
 
 /***/ }),
-/* 415 */
+/* 416 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(417);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -76862,7 +75699,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 416 */
+/* 417 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77037,12 +75874,12 @@ function removeBVTT(el) {
 });
 
 /***/ }),
-/* 417 */
+/* 418 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(408);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -77073,7 +75910,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 418 */
+/* 419 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77101,7 +75938,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 419 */
+/* 420 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77117,7 +75954,7 @@ function lowerFirst(str) {
 }
 
 /***/ }),
-/* 420 */
+/* 421 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77135,7 +75972,7 @@ function memoize(fn) {
 }
 
 /***/ }),
-/* 421 */
+/* 422 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77148,7 +75985,7 @@ function memoize(fn) {
 });
 
 /***/ }),
-/* 422 */
+/* 423 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77160,7 +75997,7 @@ var isSSR = typeof window === 'undefined';
 var HTMLElement = isSSR ? Object : window.HTMLElement;
 
 /***/ }),
-/* 423 */
+/* 424 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77198,7 +76035,7 @@ function stableSort(array, compareFn) {
 }
 
 /***/ }),
-/* 424 */
+/* 425 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77218,11 +76055,11 @@ function suffixPropName(suffix, str) {
 }
 
 /***/ }),
-/* 425 */
+/* 426 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lower_first__ = __webpack_require__(419);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lower_first__ = __webpack_require__(420);
 /* harmony export (immutable) */ __webpack_exports__["a"] = unPrefixPropName;
 
 
@@ -77235,61 +76072,61 @@ function unPrefixPropName(prefix, value) {
 }
 
 /***/ }),
-/* 426 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(458);
-__webpack_require__(249);
-__webpack_require__(489);
-__webpack_require__(459);
-module.exports = __webpack_require__(44).Promise;
-
-
-/***/ }),
 /* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(474);
-__webpack_require__(478);
-__webpack_require__(485);
+__webpack_require__(459);
 __webpack_require__(249);
-__webpack_require__(469);
-__webpack_require__(470);
-__webpack_require__(475);
-__webpack_require__(479);
-__webpack_require__(481);
-__webpack_require__(465);
-__webpack_require__(466);
-__webpack_require__(467);
-__webpack_require__(468);
-__webpack_require__(471);
-__webpack_require__(472);
-__webpack_require__(473);
-__webpack_require__(476);
-__webpack_require__(477);
-__webpack_require__(480);
-__webpack_require__(482);
-__webpack_require__(483);
-__webpack_require__(484);
-__webpack_require__(461);
-__webpack_require__(462);
-__webpack_require__(463);
-__webpack_require__(464);
-module.exports = __webpack_require__(44).String;
+__webpack_require__(490);
+__webpack_require__(460);
+module.exports = __webpack_require__(44).Promise;
 
 
 /***/ }),
 /* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(488);
+__webpack_require__(475);
+__webpack_require__(479);
 __webpack_require__(486);
-__webpack_require__(487);
-module.exports = __webpack_require__(44).Array;
+__webpack_require__(249);
+__webpack_require__(470);
+__webpack_require__(471);
+__webpack_require__(476);
+__webpack_require__(480);
+__webpack_require__(482);
+__webpack_require__(466);
+__webpack_require__(467);
+__webpack_require__(468);
+__webpack_require__(469);
+__webpack_require__(472);
+__webpack_require__(473);
+__webpack_require__(474);
+__webpack_require__(477);
+__webpack_require__(478);
+__webpack_require__(481);
+__webpack_require__(483);
+__webpack_require__(484);
+__webpack_require__(485);
+__webpack_require__(462);
+__webpack_require__(463);
+__webpack_require__(464);
+__webpack_require__(465);
+module.exports = __webpack_require__(44).String;
 
 
 /***/ }),
 /* 429 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(489);
+__webpack_require__(487);
+__webpack_require__(488);
+module.exports = __webpack_require__(44).Array;
+
+
+/***/ }),
+/* 430 */
 /***/ (function(module, exports) {
 
 module.exports = function (it, Constructor, name, forbiddenField) {
@@ -77300,7 +76137,7 @@ module.exports = function (it, Constructor, name, forbiddenField) {
 
 
 /***/ }),
-/* 430 */
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(46);
@@ -77322,7 +76159,7 @@ module.exports = function (original) {
 
 
 /***/ }),
-/* 431 */
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77342,15 +76179,15 @@ module.exports = function () {
 
 
 /***/ }),
-/* 432 */
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(82);
-var call = __webpack_require__(437);
-var isArrayIter = __webpack_require__(436);
+var call = __webpack_require__(438);
+var isArrayIter = __webpack_require__(437);
 var anObject = __webpack_require__(26);
 var toLength = __webpack_require__(32);
-var getIterFn = __webpack_require__(456);
+var getIterFn = __webpack_require__(457);
 var BREAK = {};
 var RETURN = {};
 var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
@@ -77373,7 +76210,7 @@ exports.RETURN = RETURN;
 
 
 /***/ }),
-/* 433 */
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = !__webpack_require__(83) && !__webpack_require__(84)(function () {
@@ -77382,7 +76219,7 @@ module.exports = !__webpack_require__(83) && !__webpack_require__(84)(function (
 
 
 /***/ }),
-/* 434 */
+/* 435 */
 /***/ (function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -77404,7 +76241,7 @@ module.exports = function (fn, args, that) {
 
 
 /***/ }),
-/* 435 */
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -77416,7 +76253,7 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 436 */
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
@@ -77430,7 +76267,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 437 */
+/* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
@@ -77448,12 +76285,12 @@ module.exports = function (iterator, fn, value, entries) {
 
 
 /***/ }),
-/* 438 */
+/* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var create = __webpack_require__(442);
+var create = __webpack_require__(443);
 var descriptor = __webpack_require__(244);
 var setToStringTag = __webpack_require__(162);
 var IteratorPrototype = {};
@@ -77468,7 +76305,7 @@ module.exports = function (Constructor, NAME, next) {
 
 
 /***/ }),
-/* 439 */
+/* 440 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ITERATOR = __webpack_require__(16)('iterator');
@@ -77496,7 +76333,7 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
-/* 440 */
+/* 441 */
 /***/ (function(module, exports) {
 
 module.exports = function (done, value) {
@@ -77505,7 +76342,7 @@ module.exports = function (done, value) {
 
 
 /***/ }),
-/* 441 */
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(27);
@@ -77580,12 +76417,12 @@ module.exports = function () {
 
 
 /***/ }),
-/* 442 */
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(26);
-var dPs = __webpack_require__(443);
+var dPs = __webpack_require__(444);
 var enumBugKeys = __webpack_require__(236);
 var IE_PROTO = __webpack_require__(163)('IE_PROTO');
 var Empty = function () { /* empty */ };
@@ -77627,7 +76464,7 @@ module.exports = Object.create || function create(O, Properties) {
 
 
 /***/ }),
-/* 443 */
+/* 444 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(110);
@@ -77646,7 +76483,7 @@ module.exports = __webpack_require__(83) ? Object.defineProperties : function de
 
 
 /***/ }),
-/* 444 */
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
@@ -77665,7 +76502,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 445 */
+/* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var has = __webpack_require__(109);
@@ -77688,7 +76525,7 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 446 */
+/* 447 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -77701,7 +76538,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 447 */
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(26);
@@ -77719,7 +76556,7 @@ module.exports = function (C, x) {
 
 
 /***/ }),
-/* 448 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var redefine = __webpack_require__(64);
@@ -77730,7 +76567,7 @@ module.exports = function (target, src, safe) {
 
 
 /***/ }),
-/* 449 */
+/* 450 */
 /***/ (function(module, exports) {
 
 // 7.2.9 SameValue(x, y)
@@ -77741,7 +76578,7 @@ module.exports = Object.is || function is(x, y) {
 
 
 /***/ }),
-/* 450 */
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77761,7 +76598,7 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 451 */
+/* 452 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77780,13 +76617,13 @@ module.exports = function repeat(count) {
 
 
 /***/ }),
-/* 452 */
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(21);
 var defined = __webpack_require__(45);
 var fails = __webpack_require__(84);
-var spaces = __webpack_require__(453);
+var spaces = __webpack_require__(454);
 var space = '[' + spaces + ']';
 var non = '\u200b\u0085';
 var ltrim = RegExp('^' + space + space + '*');
@@ -77816,7 +76653,7 @@ module.exports = exporter;
 
 
 /***/ }),
-/* 453 */
+/* 454 */
 /***/ (function(module, exports) {
 
 module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
@@ -77824,7 +76661,7 @@ module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u20
 
 
 /***/ }),
-/* 454 */
+/* 455 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
@@ -77842,7 +76679,7 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 455 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(27);
@@ -77852,7 +76689,7 @@ module.exports = navigator && navigator.userAgent || '';
 
 
 /***/ }),
-/* 456 */
+/* 457 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var classof = __webpack_require__(107);
@@ -77866,13 +76703,13 @@ module.exports = __webpack_require__(44).getIteratorMethod = function (it) {
 
 
 /***/ }),
-/* 457 */
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var addToUnscopables = __webpack_require__(106);
-var step = __webpack_require__(440);
+var step = __webpack_require__(441);
 var Iterators = __webpack_require__(85);
 var toIObject = __webpack_require__(112);
 
@@ -77907,7 +76744,7 @@ addToUnscopables('entries');
 
 
 /***/ }),
-/* 458 */
+/* 459 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77924,7 +76761,7 @@ if (test + '' != '[object z]') {
 
 
 /***/ }),
-/* 459 */
+/* 460 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77936,15 +76773,15 @@ var classof = __webpack_require__(107);
 var $export = __webpack_require__(21);
 var isObject = __webpack_require__(46);
 var aFunction = __webpack_require__(81);
-var anInstance = __webpack_require__(429);
-var forOf = __webpack_require__(432);
+var anInstance = __webpack_require__(430);
+var forOf = __webpack_require__(433);
 var speciesConstructor = __webpack_require__(246);
 var task = __webpack_require__(247).set;
-var microtask = __webpack_require__(441)();
+var microtask = __webpack_require__(442)();
 var newPromiseCapabilityModule = __webpack_require__(242);
-var perform = __webpack_require__(446);
-var userAgent = __webpack_require__(455);
-var promiseResolve = __webpack_require__(447);
+var perform = __webpack_require__(447);
+var userAgent = __webpack_require__(456);
+var promiseResolve = __webpack_require__(448);
 var PROMISE = 'Promise';
 var TypeError = global.TypeError;
 var process = global.process;
@@ -78119,7 +76956,7 @@ if (!USE_NATIVE) {
     this._h = 0;              // <- rejection state, 0 - default, 1 - handled, 2 - unhandled
     this._n = false;          // <- notify
   };
-  Internal.prototype = __webpack_require__(448)($Promise.prototype, {
+  Internal.prototype = __webpack_require__(449)($Promise.prototype, {
     // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
     then: function then(onFulfilled, onRejected) {
       var reaction = newPromiseCapability(speciesConstructor(this, $Promise));
@@ -78151,7 +76988,7 @@ if (!USE_NATIVE) {
 
 $export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
 __webpack_require__(162)($Promise, PROMISE);
-__webpack_require__(450)(PROMISE);
+__webpack_require__(451)(PROMISE);
 Wrapper = __webpack_require__(44)[PROMISE];
 
 // statics
@@ -78170,7 +77007,7 @@ $export($export.S + $export.F * (LIBRARY || !USE_NATIVE), PROMISE, {
     return promiseResolve(LIBRARY && this === Wrapper ? $Promise : this, x);
   }
 });
-$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(439)(function (iter) {
+$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(440)(function (iter) {
   $Promise.all(iter)['catch'](empty);
 })), PROMISE, {
   // 25.4.4.1 Promise.all(iterable)
@@ -78217,7 +77054,7 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(439)(functio
 
 
 /***/ }),
-/* 460 */
+/* 461 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78233,7 +77070,7 @@ __webpack_require__(21)({
 
 
 /***/ }),
-/* 461 */
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78280,7 +77117,7 @@ __webpack_require__(108)('match', 1, function (defined, MATCH, $match, maybeCall
 
 
 /***/ }),
-/* 462 */
+/* 463 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78405,14 +77242,14 @@ __webpack_require__(108)('replace', 2, function (defined, REPLACE, $replace, may
 
 
 /***/ }),
-/* 463 */
+/* 464 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var anObject = __webpack_require__(26);
-var sameValue = __webpack_require__(449);
+var sameValue = __webpack_require__(450);
 var regExpExec = __webpack_require__(111);
 
 // @@search logic
@@ -78443,7 +77280,7 @@ __webpack_require__(108)('search', 1, function (defined, SEARCH, $search, maybeC
 
 
 /***/ }),
-/* 464 */
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78582,7 +77419,7 @@ __webpack_require__(108)('split', 2, function (defined, SPLIT, $split, maybeCall
 
 
 /***/ }),
-/* 465 */
+/* 466 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78596,7 +77433,7 @@ __webpack_require__(23)('anchor', function (createHTML) {
 
 
 /***/ }),
-/* 466 */
+/* 467 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78610,7 +77447,7 @@ __webpack_require__(23)('big', function (createHTML) {
 
 
 /***/ }),
-/* 467 */
+/* 468 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78624,7 +77461,7 @@ __webpack_require__(23)('blink', function (createHTML) {
 
 
 /***/ }),
-/* 468 */
+/* 469 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78638,7 +77475,7 @@ __webpack_require__(23)('bold', function (createHTML) {
 
 
 /***/ }),
-/* 469 */
+/* 470 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78654,7 +77491,7 @@ $export($export.P, 'String', {
 
 
 /***/ }),
-/* 470 */
+/* 471 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78681,7 +77518,7 @@ $export($export.P + $export.F * __webpack_require__(159)(ENDS_WITH), 'String', {
 
 
 /***/ }),
-/* 471 */
+/* 472 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78695,7 +77532,7 @@ __webpack_require__(23)('fixed', function (createHTML) {
 
 
 /***/ }),
-/* 472 */
+/* 473 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78709,7 +77546,7 @@ __webpack_require__(23)('fontcolor', function (createHTML) {
 
 
 /***/ }),
-/* 473 */
+/* 474 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78723,7 +77560,7 @@ __webpack_require__(23)('fontsize', function (createHTML) {
 
 
 /***/ }),
-/* 474 */
+/* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(21);
@@ -78752,7 +77589,7 @@ $export($export.S + $export.F * (!!$fromCodePoint && $fromCodePoint.length != 1)
 
 
 /***/ }),
-/* 475 */
+/* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78771,7 +77608,7 @@ $export($export.P + $export.F * __webpack_require__(159)(INCLUDES), 'String', {
 
 
 /***/ }),
-/* 476 */
+/* 477 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78785,7 +77622,7 @@ __webpack_require__(23)('italics', function (createHTML) {
 
 
 /***/ }),
-/* 477 */
+/* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78799,7 +77636,7 @@ __webpack_require__(23)('link', function (createHTML) {
 
 
 /***/ }),
-/* 478 */
+/* 479 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(21);
@@ -78823,19 +77660,19 @@ $export($export.S, 'String', {
 
 
 /***/ }),
-/* 479 */
+/* 480 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(21);
 
 $export($export.P, 'String', {
   // 21.1.3.13 String.prototype.repeat(count)
-  repeat: __webpack_require__(451)
+  repeat: __webpack_require__(452)
 });
 
 
 /***/ }),
-/* 480 */
+/* 481 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78849,7 +77686,7 @@ __webpack_require__(23)('small', function (createHTML) {
 
 
 /***/ }),
-/* 481 */
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78874,7 +77711,7 @@ $export($export.P + $export.F * __webpack_require__(159)(STARTS_WITH), 'String',
 
 
 /***/ }),
-/* 482 */
+/* 483 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78888,7 +77725,7 @@ __webpack_require__(23)('strike', function (createHTML) {
 
 
 /***/ }),
-/* 483 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78902,7 +77739,7 @@ __webpack_require__(23)('sub', function (createHTML) {
 
 
 /***/ }),
-/* 484 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78916,13 +77753,13 @@ __webpack_require__(23)('sup', function (createHTML) {
 
 
 /***/ }),
-/* 485 */
+/* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 21.1.3.25 String.prototype.trim()
-__webpack_require__(452)('trim', function ($trim) {
+__webpack_require__(453)('trim', function ($trim) {
   return function trim() {
     return $trim(this, 3);
   };
@@ -78930,7 +77767,7 @@ __webpack_require__(452)('trim', function ($trim) {
 
 
 /***/ }),
-/* 486 */
+/* 487 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78959,7 +77796,7 @@ __webpack_require__(106)('flatMap');
 
 
 /***/ }),
-/* 487 */
+/* 488 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78987,7 +77824,7 @@ __webpack_require__(106)('flatten');
 
 
 /***/ }),
-/* 488 */
+/* 489 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79006,10 +77843,10 @@ __webpack_require__(106)('includes');
 
 
 /***/ }),
-/* 489 */
+/* 490 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $iterators = __webpack_require__(457);
+var $iterators = __webpack_require__(458);
 var getKeys = __webpack_require__(243);
 var redefine = __webpack_require__(64);
 var global = __webpack_require__(27);
@@ -79070,49 +77907,49 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
 
 
 /***/ }),
-/* 490 */
+/* 491 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(66)();
 exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transition: opacity .15s linear;\n}\n.fade-enter, .fade-leave-to {\n    opacity: 0;\n}\n", ""]);
 
 /***/ }),
-/* 491 */
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(66)();
 exports.push([module.i, "/* workaround for https://github.com/bootstrap-vue/bootstrap-vue/issues/1560 */\n/* source: _input-group.scss */\n\n.input-group > .input-group-prepend > .b-dropdown > .btn,\n.input-group > .input-group-append:not(:last-child) > .b-dropdown > .btn,\n.input-group > .input-group-append:last-child > .b-dropdown:not(:last-child):not(.dropdown-toggle) > .btn {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n}\n\n.input-group > .input-group-append > .b-dropdown > .btn,\n.input-group > .input-group-prepend:not(:first-child) > .b-dropdown > .btn,\n.input-group > .input-group-prepend:first-child > .b-dropdown:not(:first-child) > .btn {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n}\n", ""]);
 
 /***/ }),
-/* 492 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(66)();
 exports.push([module.i, "/* Special styling for type=range and type=color input */\ninput.form-control[type=\"range\"],\ninput.form-control[type=\"color\"] {\n    height: 2.25rem;\n}\ninput.form-control.form-control-sm[type=\"range\"],\ninput.form-control.form-control-sm[type=\"color\"] {\n    height: 1.9375rem;\n}\ninput.form-control.form-control-lg[type=\"range\"],\ninput.form-control.form-control-lg[type=\"color\"] {\n    height: 3rem;\n}\n\n/* Less padding on type=color */\ninput.form-control[type=\"color\"] {\n    padding: 0.25rem 0.25rem;\n}\ninput.form-control.form-control-sm[type=\"color\"] {\n    padding: 0.125rem 0.125rem;\n}\n", ""]);
 
 /***/ }),
-/* 493 */
+/* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(66)();
 exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table.b-table-fixed {\n    table-layout: fixed;\n}\n\n/* Busy table styling */\ntable.b-table[aria-busy='false'] {\n    opacity: 1;\n}\ntable.b-table[aria-busy='true'] {\n    opacity: 0.6;\n}\n\n/* Sort styling */\ntable.b-table > thead > tr > th,\ntable.b-table > tfoot > tr > th {\n    position: relative;\n}\ntable.b-table > thead > tr > th.sorting,\ntable.b-table > tfoot > tr > th.sorting {\n    padding-right: 1.5em;\n    cursor: pointer;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::after {\n    position: absolute;\n    bottom: 0;\n    display: block;\n    opacity: 0.4;\n    padding-bottom: inherit;\n    font-size: inherit;\n    line-height: 180%;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::before {\n    right: 0.75em;\n    content: '\\2191';\n}\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::after {\n    right: 0.25em;\n    content: '\\2193';\n}\ntable.b-table > thead > tr > th.sorting_asc::after,\ntable.b-table > thead > tr > th.sorting_desc::before,\ntable.b-table > tfoot > tr > th.sorting_asc::after,\ntable.b-table > tfoot > tr > th.sorting_desc::before {\n    opacity: 1;\n}\n\n/* Stacked table layout */\n/* Derived from http://blog.adrianroselli.com/2017/11/a-responsive-accessible-table.html */\n/* Always stacked */\ntable.b-table.b-table-stacked {\n    width: 100%;\n}\ntable.b-table.b-table-stacked,\ntable.b-table.b-table-stacked > tbody,\ntable.b-table.b-table-stacked > tbody > tr,\ntable.b-table.b-table-stacked > tbody > tr > td,\ntable.b-table.b-table-stacked > tbody > tr > th,\ntable.b-table.b-table-stacked > caption {\n    display: block;\n}\n\n/* Hide stuff we can't deal with, or shouldn't show */\ntable.b-table.b-table-stacked > thead,\ntable.b-table.b-table-stacked > tfoot,\ntable.b-table.b-table-stacked > tbody > tr.b-table-top-row,\ntable.b-table.b-table-stacked > tbody > tr.b-table-bottom-row {\n    display: none;\n}\n\n/* inter-row top border */\ntable.b-table.b-table-stacked > tbody > tr > :first-child {\n    border-top-width: 0.4rem;\n}\n\n/* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\ntable.b-table.b-table-stacked > tbody > tr > [data-label] {\n    display: grid;\n    grid-template-columns: 40% auto;\n    grid-gap: 0.25rem 1rem;\n}\n\n/* generate row cell \"heading\" */\ntable.b-table.b-table-stacked > tbody > tr > [data-label]::before {\n    content: attr(data-label);\n    display: inline;\n    text-align: right;\n    overflow-wrap: break-word;\n    font-weight: bold;\n    font-style: normal;\n}\n\n@media all and (max-width: 575.99px) {\n    /* Under SM */\n    table.b-table.b-table-stacked-sm {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-sm,\n    table.b-table.b-table-stacked-sm > tbody,\n    table.b-table.b-table-stacked-sm > tbody > tr,\n    table.b-table.b-table-stacked-sm > tbody > tr > td,\n    table.b-table.b-table-stacked-sm > tbody > tr > th,\n    table.b-table.b-table-stacked-sm > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-sm > thead,\n    table.b-table.b-table-stacked-sm > tfoot,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-sm > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 767.99px) {\n    /* under MD  */\n    table.b-table.b-table-stacked-md {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-md,\n    table.b-table.b-table-stacked-md > tbody,\n    table.b-table.b-table-stacked-md > tbody > tr,\n    table.b-table.b-table-stacked-md > tbody > tr > td,\n    table.b-table.b-table-stacked-md > tbody > tr > th,\n    table.b-table.b-table-stacked-md > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-md > thead,\n    table.b-table.b-table-stacked-md > tfoot,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-md > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 991.99px) {\n    /* under LG  */\n    table.b-table.b-table-stacked-lg {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-lg,\n    table.b-table.b-table-stacked-lg > tbody,\n    table.b-table.b-table-stacked-lg > tbody > tr,\n    table.b-table.b-table-stacked-lg > tbody > tr > td,\n    table.b-table.b-table-stacked-lg > tbody > tr > th,\n    table.b-table.b-table-stacked-lg > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-lg > thead,\n    table.b-table.b-table-stacked-lg > tfoot,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-lg > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 1199.99px) {\n    /* under XL  */\n    table.b-table.b-table-stacked-xl {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-xl,\n    table.b-table.b-table-stacked-xl > tbody,\n    table.b-table.b-table-stacked-xl > tbody > tr,\n    table.b-table.b-table-stacked-xl > tbody > tr > td,\n    table.b-table.b-table-stacked-xl > tbody > tr > th,\n    table.b-table.b-table-stacked-xl > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-xl > thead,\n    table.b-table.b-table-stacked-xl > tfoot,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-xl > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n/* Details row styling */\ntable.b-table > tbody > tr.b-table-details > td {\n    border-top: none;\n}\n", ""]);
 
 /***/ }),
-/* 494 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n", ""]);
-
-/***/ }),
 /* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margin: 0;\n  top: 0;\n  left: 15px;\n  width: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n.subject {\n  font-family: Arial;\n  font-weight: bold;\n}\n.img-avatar {\n  width: 50px;\n}\n", ""]);
 
 /***/ }),
 /* 496 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(66)();
+exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margin: 0;\n  top: 0;\n  left: 50px;\n  width: 0px;\n}\n", ""]);
+
+/***/ }),
+/* 497 */
 /***/ (function(module, exports) {
 
 /*!
@@ -79139,7 +77976,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 497 */
+/* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -80077,7 +78914,7 @@ module.exports = get;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54)))
 
 /***/ }),
-/* 498 */
+/* 499 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -80664,7 +79501,7 @@ module.exports = startCase;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54)))
 
 /***/ }),
-/* 499 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -80857,32 +79694,6 @@ module.exports = startCase;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54), __webpack_require__(250)))
 
 /***/ }),
-/* 500 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(490);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(115)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../../css-loader/index.js!./alert.css", function() {
-			var newContent = require("!!../../../../css-loader/index.js!./alert.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
 /* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -80898,8 +79709,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../css-loader/index.js!./dropdown.css", function() {
-			var newContent = require("!!../../../../css-loader/index.js!./dropdown.css");
+		module.hot.accept("!!../../../../css-loader/index.js!./alert.css", function() {
+			var newContent = require("!!../../../../css-loader/index.js!./alert.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -80924,8 +79735,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../css-loader/index.js!./form-input.css", function() {
-			var newContent = require("!!../../../../css-loader/index.js!./form-input.css");
+		module.hot.accept("!!../../../../css-loader/index.js!./dropdown.css", function() {
+			var newContent = require("!!../../../../css-loader/index.js!./dropdown.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -80950,6 +79761,32 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
+		module.hot.accept("!!../../../../css-loader/index.js!./form-input.css", function() {
+			var newContent = require("!!../../../../css-loader/index.js!./form-input.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 504 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(494);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(115)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
 		module.hot.accept("!!../../../../css-loader/index.js!./table.css", function() {
 			var newContent = require("!!../../../../css-loader/index.js!./table.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
@@ -80961,7 +79798,7 @@ if(false) {
 }
 
 /***/ }),
-/* 504 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -81017,7 +79854,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(499);
+__webpack_require__(500);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -81031,7 +79868,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54)))
 
 /***/ }),
-/* 505 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81307,7 +80144,7 @@ exports.mixins = mixins;
 
 
 /***/ }),
-/* 506 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81396,18 +80233,18 @@ exports.directive = directive;
 exports.mixin = mixin;
 
 /***/ }),
-/* 507 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(554)
+__webpack_require__(555)
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(301),
   /* template */
-  __webpack_require__(533),
+  __webpack_require__(534),
   /* scopeId */
   null,
   /* cssModules */
@@ -81434,14 +80271,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 508 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   null,
   /* template */
-  __webpack_require__(548),
+  __webpack_require__(549),
   /* scopeId */
   null,
   /* cssModules */
@@ -81468,14 +80305,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 509 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(302),
   /* template */
-  __webpack_require__(534),
+  __webpack_require__(535),
   /* scopeId */
   null,
   /* cssModules */
@@ -81502,14 +80339,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 510 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(303),
   /* template */
-  __webpack_require__(538),
+  __webpack_require__(539),
   /* scopeId */
   null,
   /* cssModules */
@@ -81536,14 +80373,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 511 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(304),
   /* template */
-  __webpack_require__(531),
+  __webpack_require__(532),
   /* scopeId */
   null,
   /* cssModules */
@@ -81570,14 +80407,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 512 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(305),
   /* template */
-  __webpack_require__(545),
+  __webpack_require__(546),
   /* scopeId */
   null,
   /* cssModules */
@@ -81604,14 +80441,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 513 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   null,
   /* template */
-  __webpack_require__(542),
+  __webpack_require__(543),
   /* scopeId */
   null,
   /* cssModules */
@@ -81638,14 +80475,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 514 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(306),
   /* template */
-  __webpack_require__(540),
+  __webpack_require__(541),
   /* scopeId */
   null,
   /* cssModules */
@@ -81672,14 +80509,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 515 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(307),
   /* template */
-  __webpack_require__(535),
+  __webpack_require__(536),
   /* scopeId */
   null,
   /* cssModules */
@@ -81706,14 +80543,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 516 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(308),
   /* template */
-  __webpack_require__(530),
+  __webpack_require__(531),
   /* scopeId */
   null,
   /* cssModules */
@@ -81740,14 +80577,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 517 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(309),
   /* template */
-  __webpack_require__(541),
+  __webpack_require__(542),
   /* scopeId */
   null,
   /* cssModules */
@@ -81774,14 +80611,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 518 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(310),
   /* template */
-  __webpack_require__(529),
+  __webpack_require__(530),
   /* scopeId */
   null,
   /* cssModules */
@@ -81808,14 +80645,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 519 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(311),
   /* template */
-  __webpack_require__(532),
+  __webpack_require__(533),
   /* scopeId */
   null,
   /* cssModules */
@@ -81842,14 +80679,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 520 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(312),
   /* template */
-  __webpack_require__(543),
+  __webpack_require__(544),
   /* scopeId */
   null,
   /* cssModules */
@@ -81876,14 +80713,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 521 */
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   null,
   /* template */
-  __webpack_require__(546),
+  __webpack_require__(547),
   /* scopeId */
   null,
   /* cssModules */
@@ -81910,14 +80747,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 522 */
+/* 523 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(313),
   /* template */
-  __webpack_require__(536),
+  __webpack_require__(537),
   /* scopeId */
   null,
   /* cssModules */
@@ -81944,18 +80781,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 523 */
+/* 524 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(555)
+__webpack_require__(556)
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(314),
   /* template */
-  __webpack_require__(550),
+  __webpack_require__(551),
   /* scopeId */
   "data-v-e8dd165e",
   /* cssModules */
@@ -81982,14 +80819,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 524 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(315),
   /* template */
-  __webpack_require__(539),
+  __webpack_require__(540),
   /* scopeId */
   null,
   /* cssModules */
@@ -82016,14 +80853,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 525 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(316),
   /* template */
-  __webpack_require__(549),
+  __webpack_require__(550),
   /* scopeId */
   null,
   /* cssModules */
@@ -82050,14 +80887,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 526 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(317),
   /* template */
-  __webpack_require__(547),
+  __webpack_require__(548),
   /* scopeId */
   null,
   /* cssModules */
@@ -82084,14 +80921,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 527 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(318),
   /* template */
-  __webpack_require__(537),
+  __webpack_require__(538),
   /* scopeId */
   null,
   /* cssModules */
@@ -82118,14 +80955,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 528 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(319),
   /* template */
-  __webpack_require__(544),
+  __webpack_require__(545),
   /* scopeId */
   null,
   /* cssModules */
@@ -82152,7 +80989,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 529 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -82417,16 +81254,40 @@ if (false) {
 }
 
 /***/ }),
-/* 530 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n  Kết quả học tập:\n  " + _vm._s(this.bangdiem.length) + "\n  "), _vm._l((_vm.bangdiem), function(p) {
-    return _c('div', {
+  return _c('div', [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "col-md-2"
+  }, [_c('select', {
+    staticClass: "form-control combobox",
+    attrs: {
+      "name": "cmbMonHoc",
+      "id": "cmbMonHoc"
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": "-1"
+    }
+  }, [_vm._v("--- Chọn môn học ---")]), _vm._v(" "), _vm._l((_vm.bangdiem), function(p) {
+    return _c('option', {
       key: p.ID_mon
-    }, [_vm._v(_vm._s(p))])
-  })], 2)
-},staticRenderFns: []}
+    }, [_vm._v(_vm._s(p.Ten_hoc_phan))])
+  })], 2)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "col-md-4"
+  }, [_c('span', {
+    staticClass: "title"
+  }, [_vm._v("KẾT QUẢ HỌC TẬP")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "col-md-4"
+  }, [_c('span', {
+    staticClass: "subject"
+  }, [_vm._v("Tên môn học")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -82436,7 +81297,7 @@ if (false) {
 }
 
 /***/ }),
-/* 531 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -82453,7 +81314,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     staticClass: "img-fluid mx-auto d-block",
     attrs: {
-      "src": "/img/banner.jpg"
+      "src": "img/banner.jpg"
     }
   }), _vm._v(" "), _c('form', {
     attrs: {
@@ -82582,7 +81443,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     staticClass: "logo",
     attrs: {
-      "src": "/img/logo-f.png",
+      "src": "img/logo-f.png",
       "alt": "Logo"
     }
   })]), _vm._v(" "), _c('div', {
@@ -82635,7 +81496,7 @@ if (false) {
 }
 
 /***/ }),
-/* 532 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -82657,7 +81518,7 @@ if (false) {
 }
 
 /***/ }),
-/* 533 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -82672,7 +81533,7 @@ if (false) {
 }
 
 /***/ }),
-/* 534 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -84787,4167 +83648,17 @@ if (false) {
 }
 
 /***/ }),
-/* 535 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-12 fullwidth"
-  }, [_c('div', {
-    staticClass: "news",
+  return _c('div', [_c('div', [_vm._v("LÝ LỊCH SINH VIÊN")]), _vm._v(" "), _c('div', [_vm._v("Họ và tên:" + _vm._s(_vm.currentUser.Ho_ten))]), _vm._v(" "), _c('div', [_c('img', {
+    staticClass: "img-circle",
     attrs: {
-      "id": "dvData"
-    }
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "col-md-10 fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "30%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Họ và tên:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "10px"
-    },
-    attrs: {
-      "id": "lblHoTen"
-    }
-  }, [_vm._v(_vm._s(_vm.currentUser.Ho_ten))])]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5)]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-10 fullwidth",
-    staticStyle: {
-      "height": "20px"
-    }
-  }), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('div', {
-    staticClass: "col-md-10 fullwidth",
-    staticStyle: {
-      "height": "20px"
-    }
-  }), _vm._v(" "), _vm._m(7), _vm._v(" "), _c('div', {
-    staticClass: "col-md-10 fullwidth",
-    staticStyle: {
-      "height": "20px"
-    }
-  }), _vm._v(" "), _vm._m(8)]), _vm._v(" "), _vm._m(9), _vm._v(" "), _vm._m(10), _vm._v(" "), _vm._m(11), _vm._v(" "), _vm._m(12), _vm._v(" "), _vm._m(13), _vm._v(" "), _c('br')])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row",
-    staticStyle: {
-      "height": "25px",
-      "margin-top": "15px",
-      "margin-left": "30px"
-    }
-  }, [_c('div', {
-    staticClass: "col-md-2"
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Mã sinh viên:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2",
-    staticStyle: {
-      "color": "red",
-      "font-weight": "bold"
-    },
-    attrs: {
-      "id": "lblMaSinhVien"
-    }
-  }, [_vm._v("123456789")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row",
-    staticStyle: {
-      "text-align": "center"
-    }
-  }, [_c('h3', {
-    staticClass: "TitleHoSo",
-    staticStyle: {
-      "width": "100%",
-      "font-family": "'Times New Roman'",
-      "font-size": "22px",
-      "font-weight": "normal",
-      "color": "black"
-    }
-  }, [_vm._v("SƠ YẾU LÝ LỊCH SINH VIÊN")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-2"
-  }, [_c('img', {
-    staticStyle: {
-      "margin-left": "45px",
-      "width": "120px",
-      "height": "150px",
-      "border": "1px solid #ff6a00"
-    },
-    attrs: {
-      "src": ""
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "20%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Ngày sinh:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": "lblNgaySinh"
-    }
-  }, [_vm._v("15/02/1998")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "20%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Giới tính:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "4px"
-    },
-    attrs: {
-      "id": "lblGioiTinh"
-    }
-  }, [_vm._v("Nam")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Quốc tịch:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": "lblQuocTich"
-    }
-  }, [_vm._v("Việt Nam")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-10 fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "50%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Quê quán:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("Hà Hội - Hải Phòng")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "50%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Nơi sinh:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "15px"
-    },
-    attrs: {
-      "id": "lblNoiSinh"
-    }
-  }, [_vm._v("TP Hải Phòng")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-10 fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "30%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Dân tộc:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "20px"
-    },
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "20%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Tôn giáo:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "8px"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "20%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("CMND:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "18px"
-    }
-  }, [_vm._v("122323223")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "30%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Email:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
+      "src": _vm.imgCurrent
     }
   })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-10 fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "30%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Hệ đào tạo:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "color": "red"
-    },
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("Đại học - Chính quy")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "35%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Chuyên ngành:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "color": "red"
-    },
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("Kiến trúc")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "20%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Niên khóa:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "color": "red"
-    },
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("2016-2020")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "15%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Khóa học:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "color": "red"
-    },
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("2016")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-10 fullwidth",
-    staticStyle: {
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth form-group",
-    staticStyle: {
-      "margin-left": "60px"
-    }
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("ĐT nhà riêng:")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    staticStyle: {
-      "width": "250px"
-    },
-    attrs: {
-      "id": "txtDien_thoai_NREdit",
-      "type": "text",
-      "value": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("ĐT cá nhân:")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    staticStyle: {
-      "width": "250px"
-    },
-    attrs: {
-      "id": "txtDienthoai_canhanEdit",
-      "type": "text",
-      "value": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Quận/Huyện:")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    staticStyle: {
-      "width": "250px"
-    },
-    attrs: {
-      "id": "cbbQuanHuyenEdit"
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "0200"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0201"
-    }
-  }, [_vm._v("Quận Một")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0202"
-    }
-  }, [_vm._v("Quận Hai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0203"
-    }
-  }, [_vm._v("Quận Ba")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0204"
-    }
-  }, [_vm._v("Quận Bốn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0205"
-    }
-  }, [_vm._v("Quận Năm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0206"
-    }
-  }, [_vm._v("Quận Sáu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0207"
-    }
-  }, [_vm._v("Quận Bảy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0208"
-    }
-  }, [_vm._v("Quận Tám")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0209"
-    }
-  }, [_vm._v("Quận Chín")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0210"
-    }
-  }, [_vm._v("Quận Mười")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0211"
-    }
-  }, [_vm._v("Quận Mười một")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0212"
-    }
-  }, [_vm._v("Quận Mười hai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0213"
-    }
-  }, [_vm._v("Quận Gò Vấp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0214"
-    }
-  }, [_vm._v("Quận Tân Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0215"
-    }
-  }, [_vm._v("Quận Tân Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0216"
-    }
-  }, [_vm._v("Quận Bình Thạnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0217"
-    }
-  }, [_vm._v("Quận Phú Nhuận")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0218"
-    }
-  }, [_vm._v("Quận Thủ Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0219"
-    }
-  }, [_vm._v("Quận Bình Tân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0220"
-    }
-  }, [_vm._v("Huyện Bình Chánh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0221"
-    }
-  }, [_vm._v("Huyện Củ Chi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0222"
-    }
-  }, [_vm._v("Huyện Hóc Môn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0223"
-    }
-  }, [_vm._v("Huyện Nhà Bè")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0224"
-    }
-  }, [_vm._v("Huyện Cần Giờ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0300"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0301"
-    }
-  }, [_vm._v("Quận Hồng Bàng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0302"
-    }
-  }, [_vm._v("Quận Lê Chân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0303"
-    }
-  }, [_vm._v("Quận Ngô Quyền")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0304"
-    }
-  }, [_vm._v("Quận Kiến An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0305"
-    }
-  }, [_vm._v("Quận Hải An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0306"
-    }
-  }, [_vm._v("Quận Đồ Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0307"
-    }
-  }, [_vm._v("Huyện An Lão")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0308"
-    }
-  }, [_vm._v("Huyện Kiến Thuỵ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0309"
-    }
-  }, [_vm._v("Huyện Thủy Nguyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0310"
-    }
-  }, [_vm._v("Huyện An Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0311"
-    }
-  }, [_vm._v("Huyện Tiên Lãng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0312"
-    }
-  }, [_vm._v("Huyện Vĩnh Bảo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0313"
-    }
-  }, [_vm._v("Huyện Cát Hải")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0314"
-    }
-  }, [_vm._v("Huyện Bạch Long Vĩ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0315"
-    }
-  }, [_vm._v("Quận Dương Kinh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0400"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0401"
-    }
-  }, [_vm._v("Quận Hải Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0402"
-    }
-  }, [_vm._v("Quận Thanh Khê")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0403"
-    }
-  }, [_vm._v("Quận Sơn Trà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0404"
-    }
-  }, [_vm._v("Quận Ngũ Hành Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0405"
-    }
-  }, [_vm._v("Quận Liên Chiểu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0406"
-    }
-  }, [_vm._v("Huyện Hoà Vang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0407"
-    }
-  }, [_vm._v("Quận Cẩm Lệ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0500"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0501"
-    }
-  }, [_vm._v("Thị xã Hà Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0502"
-    }
-  }, [_vm._v("Huyện Đồng Văn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0503"
-    }
-  }, [_vm._v("Huyện Mèo Vạc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0504"
-    }
-  }, [_vm._v("Huyện Yên Minh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0505"
-    }
-  }, [_vm._v("Huyện Quản Bạ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0506"
-    }
-  }, [_vm._v("Huyện Vị Xuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0507"
-    }
-  }, [_vm._v("Huyện Bắc Mê")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0508"
-    }
-  }, [_vm._v("Huyện Hoàng Su Phì")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0509"
-    }
-  }, [_vm._v("Huyện Xín Mần")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0510"
-    }
-  }, [_vm._v("Huyện Bắc Quang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0511"
-    }
-  }, [_vm._v("Huyện Quang Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0600"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0601"
-    }
-  }, [_vm._v("Thị xã Cao Bằng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0602"
-    }
-  }, [_vm._v("Huyện Bảo Lạc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0603"
-    }
-  }, [_vm._v("Huyện Thông Nông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0604"
-    }
-  }, [_vm._v("Huyện Hà Quảng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0605"
-    }
-  }, [_vm._v("Huyện Trà Lĩnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0606"
-    }
-  }, [_vm._v("Huyện Trùng Khánh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0607"
-    }
-  }, [_vm._v("Huyện Nguyên Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0608"
-    }
-  }, [_vm._v("Huyện Hoà An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0609"
-    }
-  }, [_vm._v("Huyện Quảng Uyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0610"
-    }
-  }, [_vm._v("Huyện Thạch An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0611"
-    }
-  }, [_vm._v("Huyện Hạ Lang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0612"
-    }
-  }, [_vm._v("Huyện Bảo Lâm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0613"
-    }
-  }, [_vm._v("Huyện Phục Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0700"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0701"
-    }
-  }, [_vm._v("Thị xã Lai Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0702"
-    }
-  }, [_vm._v("Huyện Tam Đường")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0703"
-    }
-  }, [_vm._v("Huyện Phong Thổ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0704"
-    }
-  }, [_vm._v("Huyện Sìn Hồ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0705"
-    }
-  }, [_vm._v("Huyện Mường Tè")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0706"
-    }
-  }, [_vm._v("Huyện Than Uyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0800"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0801"
-    }
-  }, [_vm._v("Thành phố Lào Cai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0802"
-    }
-  }, [_vm._v("Huyện Xi Ma Cai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0803"
-    }
-  }, [_vm._v("Huyện Bát Xát")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0804"
-    }
-  }, [_vm._v("Huyện Bảo Thắng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0805"
-    }
-  }, [_vm._v("Huyện Sa Pa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0806"
-    }
-  }, [_vm._v("Huyện Văn Bàn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0807"
-    }
-  }, [_vm._v("Huyện Bảo Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0808"
-    }
-  }, [_vm._v("Huyện Bắc Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0809"
-    }
-  }, [_vm._v("Huyện Mường Khương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0900"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0901"
-    }
-  }, [_vm._v("Thị xã Tuyên Quang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0902"
-    }
-  }, [_vm._v("Huyện Na Hang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0903"
-    }
-  }, [_vm._v("Huyện Chiêm Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0904"
-    }
-  }, [_vm._v("Huyện Hàm Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0905"
-    }
-  }, [_vm._v("Huyện Yên Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "0906"
-    }
-  }, [_vm._v("Huyện Sơn Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1000"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1001"
-    }
-  }, [_vm._v("Thành phố Lạng Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1002"
-    }
-  }, [_vm._v("Huyện Tràng Định")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1003"
-    }
-  }, [_vm._v("Huyện Bình Gia")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1004"
-    }
-  }, [_vm._v("Huyện Văn Lãng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1005"
-    }
-  }, [_vm._v("Huyện Bắc Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1006"
-    }
-  }, [_vm._v("Huyện Văn Quan")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1007"
-    }
-  }, [_vm._v("Huyện Cao Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1008"
-    }
-  }, [_vm._v("Huyện Lộc Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1009"
-    }
-  }, [_vm._v("Huyện Chi Lăng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1010"
-    }
-  }, [_vm._v("Huyện Đình Lập")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1011"
-    }
-  }, [_vm._v("Huyện Hữu Lũng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1100"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1101"
-    }
-  }, [_vm._v("Thị xã Bắc Kạn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1102"
-    }
-  }, [_vm._v("Huyện Chợ Đồn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1103"
-    }
-  }, [_vm._v("Huyện Bạch Thông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1104"
-    }
-  }, [_vm._v("Huyện Na Rì")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1105"
-    }
-  }, [_vm._v("Huyện Ngân Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1106"
-    }
-  }, [_vm._v("Huyện Ba Bể")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1107"
-    }
-  }, [_vm._v("Huyện Chợ Mới")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1108"
-    }
-  }, [_vm._v("Huyện Pác Nặm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1200"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1201"
-    }
-  }, [_vm._v("TP.Thái Nguyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1202"
-    }
-  }, [_vm._v("Thị xã Sông Công")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1203"
-    }
-  }, [_vm._v("Huyện Định Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1204"
-    }
-  }, [_vm._v("Huyện Phú Lương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1205"
-    }
-  }, [_vm._v("Huyện Võ Nhai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1206"
-    }
-  }, [_vm._v("Huyện Đại Từ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1207"
-    }
-  }, [_vm._v("Huyện Đồng Hỷ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1208"
-    }
-  }, [_vm._v("Huyện Phú Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1209"
-    }
-  }, [_vm._v("Huyện Phổ Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1300"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1301"
-    }
-  }, [_vm._v("Thành phố Yên Bái")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1302"
-    }
-  }, [_vm._v("Thị xã Nghĩa Lộ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1303"
-    }
-  }, [_vm._v("Huyện Văn Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1304"
-    }
-  }, [_vm._v("Huyện Yên Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1305"
-    }
-  }, [_vm._v("Huyện Mù Cang Chải")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1306"
-    }
-  }, [_vm._v("Huyện Văn Chấn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1307"
-    }
-  }, [_vm._v("Huyện Trấn Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1308"
-    }
-  }, [_vm._v("Huyện Trạm Tấu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1309"
-    }
-  }, [_vm._v("Huyện Lục Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1400"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1401"
-    }
-  }, [_vm._v("Thị xã Sơn La")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1402"
-    }
-  }, [_vm._v("Huyện Quỳnh Nhai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1403"
-    }
-  }, [_vm._v("Huyện Mường La")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1404"
-    }
-  }, [_vm._v("Huyện Thuận Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1405"
-    }
-  }, [_vm._v("Huyện Bắc Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1406"
-    }
-  }, [_vm._v("Huyện Phù Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1407"
-    }
-  }, [_vm._v("Huyện Mai Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1408"
-    }
-  }, [_vm._v("Huyện Yên Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1409"
-    }
-  }, [_vm._v("Huyện Sông Mã")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1410"
-    }
-  }, [_vm._v("Huyện Mộc Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1411"
-    }
-  }, [_vm._v("Huyện Sốp Cộp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1500"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1501"
-    }
-  }, [_vm._v("TP. Việt Trì")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1502"
-    }
-  }, [_vm._v("Thị xã Phú Thọ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1503"
-    }
-  }, [_vm._v("Huyện Đoan Hùng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1504"
-    }
-  }, [_vm._v("Huyện Thanh Ba")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1505"
-    }
-  }, [_vm._v("Huyện Hạ Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1506"
-    }
-  }, [_vm._v("Huyện Cẩm Khê")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1507"
-    }
-  }, [_vm._v("Huyện Yên Lập")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1508"
-    }
-  }, [_vm._v("Huyện Thanh Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1509"
-    }
-  }, [_vm._v("Huyện Phù Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1510"
-    }
-  }, [_vm._v("Huyện Lâm Thao")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1511"
-    }
-  }, [_vm._v("Huyện Tam Nông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1512"
-    }
-  }, [_vm._v("Huyện Thanh Thủy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1513"
-    }
-  }, [_vm._v("Huyện Tân Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1600"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1601"
-    }
-  }, [_vm._v("Thành phố Vĩnh Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1602"
-    }
-  }, [_vm._v("Huyện Tam Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1603"
-    }
-  }, [_vm._v("Huyện Lập Thạch")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1604"
-    }
-  }, [_vm._v("Huyện Vĩnh Tường")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1605"
-    }
-  }, [_vm._v("Huyện Yên Lạc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1606"
-    }
-  }, [_vm._v("Huyện Bình Xuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1607"
-    }
-  }, [_vm._v("Huyện Mê Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1608"
-    }
-  }, [_vm._v("Thị xã Phúc Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1609"
-    }
-  }, [_vm._v("Huyện Tam Đảo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1700"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1701"
-    }
-  }, [_vm._v("TP. Hạ Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1702"
-    }
-  }, [_vm._v("Thị xã Cẩm Phả")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1703"
-    }
-  }, [_vm._v("Thị xã Uông Bí")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1704"
-    }
-  }, [_vm._v("Thị xã Móng Cái")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1705"
-    }
-  }, [_vm._v("Huyện Bình Liêu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1706"
-    }
-  }, [_vm._v("Huyện Đầm Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1707"
-    }
-  }, [_vm._v("Huyện Hải Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1708"
-    }
-  }, [_vm._v("Huyện Tiên Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1709"
-    }
-  }, [_vm._v("Huyện Ba Chẽ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1710"
-    }
-  }, [_vm._v("Huyện Đông Triều")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1711"
-    }
-  }, [_vm._v("Huyện Yên Hưng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1712"
-    }
-  }, [_vm._v("Huyện Hoành Bồ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1713"
-    }
-  }, [_vm._v("Huyện Vân Đồn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1714"
-    }
-  }, [_vm._v("Huyện Cô Tô")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1800"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1801"
-    }
-  }, [_vm._v("Thành phố Bắc Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1802"
-    }
-  }, [_vm._v("Huyện Yên Thế")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1803"
-    }
-  }, [_vm._v("Huyện Lục Ngạn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1804"
-    }
-  }, [_vm._v("Huyện Sơn Động")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1805"
-    }
-  }, [_vm._v("Huyện Lục Nam")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1806"
-    }
-  }, [_vm._v("Huyện Tân Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1807"
-    }
-  }, [_vm._v("Huyện Hiệp Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1808"
-    }
-  }, [_vm._v("Huyện Lạng Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1809"
-    }
-  }, [_vm._v("Huyện Việt Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1810"
-    }
-  }, [_vm._v("Huyện Yên Dũng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1900"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1901"
-    }
-  }, [_vm._v("Thành phố Bắc Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1902"
-    }
-  }, [_vm._v("Huyện Yên Phong")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1903"
-    }
-  }, [_vm._v("Huyện Quế Võ.")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1904"
-    }
-  }, [_vm._v("Huyện Tiên Du")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1905"
-    }
-  }, [_vm._v("Huyện Từ Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1906"
-    }
-  }, [_vm._v("Huyện Thuận Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1907"
-    }
-  }, [_vm._v("Huyện Gia Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1908"
-    }
-  }, [_vm._v("Huyện Lương Tài")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A00"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A01"
-    }
-  }, [_vm._v("Quận Ba Đình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A02"
-    }
-  }, [_vm._v("Quận Hoàn Kiếm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A03"
-    }
-  }, [_vm._v("Quận Hai Bà Trưng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A04"
-    }
-  }, [_vm._v("Quận Đống Đa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A05"
-    }
-  }, [_vm._v("Quận Tây Hồ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A06"
-    }
-  }, [_vm._v("Quận Cầu Giấy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A07"
-    }
-  }, [_vm._v("Quận Thanh Xuân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A08"
-    }
-  }, [_vm._v("Quận Hoàng Mai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A09"
-    }
-  }, [_vm._v("Quận Long Biên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A10"
-    }
-  }, [_vm._v("Huyện Từ Liêm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A11"
-    }
-  }, [_vm._v("Huyện Thanh Trì")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A12"
-    }
-  }, [_vm._v("Huyện Gia Lâm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A13"
-    }
-  }, [_vm._v("Huyện Đông Anh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1A14"
-    }
-  }, [_vm._v("Huyện Sóc Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B00"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B15"
-    }
-  }, [_vm._v("Thành phố Hà Đông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B16"
-    }
-  }, [_vm._v("Thành phố Sơn Tây")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B17"
-    }
-  }, [_vm._v("Huyện Ba Vì")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B18"
-    }
-  }, [_vm._v("Huyện Phúc Thọ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B19"
-    }
-  }, [_vm._v("Huyện Thạch Thất")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B20"
-    }
-  }, [_vm._v("Huyện Quốc Oai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B21"
-    }
-  }, [_vm._v("Huyện Chương Mỹ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B22"
-    }
-  }, [_vm._v("Huyện Đan Phượng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B23"
-    }
-  }, [_vm._v("Huyện Hoài Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B24"
-    }
-  }, [_vm._v("Huyện Thanh Oai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B25"
-    }
-  }, [_vm._v("Huyện Mỹ Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B26"
-    }
-  }, [_vm._v("Huyện ứng Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B27"
-    }
-  }, [_vm._v("Huyện Thường Tín")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B28"
-    }
-  }, [_vm._v("Huyện Phú Xuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1B29"
-    }
-  }, [_vm._v("Huyện Mê Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2100"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2101"
-    }
-  }, [_vm._v("Thành phố Hải Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2102"
-    }
-  }, [_vm._v("Huyện Chí Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2103"
-    }
-  }, [_vm._v("Huyện Nam Sách")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2104"
-    }
-  }, [_vm._v("Huyện Kinh Môn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2105"
-    }
-  }, [_vm._v("Huyện Gia Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2106"
-    }
-  }, [_vm._v("Huyện Tứ Kỳ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2107"
-    }
-  }, [_vm._v("Huyện Thanh Miện")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2108"
-    }
-  }, [_vm._v("Huyện Ninh Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2109"
-    }
-  }, [_vm._v("Huyện Cẩm Giàng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2110"
-    }
-  }, [_vm._v("Huyện Thanh Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2111"
-    }
-  }, [_vm._v("Huyện Kim Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2112"
-    }
-  }, [_vm._v("Huyện Bình Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2200"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2201"
-    }
-  }, [_vm._v("Thị xã Hưng Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2202"
-    }
-  }, [_vm._v("Huyện Kim Động")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2203"
-    }
-  }, [_vm._v("Huyện Ân Thi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2204"
-    }
-  }, [_vm._v("Huyện Khoái Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2205"
-    }
-  }, [_vm._v("Huyện Yên Mỹ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2206"
-    }
-  }, [_vm._v("Huyện Tiên Lữ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2207"
-    }
-  }, [_vm._v("Huyện Phù Cừ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2208"
-    }
-  }, [_vm._v("Huyện Mỹ Hào")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2209"
-    }
-  }, [_vm._v("Huyện Văn Lâm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2210"
-    }
-  }, [_vm._v("Huyện Văn Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2300"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2301"
-    }
-  }, [_vm._v("Thành phố Hoà Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2302"
-    }
-  }, [_vm._v("Huyện Đà Bắc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2303"
-    }
-  }, [_vm._v("Huyện Mai Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2304"
-    }
-  }, [_vm._v("Huyện Tân Lạc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2305"
-    }
-  }, [_vm._v("Huyện Lạc Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2306"
-    }
-  }, [_vm._v("Huyện Kỳ Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2307"
-    }
-  }, [_vm._v("Huyện Lưương Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2308"
-    }
-  }, [_vm._v("Huyện Kim Bôi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2309"
-    }
-  }, [_vm._v("Huyện Lạc Thuỷ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2310"
-    }
-  }, [_vm._v("Huyện Yên Thuỷ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2311"
-    }
-  }, [_vm._v("Huyện Cao Phong")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2400"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2401"
-    }
-  }, [_vm._v("Thị xã Phủ Lý")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2402"
-    }
-  }, [_vm._v("Huyện Duy Tiên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2403"
-    }
-  }, [_vm._v("Huyện Kim Bảng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2404"
-    }
-  }, [_vm._v("Huyện Lý Nhân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2405"
-    }
-  }, [_vm._v("Huỵện Thanh Liêm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2406"
-    }
-  }, [_vm._v("Huyện Bình Lục")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2500"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2501"
-    }
-  }, [_vm._v("TP. Nam Định")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2502"
-    }
-  }, [_vm._v("Huyện Mỹ Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2503"
-    }
-  }, [_vm._v("Huyện Xuân Trường")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2504"
-    }
-  }, [_vm._v("Huyện Giao Thủy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2505"
-    }
-  }, [_vm._v("Huyện ý Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2506"
-    }
-  }, [_vm._v("Huyện Vụ Bản")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2507"
-    }
-  }, [_vm._v("Huyện Nam Trực")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2508"
-    }
-  }, [_vm._v("Huyện Trực Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2509"
-    }
-  }, [_vm._v("Huyện Nghĩa Hưng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2510"
-    }
-  }, [_vm._v("Huyện Hải Hậu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2600"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2601"
-    }
-  }, [_vm._v("Thành phố Thái Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2602"
-    }
-  }, [_vm._v("Huyện Quỳnh Phụ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2603"
-    }
-  }, [_vm._v("Huyện Hưng Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2604"
-    }
-  }, [_vm._v("Huyện Đông Hưng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2605"
-    }
-  }, [_vm._v("Huyện Vũ Thư")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2606"
-    }
-  }, [_vm._v("Huyện Kiến Xương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2607"
-    }
-  }, [_vm._v("Huyện Tiền Hải")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2608"
-    }
-  }, [_vm._v("Huyện Thái Thuỵ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2700"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2701"
-    }
-  }, [_vm._v("Thành phố Ninh Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2702"
-    }
-  }, [_vm._v("Thị xã Tam Điệp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2703"
-    }
-  }, [_vm._v("Huyện Nho Quan")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2704"
-    }
-  }, [_vm._v("Huyện Gia Viễn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2705"
-    }
-  }, [_vm._v("Huyện Hoa Lư")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2706"
-    }
-  }, [_vm._v("Huyện Yên Mô")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2707"
-    }
-  }, [_vm._v("Huyện Kim Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2708"
-    }
-  }, [_vm._v("Huyện Yên Khánh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2800"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2801"
-    }
-  }, [_vm._v("Thành phố Thanh Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2802"
-    }
-  }, [_vm._v("Thị xã Bỉm Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2803"
-    }
-  }, [_vm._v("Thị xã Sầm Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2804"
-    }
-  }, [_vm._v("Huyện Quan Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2805"
-    }
-  }, [_vm._v("Huyện Quan Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2806"
-    }
-  }, [_vm._v("Huyện Mường Lát")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2807"
-    }
-  }, [_vm._v("Huyện Bá Thước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2808"
-    }
-  }, [_vm._v("Huyện Thường Xuân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2809"
-    }
-  }, [_vm._v("Huyện Như Xuân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2810"
-    }
-  }, [_vm._v("Huyện Như Thanh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2811"
-    }
-  }, [_vm._v("Huyện Lang Chánh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2812"
-    }
-  }, [_vm._v("Huyện Ngọc Lặc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2813"
-    }
-  }, [_vm._v("Huyện Thạch Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2814"
-    }
-  }, [_vm._v("Huyện Cẩm Thủy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2815"
-    }
-  }, [_vm._v("Huyện Thọ Xuân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2816"
-    }
-  }, [_vm._v("Huyện Vĩnh Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2817"
-    }
-  }, [_vm._v("Huyện Thiệu Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2818"
-    }
-  }, [_vm._v("Huyện Triệu Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2819"
-    }
-  }, [_vm._v("Huyện Nông Cống")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2820"
-    }
-  }, [_vm._v("Huyện Đông Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2821"
-    }
-  }, [_vm._v("Huyện Hà Trung")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2822"
-    }
-  }, [_vm._v("Huyện Hoằng Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2823"
-    }
-  }, [_vm._v("Huyện Nga Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2824"
-    }
-  }, [_vm._v("Huyện Hậu Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2825"
-    }
-  }, [_vm._v("Huyện Quảng Xương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2826"
-    }
-  }, [_vm._v("Huyện Tĩnh Gia")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2827"
-    }
-  }, [_vm._v("Huyện Yên Định")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2900"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2901"
-    }
-  }, [_vm._v("Thành phố Vinh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2902"
-    }
-  }, [_vm._v("Thị xã Cửa Lò")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2903"
-    }
-  }, [_vm._v("Huyện Quỳ Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2904"
-    }
-  }, [_vm._v("Huyện Quỳ Hợp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2905"
-    }
-  }, [_vm._v("Huyện Nghĩa Đàn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2906"
-    }
-  }, [_vm._v("Huyện Quỳnh Lưu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2907"
-    }
-  }, [_vm._v("Huyện Kỳ Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2908"
-    }
-  }, [_vm._v("Huyện Tương Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2909"
-    }
-  }, [_vm._v("Huyện Con Cuông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2910"
-    }
-  }, [_vm._v("Huyện Tân Kỳ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2911"
-    }
-  }, [_vm._v("Huyện Yên Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2912"
-    }
-  }, [_vm._v("Huyện Diễn Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2913"
-    }
-  }, [_vm._v("Huyện Anh Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2914"
-    }
-  }, [_vm._v("Huyện Đô Lương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2915"
-    }
-  }, [_vm._v("Huyện Thanh Chương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2916"
-    }
-  }, [_vm._v("Huyện Nghi Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2917"
-    }
-  }, [_vm._v("Huyện Nam Đàn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2918"
-    }
-  }, [_vm._v("Huyện Hưng Nguyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2919"
-    }
-  }, [_vm._v("Huyện Quế Phong")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2920"
-    }
-  }, [_vm._v("Huyện Thái Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3000"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3001"
-    }
-  }, [_vm._v("Thành phố Hà Tĩnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3002"
-    }
-  }, [_vm._v("Thị xã Hồng Lĩnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3003"
-    }
-  }, [_vm._v("Huyện Hương Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3004"
-    }
-  }, [_vm._v("Huyện Đức Thọ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3005"
-    }
-  }, [_vm._v("Huyện Nghi Xuân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3006"
-    }
-  }, [_vm._v("Huyện Can Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3007"
-    }
-  }, [_vm._v("Huyện Hương Khê")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3008"
-    }
-  }, [_vm._v("Huyện Thạch Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3009"
-    }
-  }, [_vm._v("Huyện Cẩm Xuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3010"
-    }
-  }, [_vm._v("Huyện Kỳ Anh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3011"
-    }
-  }, [_vm._v("Huyện Vũ Quang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3012"
-    }
-  }, [_vm._v("Huyện Lộc Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3100"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3101"
-    }
-  }, [_vm._v("Thành phố Đồng Hới")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3102"
-    }
-  }, [_vm._v("Huyện Tuyên Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3103"
-    }
-  }, [_vm._v("Huyện Minh Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3104"
-    }
-  }, [_vm._v("Huyện Quảng Trạch")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3105"
-    }
-  }, [_vm._v("Huyện Bố Trạch")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3106"
-    }
-  }, [_vm._v("Huyện Quảng Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3107"
-    }
-  }, [_vm._v("Huyện Lệ Thuỷ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3200"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3201"
-    }
-  }, [_vm._v("Thị xã Đông Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3202"
-    }
-  }, [_vm._v("Thị xã Quảng Trị")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3203"
-    }
-  }, [_vm._v("Huyện Vĩnh Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3204"
-    }
-  }, [_vm._v("Huyện Gio Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3205"
-    }
-  }, [_vm._v("Huyện Cam Lộ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3206"
-    }
-  }, [_vm._v("Huyện Triệu Phong")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3207"
-    }
-  }, [_vm._v("Huyện Hải Lăng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3208"
-    }
-  }, [_vm._v("Huyện Hướng Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3209"
-    }
-  }, [_vm._v("Huyện Đăk Rông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3210"
-    }
-  }, [_vm._v("Huyện đảo Cồn cỏ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3300"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3301"
-    }
-  }, [_vm._v("TP. Huế")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3302"
-    }
-  }, [_vm._v("Huyện Phong Điền")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3303"
-    }
-  }, [_vm._v("Huyện Quảng Điền")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3304"
-    }
-  }, [_vm._v("Huyện Hương Trà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3305"
-    }
-  }, [_vm._v("Huyện Phú Vang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3306"
-    }
-  }, [_vm._v("Huyện Hương Thuỷ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3307"
-    }
-  }, [_vm._v("Huyện Phú Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3308"
-    }
-  }, [_vm._v("Huyện Nam Đông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3309"
-    }
-  }, [_vm._v("Huyện A Lưới")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3400"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3401"
-    }
-  }, [_vm._v("Thành phố Tam Kỳ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3402"
-    }
-  }, [_vm._v("Thị xã Hội An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3403"
-    }
-  }, [_vm._v("Huyện Duy Xuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3404"
-    }
-  }, [_vm._v("Huyện Điện Bàn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3405"
-    }
-  }, [_vm._v("Huyện Đại Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3406"
-    }
-  }, [_vm._v("Huyện Quế Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3407"
-    }
-  }, [_vm._v("Huyện Hiệp Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3408"
-    }
-  }, [_vm._v("Huyện Thăng Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3409"
-    }
-  }, [_vm._v("Huyện Núi Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3410"
-    }
-  }, [_vm._v("Huyện Tiên Phước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3411"
-    }
-  }, [_vm._v("Huyện Bắc Trà My")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3412"
-    }
-  }, [_vm._v("Huyện Đông Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3413"
-    }
-  }, [_vm._v("Huyện Nam Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3414"
-    }
-  }, [_vm._v("Huyện Phước Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3415"
-    }
-  }, [_vm._v("Huyện Nam Trà My")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3416"
-    }
-  }, [_vm._v("Huyện Tây Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3417"
-    }
-  }, [_vm._v("Huyện Phú Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3500"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3501"
-    }
-  }, [_vm._v("Thành phố Quảng Ngãi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3502"
-    }
-  }, [_vm._v("Huyện Lý Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3503"
-    }
-  }, [_vm._v("Huyện Bình Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3504"
-    }
-  }, [_vm._v("Huyện Trà Bồng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3505"
-    }
-  }, [_vm._v("Huyện Sơn Tịnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3506"
-    }
-  }, [_vm._v("Huyện Sơn Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3507"
-    }
-  }, [_vm._v("Huyện Tư Nghĩa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3508"
-    }
-  }, [_vm._v("Huyện Nghĩa Hành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3509"
-    }
-  }, [_vm._v("Huyện Minh Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3510"
-    }
-  }, [_vm._v("Huyện Mộ Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3511"
-    }
-  }, [_vm._v("Huyện Đức Phổ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3512"
-    }
-  }, [_vm._v("Huyện Ba Tơ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3513"
-    }
-  }, [_vm._v("Huyện Sơn Tây")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3514"
-    }
-  }, [_vm._v("Huyện Tây Trà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3600"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3601"
-    }
-  }, [_vm._v("Thị xã KonTum")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3602"
-    }
-  }, [_vm._v("Huyện Đăk Glei")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3603"
-    }
-  }, [_vm._v("Huyện Ngọc Hồi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3604"
-    }
-  }, [_vm._v("Huyện Đăk Tô")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3605"
-    }
-  }, [_vm._v("Huyện Sa Thầy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3606"
-    }
-  }, [_vm._v("Huyện Kon Plong")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3607"
-    }
-  }, [_vm._v("Huyện Đăk Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3608"
-    }
-  }, [_vm._v("Huyện Kon Rộy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3609"
-    }
-  }, [_vm._v("Huyện Tu Mơ Rông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3700"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3701"
-    }
-  }, [_vm._v("Thành phố Quy Nhơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3702"
-    }
-  }, [_vm._v("Huyện An Lão")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3703"
-    }
-  }, [_vm._v("Huyện Hoài Ân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3704"
-    }
-  }, [_vm._v("Huyện Hoài Nhơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3705"
-    }
-  }, [_vm._v("Huyện Phù Mỹ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3706"
-    }
-  }, [_vm._v("Huyện Phù Cát")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3707"
-    }
-  }, [_vm._v("Huyện Vĩnh Thạnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3708"
-    }
-  }, [_vm._v("Huyện Tây Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3709"
-    }
-  }, [_vm._v("Huyện Vân Canh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3710"
-    }
-  }, [_vm._v("Huyện An Nhơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3711"
-    }
-  }, [_vm._v("Huyện Tuy Phước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3800"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3801"
-    }
-  }, [_vm._v("Thành phố Pleiku")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3802"
-    }
-  }, [_vm._v("Huyện Chư Păh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3803"
-    }
-  }, [_vm._v("Huyện Mang Yang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3804"
-    }
-  }, [_vm._v("Huyện Kbang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3805"
-    }
-  }, [_vm._v("Thị xã An Khê")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3806"
-    }
-  }, [_vm._v("Huyện Kông Chro")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3807"
-    }
-  }, [_vm._v("Huyện Đức Cơ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3808"
-    }
-  }, [_vm._v("Huyện Chưprông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3809"
-    }
-  }, [_vm._v("Huyện Chư Sê")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3810"
-    }
-  }, [_vm._v("Huyện Ayunpa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3811"
-    }
-  }, [_vm._v("Huyện Krông Pa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3812"
-    }
-  }, [_vm._v("Huyện Ia Grai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3813"
-    }
-  }, [_vm._v("Huyện Đăk Đoa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3814"
-    }
-  }, [_vm._v("Huyện Ia Pa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3815"
-    }
-  }, [_vm._v("Huyện Đăk Pơ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3816"
-    }
-  }, [_vm._v("Huyện Phú Thiện")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3900"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3901"
-    }
-  }, [_vm._v("Thị xã Tuy Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3902"
-    }
-  }, [_vm._v("Huyện Đồng Xuân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3903"
-    }
-  }, [_vm._v("Huyện Sông Cầu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3904"
-    }
-  }, [_vm._v("Huyện Tuy An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3905"
-    }
-  }, [_vm._v("Huyện Sơn Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3906"
-    }
-  }, [_vm._v("Huyện Sông Hinh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3907"
-    }
-  }, [_vm._v("Huyện Đông Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3908"
-    }
-  }, [_vm._v("Huyện Phú Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3909"
-    }
-  }, [_vm._v("Huyện Tây Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4000"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4001"
-    }
-  }, [_vm._v("Thành phố Buôn Ma Thuột")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4002"
-    }
-  }, [_vm._v("Huyện Ea H Leo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4003"
-    }
-  }, [_vm._v("Huyện Krông Buk")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4004"
-    }
-  }, [_vm._v("Huyện Krông Năng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4005"
-    }
-  }, [_vm._v("Huyện Ea Súp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4006"
-    }
-  }, [_vm._v("Huyện Cư M gar")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4007"
-    }
-  }, [_vm._v("Huyện Krông Pắc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4008"
-    }
-  }, [_vm._v("Huyện Ea Kar")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4009"
-    }
-  }, [_vm._v("Huyện M'Đrăk")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4010"
-    }
-  }, [_vm._v("Huyện Krông Ana")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4011"
-    }
-  }, [_vm._v("Huyện Krông Bông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4012"
-    }
-  }, [_vm._v("Huyện Lăk")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4013"
-    }
-  }, [_vm._v("Huyện Buôn Đôn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4014"
-    }
-  }, [_vm._v("Huyện Cư Kuin")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4100"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4101"
-    }
-  }, [_vm._v("Thành phố Nha Trang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4102"
-    }
-  }, [_vm._v("Huyện Vạn Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4103"
-    }
-  }, [_vm._v("Huyện Ninh Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4104"
-    }
-  }, [_vm._v("Huyện Diên Khánh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4105"
-    }
-  }, [_vm._v("Huyện Khánh Vĩnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4106"
-    }
-  }, [_vm._v("Thị xã Cam Ranh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4107"
-    }
-  }, [_vm._v("Huyện Khánh Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4108"
-    }
-  }, [_vm._v("Huyện Trường Sa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4109"
-    }
-  }, [_vm._v("Huyện Cam Lâm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4200"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4201"
-    }
-  }, [_vm._v("Thành phố Đà Lạt")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4202"
-    }
-  }, [_vm._v("Thị xã. Bảo Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4203"
-    }
-  }, [_vm._v("Huyện Đức Trọng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4204"
-    }
-  }, [_vm._v("Huyện Di Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4205"
-    }
-  }, [_vm._v("Huyện Đơn Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4206"
-    }
-  }, [_vm._v("Huyện Lạc Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4207"
-    }
-  }, [_vm._v("Huyện Đạ Huoai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4208"
-    }
-  }, [_vm._v("Huyện Đạ Tẻh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4209"
-    }
-  }, [_vm._v("Huyện Cát Tiên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4210"
-    }
-  }, [_vm._v("Huyện Lâm Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4211"
-    }
-  }, [_vm._v("Huyện Bảo Lâm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4212"
-    }
-  }, [_vm._v("Huyện Đam Rông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4300"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4301"
-    }
-  }, [_vm._v("Thị xã Đồng Xoài")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4302"
-    }
-  }, [_vm._v("Huyện Đồng Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4303"
-    }
-  }, [_vm._v("Huyện Chơn Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4304"
-    }
-  }, [_vm._v("Huyện Bình Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4305"
-    }
-  }, [_vm._v("Huyện Lộc Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4306"
-    }
-  }, [_vm._v("Huyện Bù Đốp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4307"
-    }
-  }, [_vm._v("Huyện Phước Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4308"
-    }
-  }, [_vm._v("Huyện Bù Đăng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4400"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4401"
-    }
-  }, [_vm._v("Thị xã Thủ Dầu Một")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4402"
-    }
-  }, [_vm._v("Huyện Bến Cát")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4403"
-    }
-  }, [_vm._v("Huyện Tân Uyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4404"
-    }
-  }, [_vm._v("Huyện Thuận An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4405"
-    }
-  }, [_vm._v("Huyện Dĩ An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4406"
-    }
-  }, [_vm._v("Huyện Phú Giáo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4407"
-    }
-  }, [_vm._v("Huyện Dầu Tiếng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4500"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4501"
-    }
-  }, [_vm._v("Thành phố Phan Rang-Tháp Chàm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4502"
-    }
-  }, [_vm._v("Huyện Ninh Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4504"
-    }
-  }, [_vm._v("Huyện Ninh Phước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4505"
-    }
-  }, [_vm._v("Huyện Bác ái")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4506"
-    }
-  }, [_vm._v("Huyện Thuận Bắc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4550"
-    }
-  }, [_vm._v("Huyện Ninh Hải")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4600"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4601"
-    }
-  }, [_vm._v("Thị xã Tây Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4602"
-    }
-  }, [_vm._v("Huyện Tân Biên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4603"
-    }
-  }, [_vm._v("Huyện Tân Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4604"
-    }
-  }, [_vm._v("Huyện Dương Minh Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4605"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4606"
-    }
-  }, [_vm._v("Huyện Hoà Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4607"
-    }
-  }, [_vm._v("Huyện Bến Cầu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4608"
-    }
-  }, [_vm._v("Huyện Gò Dầu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4609"
-    }
-  }, [_vm._v("Huyện Trảng Bàng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4700"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4701"
-    }
-  }, [_vm._v("Thành phố Phan Thiết")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4702"
-    }
-  }, [_vm._v("Huyện Tuy Phong")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4703"
-    }
-  }, [_vm._v("Huyện Bắc Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4704"
-    }
-  }, [_vm._v("Huyện Hàm Thuận Bắc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4705"
-    }
-  }, [_vm._v("Huyện Hàm Thuận Nam")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4706"
-    }
-  }, [_vm._v("Huyện Hàm Tân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4707"
-    }
-  }, [_vm._v("Huyện Đức Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4708"
-    }
-  }, [_vm._v("Huyện Tánh Linh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4709"
-    }
-  }, [_vm._v("Huyện đảo Phú Quý")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4710"
-    }
-  }, [_vm._v("Thị xã LaGi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4800"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4801"
-    }
-  }, [_vm._v("Thành phố Biên Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4802"
-    }
-  }, [_vm._v("Huyện Vĩnh Cửu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4803"
-    }
-  }, [_vm._v("Huyện Tân Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4804"
-    }
-  }, [_vm._v("Huyện Định Quán")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4805"
-    }
-  }, [_vm._v("Huyện Thống Nhất")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4806"
-    }
-  }, [_vm._v("Thị xã Long Khánh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4807"
-    }
-  }, [_vm._v("Huyện Xuân Lộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4808"
-    }
-  }, [_vm._v("Huyện Long Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4809"
-    }
-  }, [_vm._v("Huyện Nhơn Trạch")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4810"
-    }
-  }, [_vm._v("Huyện Trảng Bom")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4811"
-    }
-  }, [_vm._v("Huyện Cẩm Mỹ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4900"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4901"
-    }
-  }, [_vm._v("Thị xã Tân An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4902"
-    }
-  }, [_vm._v("Huyện Vĩnh Hưng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4903"
-    }
-  }, [_vm._v("Huyện Mộc Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4904"
-    }
-  }, [_vm._v("Huyện Tân Thạnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4905"
-    }
-  }, [_vm._v("Huyện Thạnh Hoá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4906"
-    }
-  }, [_vm._v("Huyện Đức Huệ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4907"
-    }
-  }, [_vm._v("Huyện Đức Hoà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4908"
-    }
-  }, [_vm._v("Huyện Bến Lức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4909"
-    }
-  }, [_vm._v("Huyện Thủ Thừa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4910"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4911"
-    }
-  }, [_vm._v("Huyện Tân Trụ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4912"
-    }
-  }, [_vm._v("Huyện Cần Đước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4913"
-    }
-  }, [_vm._v("Huyện Cần Giuộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4914"
-    }
-  }, [_vm._v("Huyện Tân Hưng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5000"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5001"
-    }
-  }, [_vm._v("Thành phố Cao Lãnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5002"
-    }
-  }, [_vm._v("Thị xã Sa Đéc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5003"
-    }
-  }, [_vm._v("Huyện Tân Hồng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5004"
-    }
-  }, [_vm._v("Huyện Hồng Ngự")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5005"
-    }
-  }, [_vm._v("Huyện Tam Nông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5006"
-    }
-  }, [_vm._v("Huyện Thanh Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5007"
-    }
-  }, [_vm._v("Huyện Cao Lãnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5008"
-    }
-  }, [_vm._v("Huyện Lấp Vò")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5009"
-    }
-  }, [_vm._v("Huyện Tháp Mười")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5010"
-    }
-  }, [_vm._v("Huyện Lai Vung")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5011"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5100"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5101"
-    }
-  }, [_vm._v("Thành phố Long Xuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5102"
-    }
-  }, [_vm._v("Thị xã Châu Đốc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5103"
-    }
-  }, [_vm._v("Huyện An Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5104"
-    }
-  }, [_vm._v("Huyện Tân Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5105"
-    }
-  }, [_vm._v("Huyện Phú Tân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5106"
-    }
-  }, [_vm._v("Huyện Tịnh Biên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5107"
-    }
-  }, [_vm._v("Huyện Tri Tôn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5108"
-    }
-  }, [_vm._v("Huyện Châu Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5109"
-    }
-  }, [_vm._v("Huyện Chợ Mới")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5110"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5111"
-    }
-  }, [_vm._v("Huyện Thoại Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5200"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5201"
-    }
-  }, [_vm._v("Thành phố Vũng Tàu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5202"
-    }
-  }, [_vm._v("Thị xã Bà Rịa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5203"
-    }
-  }, [_vm._v("Huyện Xuyên Mộc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5204"
-    }
-  }, [_vm._v("Huyện Long Điền")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5205"
-    }
-  }, [_vm._v("Huyện Côn Đảo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5206"
-    }
-  }, [_vm._v("Huyện Tân Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5207"
-    }
-  }, [_vm._v("Huyện Châu Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5208"
-    }
-  }, [_vm._v("Huyện Đất Đỏ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5300"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5301"
-    }
-  }, [_vm._v("Thành phố Mỹ Tho")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5302"
-    }
-  }, [_vm._v("Thị xã Gò Công")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5303"
-    }
-  }, [_vm._v("Huyện Cái Bè")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5304"
-    }
-  }, [_vm._v("Huyện Cai Lậy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5305"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5306"
-    }
-  }, [_vm._v("Huyện Chợ Gạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5307"
-    }
-  }, [_vm._v("Huyện Gò Công Tây")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5308"
-    }
-  }, [_vm._v("Huyện Gò Công Đông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5309"
-    }
-  }, [_vm._v("Huyện Tân Phước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5400"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5401"
-    }
-  }, [_vm._v("Thành phố Rạch Giá")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5402"
-    }
-  }, [_vm._v("Thị xã Hà Tiên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5403"
-    }
-  }, [_vm._v("Huyện Kiên Lương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5404"
-    }
-  }, [_vm._v("Huyện Hòn Đất")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5405"
-    }
-  }, [_vm._v("Huyện Tân Hiệp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5406"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5407"
-    }
-  }, [_vm._v("Huyện Giồng Riềng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5408"
-    }
-  }, [_vm._v("Huyện Gò Quao")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5409"
-    }
-  }, [_vm._v("Huyện An Biên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5410"
-    }
-  }, [_vm._v("Huyện An Minh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5411"
-    }
-  }, [_vm._v("Huyện Vĩnh Thuận")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5412"
-    }
-  }, [_vm._v("Huyện Phú Quốc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5413"
-    }
-  }, [_vm._v("Huyện Kiên Hải")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5414"
-    }
-  }, [_vm._v("Huyện U minh Thượng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5500"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5501"
-    }
-  }, [_vm._v("Quận Ninh Kiều")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5502"
-    }
-  }, [_vm._v("Quận Bình Thuỷ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5503"
-    }
-  }, [_vm._v("Quận Cái Răng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5504"
-    }
-  }, [_vm._v("Quận Ô Môn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5505"
-    }
-  }, [_vm._v("Huyện Phong Điền")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5506"
-    }
-  }, [_vm._v("Huyện Cờ Đỏ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5507"
-    }
-  }, [_vm._v("Huyện Vĩnh Thạnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5508"
-    }
-  }, [_vm._v("Huỵện Thốt Nốt")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5600"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5601"
-    }
-  }, [_vm._v("Thị xã Bến Tre")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5602"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5603"
-    }
-  }, [_vm._v("Huyện Chợ Lách")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5604"
-    }
-  }, [_vm._v("Huyện Mỏ Cày")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5605"
-    }
-  }, [_vm._v("Huyện Giồng Trôm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5606"
-    }
-  }, [_vm._v("Huyện Bình Đại")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5607"
-    }
-  }, [_vm._v("Huyện Ba Tri")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5608"
-    }
-  }, [_vm._v("Huyện Thạnh Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5700"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5701"
-    }
-  }, [_vm._v("Thị xã Vĩnh Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5702"
-    }
-  }, [_vm._v("Huyện Long Hồ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5703"
-    }
-  }, [_vm._v("Huyện Mang Thít")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5704"
-    }
-  }, [_vm._v("Huyện Bình Minh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5705"
-    }
-  }, [_vm._v("Huyện Tam Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5706"
-    }
-  }, [_vm._v("Huyện Trà Ôn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5707"
-    }
-  }, [_vm._v("Huyện Vũng Liêm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5708"
-    }
-  }, [_vm._v("huyện Bình Tân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5800"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5801"
-    }
-  }, [_vm._v("Thị xã Trà Vinh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5802"
-    }
-  }, [_vm._v("Huyện Càng Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5803"
-    }
-  }, [_vm._v("Huyện Cầu Kè")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5804"
-    }
-  }, [_vm._v("Huyện Tiểu Cần")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5805"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5806"
-    }
-  }, [_vm._v("Huyện Trà Cú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5807"
-    }
-  }, [_vm._v("Huyện Cầu Ngang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5808"
-    }
-  }, [_vm._v("Huyện Duyên Hải")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5900"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5901"
-    }
-  }, [_vm._v("Thành phố Sóc Trăng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5902"
-    }
-  }, [_vm._v("Huyện Kế Sách")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5903"
-    }
-  }, [_vm._v("Huyện Mỹ Tú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5904"
-    }
-  }, [_vm._v("Huyện Mỹ Xuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5905"
-    }
-  }, [_vm._v("Huyện Thạnh Trị")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5906"
-    }
-  }, [_vm._v("Huyện Long Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5907"
-    }
-  }, [_vm._v("Huyện Vĩnh Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5908"
-    }
-  }, [_vm._v("Huyện Cù Lao Dung")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5909"
-    }
-  }, [_vm._v("Huyện Ngã Năm")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6000"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6001"
-    }
-  }, [_vm._v("Thị xã Bạc Liêu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6002"
-    }
-  }, [_vm._v("Huyện Vĩnh Lợi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6003"
-    }
-  }, [_vm._v("Huyện Hồng Dân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6004"
-    }
-  }, [_vm._v("Huyện Giá Rai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6005"
-    }
-  }, [_vm._v("Huyện Phước Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6006"
-    }
-  }, [_vm._v("Huyện Đông Hải")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6007"
-    }
-  }, [_vm._v("Huyện Hoà Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6100"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6101"
-    }
-  }, [_vm._v("Thành phố Cà Mau")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6102"
-    }
-  }, [_vm._v("Huyện Thới Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6103"
-    }
-  }, [_vm._v("Huyện U Minh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6104"
-    }
-  }, [_vm._v("Huyện Trần Văn Thời")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6105"
-    }
-  }, [_vm._v("Huyện Cái Nước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6106"
-    }
-  }, [_vm._v("Huyện Đầm Dơi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6107"
-    }
-  }, [_vm._v("Huyện Ngọc Hiển")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6108"
-    }
-  }, [_vm._v("Huyện Năm Căn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6109"
-    }
-  }, [_vm._v("Huyện Phú Tân")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6200"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6201"
-    }
-  }, [_vm._v("TP. Điện Biên Phủ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6202"
-    }
-  }, [_vm._v("Thị xã Mường Lay")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6203"
-    }
-  }, [_vm._v("Huyện Điện Biên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6204"
-    }
-  }, [_vm._v("Huyện Tuần Giáo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6205"
-    }
-  }, [_vm._v("Huyện Mường Chà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6206"
-    }
-  }, [_vm._v("Huyện Tủa Chùa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6207"
-    }
-  }, [_vm._v("Huyện Điện Biên Đông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6208"
-    }
-  }, [_vm._v("Huyện Mường Nhé")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6209"
-    }
-  }, [_vm._v("Huyện Mường ảng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6300"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6301"
-    }
-  }, [_vm._v("Thị xã Gia Nghĩa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6302"
-    }
-  }, [_vm._v("Huyện Dăk RLấp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6303"
-    }
-  }, [_vm._v("Huyện Dăk Mil")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6304"
-    }
-  }, [_vm._v("Huyện Cư Jút")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6305"
-    }
-  }, [_vm._v("Huyện Dăk Song")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6306"
-    }
-  }, [_vm._v("Huyện Krông Nô")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6307"
-    }
-  }, [_vm._v("Huyện Dăk GLong")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6308"
-    }
-  }, [_vm._v("Huyện Tuy Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6400"
-    }
-  }, [_vm._v("Sở Giáo dục và Đào tạo")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6401"
-    }
-  }, [_vm._v("Thị xã Vị Thanh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6402"
-    }
-  }, [_vm._v("Huyện Vị Thuỷ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6403"
-    }
-  }, [_vm._v("Huyện Long Mỹ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6404"
-    }
-  }, [_vm._v("Huyện Phụng Hiệp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6405"
-    }
-  }, [_vm._v("Huyện Châu Thành")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6406"
-    }
-  }, [_vm._v("Huyện Châu Thành A")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6407"
-    }
-  }, [_vm._v("Thị xã Ngã Bảy")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6410"
-    }
-  }, [_vm._v("TX Thái Hoa")])])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Tỉnh/Thành phố:")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    staticStyle: {
-      "width": "250px"
-    },
-    attrs: {
-      "id": "cbbTinhThanhPhoEdit"
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "2"
-    }
-  }, [_vm._v("TP Hồ Chí Minh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3"
-    }
-  }, [_vm._v("TP Hải Phòng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4"
-    }
-  }, [_vm._v("TP Đà Nẵng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5"
-    }
-  }, [_vm._v("Tỉnh Hà Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6"
-    }
-  }, [_vm._v("Tỉnh Cao Bằng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "7"
-    }
-  }, [_vm._v("Tỉnh Lai Châu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "8"
-    }
-  }, [_vm._v("Tỉnh Lào Cai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "9"
-    }
-  }, [_vm._v("Tỉnh Tuyên Quang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "10"
-    }
-  }, [_vm._v("Tỉnh Lạng Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "11"
-    }
-  }, [_vm._v("Tỉnh Bắc Cạn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "12"
-    }
-  }, [_vm._v("Tỉnh Thái Nguyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "13"
-    }
-  }, [_vm._v("Tỉnh Yên Bái")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "14"
-    }
-  }, [_vm._v("Tỉnh Sơn La")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "15"
-    }
-  }, [_vm._v("Tỉnh Phú Thọ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "16"
-    }
-  }, [_vm._v("Tỉnh Vĩnh Phúc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "17"
-    }
-  }, [_vm._v("Tỉnh Quảng Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "18"
-    }
-  }, [_vm._v("Tỉnh Bắc Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "19"
-    }
-  }, [_vm._v("Tỉnh Bắc Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "21"
-    }
-  }, [_vm._v("Tỉnh Hải Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "22"
-    }
-  }, [_vm._v("Tỉnh Hưng Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "23"
-    }
-  }, [_vm._v("Tỉnh Hòa Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "24"
-    }
-  }, [_vm._v("Tỉnh Hà Nam")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "25"
-    }
-  }, [_vm._v("Tỉnh Nam Định")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "26"
-    }
-  }, [_vm._v("Tỉnh Thái Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "27"
-    }
-  }, [_vm._v("Tỉnh Ninh Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "28"
-    }
-  }, [_vm._v("Tỉnh Thanh Hóa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "29"
-    }
-  }, [_vm._v("Tỉnh Nghệ An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "30"
-    }
-  }, [_vm._v("Tỉnh Hà Tĩnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "31"
-    }
-  }, [_vm._v("Tỉnh Quảng Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "32"
-    }
-  }, [_vm._v("Tỉnh Quảng Trị")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "33"
-    }
-  }, [_vm._v("Tỉnh Thừa thiên-Huế")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "34"
-    }
-  }, [_vm._v("Tỉnh Quảng Nam")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "35"
-    }
-  }, [_vm._v("Tỉnh Quảng Ngãi")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "36"
-    }
-  }, [_vm._v("Tỉnh KonTum")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "37"
-    }
-  }, [_vm._v("Tỉnh Bình Định")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "38"
-    }
-  }, [_vm._v("Tỉnh Gia Lai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "39"
-    }
-  }, [_vm._v("Tỉnh Phú Yên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "40"
-    }
-  }, [_vm._v("Tỉnh Đắc Lắc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "41"
-    }
-  }, [_vm._v("Tỉnh Khánh Hòa")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "42"
-    }
-  }, [_vm._v("Tỉnh Lâm Đồng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "43"
-    }
-  }, [_vm._v("Tỉnh Bình Phước")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "44"
-    }
-  }, [_vm._v("Tỉnh Bình Dương")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "45"
-    }
-  }, [_vm._v("Tỉnh Ninh Thuận")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "46"
-    }
-  }, [_vm._v("Tỉnh Tây Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "47"
-    }
-  }, [_vm._v("Tỉnh Bình Thuận")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "48"
-    }
-  }, [_vm._v("Tỉnh Đồng Nai")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "49"
-    }
-  }, [_vm._v("Tỉnh Long An")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "50"
-    }
-  }, [_vm._v("Tỉnh Đồng Tháp")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "51"
-    }
-  }, [_vm._v("Tỉnh An Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "52"
-    }
-  }, [_vm._v("Tỉnh BàRịa-VT")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "53"
-    }
-  }, [_vm._v("Tỉnh Tiền Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "54"
-    }
-  }, [_vm._v("Tỉnh Kiên Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "55"
-    }
-  }, [_vm._v("TP Cần Thơ")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "56"
-    }
-  }, [_vm._v("Tỉnh Bến Tre")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "57"
-    }
-  }, [_vm._v("Tỉnh Vĩnh Long")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "58"
-    }
-  }, [_vm._v("Tỉnh Trà Vinh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "59"
-    }
-  }, [_vm._v("Tỉnh Sóc Trăng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "60"
-    }
-  }, [_vm._v("Tỉnh Bạc Liêu")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "61"
-    }
-  }, [_vm._v("Tỉnh Cà Mau")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "62"
-    }
-  }, [_vm._v("Tỉnh Điện Biên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "63"
-    }
-  }, [_vm._v("Tỉnh Đăk Nông")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "64"
-    }
-  }, [_vm._v("Tỉnh Hậu Giang")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "70"
-    }
-  }, [_vm._v("Tỉnh Hoàng Liên Sơn")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "71"
-    }
-  }, [_vm._v("Tỉnh Vĩnh Phú")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "72"
-    }
-  }, [_vm._v("Tỉnh Hà Nam Ninh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "73"
-    }
-  }, [_vm._v("Tỉnh Hà Sơn Bình")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "74"
-    }
-  }, [_vm._v("Tỉnh Nam Hà")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "75"
-    }
-  }, [_vm._v("Tỉnh Hà Bắc")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "76"
-    }
-  }, [_vm._v("Tỉnh Hải Hưng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "77"
-    }
-  }, [_vm._v("Tỉnh Bắc Thái")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "78"
-    }
-  }, [_vm._v("Tỉnh Hà Tuyên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "79"
-    }
-  }, [_vm._v("Quảng Nam Đà Nẵng")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "80"
-    }
-  }, [_vm._v("Nghệ Tĩnh")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "81"
-    }
-  }, [_vm._v("Bình Trị Thiên")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "82"
-    }
-  }, [_vm._v("Vương quốc Campuchia")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "83"
-    }
-  }, [_vm._v("Cộng hoà dân chủ Lào")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "84"
-    }
-  }, [_vm._v("Cộng hòa Liên Bang Đức")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "85"
-    }
-  }, [_vm._v("Liên Xô")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "86"
-    }
-  }, [_vm._v("Sông Bé")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "87"
-    }
-  }, [_vm._v("Palestin")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "100"
-    }
-  }, [_vm._v("TP Hà Nội (Hà tây cũ)")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "101"
-    }
-  }, [_vm._v("TP Hà nội")])])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-10 fullwidth",
-    staticStyle: {
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-left": "60px"
-    }
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "50%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("HK thường trú:")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    staticStyle: {
-      "width": "560px"
-    },
-    attrs: {
-      "id": "txtDia_chi_ttEdit",
-      "type": "text",
-      "value": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "20%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Xã/Phường:")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    staticStyle: {
-      "width": "560px"
-    },
-    attrs: {
-      "id": "txtXa_phuong_tt",
-      "type": "text",
-      "value": ""
-    }
-  })])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-10 fullwidth",
-    staticStyle: {
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-left": "60px"
-    }
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "50%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Nơi ở hiện nay:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "18px"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "50%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Địa chỉ báo tin:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "39px"
-    }
-  })])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-10 fullwidth",
-    staticStyle: {
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-left": "60px"
-    }
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "50%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Đối tượng ưu tiên:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "50%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Đối tượng miễn giảm:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row",
-    staticStyle: {
-      "margin-top": "20px"
-    }
-  }, [_c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-left": "60px"
-    }
-  }, [_c('div', {
-    staticClass: "panel panel-default",
-    staticStyle: {
-      "width": "95%"
-    }
-  }, [_c('div', {
-    staticClass: "panel-heading"
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("QUAN HỆ GIA ĐÌNH")])]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "30%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Họ tên cha:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "70%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Hộ khẩu thường trú:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Năm sinh:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "8px"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Quốc tịch:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("Việt Nam")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Dân tộc:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Tôn Giáo:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "100%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Nghề nghiệp cha:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }, [_c('hr')]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "30%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Họ tên Mẹ:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "70%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Hộ khẩu thường trú:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Năm sinh:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    staticStyle: {
-      "margin-left": "8px"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Quốc tịch:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("Việt Nam")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Dân tộc:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Tôn Giáo:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "100%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Nghề nghiệp mẹ:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }, [_c('hr')]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "30%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Họ tên vợ/chồng:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "70%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Hộ khẩu thường trú:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Quốc tịch:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  }, [_vm._v("Việt Nam")])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Dân tộc:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "25%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Tôn Giáo:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "100%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Nghề nghiệp vợ/chồng:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth",
-    staticStyle: {
-      "margin-top": "20px",
-      "height": "20px"
-    }
-  }, [_c('hr')]), _vm._v(" "), _c('div', {
-    staticClass: "fullwidth"
-  }, [_c('div', {
-    staticStyle: {
-      "float": "left",
-      "width": "55%"
-    }
-  }, [_c('span', {
-    staticClass: "NoiDungHoSo"
-  }, [_vm._v("Số lượng Anh/Chị/Em:")]), _vm._v(" "), _c('span', {
-    staticClass: "NoiDungHoSo2 label",
-    attrs: {
-      "id": ""
-    }
-  })])])])])])])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -88957,7 +83668,7 @@ if (false) {
 }
 
 /***/ }),
-/* 536 */
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -89404,7 +84115,7 @@ if (false) {
 }
 
 /***/ }),
-/* 537 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -89451,7 +84162,7 @@ if (false) {
 }
 
 /***/ }),
-/* 538 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -89589,7 +84300,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-xs-12"
+    staticClass: "col-md-4"
   }, [_c('img', {
     attrs: {
       "src": "img/banner.jpg",
@@ -89599,7 +84310,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('img', {
     attrs: {
-      "src": "img/calenda_rong.png",
+      "src": "img/lichhoc.png",
       "alt": "Lịch học",
       "height": "45"
     }
@@ -89670,7 +84381,7 @@ if (false) {
 }
 
 /***/ }),
-/* 539 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -89681,13 +84392,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('template', {
     slot: "header"
-  }, [_c('div', [_vm._v("\n\n        " + _vm._s(_vm.currentUser) + "\n         "), _c('img', {
+  }, [_c('div', [_c('div', [_vm._v(_vm._s(_vm.currentUser.Ho_ten))]), _vm._v(" "), _c('div', [_c('img', {
     staticClass: "img-avatar",
     attrs: {
-      "src": "img/avatars/6.jpg",
-      "alt": "admin@test.com"
+      "src": _vm.imgLink,
+      "alt": _vm.imgLink
     }
-  })])]), _vm._v(" "), _c('template', {
+  })])])]), _vm._v(" "), _c('template', {
     slot: "dropdown"
   }, [_c('b-dropdown-item', {
     on: {
@@ -89722,7 +84433,7 @@ if (false) {
 }
 
 /***/ }),
-/* 540 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -89737,7 +84448,7 @@ if (false) {
 }
 
 /***/ }),
-/* 541 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -89762,7 +84473,7 @@ if (false) {
 }
 
 /***/ }),
-/* 542 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -89987,7 +84698,7 @@ if (false) {
 }
 
 /***/ }),
-/* 543 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -90549,7 +85260,7 @@ if (false) {
 }
 
 /***/ }),
-/* 544 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -90652,148 +85363,13 @@ if (false) {
 }
 
 /***/ }),
-/* 545 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: "p-3"
-  }, [_c('div', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3  mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "success"
-    }
-  })], 1)]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3  mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "danger"
-    }
-  })], 1)]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3  mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "info"
-    }
-  })], 1)]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3  mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "warning"
-    }
-  })], 1)]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3  mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "dark"
-    }
-  })], 1)]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])])])])
+  return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])])
+  return _c('div', [_c('div', [_vm._v("TIN NHẮN")]), _vm._v(" "), _c('div')])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -90804,7 +85380,7 @@ if (false) {
 }
 
 /***/ }),
-/* 546 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -91094,7 +85670,7 @@ if (false) {
 }
 
 /***/ }),
-/* 547 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -91141,7 +85717,7 @@ if (false) {
 }
 
 /***/ }),
-/* 548 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -91205,7 +85781,7 @@ if (false) {
 }
 
 /***/ }),
-/* 549 */
+/* 550 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -91361,7 +85937,7 @@ if (false) {
 }
 
 /***/ }),
-/* 550 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -91380,7 +85956,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('b-link', {
     staticClass: "navbar-brand",
     attrs: {
-      "to": "#"
+      "to": "/home"
     }
   }, [_c('img', {
     staticClass: "navbar-brand-full",
@@ -91450,20 +86026,20 @@ if (false) {
 }
 
 /***/ }),
-/* 551 */
+/* 552 */
 /***/ (function(module, exports) {
 
 module.exports=function(t){function e(o){if(r[o])return r[o].exports;var n=r[o]={i:o,l:!1,exports:{}};return t[o].call(n.exports,n,n.exports,e),n.l=!0,n.exports}var r={};return e.m=t,e.c=r,e.i=function(t){return t},e.d=function(t,r,o){e.o(t,r)||Object.defineProperty(t,r,{configurable:!1,enumerable:!0,get:o})},e.n=function(t){var r=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(r,"a",r),r},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/dist/",e(e.s=6)}([function(t,e,r){"use strict";function o(t,e){function r(){t.classList.add("ps--focus")}function o(){t.classList.remove("ps--focus")}var n=this;n.settings=a();for(var i in e)n.settings[i]=e[i];n.containerWidth=null,n.containerHeight=null,n.contentWidth=null,n.contentHeight=null,n.isRtl="rtl"===c.css(t,"direction"),n.isNegativeScroll=function(){var e=t.scrollLeft,r=null;return t.scrollLeft=-1,r=t.scrollLeft<0,t.scrollLeft=e,r}(),n.negativeScrollAdjustment=n.isNegativeScroll?t.scrollWidth-t.clientWidth:0,n.event=new u,n.ownerDocument=t.ownerDocument||document,n.scrollbarXRail=c.appendTo(c.create("div","ps__scrollbar-x-rail"),t),n.scrollbarX=c.appendTo(c.create("div","ps__scrollbar-x"),n.scrollbarXRail),n.scrollbarX.setAttribute("tabindex",0),n.event.bind(n.scrollbarX,"focus",r),n.event.bind(n.scrollbarX,"blur",o),n.scrollbarXActive=null,n.scrollbarXWidth=null,n.scrollbarXLeft=null,n.scrollbarXBottom=s.toInt(c.css(n.scrollbarXRail,"bottom")),n.isScrollbarXUsingBottom=n.scrollbarXBottom===n.scrollbarXBottom,n.scrollbarXTop=n.isScrollbarXUsingBottom?null:s.toInt(c.css(n.scrollbarXRail,"top")),n.railBorderXWidth=s.toInt(c.css(n.scrollbarXRail,"borderLeftWidth"))+s.toInt(c.css(n.scrollbarXRail,"borderRightWidth")),c.css(n.scrollbarXRail,"display","block"),n.railXMarginWidth=s.toInt(c.css(n.scrollbarXRail,"marginLeft"))+s.toInt(c.css(n.scrollbarXRail,"marginRight")),c.css(n.scrollbarXRail,"display",""),n.railXWidth=null,n.railXRatio=null,n.scrollbarYRail=c.appendTo(c.create("div","ps__scrollbar-y-rail"),t),n.scrollbarY=c.appendTo(c.create("div","ps__scrollbar-y"),n.scrollbarYRail),n.scrollbarY.setAttribute("tabindex",0),n.event.bind(n.scrollbarY,"focus",r),n.event.bind(n.scrollbarY,"blur",o),n.scrollbarYActive=null,n.scrollbarYHeight=null,n.scrollbarYTop=null,n.scrollbarYRight=s.toInt(c.css(n.scrollbarYRail,"right")),n.isScrollbarYUsingRight=n.scrollbarYRight===n.scrollbarYRight,n.scrollbarYLeft=n.isScrollbarYUsingRight?null:s.toInt(c.css(n.scrollbarYRail,"left")),n.scrollbarYOuterWidth=n.isRtl?s.outerWidth(n.scrollbarY):null,n.railBorderYWidth=s.toInt(c.css(n.scrollbarYRail,"borderTopWidth"))+s.toInt(c.css(n.scrollbarYRail,"borderBottomWidth")),c.css(n.scrollbarYRail,"display","block"),n.railYMarginHeight=s.toInt(c.css(n.scrollbarYRail,"marginTop"))+s.toInt(c.css(n.scrollbarYRail,"marginBottom")),c.css(n.scrollbarYRail,"display",""),n.railYHeight=null,n.railYRatio=null}function n(t){return t.getAttribute("data-ps-id")}function i(t,e){t.setAttribute("data-ps-id",e)}function l(t){t.removeAttribute("data-ps-id")}var s=r(2),a=r(14),c=r(4),u=r(11),p=r(12),d={};e.add=function(t,e){var r=p();return i(t,r),d[r]=new o(t,e),d[r]},e.remove=function(t){delete d[n(t)],l(t)},e.get=function(t){return d[n(t)]}},function(t,e,r){"use strict";function o(t,e){return t.settings.minScrollbarLength&&(e=Math.max(e,t.settings.minScrollbarLength)),t.settings.maxScrollbarLength&&(e=Math.min(e,t.settings.maxScrollbarLength)),e}function n(t,e){var r={width:e.railXWidth};e.isRtl?r.left=e.negativeScrollAdjustment+t.scrollLeft+e.containerWidth-e.contentWidth:r.left=t.scrollLeft,e.isScrollbarXUsingBottom?r.bottom=e.scrollbarXBottom-t.scrollTop:r.top=e.scrollbarXTop+t.scrollTop,l.css(e.scrollbarXRail,r);var o={top:t.scrollTop,height:e.railYHeight};e.isScrollbarYUsingRight?e.isRtl?o.right=e.contentWidth-(e.negativeScrollAdjustment+t.scrollLeft)-e.scrollbarYRight-e.scrollbarYOuterWidth:o.right=e.scrollbarYRight-t.scrollLeft:e.isRtl?o.left=e.negativeScrollAdjustment+t.scrollLeft+2*e.containerWidth-e.contentWidth-e.scrollbarYLeft-e.scrollbarYOuterWidth:o.left=e.scrollbarYLeft+t.scrollLeft,l.css(e.scrollbarYRail,o),l.css(e.scrollbarX,{left:e.scrollbarXLeft,width:e.scrollbarXWidth-e.railBorderXWidth}),l.css(e.scrollbarY,{top:e.scrollbarYTop,height:e.scrollbarYHeight-e.railBorderYWidth})}var i=r(2),l=r(4),s=r(0),a=r(3);t.exports=function(t){var e=s.get(t);e.containerWidth=t.clientWidth,e.containerHeight=t.clientHeight,e.contentWidth=t.scrollWidth,e.contentHeight=t.scrollHeight;var r;t.contains(e.scrollbarXRail)||(r=l.queryChildren(t,".ps__scrollbar-x-rail"),r.length>0&&r.forEach(function(t){l.remove(t)}),l.appendTo(e.scrollbarXRail,t)),t.contains(e.scrollbarYRail)||(r=l.queryChildren(t,".ps__scrollbar-y-rail"),r.length>0&&r.forEach(function(t){l.remove(t)}),l.appendTo(e.scrollbarYRail,t)),!e.settings.suppressScrollX&&e.containerWidth+e.settings.scrollXMarginOffset<e.contentWidth?(e.scrollbarXActive=!0,e.railXWidth=e.containerWidth-e.railXMarginWidth,e.railXRatio=e.containerWidth/e.railXWidth,e.scrollbarXWidth=o(e,i.toInt(e.railXWidth*e.containerWidth/e.contentWidth)),e.scrollbarXLeft=i.toInt((e.negativeScrollAdjustment+t.scrollLeft)*(e.railXWidth-e.scrollbarXWidth)/(e.contentWidth-e.containerWidth))):e.scrollbarXActive=!1,!e.settings.suppressScrollY&&e.containerHeight+e.settings.scrollYMarginOffset<e.contentHeight?(e.scrollbarYActive=!0,e.railYHeight=e.containerHeight-e.railYMarginHeight,e.railYRatio=e.containerHeight/e.railYHeight,e.scrollbarYHeight=o(e,i.toInt(e.railYHeight*e.containerHeight/e.contentHeight)),e.scrollbarYTop=i.toInt(t.scrollTop*(e.railYHeight-e.scrollbarYHeight)/(e.contentHeight-e.containerHeight))):e.scrollbarYActive=!1,e.scrollbarXLeft>=e.railXWidth-e.scrollbarXWidth&&(e.scrollbarXLeft=e.railXWidth-e.scrollbarXWidth),e.scrollbarYTop>=e.railYHeight-e.scrollbarYHeight&&(e.scrollbarYTop=e.railYHeight-e.scrollbarYHeight),n(t,e),e.scrollbarXActive?t.classList.add("ps--active-x"):(t.classList.remove("ps--active-x"),e.scrollbarXWidth=0,e.scrollbarXLeft=0,a(t,"left",0)),e.scrollbarYActive?t.classList.add("ps--active-y"):(t.classList.remove("ps--active-y"),e.scrollbarYHeight=0,e.scrollbarYTop=0,a(t,"top",0))}},function(t,e,r){"use strict";function o(t){var e,r=["ps--in-scrolling"];return e=void 0===t?["ps--x","ps--y"]:["ps--"+t],r.concat(e)}var n=r(4),i=e.toInt=function(t){return parseInt(t,10)||0};e.isEditable=function(t){return n.matches(t,"input,[contenteditable]")||n.matches(t,"select,[contenteditable]")||n.matches(t,"textarea,[contenteditable]")||n.matches(t,"button,[contenteditable]")},e.removePsClasses=function(t){for(var e=0;e<t.classList.length;e++){var r=t.classList[e];0===r.indexOf("ps-")&&t.classList.remove(r)}},e.outerWidth=function(t){return i(n.css(t,"width"))+i(n.css(t,"paddingLeft"))+i(n.css(t,"paddingRight"))+i(n.css(t,"borderLeftWidth"))+i(n.css(t,"borderRightWidth"))},e.startScrolling=function(t,e){for(var r=o(e),n=0;n<r.length;n++)t.classList.add(r[n])},e.stopScrolling=function(t,e){for(var r=o(e),n=0;n<r.length;n++)t.classList.remove(r[n])},e.env={isWebKit:"undefined"!=typeof document&&"WebkitAppearance"in document.documentElement.style,supportsTouch:"undefined"!=typeof window&&("ontouchstart"in window||window.DocumentTouch&&document instanceof window.DocumentTouch),supportsIePointer:"undefined"!=typeof window&&null!==window.navigator.msMaxTouchPoints}},function(t,e,r){"use strict";var o=r(0),n=function(t){var e=document.createEvent("Event");return e.initEvent(t,!0,!0),e};t.exports=function(t,e,r){if(void 0===t)throw"You must provide an element to the update-scroll function";if(void 0===e)throw"You must provide an axis to the update-scroll function";if(void 0===r)throw"You must provide a value to the update-scroll function";"top"===e&&r<=0&&(t.scrollTop=r=0,t.dispatchEvent(n("ps-y-reach-start"))),"left"===e&&r<=0&&(t.scrollLeft=r=0,t.dispatchEvent(n("ps-x-reach-start")));var i=o.get(t);"top"===e&&r>=i.contentHeight-i.containerHeight&&(r=i.contentHeight-i.containerHeight,r-t.scrollTop<=2?r=t.scrollTop:t.scrollTop=r,t.dispatchEvent(n("ps-y-reach-end"))),"left"===e&&r>=i.contentWidth-i.containerWidth&&(r=i.contentWidth-i.containerWidth,r-t.scrollLeft<=2?r=t.scrollLeft:t.scrollLeft=r,t.dispatchEvent(n("ps-x-reach-end"))),void 0===i.lastTop&&(i.lastTop=t.scrollTop),void 0===i.lastLeft&&(i.lastLeft=t.scrollLeft),"top"===e&&r<i.lastTop&&t.dispatchEvent(n("ps-scroll-up")),"top"===e&&r>i.lastTop&&t.dispatchEvent(n("ps-scroll-down")),"left"===e&&r<i.lastLeft&&t.dispatchEvent(n("ps-scroll-left")),"left"===e&&r>i.lastLeft&&t.dispatchEvent(n("ps-scroll-right")),"top"===e&&r!==i.lastTop&&(t.scrollTop=i.lastTop=r,t.dispatchEvent(n("ps-scroll-y"))),"left"===e&&r!==i.lastLeft&&(t.scrollLeft=i.lastLeft=r,t.dispatchEvent(n("ps-scroll-x")))}},function(t,e,r){"use strict";function o(t,e){return window.getComputedStyle(t)[e]}function n(t,e,r){return"number"==typeof r&&(r=r.toString()+"px"),t.style[e]=r,t}function i(t,e){for(var r in e){var o=e[r];"number"==typeof o&&(o=o.toString()+"px"),t.style[r]=o}return t}var l={};l.create=function(t,e){var r=document.createElement(t);return r.className=e,r},l.appendTo=function(t,e){return e.appendChild(t),t},l.css=function(t,e,r){return"object"==typeof e?i(t,e):void 0===r?o(t,e):n(t,e,r)},l.matches=function(t,e){return void 0!==t.matches?t.matches(e):t.msMatchesSelector(e)},l.remove=function(t){void 0!==t.remove?t.remove():t.parentNode&&t.parentNode.removeChild(t)},l.queryChildren=function(t,e){return Array.prototype.filter.call(t.childNodes,function(t){return l.matches(t,e)})},t.exports=l},function(t,e,r){r(28);var o=r(25)(r(7),r(26),null,null);t.exports=o.exports},function(t,e,r){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=r(5),n=r.n(o);e.default=n.a},function(t,e,r){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=r(10),n=r.n(o);e.default={name:"vue-perfect-scrollbar",props:{settings:{default:void 0},swicher:{type:Boolean,default:!0},tagname:{type:String,default:"section"}},methods:{scrollHanle:function(t){this.$emit(t.type,t)},update:function(){n.a.update(this.$el)},__init:function(){this.swicher&&(this._ps_inited?this.update(this.$el):(this._ps_inited=!0,n.a.initialize(this.$el,this.settings)))},__uninit:function(){n.a.destroy(this.$el),this._ps_inited=!1}},watch:{swicher:function(t){t&&!this._ps_inited&&this.__init(),!t&&this._ps_inited&&this.__uninit()},$route:function(){this.update()}},mounted:function(){this.__init()},updated:function(){this.$nextTick(this.update)},activated:function(){this.__init()},deactivated:function(){this.__uninit()},beforeDestroy:function(){this.__uninit()}}},function(t,e,r){e=t.exports=r(9)(),e.push([t.i,".ps{-ms-touch-action:auto;touch-action:auto;overflow:hidden!important;-ms-overflow-style:none}@supports (-ms-overflow-style:none){.ps{overflow:auto!important}}@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active){.ps{overflow:auto!important}}.ps.ps--active-x>.ps__scrollbar-x-rail,.ps.ps--active-y>.ps__scrollbar-y-rail{display:block;background-color:transparent}.ps.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail{background-color:#eee;opacity:.9}.ps.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail>.ps__scrollbar-x{background-color:#999;height:11px}.ps.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail{background-color:#eee;opacity:.9}.ps.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y{background-color:#999;width:11px}.ps>.ps__scrollbar-x-rail{display:none;position:absolute;opacity:0;transition:background-color .2s linear,opacity .2s linear;bottom:0;height:15px}.ps>.ps__scrollbar-x-rail>.ps__scrollbar-x{position:absolute;background-color:#aaa;border-radius:6px;transition:background-color .2s linear,height .2s linear,width .2s ease-in-out,border-radius .2s ease-in-out;bottom:2px;height:6px}.ps>.ps__scrollbar-x-rail:active>.ps__scrollbar-x,.ps>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x{height:11px}.ps>.ps__scrollbar-y-rail{display:none;position:absolute;opacity:0;transition:background-color .2s linear,opacity .2s linear;right:0;width:15px}.ps>.ps__scrollbar-y-rail>.ps__scrollbar-y{position:absolute;background-color:#aaa;border-radius:6px;transition:background-color .2s linear,height .2s linear,width .2s ease-in-out,border-radius .2s ease-in-out;right:2px;width:6px}.ps>.ps__scrollbar-y-rail:active>.ps__scrollbar-y,.ps>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y{width:11px}.ps:hover.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail{background-color:#eee;opacity:.9}.ps:hover.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail>.ps__scrollbar-x{background-color:#999;height:11px}.ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail{background-color:#eee;opacity:.9}.ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y{background-color:#999;width:11px}.ps:hover>.ps__scrollbar-x-rail,.ps:hover>.ps__scrollbar-y-rail{opacity:.6}.ps:hover>.ps__scrollbar-x-rail:hover{background-color:#eee;opacity:.9}.ps:hover>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x{background-color:#999}.ps:hover>.ps__scrollbar-y-rail:hover{background-color:#eee;opacity:.9}.ps:hover>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y{background-color:#999}.ps-container{position:relative}",""])},function(t,e){t.exports=function(){var t=[];return t.toString=function(){for(var t=[],e=0;e<this.length;e++){var r=this[e];r[2]?t.push("@media "+r[2]+"{"+r[1]+"}"):t.push(r[1])}return t.join("")},t.i=function(e,r){"string"==typeof e&&(e=[[null,e,""]]);for(var o={},n=0;n<this.length;n++){var i=this[n][0];"number"==typeof i&&(o[i]=!0)}for(n=0;n<e.length;n++){var l=e[n];"number"==typeof l[0]&&o[l[0]]||(r&&!l[2]?l[2]=r:r&&(l[2]="("+l[2]+") and ("+r+")"),t.push(l))}},t}},function(t,e,r){"use strict";t.exports=r(13)},function(t,e,r){"use strict";var o=function(t){this.element=t,this.events={}};o.prototype.bind=function(t,e){void 0===this.events[t]&&(this.events[t]=[]),this.events[t].push(e),this.element.addEventListener(t,e,!1)},o.prototype.unbind=function(t,e){var r=void 0!==e;this.events[t]=this.events[t].filter(function(o){return!(!r||o===e)||(this.element.removeEventListener(t,o,!1),!1)},this)},o.prototype.unbindAll=function(){for(var t in this.events)this.unbind(t)};var n=function(){this.eventElements=[]};n.prototype.eventElement=function(t){var e=this.eventElements.filter(function(e){return e.element===t})[0];return void 0===e&&(e=new o(t),this.eventElements.push(e)),e},n.prototype.bind=function(t,e,r){this.eventElement(t).bind(e,r)},n.prototype.unbind=function(t,e,r){this.eventElement(t).unbind(e,r)},n.prototype.unbindAll=function(){for(var t=0;t<this.eventElements.length;t++)this.eventElements[t].unbindAll()},n.prototype.once=function(t,e,r){var o=this.eventElement(t),n=function(t){o.unbind(e,n),r(t)};o.bind(e,n)},t.exports=n},function(t,e,r){"use strict";t.exports=function(){function t(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return t()+t()+"-"+t()+"-"+t()+"-"+t()+"-"+t()+t()+t()}}()},function(t,e,r){"use strict";var o=r(15),n=r(23),i=r(24);t.exports={initialize:n,update:i,destroy:o}},function(t,e,r){"use strict";t.exports=function(){return{handlers:["click-rail","drag-scrollbar","keyboard","wheel","touch"],maxScrollbarLength:null,minScrollbarLength:null,scrollXMarginOffset:0,scrollYMarginOffset:0,suppressScrollX:!1,suppressScrollY:!1,swipePropagation:!0,swipeEasing:!0,useBothWheelAxes:!1,wheelPropagation:!1,wheelSpeed:1,theme:"default"}}},function(t,e,r){"use strict";var o=r(2),n=r(4),i=r(0);t.exports=function(t){var e=i.get(t);e&&(e.event.unbindAll(),n.remove(e.scrollbarX),n.remove(e.scrollbarY),n.remove(e.scrollbarXRail),n.remove(e.scrollbarYRail),o.removePsClasses(t),i.remove(t))}},function(t,e,r){"use strict";function o(t,e){function r(t){return t.getBoundingClientRect()}var o=function(t){t.stopPropagation()};e.event.bind(e.scrollbarY,"click",o),e.event.bind(e.scrollbarYRail,"click",function(o){var n=o.pageY-window.pageYOffset-r(e.scrollbarYRail).top,s=n>e.scrollbarYTop?1:-1;l(t,"top",t.scrollTop+s*e.containerHeight),i(t),o.stopPropagation()}),e.event.bind(e.scrollbarX,"click",o),e.event.bind(e.scrollbarXRail,"click",function(o){var n=o.pageX-window.pageXOffset-r(e.scrollbarXRail).left,s=n>e.scrollbarXLeft?1:-1;l(t,"left",t.scrollLeft+s*e.containerWidth),i(t),o.stopPropagation()})}var n=r(0),i=r(1),l=r(3);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(r){var n=o+r*e.railXRatio,l=Math.max(0,e.scrollbarXRail.getBoundingClientRect().left)+e.railXRatio*(e.railXWidth-e.scrollbarXWidth);e.scrollbarXLeft=n<0?0:n>l?l:n;var s=i.toInt(e.scrollbarXLeft*(e.contentWidth-e.containerWidth)/(e.containerWidth-e.railXRatio*e.scrollbarXWidth))-e.negativeScrollAdjustment;c(t,"left",s)}var o=null,n=null,s=function(e){r(e.pageX-n),a(t),e.stopPropagation(),e.preventDefault()},u=function(){i.stopScrolling(t,"x"),e.event.unbind(e.ownerDocument,"mousemove",s)};e.event.bind(e.scrollbarX,"mousedown",function(r){n=r.pageX,o=i.toInt(l.css(e.scrollbarX,"left"))*e.railXRatio,i.startScrolling(t,"x"),e.event.bind(e.ownerDocument,"mousemove",s),e.event.once(e.ownerDocument,"mouseup",u),r.stopPropagation(),r.preventDefault()})}function n(t,e){function r(r){var n=o+r*e.railYRatio,l=Math.max(0,e.scrollbarYRail.getBoundingClientRect().top)+e.railYRatio*(e.railYHeight-e.scrollbarYHeight);e.scrollbarYTop=n<0?0:n>l?l:n;var s=i.toInt(e.scrollbarYTop*(e.contentHeight-e.containerHeight)/(e.containerHeight-e.railYRatio*e.scrollbarYHeight));c(t,"top",s)}var o=null,n=null,s=function(e){r(e.pageY-n),a(t),e.stopPropagation(),e.preventDefault()},u=function(){i.stopScrolling(t,"y"),e.event.unbind(e.ownerDocument,"mousemove",s)};e.event.bind(e.scrollbarY,"mousedown",function(r){n=r.pageY,o=i.toInt(l.css(e.scrollbarY,"top"))*e.railYRatio,i.startScrolling(t,"y"),e.event.bind(e.ownerDocument,"mousemove",s),e.event.once(e.ownerDocument,"mouseup",u),r.stopPropagation(),r.preventDefault()})}var i=r(2),l=r(4),s=r(0),a=r(1),c=r(3);t.exports=function(t){var e=s.get(t);o(t,e),n(t,e)}},function(t,e,r){"use strict";function o(t,e){function r(r,o){var n=t.scrollTop;if(0===r){if(!e.scrollbarYActive)return!1;if(0===n&&o>0||n>=e.contentHeight-e.containerHeight&&o<0)return!e.settings.wheelPropagation}var i=t.scrollLeft;if(0===o){if(!e.scrollbarXActive)return!1;if(0===i&&r<0||i>=e.contentWidth-e.containerWidth&&r>0)return!e.settings.wheelPropagation}return!0}var o=!1;e.event.bind(t,"mouseenter",function(){o=!0}),e.event.bind(t,"mouseleave",function(){o=!1});var l=!1;e.event.bind(e.ownerDocument,"keydown",function(c){if(!(c.isDefaultPrevented&&c.isDefaultPrevented()||c.defaultPrevented)){var u=i.matches(e.scrollbarX,":focus")||i.matches(e.scrollbarY,":focus");if(o||u){var p=document.activeElement?document.activeElement:e.ownerDocument.activeElement;if(p){if("IFRAME"===p.tagName)p=p.contentDocument.activeElement;else for(;p.shadowRoot;)p=p.shadowRoot.activeElement;if(n.isEditable(p))return}var d=0,f=0;switch(c.which){case 37:d=c.metaKey?-e.contentWidth:c.altKey?-e.containerWidth:-30;break;case 38:f=c.metaKey?e.contentHeight:c.altKey?e.containerHeight:30;break;case 39:d=c.metaKey?e.contentWidth:c.altKey?e.containerWidth:30;break;case 40:f=c.metaKey?-e.contentHeight:c.altKey?-e.containerHeight:-30;break;case 33:f=90;break;case 32:f=c.shiftKey?90:-90;break;case 34:f=-90;break;case 35:f=c.ctrlKey?-e.contentHeight:-e.containerHeight;break;case 36:f=c.ctrlKey?t.scrollTop:e.containerHeight;break;default:return}a(t,"top",t.scrollTop-f),a(t,"left",t.scrollLeft+d),s(t),l=r(d,f),l&&c.preventDefault()}}})}var n=r(2),i=r(4),l=r(0),s=r(1),a=r(3);t.exports=function(t){o(t,l.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(r,o){var n=t.scrollTop;if(0===r){if(!e.scrollbarYActive)return!1;if(0===n&&o>0||n>=e.contentHeight-e.containerHeight&&o<0)return!e.settings.wheelPropagation}var i=t.scrollLeft;if(0===o){if(!e.scrollbarXActive)return!1;if(0===i&&r<0||i>=e.contentWidth-e.containerWidth&&r>0)return!e.settings.wheelPropagation}return!0}function o(t){var e=t.deltaX,r=-1*t.deltaY;return void 0!==e&&void 0!==r||(e=-1*t.wheelDeltaX/6,r=t.wheelDeltaY/6),t.deltaMode&&1===t.deltaMode&&(e*=10,r*=10),e!==e&&r!==r&&(e=0,r=t.wheelDelta),t.shiftKey?[-r,-e]:[e,r]}function n(e,r){var o=t.querySelector("textarea:hover, select[multiple]:hover, .ps-child:hover");if(o){var n=window.getComputedStyle(o);if(![n.overflow,n.overflowX,n.overflowY].join("").match(/(scroll|auto)/))return!1;var i=o.scrollHeight-o.clientHeight;if(i>0&&!(0===o.scrollTop&&r>0||o.scrollTop===i&&r<0))return!0;var l=o.scrollLeft-o.clientWidth;if(l>0&&!(0===o.scrollLeft&&e<0||o.scrollLeft===l&&e>0))return!0}return!1}function s(s){var c=o(s),u=c[0],p=c[1];n(u,p)||(a=!1,e.settings.useBothWheelAxes?e.scrollbarYActive&&!e.scrollbarXActive?(p?l(t,"top",t.scrollTop-p*e.settings.wheelSpeed):l(t,"top",t.scrollTop+u*e.settings.wheelSpeed),a=!0):e.scrollbarXActive&&!e.scrollbarYActive&&(u?l(t,"left",t.scrollLeft+u*e.settings.wheelSpeed):l(t,"left",t.scrollLeft-p*e.settings.wheelSpeed),a=!0):(l(t,"top",t.scrollTop-p*e.settings.wheelSpeed),l(t,"left",t.scrollLeft+u*e.settings.wheelSpeed)),i(t),(a=a||r(u,p))&&(s.stopPropagation(),s.preventDefault()))}var a=!1;void 0!==window.onwheel?e.event.bind(t,"wheel",s):void 0!==window.onmousewheel&&e.event.bind(t,"mousewheel",s)}var n=r(0),i=r(1),l=r(3);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){e.event.bind(t,"scroll",function(){i(t)})}var n=r(0),i=r(1);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(){var t=window.getSelection?window.getSelection():document.getSelection?document.getSelection():"";return 0===t.toString().length?null:t.getRangeAt(0).commonAncestorContainer}function o(){c||(c=setInterval(function(){if(!i.get(t))return void clearInterval(c);s(t,"top",t.scrollTop+u.top),s(t,"left",t.scrollLeft+u.left),l(t)},50))}function a(){c&&(clearInterval(c),c=null),n.stopScrolling(t)}var c=null,u={top:0,left:0},p=!1;e.event.bind(e.ownerDocument,"selectionchange",function(){t.contains(r())?p=!0:(p=!1,a())}),e.event.bind(window,"mouseup",function(){p&&(p=!1,a())}),e.event.bind(window,"keyup",function(){p&&(p=!1,a())}),e.event.bind(window,"mousemove",function(e){if(p){var r={x:e.pageX,y:e.pageY},i={left:t.offsetLeft,right:t.offsetLeft+t.offsetWidth,top:t.offsetTop,bottom:t.offsetTop+t.offsetHeight};r.x<i.left+3?(u.left=-5,n.startScrolling(t,"x")):r.x>i.right-3?(u.left=5,n.startScrolling(t,"x")):u.left=0,r.y<i.top+3?(u.top=i.top+3-r.y<5?-5:-20,n.startScrolling(t,"y")):r.y>i.bottom-3?(u.top=r.y-i.bottom+3<5?5:20,n.startScrolling(t,"y")):u.top=0,0===u.top&&0===u.left?a():o()}})}var n=r(2),i=r(0),l=r(1),s=r(3);t.exports=function(t){o(t,i.get(t))}},function(t,e,r){"use strict";function o(t,e,r,o){function n(r,o){var n=t.scrollTop,i=t.scrollLeft,l=Math.abs(r),s=Math.abs(o);if(s>l){if(o<0&&n===e.contentHeight-e.containerHeight||o>0&&0===n)return!e.settings.swipePropagation}else if(l>s&&(r<0&&i===e.contentWidth-e.containerWidth||r>0&&0===i))return!e.settings.swipePropagation;return!0}function a(e,r){s(t,"top",t.scrollTop-r),s(t,"left",t.scrollLeft-e),l(t)}function c(){w=!0}function u(){w=!1}function p(t){return t.targetTouches?t.targetTouches[0]:t}function d(t){return(!t.pointerType||"pen"!==t.pointerType||0!==t.buttons)&&(!(!t.targetTouches||1!==t.targetTouches.length)||!(!t.pointerType||"mouse"===t.pointerType||t.pointerType===t.MSPOINTER_TYPE_MOUSE))}function f(t){if(d(t)){_=!0;var e=p(t);b.pageX=e.pageX,b.pageY=e.pageY,g=(new Date).getTime(),null!==y&&clearInterval(y),t.stopPropagation()}}function h(t){if(!_&&e.settings.swipePropagation&&f(t),!w&&_&&d(t)){var r=p(t),o={pageX:r.pageX,pageY:r.pageY},i=o.pageX-b.pageX,l=o.pageY-b.pageY;a(i,l),b=o;var s=(new Date).getTime(),c=s-g;c>0&&(m.x=i/c,m.y=l/c,g=s),n(i,l)&&(t.stopPropagation(),t.preventDefault())}}function v(){!w&&_&&(_=!1,e.settings.swipeEasing&&(clearInterval(y),y=setInterval(function(){return i.get(t)&&(m.x||m.y)?Math.abs(m.x)<.01&&Math.abs(m.y)<.01?void clearInterval(y):(a(30*m.x,30*m.y),m.x*=.8,void(m.y*=.8)):void clearInterval(y)},10)))}var b={},g=0,m={},y=null,w=!1,_=!1;r?(e.event.bind(window,"touchstart",c),e.event.bind(window,"touchend",u),e.event.bind(t,"touchstart",f),e.event.bind(t,"touchmove",h),e.event.bind(t,"touchend",v)):o&&(window.PointerEvent?(e.event.bind(window,"pointerdown",c),e.event.bind(window,"pointerup",u),e.event.bind(t,"pointerdown",f),e.event.bind(t,"pointermove",h),e.event.bind(t,"pointerup",v)):window.MSPointerEvent&&(e.event.bind(window,"MSPointerDown",c),e.event.bind(window,"MSPointerUp",u),e.event.bind(t,"MSPointerDown",f),e.event.bind(t,"MSPointerMove",h),e.event.bind(t,"MSPointerUp",v)))}var n=r(2),i=r(0),l=r(1),s=r(3);t.exports=function(t){if(n.env.supportsTouch||n.env.supportsIePointer){o(t,i.get(t),n.env.supportsTouch,n.env.supportsIePointer)}}},function(t,e,r){"use strict";var o=r(0),n=r(1),i={"click-rail":r(16),"drag-scrollbar":r(17),keyboard:r(18),wheel:r(19),touch:r(22),selection:r(21)},l=r(20);t.exports=function(t,e){t.classList.add("ps");var r=o.add(t,"object"==typeof e?e:{});t.classList.add("ps--theme_"+r.settings.theme),r.settings.handlers.forEach(function(e){i[e](t)}),l(t),n(t)}},function(t,e,r){"use strict";var o=r(2),n=r(4),i=r(0),l=r(1),s=r(3);t.exports=function(t){var e=i.get(t);e&&(e.negativeScrollAdjustment=e.isNegativeScroll?t.scrollWidth-t.clientWidth:0,n.css(e.scrollbarXRail,"display","block"),n.css(e.scrollbarYRail,"display","block"),e.railXMarginWidth=o.toInt(n.css(e.scrollbarXRail,"marginLeft"))+o.toInt(n.css(e.scrollbarXRail,"marginRight")),e.railYMarginHeight=o.toInt(n.css(e.scrollbarYRail,"marginTop"))+o.toInt(n.css(e.scrollbarYRail,"marginBottom")),n.css(e.scrollbarXRail,"display","none"),n.css(e.scrollbarYRail,"display","none"),l(t),s(t,"top",t.scrollTop),s(t,"left",t.scrollLeft),n.css(e.scrollbarXRail,"display",""),n.css(e.scrollbarYRail,"display",""))}},function(t,e){t.exports=function(t,e,r,o){var n,i=t=t||{},l=typeof t.default;"object"!==l&&"function"!==l||(n=t,i=t.default);var s="function"==typeof i?i.options:i;if(e&&(s.render=e.render,s.staticRenderFns=e.staticRenderFns),r&&(s._scopeId=r),o){var a=s.computed||(s.computed={});Object.keys(o).forEach(function(t){var e=o[t];a[t]=function(){return e}})}return{esModule:n,exports:i,options:s}}},function(t,e){t.exports={render:function(){var t=this,e=t.$createElement;return(t._self._c||e)(t.$props.tagname,{tag:"section",staticClass:"ps-container",on:{"~mouseover":function(e){t.update(e)},"ps-scroll-y":t.scrollHanle,"ps-scroll-x":t.scrollHanle,"ps-scroll-up":t.scrollHanle,"ps-scroll-down":t.scrollHanle,"ps-scroll-left":t.scrollHanle,"ps-scroll-right":t.scrollHanle,"ps-y-reach-start":t.scrollHanle,"ps-y-reach-end":t.scrollHanle,"ps-x-reach-start":t.scrollHanle,"ps-x-reach-end":t.scrollHanle}},[t._t("default")],2)},staticRenderFns:[]}},function(t,e){function r(t,e){for(var r=0;r<t.length;r++){var o=t[r],n=u[o.id];if(n){n.refs++;for(var i=0;i<n.parts.length;i++)n.parts[i](o.parts[i]);for(;i<o.parts.length;i++)n.parts.push(s(o.parts[i],e))}else{for(var l=[],i=0;i<o.parts.length;i++)l.push(s(o.parts[i],e));u[o.id]={id:o.id,refs:1,parts:l}}}}function o(t){for(var e=[],r={},o=0;o<t.length;o++){var n=t[o],i=n[0],l=n[1],s=n[2],a=n[3],c={css:l,media:s,sourceMap:a};r[i]?r[i].parts.push(c):e.push(r[i]={id:i,parts:[c]})}return e}function n(t,e){var r=f(),o=b[b.length-1];if("top"===t.insertAt)o?o.nextSibling?r.insertBefore(e,o.nextSibling):r.appendChild(e):r.insertBefore(e,r.firstChild),b.push(e);else{if("bottom"!==t.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");r.appendChild(e)}}function i(t){t.parentNode.removeChild(t);var e=b.indexOf(t);e>=0&&b.splice(e,1)}function l(t){var e=document.createElement("style");return e.type="text/css",n(t,e),e}function s(t,e){var r,o,n;if(e.singleton){var s=v++;r=h||(h=l(e)),o=a.bind(null,r,s,!1),n=a.bind(null,r,s,!0)}else r=l(e),o=c.bind(null,r),n=function(){i(r)};return o(t),function(e){if(e){if(e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap)return;o(t=e)}else n()}}function a(t,e,r,o){var n=r?"":o.css;if(t.styleSheet)t.styleSheet.cssText=g(e,n);else{var i=document.createTextNode(n),l=t.childNodes;l[e]&&t.removeChild(l[e]),l.length?t.insertBefore(i,l[e]):t.appendChild(i)}}function c(t,e){var r=e.css,o=e.media,n=e.sourceMap;if(o&&t.setAttribute("media",o),n&&(r+="\n/*# sourceURL="+n.sources[0]+" */",r+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(n))))+" */"),t.styleSheet)t.styleSheet.cssText=r;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(r))}}var u={},p=function(t){var e;return function(){return void 0===e&&(e=t.apply(this,arguments)),e}},d=p(function(){return/msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase())}),f=p(function(){return document.head||document.getElementsByTagName("head")[0]}),h=null,v=0,b=[];t.exports=function(t,e){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");e=e||{},void 0===e.singleton&&(e.singleton=d()),void 0===e.insertAt&&(e.insertAt="bottom");var n=o(t);return r(n,e),function(t){for(var i=[],l=0;l<n.length;l++){var s=n[l],a=u[s.id];a.refs--,i.push(a)}if(t){r(o(t),e)}for(var l=0;l<i.length;l++){var a=i[l];if(0===a.refs){for(var c=0;c<a.parts.length;c++)a.parts[c]();delete u[a.id]}}}};var g=function(){var t=[];return function(e,r){return t[e]=r,t.filter(Boolean).join("\n")}}()},function(t,e,r){var o=r(8);"string"==typeof o&&(o=[[t.i,o,""]]);r(27)(o,{});o.locals&&(t.exports=o.locals)}]);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 552 */
+/* 553 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_class_component__ = __webpack_require__(505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_class_component__ = __webpack_require__(506);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_class_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_class_component__);
 /* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1_vue_class_component___default.a; });
 /* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_0_vue___default.a; });
@@ -91603,7 +86179,7 @@ function isPromise(obj) {
 
 
 /***/ }),
-/* 553 */
+/* 554 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -94228,13 +88804,13 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 554 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(494);
+var content = __webpack_require__(495);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -94254,13 +88830,13 @@ if(false) {
 }
 
 /***/ }),
-/* 555 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(495);
+var content = __webpack_require__(496);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -94280,7 +88856,7 @@ if(false) {
 }
 
 /***/ }),
-/* 556 */
+/* 557 */
 /***/ (function(module, exports) {
 
 /**
@@ -94313,7 +88889,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 557 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(252);

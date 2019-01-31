@@ -3,12 +3,12 @@
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <nav class="navbar bg-white justify-content-center fix-top">
       <a class="navbar-brand" href="#">
-        <img src="/img/logo-f.png" alt="Logo" class="logo">
+        <img src="img/logo-f.png" alt="Logo" class="logo">
       </a>
       <div class="title">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</div>
     </nav>
     <div class="container">
-      <img class="img-fluid mx-auto d-block" src="/img/banner.jpg">
+      <img class="img-fluid mx-auto d-block" src="img/banner.jpg">
       <form id="loginForm" @submit.prevent="login" method="post">
         <div class="form-group">
           <label for="exampleInputEmail1">Tài khoản</label>
@@ -117,12 +117,12 @@ export default {
         Password: this.Password
       })
         .then(response => {
-          console.log(response);
+          // console.log(response);
           if (response.isSuccess) {
             localStorage.setItem("access_token", response.message);
             Users.getUserInfor()
               .then(user => {
-                console.log(user);
+                //console.log(user);
                 localStorage.setItem("user", JSON.stringify(user));
                 this.$router.push("/");
               })

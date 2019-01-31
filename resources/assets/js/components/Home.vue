@@ -6,7 +6,7 @@
       <div class="container">
         <!-- Phần Banner -->
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-md-4">
             <img src="img/banner.jpg" width="100%">
           </div>
         </div>
@@ -16,7 +16,7 @@
           <div class="col-xs-1">
             <button @click="goto('/studyplan')" type="button" class="btn main">
               <div>
-                <img src="img/calenda_rong.png" alt="Lịch học" height="45">
+                <img src="img/lichhoc.png" alt="Lịch học" height="45">
               </div>
               <div class="title_color">Lịch học</div>
             </button>
