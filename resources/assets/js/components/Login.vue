@@ -83,7 +83,8 @@ export default {
     return {
       //Role: 0,
       UserName: "1351020142",
-      Password: "TH2UNbZTqe9iKdPGvefnDg==",
+      Password: "",
+      encrypted:"",
       rememberme: false
     };
   },
@@ -92,8 +93,8 @@ export default {
   },
   watch: {
     Password(newVal, oldVal){
-      let encrypted =  md5.base64(newVal);
-      console.log(encrypted)
+      this.encrypted =  md5.base64(newVal);
+      console.log(this.encrypted)
     }
   },
   methods: {
@@ -121,7 +122,7 @@ export default {
       Users.studentLogin({
         //Role: this.Role,
         UserName: this.UserName,
-        Password: this.Password
+        Password: this.encrypted
       })
         .then(response => {
           // console.log(response);
