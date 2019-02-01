@@ -2,8 +2,6 @@
   <AppHeaderDropdown right no-caret>
     <template slot="header">
       <div>
-        <div>{{currentUser.Ho_ten}}</div>
-
         <div>
           <!-- {{currentUser.Image_Url}} -->
           <img :src="imgLink" class="img-avatar" :alt="imgLink">

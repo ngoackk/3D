@@ -44,6 +44,6 @@ export default {
 }
 
 .img-avatar {
-  width: 50px;
+  width: 30px;
 }
 </style>

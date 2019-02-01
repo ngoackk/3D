@@ -7,8 +7,8 @@ export const Users = {
           userName: crendential.UserName, //  "60.58.01.02",
           password: crendential.Password, //"mhl9QmgbrLq8W8pV5u/lpQ==",
           deviceid: "ggsgfdgdg"
-        }
-      Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+        };
+      Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
       fetch(url, {
         method: "POST",
         headers: {
@@ -16,14 +16,14 @@ export const Users = {
           'Content-Type': 'application/json'
         }
       }).then(response => {
-        resolve(response.json())
+        resolve(response.json());
       }).catch(error => {
-        reject(error)
-      })
-    })
+        reject(error);
+      });
+    });
   },
   getUserInfor() {
-    return this.callServer("Profile")
+    return this.callServer("Profile");
     // return new Promise((resolve, reject) => {
     //   let token = localStorage.getItem("access_token");
     //   fetch("http://103.28.37.34:806/api/Profile?accessToken=" + token, {
@@ -45,7 +45,7 @@ export const Users = {
     // })
   },
   getLearningPoint() {
-    return this.callServer("LearningPoints")
+    return this.callServer("LearningPoints");
 
   },
   callServer(url) {
@@ -61,13 +61,13 @@ export const Users = {
         })
         .then(data => {
           console.log("Lấy dữ liệu thành công: ", data);
-          resolve(data.json())
+          resolve(data.json());
         })
         .catch(error => {
           console.log("Lấy dữ liệu thất bại: ", error);
-          reject(error)
+          reject(error);
         });
-    })
+    });
   },
   login(crendential) {
     return new Promise((resolve, reject) => {

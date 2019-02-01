@@ -97,6 +97,8 @@
 
 <script>
 import { HeaderDropdown as AppHeaderDropdown } from "@coreui/vue";
+import {Users, Data} from "../apis/api";
+
 export default {
   name: "DefaultHeaderDropdownMsg",
   components: {
@@ -104,6 +106,10 @@ export default {
   },
   data: () => {
     return { itemsCount: 10, avatar: "img/avatars/vinhpq.png" };
+  },
+
+  mounted(){
+    
   },
   methods: {
     loadMore() {}
