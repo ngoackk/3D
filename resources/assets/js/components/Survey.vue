@@ -1,8 +1,14 @@
 <template>
   <div>
-    <img src="img/survey.png " width="25">>Khảo sát
+    <div class="title">Khảo sát</div>
+    <div>{{md5Msg}}</div>
   </div>
 </template>
 <script>
-export default {};
+import { md5 } from "js-md5";
+export default {
+  data: function() {
+    return { md5Msg: md5("Giá trị MD5") };
+  }
+};
 </script>

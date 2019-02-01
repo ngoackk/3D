@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div><span class="title">TIN NHẮN</span></div>
-    
+    <div>
+      <span class="title">TIN NHẮN</span>
+    </div>
+
     <div>
       <ul>
         <a v-for="mss in msg" :key="mss.ID" href="#">
@@ -23,7 +25,7 @@ export default {
   },
 
   mounted() {
-    Users.callServer("Notification")
+    Users.callServer("Chat")
       .then(msgList => {
         this.msg = msgList;
       })
