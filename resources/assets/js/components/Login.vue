@@ -77,6 +77,7 @@
 </template>
 <script>
 import { Users, Data } from "../apis/api";
+import md5 from "js-md5"
 export default {
   data() {
     return {
@@ -88,6 +89,12 @@ export default {
   },
   mounted() {
     this.logout();
+  },
+  watch: {
+    Password(newVal, oldVal){
+      let encrypted =  md5.base64(newVal);
+      console.log(encrypted)
+    }
   },
   methods: {
     loginSubmit() {
