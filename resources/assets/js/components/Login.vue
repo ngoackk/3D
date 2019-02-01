@@ -122,7 +122,7 @@ export default {
       Users.studentLogin({
         //Role: this.Role,
         UserName: this.UserName,
-        Password: this.encrypted
+        Password: md5.base64(this.Password)
       })
         .then(response => {
           // console.log(response);
