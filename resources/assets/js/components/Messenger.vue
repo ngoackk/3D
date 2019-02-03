@@ -6,8 +6,8 @@
 
     <div>
       <ul>
-        <a v-for="mss in msg" :key="mss.ID" href="#">
-          <li>{{mss.Tieu_de}}</li>
+        <a v-for="mss in this.msg" :key="mss.ID" href="#">
+          <li>{{mss.ID, mss.Tieude}}</li>
         </a>
       </ul>
     </div>
@@ -26,12 +26,13 @@ export default {
 
   mounted() {
     Users.callServer("Chat")
-      .then(msgList => {
-        this.msg = msgList;
+      .then(listThongTin => {
+        this.msg = listThongTin;
+        //console.log(msg);
       })
 
       .catch(err => {
-        alert(err);
+        alert("Lỗi phần dữ liệu Tin nhắn: " + err);
       });
   },
 

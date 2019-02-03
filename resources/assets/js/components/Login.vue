@@ -68,23 +68,21 @@
         </li>
       </ul>
       <ul class="nav justify-content-end">
-        <li class="nav-item">
-         NAMVIET.JSC
-        </li>
+        <li class="nav-item">NAMVIET.JSC</li>
       </ul>
     </nav>
   </div>
 </template>
 <script>
 import { Users, Data } from "../apis/api";
-import md5 from "js-md5"
+import md5 from "js-md5";
 export default {
   data() {
     return {
       //Role: 0,
-      UserName: "1351020142",
-      Password: "",
-      encrypted:"",
+      UserName: "1351010122",
+      Password: "toihanhphuc",
+      encrypted: "",
       rememberme: false
     };
   },
@@ -92,9 +90,9 @@ export default {
     this.logout();
   },
   watch: {
-    Password(newVal, oldVal){
-      this.encrypted =  md5.base64(newVal);
-      console.log(this.encrypted)
+    Password(newVal, oldVal) {
+      this.encrypted = md5.base64(newVal);
+      //console.log(this.encrypted)
     }
   },
   methods: {

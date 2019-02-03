@@ -5,10 +5,10 @@
   </div>
 </template>
 <script>
-import { md5 } from "js-md5";
+import md5 from "js-md5";
 export default {
   data: function() {
-    return { md5Msg: md5("Giá trị MD5") };
+    return { md5Msg: md5.base64("Giá trị MD5") };
   }
 };
 </script>
