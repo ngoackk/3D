@@ -4,28 +4,32 @@
       <span class="title">TIN NHẮN</span>
     </div>
     <div>
-      <b-btn v-b-toggle.collapse1 variant="primary">Toggle Collapse</b-btn>
+      <b-btn v-b-toggle.collapse1 variant="primary">Nội dung trò chuyện</b-btn>
       <b-collapse id="collapse1" class="mt-2">
         <b-card>
-          <p class="card-text">Collapse contents Here</p>
-          <b-btn v-b-toggle.collapse1_inner size="sm">Toggle Inner Collapse</b-btn>
+          <p class="card-text">
+            <span v-for="msd in msgDetail" :key="msd.ID">
+              <div>
+                <span class="title">{{currentUser["Ho_ten"]}}:</span>
+                {{msd.Noi_dung}}
+              </div>
+
+              <div>
+                <span class="title">Người nhận:</span>
+                {{msd.Nguoi_nhan}}
+              </div>
+              <div>
+                <span class="title">Ngày gửi:</span>
+                {{msd.NgayGui}}
+              </div>
+            </span>
+          </p>
+          <b-btn v-b-toggle.collapse1_inner size="sm">Bắt đầu</b-btn>
           <b-collapse id="collapse1_inner" class="mt-2">
-            <b-card>Hello!</b-card>
+            <b-card>Xin chào</b-card>
           </b-collapse>
         </b-card>
       </b-collapse>
-    </div>
-    <div>
-      <ul>
-        <a v-for="mss in this.msg" :key="mss.ID" href="#">
-          <li>{{mss.ID}} - {{mss.Tieude}}</li>
-          
-        </a>
-        
-       
-         
-        
-      </ul>
     </div>
   </div>
 </template>
@@ -45,16 +49,16 @@ export default {
     Users.callServer("Chat")
       .then(listThongTin => {
         this.msg = listThongTin;
-        console.log(this.msg);
+        // console.log(this.msg);
       })
 
       .catch(err => {
         alert("Lỗi phần dữ liệu Tin nhắn: " + err);
       });
 
-    Users.callServer("Chat", 59).then(lsDetail => {
+    Users.getMsgDetail("Chat", 59).then(lsDetail => {
       this.msgDetail = lsDetail;
-      console.log(this.msgDetail);
+      console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
     });
   },
 

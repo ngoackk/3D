@@ -1,33 +1,73 @@
 <template>
   <div>
-    <div class="col-md-4"><span class="title">KẾT QUẢ HỌC TẬP</span></div>
-    <!-- {{this.bangdiem.length}} -->
-    <!-- <div v-for="p in bangdiem" :key="p.ID_mon">{{p.Ten_hoc_phan}}</div> -->
-    <div class="col-md-4"><span class="subject">Tên môn học</span></div>
-    <div class="col-md-2">
-      <select class="form-control combobox" name="cmbMonHoc" id="cmbMonHoc">
-        <option value="-1">--- Chọn môn học ---</option>
-
-        <option v-for="p in bangdiem" :key="p.ID_mon">{{p.Ten_hoc_phan}}</option>
-      </select>
+    <div>
+      <span class="title">{{currentUser["Ho_ten"]}}</span>
     </div>
+    <ag-grid-vue
+      style="width: 100%; height: 100%;"
+      class="ag-theme-balham"
+      :columnDefs="columnDefs"
+      :rowData="rowData"
+    ></ag-grid-vue>
   </div>
 </template>
+
 <script>
+import { AgGridVue } from "ag-grid-vue";
 import { Users, Data } from "../apis/api";
+
 export default {
-  data: function() {
+  name: "App",
+
+  inject: ["currentUser"],
+  data() {
     return {
+      columnDefs: null,
+      rowData: null,
       bangdiem: []
     };
   },
+  components: {
+    AgGridVue
+  },
+  beforeMount() {
+    this.columnDefs = [
+      {
+        headerName: "Môn học",
+        field: "Ten_hoc_phan",
+        sortable: true,
+        filter: true
+      },
+      {
+        headerName: "Điểm chữ",
+        field: "Diem_chu",
+        sortable: true,
+        filter: true
+      },
+      {
+        headerName: "Số học trình",
+        field: "So_hoc_trinh",
+        sortable: true,
+        filter: true
+      }
+    ];
+
+    // this.rowData = [
+    //   { make: "Toyota", model: "Celica", price: 35000 },
+    //   { make: "Ford", model: "Mondeo", price: 32000 },
+    //   { make: "Porsche", model: "Boxter", price: 72000 }
+    // ];
+
+    // fetch("http://103.28.37.34:98/api/huyen")
+    //   .then(result => result.json())
+    //   .then(rowData => (this.rowData = rowData));
+  },
+
   mounted() {
-    //console.log("mounted");
     Users.callServer("LearningPoints")
       .then(points => {
         this.bangdiem = points;
-        // this.bangdiem.push(points[0]);
-        // this.bangdiem.push(points[1]);
+        this.rowData = points;
       })
       .catch(err => {
         alert(err);

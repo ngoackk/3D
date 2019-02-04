@@ -46,4 +46,11 @@ export default {
 .img-avatar {
   width: 30px;
 }
+
+.frame {
+  border-style: solid;
+  border-color: coral;
+  border-width: 1px;
+  width: 100%;
+}
 </style>

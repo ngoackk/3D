@@ -70,7 +70,7 @@ export const Users = {
     });
   },
 
-  getSmsDetail(url, chatId) {
+  getMsgDetail(url, chatId) {
     return new Promise((resolve, reject) => {
       let token = localStorage.getItem("access_token");
       fetch("http://103.28.37.34:806/api/" + url + "?accessToken=" + token + "&id=" + chatId, {

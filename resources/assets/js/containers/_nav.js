@@ -39,7 +39,7 @@ export default {
     {
       name: 'Khảo sát',
       url: '/survey',
-      icon: 'icon-pencil'
+      icon: 'fa fa-file-o'
     },
     {
       title: true,

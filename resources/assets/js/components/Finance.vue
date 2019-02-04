@@ -1,50 +1,107 @@
 <template>
-<div class="container">
-  <div class="col-xs-12 fullwidth">
+  <div>
     <div>
       <span class="title">THÔNG TIN TÀI CHÍNH</span>
     </div>
-
-    <div class="col-xs-6">
-      <div>
-        <ul>
-          <li v-for="fin in finance" :key="fin.id_mon">{{fin.Ten_mon}}</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li v-for="fin in finance" :key="fin.id_mon">{{fin.So_tien_da_nop}}</li>
-        </ul>
-      </div>
+    <div>
+      <span class="title">Sinh viên: {{currentUser["Ho_ten"]}}</span>
     </div>
-  </div>
+    <ag-grid-vue
+      style="width: 100%; height: 100%;"
+      class="ag-theme-balham"
+      :columnDefs="columnDefs"
+      :rowData="rowData"
+    ></ag-grid-vue>
   </div>
 </template>
+
 <script>
+import { AgGridVue } from "ag-grid-vue";
 import { Users, Data } from "../apis/api";
 
 export default {
-  data: function() {
+  name: "App",
+
+  inject: ["currentUser"],
+  data() {
     return {
-      finance: []
+      columnDefs: null,
+      rowData: null,
+      bangdiem: []
     };
+  },
+  components: {
+    AgGridVue
+  },
+  beforeMount() {
+    this.columnDefs = [
+      {
+        headerName: "Môn học",
+        field: "Ten_mon",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      },
+      {
+        headerName: "Năm học",
+        field: "nam_hoc",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true,
+        width: 300
+      },
+
+      {
+        headerName: "Học kỳ",
+        field: "Hoc_ky",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      },
+      {
+        headerName: "Số tiền phải nộp",
+        field: "So_tien_phai_nop",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      },
+
+      {
+        headerName: "Số tiền đã nộp",
+        field: "So_tien_da_nop",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      },
+      {
+        headerName: "Còn thiếu",
+        field: "Thieu_thua",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      }
+    ];
+
+    // this.rowData = [
+    //   { make: "Toyota", model: "Celica", price: 35000 },
+    //   { make: "Ford", model: "Mondeo", price: 32000 },
+    //   { make: "Porsche", model: "Boxter", price: 72000 }
+    // ];
+
+    // fetch("http://103.28.37.34:98/api/huyen")
+    //   .then(result => result.json())
+    //   .then(rowData => (this.rowData = rowData));
   },
 
   mounted() {
     Users.callServer("Finance")
-      .then(fncList => {
-        this.finance = fncList;
-        
+      .then(points => {
+        this.bangdiem = points;
+        this.rowData = points;
       })
       .catch(err => {
-        alert("Lỗi => Thông tin tài chính: ", err);
+        alert(err);
       });
-  },
-
-  methods: {
-    total() {
-      alert("Tính tổng tiền");
-    }
   }
 };
 </script>

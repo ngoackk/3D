@@ -1,21 +1,28 @@
 <template>
-  <ag-grid-vue
-    style="width: 100%; height: 100%;"
-    class="ag-theme-balham"
-    :columnDefs="columnDefs"
-    :rowData="rowData"
-  ></ag-grid-vue>
+  <div>
+    <div>{{currentUser["Ho_ten"]}}</div>
+    <ag-grid-vue
+      style="width: 100%; height: 100%;"
+      class="ag-theme-balham"
+      :columnDefs="columnDefs"
+      :rowData="rowData"
+    ></ag-grid-vue>
+  </div>
 </template>
 
 <script>
 import { AgGridVue } from "ag-grid-vue";
+import {Users, Data} from "../apis/api";
 
 export default {
   name: "App",
+
+  inject: ["currentUser"],
   data() {
     return {
       columnDefs: null,
-      rowData: null
+      rowData: null,
+      bangdiem: []
     };
   },
   components: {
@@ -24,18 +31,23 @@ export default {
   beforeMount() {
     this.columnDefs = [
       {
-        headerName: "Mã bản ghi",
-        field: "ID",
+        headerName: "Môn học",
+        field: "Ten_hoc_phan",
         sortable: true,
         filter: true
       },
       {
-        headerName: "Mã tỉnh",
-        field: "DM_tinh_ID",
+        headerName: "Điểm chữ",
+        field: "Diem_chu",
         sortable: true,
         filter: true
       },
-      { headerName: "Huyện", field: "Ten_huyen", sortable: true, filter: true }
+      {
+        headerName: "Số học trình",
+        field: "So_hoc_trinh",
+        sortable: true,
+        filter: true
+      }
     ];
 
     // this.rowData = [
@@ -44,9 +56,20 @@ export default {
     //   { make: "Porsche", model: "Boxter", price: 72000 }
     // ];
 
-    fetch("http://103.28.37.34:98/api/huyen")
-      .then(result => result.json())
-      .then(rowData => (this.rowData = rowData));
+    // fetch("http://103.28.37.34:98/api/huyen")
+    //   .then(result => result.json())
+    //   .then(rowData => (this.rowData = rowData));
+  },
+
+  mounted() {
+    Users.callServer("LearningPoints")
+      .then(points => {
+        this.bangdiem = points;
+        this.rowData = points;
+      })
+      .catch(err => {
+        alert(err);
+      });
   }
 };
 </script>
