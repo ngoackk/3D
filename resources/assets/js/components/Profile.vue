@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <span class="title">LÝ LỊCH SINH VIÊN</span>
+      <span class="title">THÔNG TIN SINH VIÊN</span>
     </div>
 
     <div>

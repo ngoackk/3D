@@ -16138,6 +16138,25 @@ var Users = {
       });
     });
   },
+  getSmsDetail: function getSmsDetail(url, chatId) {
+    return new Promise(function (resolve, reject) {
+      var token = localStorage.getItem("access_token");
+      fetch("http://103.28.37.34:806/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
+
+      }).then(function (data) {
+        console.log("Lấy dữ liệu SMS thành công: ", data);
+        resolve(data.json());
+      }).catch(function (error) {
+        console.log("Lấy dữ liệu SMS thất bại: ", error);
+        reject(error);
+      });
+    });
+  },
   login: function login(crendential) {
     return new Promise(function (resolve, reject) {
       // console.log(crendential);
@@ -65439,8 +65458,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       //Role: 0,
-      UserName: "1351010122",
-      Password: "toihanhphuc",
+      UserName: "1551040136",
+      Password: "130176",
       encrypted: "",
       rememberme: false
     };
@@ -65528,6 +65547,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -65535,7 +65570,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   inject: ["currentUser"],
   data: function data() {
     return {
-      msg: []
+      msg: [],
+      msgDetail: []
     };
   },
   mounted: function mounted() {
@@ -65543,9 +65579,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].callServer("Chat").then(function (listThongTin) {
       _this.msg = listThongTin;
-      //console.log(msg);
+      console.log(_this.msg);
     }).catch(function (err) {
       alert("Lỗi phần dữ liệu Tin nhắn: " + err);
+    });
+
+    __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].callServer("Chat", 59).then(function (lsDetail) {
+      _this.msgDetail = lsDetail;
+      console.log(_this.msgDetail);
     });
   },
 
@@ -65554,7 +65595,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     Name: function Name() {
       return this.currentUser["Ho_ten"];
     }
-  }
+  },
+
+  methods: {}
 });
 
 /***/ }),
@@ -81653,7 +81696,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v("LÝ LỊCH SINH VIÊN")])])
+  }, [_vm._v("THÔNG TIN SINH VIÊN")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -83164,13 +83207,47 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('ul', _vm._l((this.msg), function(mss) {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('b-btn', {
+    directives: [{
+      name: "b-toggle",
+      rawName: "v-b-toggle.collapse1",
+      modifiers: {
+        "collapse1": true
+      }
+    }],
+    attrs: {
+      "variant": "primary"
+    }
+  }, [_vm._v("Toggle Collapse")]), _vm._v(" "), _c('b-collapse', {
+    staticClass: "mt-2",
+    attrs: {
+      "id": "collapse1"
+    }
+  }, [_c('b-card', [_c('p', {
+    staticClass: "card-text"
+  }, [_vm._v("Collapse contents Here")]), _vm._v(" "), _c('b-btn', {
+    directives: [{
+      name: "b-toggle",
+      rawName: "v-b-toggle.collapse1_inner",
+      modifiers: {
+        "collapse1_inner": true
+      }
+    }],
+    attrs: {
+      "size": "sm"
+    }
+  }, [_vm._v("Toggle Inner Collapse")]), _vm._v(" "), _c('b-collapse', {
+    staticClass: "mt-2",
+    attrs: {
+      "id": "collapse1_inner"
+    }
+  }, [_c('b-card', [_vm._v("Hello!")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('div', [_c('ul', _vm._l((this.msg), function(mss) {
     return _c('a', {
       key: mss.ID,
       attrs: {
         "href": "#"
       }
-    }, [_c('li', [_vm._v(_vm._s(mss.ID, mss.Tieude))])])
+    }, [_c('li', [_vm._v(_vm._s(mss.ID) + " - " + _vm._s(mss.Tieude))])])
   }), 0)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
