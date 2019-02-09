@@ -65508,8 +65508,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       //Role: 0,
-      UserName: "1551040136",
-      Password: "130176",
+      UserName: "",
+      Password: "",
       encrypted: "",
       rememberme: false
     };
@@ -65624,6 +65624,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -65661,6 +65667,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         _this2.msgDetail = lsDetail;
         // console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
       });
+    },
+
+    sendMsg: function sendMsg(msgToSend) {
+      alert("Đã gửi: " + msgToSend);
     }
   }
 });
@@ -82486,12 +82496,34 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "size": "sm"
     }
-  }, [_vm._v("Bắt đầu")]), _vm._v(" "), _c('b-collapse', {
+  }, [_vm._v("Bắt đầu gửi tin nhắn")]), _vm._v(" "), _c('b-collapse', {
     staticClass: "mt-2",
     attrs: {
       "id": "collapse1_inner"
     }
-  }, [_c('b-card', [_vm._v("Xin chào")])], 1)], 1)], 1)], 2)])
+  }, [_c('b-card', [_c('div', [_c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.msgVM),
+      expression: "msgVM"
+    }],
+    domProps: {
+      "value": (_vm.msgVM)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.msgVM = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', [_c('b-btn', {
+    on: {
+      "click": function($event) {
+        _vm.sendMsg(_vm.msgVM)
+      }
+    }
+  }, [_vm._v("Gửi")])], 1)])], 1)], 1)], 1)], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"

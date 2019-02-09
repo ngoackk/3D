@@ -31,9 +31,15 @@
               </div>
             </span>
           </p>
-          <b-btn v-b-toggle.collapse1_inner size="sm">Bắt đầu</b-btn>
+          <b-btn v-b-toggle.collapse1_inner size="sm">Bắt đầu gửi tin nhắn</b-btn>
           <b-collapse id="collapse1_inner" class="mt-2">
-            <b-card>Xin chào</b-card>
+            <b-card>
+              <div>
+              <textarea v-model="msgVM"></textarea></div>
+              <div>
+              <b-btn v-on:click="sendMsg(msgVM)">Gửi</b-btn>
+              </div>
+            </b-card>
           </b-collapse>
         </b-card>
       </b-collapse>
@@ -76,6 +82,10 @@ export default {
         this.msgDetail = lsDetail;
         // console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
       });
+    },
+
+    sendMsg: function(msgToSend) {
+      alert("Đã gửi: " + msgToSend);
     }
   }
 };

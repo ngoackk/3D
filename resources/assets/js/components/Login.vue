@@ -80,8 +80,8 @@ export default {
   data() {
     return {
       //Role: 0,
-      UserName: "1551040136",
-      Password: "130176",
+      UserName: "",
+      Password: "",
       encrypted: "",
       rememberme: false
     };
