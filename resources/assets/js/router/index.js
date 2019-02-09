@@ -19,7 +19,7 @@ import News from '../components/News';
 import Inform from '../components/inform';
 import ChangePass from '../components/ChangePass';
 import Result from '../components/Result';
-import Sales from '../components/Sales';
+// import Sales from '../components/Sales';
 
 
 // Views - Pages
@@ -52,11 +52,7 @@ export default new Router({
           name: 'Home',
           component: Home
         },
-        {
-          path: 'sales',
-          name: 'Sales',
-          component: Sales
-        },
+
         {
           path: 'messenger',
           name: 'Messenger',

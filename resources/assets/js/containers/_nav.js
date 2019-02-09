@@ -25,11 +25,11 @@ export default {
       url: '/one-gate',
       icon: 'fa fa-gavel'
     },
-    {
-      name: 'Sales',
-      url: '/sales',
-      icon: 'fa fa-comments'
-    },
+    // {
+    //   name: 'Sales',
+    //   url: '/sales',
+    //   icon: 'fa fa-comments'
+    // },
     {
       name: 'Tin nhắn',
       url: '/messenger',
@@ -67,6 +67,12 @@ export default {
     {
       name: 'Mật khẩu',
       url: '/change-pass',
+      icon: 'fa fa-key',
+
+    },
+    {
+      name: 'Đăng xuất',
+      url: '/pages/login',
       icon: 'fa fa-key',
 
     },
