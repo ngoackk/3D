@@ -16,7 +16,7 @@
       <span class="title">Lớp:</span>
       {{ClassName}}
     </div>
-    
+
     <div>
       <span class="title">Điện thoại:</span>
       {{Tel}}
@@ -25,10 +25,9 @@
       <span class="title">Email:</span>
       {{Email}}
     </div>
-    
 
     <div>
-      <img :src="img.imgCurrent" class="img-circle" :alt="img.imgCurrent">
+      <img :src="img.avatar" class="img-circle" :alt="img.avatar">
     </div>
   </div>
 </template>
@@ -40,6 +39,7 @@ export default {
     return { success: "Thành công !" };
   },
   mounted() {},
+
   computed: {
     Name() {
       return this.currentUser["Ho_ten"];
@@ -61,10 +61,15 @@ export default {
     ClassName() {
       return this.currentUser["Ten_lop"];
     },
+
     img() {
-      return {
-        imgCurrent: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
-      };
+      if (this.currentUser["Image_Url"] == null) {
+        return { avatar: "img/avatars/vinhpq.png" };
+      } else {
+        return {
+          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+        };
+      }
     }
   }
 };

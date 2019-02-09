@@ -4,7 +4,7 @@
       <div>
         <div>
           <!-- {{currentUser.Image_Url}} -->
-          <img :src="imgLink" class="img-avatar" :alt="imgLink">
+          <img :src="Img.avatar" class="img-avatar" :alt="Img.avatar">
         </div>
       </div>
     </template>
@@ -35,12 +35,25 @@ export default {
   data: () => {
     return {
       itemsCount: 42,
-      imgLink: "http://103.28.37.34:806/FileManager/Upload/avata/anh1.jpg"
+      imgLink: "http://103.28.37.34:806"
     };
   },
   mounted() {
     //console.log(this.currentUser);
   },
+
+  computed: {
+    Img() {
+      if (this.currentUser["Image_Url"] == null) {
+        return { avatar: "img/avatars/vinhpq.png" };
+      } else {
+        return {
+          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+        };
+      }
+    }
+  },
+  // Hết phần computed
   methods: {
     logout() {
       //clear session, data then go to login

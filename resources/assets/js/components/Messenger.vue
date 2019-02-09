@@ -4,7 +4,14 @@
       <span class="title">TIN NHẮN</span>
     </div>
     <div>
-      <b-btn v-b-toggle.collapse1 variant="primary">Nội dung trò chuyện</b-btn>
+      <b-btn
+        v-for="m in msg"
+        :key="m.ID"
+        v-b-toggle.collapse1
+        variant="primary"
+        id="btnContent"
+        v-on:click="getMsgById(m.ID)"
+      >{{m.Tieude}}</b-btn>
       <b-collapse id="collapse1" class="mt-2">
         <b-card>
           <p class="card-text">
@@ -55,11 +62,6 @@ export default {
       .catch(err => {
         alert("Lỗi phần dữ liệu Tin nhắn: " + err);
       });
-
-    Users.getMsgDetail("Chat", 59).then(lsDetail => {
-      this.msgDetail = lsDetail;
-      console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
-    });
   },
 
   computed: {
@@ -68,6 +70,13 @@ export default {
     }
   },
 
-  methods: {}
+  methods: {
+    getMsgById: function(msgID) {
+      Users.getMsgDetail("Chat", msgID).then(lsDetail => {
+        this.msgDetail = lsDetail;
+        // console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
+      });
+    }
+  }
 };
 </script>

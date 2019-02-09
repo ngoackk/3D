@@ -52,5 +52,6 @@ export default {
   border-color: coral;
   border-width: 1px;
   width: 100%;
+  margin: 0px 0px 0px 0px;
 }
 </style>

@@ -65235,7 +65235,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       suppressSizeToFit: true
     }, {
       headerName: "Năm học",
-      field: "Nam_hoc",
+      field: "nam_hoc",
       sortable: true,
       filter: true,
       suppressSizeToFit: true,
@@ -65617,6 +65617,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -65637,11 +65644,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }).catch(function (err) {
       alert("Lỗi phần dữ liệu Tin nhắn: " + err);
     });
-
-    __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].getMsgDetail("Chat", 59).then(function (lsDetail) {
-      _this.msgDetail = lsDetail;
-      console.log("Dữ liệu tin nhắn chi tiết: ", _this.msgDetail);
-    });
   },
 
 
@@ -65651,7 +65653,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
   },
 
-  methods: {}
+  methods: {
+    getMsgById: function getMsgById(msgID) {
+      var _this2 = this;
+
+      __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].getMsgDetail("Chat", msgID).then(function (lsDetail) {
+        _this2.msgDetail = lsDetail;
+        // console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -65755,7 +65766,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   inject: ["currentUser"],
@@ -65764,6 +65774,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return { success: "Thành công !" };
   },
   mounted: function mounted() {},
+
 
   computed: {
     Name: function Name() {
@@ -65785,9 +65796,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return this.currentUser["Ten_lop"];
     },
     img: function img() {
-      return {
-        imgCurrent: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
-      };
+      if (this.currentUser["Image_Url"] == null) {
+        return { avatar: "img/avatars/vinhpq.png" };
+      } else {
+        return {
+          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+        };
+      }
     }
   }
 });
@@ -66606,13 +66621,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       itemsCount: 42,
-      imgLink: "http://103.28.37.34:806/FileManager/Upload/avata/anh1.jpg"
+      imgLink: "http://103.28.37.34:806"
     };
   },
   mounted: function mounted() {
     //console.log(this.currentUser);
   },
 
+
+  computed: {
+    Img: function Img() {
+      if (this.currentUser["Image_Url"] == null) {
+        return { avatar: "img/avatars/vinhpq.png" };
+      } else {
+        return {
+          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+        };
+      }
+    }
+  },
+  // Hết phần computed
   methods: {
     logout: function logout() {
       //clear session, data then go to login
@@ -66658,88 +66686,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  inject: ["currentUser"],
   name: "DefaultHeaderDropdownMsg",
+
   components: {
     AppHeaderDropdown: __WEBPACK_IMPORTED_MODULE_0__coreui_vue__["l" /* HeaderDropdown */]
   },
   data: function data() {
-    return { itemsCount: 10, avatar: "img/avatars/vinhpq.png" };
+    return { itemsCount: 5 };
   },
 
   mounted: function mounted() {},
+
+
+  computed: {
+    Img: function Img() {
+      if (this.currentUser["Image_Url"] == null) {
+        return { avatar: "img/avatars/vinhpq.png" };
+      } else {
+        return {
+          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+        };
+      }
+    }
+  },
 
   methods: {
     loadMore: function loadMore() {}
@@ -78094,7 +78069,7 @@ exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(67)();
-exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n.subject {\n  font-family: Arial;\n  font-weight: bold;\n}\n.img-avatar {\n  width: 30px;\n}\n.frame {\n  border-style: solid;\n  border-color: coral;\n  border-width: 1px;\n  width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n.subject {\n  font-family: Arial;\n  font-weight: bold;\n}\n.img-avatar {\n  width: 30px;\n}\n.frame {\n  border-style: solid;\n  border-color: coral;\n  border-width: 1px;\n  width: 100%;\n  margin: 0px 0px 0px 0px;\n}\n", ""]);
 
 /***/ }),
 /* 498 */
@@ -81476,8 +81451,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Email:")]), _vm._v("\n    " + _vm._s(_vm.Email) + "\n  ")]), _vm._v(" "), _c('div', [_c('img', {
     staticClass: "img-circle",
     attrs: {
-      "src": _vm.img.imgCurrent,
-      "alt": _vm.img.imgCurrent
+      "src": _vm.img.avatar,
+      "alt": _vm.img.avatar
     }
   })])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -82221,8 +82196,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', [_c('div', [_c('img', {
     staticClass: "img-avatar",
     attrs: {
-      "src": _vm.imgLink,
-      "alt": _vm.imgLink
+      "src": _vm.Img.avatar,
+      "alt": _vm.Img.avatar
     }
   })])])]), _vm._v(" "), _c('template', {
     slot: "dropdown"
@@ -82463,18 +82438,27 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('b-btn', {
-    directives: [{
-      name: "b-toggle",
-      rawName: "v-b-toggle.collapse1",
-      modifiers: {
-        "collapse1": true
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_vm._l((_vm.msg), function(m) {
+    return _c('b-btn', {
+      directives: [{
+        name: "b-toggle",
+        rawName: "v-b-toggle.collapse1",
+        modifiers: {
+          "collapse1": true
+        }
+      }],
+      key: m.ID,
+      attrs: {
+        "variant": "primary",
+        "id": "btnContent"
+      },
+      on: {
+        "click": function($event) {
+          _vm.getMsgById(m.ID)
+        }
       }
-    }],
-    attrs: {
-      "variant": "primary"
-    }
-  }, [_vm._v("Nội dung trò chuyện")]), _vm._v(" "), _c('b-collapse', {
+    }, [_vm._v(_vm._s(m.Tieude))])
+  }), _vm._v(" "), _c('b-collapse', {
     staticClass: "mt-2",
     attrs: {
       "id": "collapse1"
@@ -82507,7 +82491,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "collapse1_inner"
     }
-  }, [_c('b-card', [_vm._v("Xin chào")])], 1)], 1)], 1)], 1)])
+  }, [_c('b-card', [_vm._v("Xin chào")])], 1)], 1)], 1)], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
@@ -82943,7 +82927,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v(_vm._s(_vm.itemsCount))])], 1), _vm._v(" "), _c('template', {
     slot: "dropdown"
-  }, [_c('div', {}, [_c('b-dropdown-item', {
+  }, [_c('div', {
+    staticClass: "frame"
+  }, [_c('b-dropdown-item', {
     staticClass: "message"
   }, [_c('div', {
     staticClass: "py-3 mr-3 float-left"
@@ -82952,8 +82938,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     staticClass: "img-avatar",
     attrs: {
-      "src": _vm.avatar,
-      "alt": "admin@bootstrapmaster.com"
+      "src": _vm.Img.avatar,
+      "alt": _vm.Img.avatar
     }
   }), _vm._v(" "), _c('b-badge', {
     staticClass: "avatar-status",
@@ -82962,113 +82948,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1)]), _vm._v(" "), _c('div', [_c('small', {
     staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
+  }, [_vm._v(_vm._s(_vm.currentUser["Ho_ten"]))]), _vm._v(" "), _c('small', {
     staticClass: "text-muted float-right mt-1"
   }, [_vm._v("1:52 PM")])]), _vm._v(" "), _c('div', {
     staticClass: "text-truncate font-weight-bold"
   }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
     staticClass: "text-truncate text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('b-dropdown-item', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3 mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "danger"
-    }
-  })], 1)]), _vm._v(" "), _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])]), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-truncate text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('b-dropdown-item', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3 mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "info"
-    }
-  })], 1)]), _vm._v(" "), _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])]), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-truncate text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('b-dropdown-item', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3 mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "warning"
-    }
-  })], 1)]), _vm._v(" "), _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])]), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-truncate text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])]), _vm._v(" "), _c('b-dropdown-item', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3 mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "img/avatars/7.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "dark"
-    }
-  })], 1)]), _vm._v(" "), _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lukasz Holeczek")]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted float-right mt-1"
-  }, [_vm._v("1:52 PM")])]), _vm._v(" "), _c('div', {
-    staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
-    staticClass: "text-truncate text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...")])])], 1)])], 2)
+  }, [_vm._v("Chào nhà trường")])])], 1)])], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
