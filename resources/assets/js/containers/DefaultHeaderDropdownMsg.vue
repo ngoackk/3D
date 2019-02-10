@@ -17,7 +17,7 @@
             <small class="text-muted">{{currentUser["Ho_ten"]}}</small>
             <small class="text-muted float-right mt-1">1:52 PM</small>
           </div>
-          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+          <div class="text-truncate font-weight-bold">Tin nhắn từ sinh viên</div>
           <small
             class="text-truncate text-muted">Chào nhà trường</small>
         </b-dropdown-item>

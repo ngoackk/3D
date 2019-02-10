@@ -3,7 +3,7 @@
     <template slot="header">
       <div>
         <div>
-          <!-- {{currentUser.Image_Url}} -->
+        
           <img :src="Img.avatar" class="img-avatar" :alt="Img.avatar">
         </div>
       </div>
@@ -57,6 +57,7 @@ export default {
   methods: {
     logout() {
       //clear session, data then go to login
+
       this.$router.push("/pages/login");
     }
   }

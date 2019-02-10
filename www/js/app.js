@@ -66574,6 +66574,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     logout: function logout() {
       //clear session, data then go to login
+
       this.$router.push("/pages/login");
     }
   }
@@ -82847,7 +82848,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "text-muted float-right mt-1"
   }, [_vm._v("1:52 PM")])]), _vm._v(" "), _c('div', {
     staticClass: "text-truncate font-weight-bold"
-  }, [_vm._v("Lorem ipsum dolor sit amet")]), _vm._v(" "), _c('small', {
+  }, [_vm._v("Tin nhắn từ sinh viên")]), _vm._v(" "), _c('small', {
     staticClass: "text-truncate text-muted"
   }, [_vm._v("Chào nhà trường")])])], 1)])], 2)
 },staticRenderFns: []}
