@@ -35,9 +35,12 @@
           <b-collapse id="collapse1_inner" class="mt-2">
             <b-card>
               <div>
-              <textarea v-model="msgVM"></textarea></div>
-              <div>
-              <b-btn v-on:click="sendMsg(msgVM)">Gửi</b-btn>
+                <form>
+                  <textarea size="200" placeholder="Mời nhập vào tin nhắn"></textarea>
+                  <div>
+                    <b-btn v-on:click="sendMsg(message)">Gửi</b-btn>
+                  </div>
+                </form>
               </div>
             </b-card>
           </b-collapse>

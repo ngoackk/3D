@@ -65630,6 +65630,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -65734,8 +65737,69 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  inject: ["currentUser"],
+  result: [],
+
+  data: function data() {
+    return {
+      myDB: [{
+        id: 1,
+        title: "Thông báo nhận thủ tục thi",
+        content: "Thông báo của giáo vụ khoa về việc hoàn thiện hồ sơ thi học kỳ",
+        date: "26/11/2017 07:08:31"
+      }, {
+        id: 2,
+        title: "Hoàn thiện thủ tục nộp hồ sơ công chứng",
+        content: "Thông báo: Mời đến văn phòng khoa để lấy hồ sơ công chứng",
+        date: "28/11/2017 07:08:31"
+      }]
+    };
+  },
+
+  methods: {
+    getMsgById: function getMsgById(msgID) {
+      // alert(msgID);
+    },
+    getDataById: function getDataById(id) {}
+  }
+});
 
 /***/ }),
 /* 309 */
@@ -81038,7 +81102,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v("LỊCH THI")])])
+  }, [_vm._v("LỊCH HỌC")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -82137,8 +82201,64 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("Một cửa")])
-},staticRenderFns: []}
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
+    attrs: {
+      "role": "tablist"
+    }
+  }, [_c('b-card', {
+    staticClass: "mb-1",
+    attrs: {
+      "no-body": ""
+    }
+  }, _vm._l((_vm.myDB), function(m) {
+    return _c('b-card-header', {
+      key: m.id,
+      staticClass: "p-1",
+      attrs: {
+        "header-tag": "header",
+        "role": "tab"
+      }
+    }, [_c('b-btn', {
+      directives: [{
+        name: "b-toggle",
+        rawName: "v-b-toggle.collapse1",
+        modifiers: {
+          "collapse1": true
+        }
+      }],
+      attrs: {
+        "block": "",
+        "variant": "info",
+        "id": "btnContent"
+      },
+      on: {
+        "click": function($event) {
+          _vm.getDataById(m.id)
+        }
+      }
+    }, [_vm._v(_vm._s(m.title))])], 1)
+  }), 1), _vm._v(" "), _c('b-collapse', {
+    attrs: {
+      "accordion": "myva",
+      "id": "collapse1",
+      "role": "tabpanel"
+    }
+  }, [_c('b-card-body', [_c('p', {
+    staticClass: "card-text"
+  }, _vm._l((_vm.myDB), function(msd) {
+    return _c('span', {
+      key: msd.ID
+    }, [_c('div', [_c('span', {
+      staticClass: "title"
+    }, [_vm._v(_vm._s(_vm.currentUser["Ho_ten"]) + ":")]), _vm._v("\n              " + _vm._s(msd.content) + "\n            ")]), _vm._v(" "), _c('div', [_c('span', {
+      staticClass: "title"
+    }, [_vm._v("Ngày:")]), _vm._v("\n              " + _vm._s(msd.date) + "\n            ")])])
+  }), 0)])], 1)], 1)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('span', {
+    staticClass: "title"
+  }, [_vm._v("DỊCH VỤ MỘT CỬA")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -82365,29 +82485,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "collapse1_inner"
     }
-  }, [_c('b-card', [_c('div', [_c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.msgVM),
-      expression: "msgVM"
-    }],
-    domProps: {
-      "value": (_vm.msgVM)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.msgVM = $event.target.value
-      }
+  }, [_c('b-card', [_c('div', [_c('form', [_c('textarea', {
+    attrs: {
+      "size": "200",
+      "placeholder": "Mời nhập vào tin nhắn"
     }
-  })]), _vm._v(" "), _c('div', [_c('b-btn', {
+  }), _vm._v(" "), _c('div', [_c('b-btn', {
     on: {
       "click": function($event) {
-        _vm.sendMsg(_vm.msgVM)
+        _vm.sendMsg(_vm.message)
       }
     }
-  }, [_vm._v("Gửi")])], 1)])], 1)], 1)], 1)], 2)])
+  }, [_vm._v("Gửi")])], 1)])])])], 1)], 1)], 1)], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"

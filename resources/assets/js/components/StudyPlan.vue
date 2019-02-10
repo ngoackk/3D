@@ -1,6 +1,6 @@
 <template>
   <div>
-     <div><span class="title">LỊCH THI</span></div>
+     <div><span class="title">LỊCH HỌC</span></div>
     <div>
       <span class="title">Sinh viên: {{currentUser["Ho_ten"]}}</span>
     </div>
