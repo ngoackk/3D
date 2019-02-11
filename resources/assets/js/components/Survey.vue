@@ -1,14 +1,21 @@
 <template>
   <div>
     <div class="title">Khảo sát</div>
-    <div>{{md5Msg}}</div>
+
+    <div class="title">{{curr.Ho_ten}}</div>
   </div>
 </template>
 <script>
-import md5 from "js-md5";
+import { Users } from "../apis/api";
 export default {
   data: function() {
-    return { md5Msg: md5.base64("Giá trị MD5") };
+    return { success: "Thành công" };
+  },
+
+  computed: {
+    curr() {
+      return Users.getCurrent();
+    }
   }
 };
 </script>

@@ -17,7 +17,6 @@
 import { Users, Date } from "../apis/api";
 
 export default {
-  inject: ["currentUser"],
   data() {
     return {
       msg: []
