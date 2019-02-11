@@ -35,10 +35,6 @@ export default {
       });
   },
 
-  computed: {
-    Name() {
-      return this.currentUser["Ho_ten"];
-    }
-  }
+  computed: {}
 };
 </script>

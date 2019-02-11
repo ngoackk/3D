@@ -93,7 +93,7 @@ export const Users = {
       user.Image_Url = noImage;
     }
 
-    alert(user.Image_Url);
+
 
     return user;
   },

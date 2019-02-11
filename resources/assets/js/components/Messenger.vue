@@ -5,7 +5,8 @@
     </div>
 
     <div>
-      <b-btn class="m-1"
+      <b-btn
+        class="m-1"
         v-for="m in msg"
         :key="m.ID"
         v-b-toggle.collapse1
@@ -76,11 +77,7 @@ export default {
       });
   },
 
-  computed: {
-    Name() {
-      return this.currentUser["Ho_ten"];
-    }
-  },
+  computed: {},
 
   methods: {
     getMsgById: function(msgID) {

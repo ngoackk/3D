@@ -6,71 +6,43 @@
 
     <div>
       <span class="title">Họ và tên:</span>
-      {{Name}}
+      {{curr.Ho_ten}}
     </div>
     <div>
       <span class="title">Mã sinh viên:</span>
-      {{StudentNo}}
+      {{curr.Ma_sv}}
     </div>
     <div>
       <span class="title">Lớp:</span>
-      {{ClassName}}
+      {{curr.Ten_lop}}
     </div>
 
     <div>
       <span class="title">Điện thoại:</span>
-      {{Tel}}
+      {{curr.Dien_thoai}}
     </div>
     <div>
       <span class="title">Email:</span>
-      {{Email}}
+      {{curr.Email}}
     </div>
 
     <div>
-      <img :src="img.avatar" class="img-circle" :alt="img.avatar">
+      <img :src="curr.Image_Url" class="img-circle" :alt="curr.Image_Url">
     </div>
   </div>
 </template>
 <script>
+import { Users, Date } from "../apis/api";
 export default {
-  inject: ["currentUser"],
-
   data() {
     return { success: "Thành công !" };
   },
   mounted() {},
 
   computed: {
-    Name() {
-      return this.currentUser["Ho_ten"];
-    },
-    imgURL() {
-      return this.currentUser["Image_Url"];
-    },
-    Tel() {
-      return this.currentUser["Dien_thoai"];
-    },
-
-    Email() {
-      return this.currentUser["Email"];
-    },
-    StudentNo() {
-      return this.currentUser["Ma_sv"];
-    },
-
-    ClassName() {
-      return this.currentUser["Ten_lop"];
-    },
-
-    img() {
-      if (Users.getCurrent().Image_Url == null) {
-        return { avatar: "img/avatars/u2.png" };
-      } else {
-        return {
-          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
-        };
-      }
+    curr() {
+      return Users.getCurrent();
+    }
   }
-}
-}
+};
 </script>

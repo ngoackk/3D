@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <span class="title">{{currentUser["Ho_ten"]}}</span>
+      <span class="title">{{curr.Ho_ten}}</span>
     </div>
     <ag-grid-vue
       style="width: 100%; height: 100%;"
@@ -72,6 +72,12 @@ export default {
       .catch(err => {
         alert(err);
       });
+  },
+
+  computed: {
+    curr() {
+      return Users.getCurrent();
+    }
   }
 };
 </script>
