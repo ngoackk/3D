@@ -65633,6 +65633,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -65668,7 +65674,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].getMsgDetail("Chat", msgID).then(function (lsDetail) {
         _this2.msgDetail = lsDetail;
-        // console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
+        console.log("Dữ liệu tin nhắn chi tiết: ", _this2.msgDetail);
       });
     },
 
@@ -65871,7 +65877,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     img: function img() {
       if (this.currentUser["Image_Url"] == null) {
-        return { avatar: "img/avatars/vinhpq.png" };
+        return { avatar: "img/avatars/u2.png" };
       } else {
         return {
           avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
@@ -66603,7 +66609,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -66626,7 +66631,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   computed: {
     Img: function Img() {
       if (this.currentUser["Image_Url"] == null) {
-        return { avatar: "img/avatars/vinhpq.png" };
+        return { avatar: "img/avatars/u2.png" };
       } else {
         return {
           avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
@@ -81946,7 +81951,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "row justify-content-center"
   }, [_c('div', {
-    staticClass: "col-xs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -81960,7 +81965,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(1), _vm._v(" "), _c('div', {
     staticClass: "title_color"
   }, [_vm._v("Lịch học")])])]), _vm._v(" "), _c('div', {
-    staticClass: "colxs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -81974,7 +81979,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(2), _vm._v(" "), _c('div', {
     staticClass: "title_color"
   }, [_vm._v("Lịch thi")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-xs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -81988,7 +81993,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(3), _vm._v(" "), _c('div', {
     staticClass: "title_color"
   }, [_vm._v("Khảo sát")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-xs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -82004,7 +82009,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Kết quả")])])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
     staticClass: "row justify-content-center"
   }, [_c('div', {
-    staticClass: "col-xs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -82018,7 +82023,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(5), _vm._v(" "), _c('div', {
     staticClass: "title_color"
   }, [_vm._v("Tin nhắn")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-xs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -82032,7 +82037,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(6), _vm._v(" "), _c('div', {
     staticClass: "title_color"
   }, [_vm._v("Bản tin")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-xs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -82046,7 +82051,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(7), _vm._v(" "), _c('div', {
     staticClass: "title_color"
   }, [_vm._v("Một cửa")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-xs-1"
+    staticClass: "col-xs-3"
   }, [_c('button', {
     staticClass: "btn main",
     attrs: {
@@ -82062,9 +82067,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Tài chính")])])])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "row"
+    staticClass: "row justify-content-center"
   }, [_c('div', {
-    staticClass: "col-md-4"
+    staticClass: "col-xs-12"
   }, [_c('img', {
     attrs: {
       "src": "img/banner.jpg",
@@ -82432,7 +82437,19 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_vm._l((_vm.msg), function(m) {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "accordion",
+    attrs: {
+      "id": "accordionExample"
+    }
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('b-card', {
+    staticClass: "mb-1",
+    attrs: {
+      "no-body": ""
+    }
+  }, [_vm._l((_vm.msg), function(m) {
     return _c('b-btn', {
       directives: [{
         name: "b-toggle",
@@ -82496,7 +82513,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.sendMsg(_vm.message)
       }
     }
-  }, [_vm._v("Gửi")])], 1)])])])], 1)], 1)], 1)], 2)])
+  }, [_vm._v("Gửi")])], 1)])])])], 1)], 1)], 1)], 2)], 1)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"

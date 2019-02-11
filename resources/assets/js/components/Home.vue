@@ -5,15 +5,15 @@
       <!-- Bắt đầu container-->
       <div class="container">
         <!-- Phần Banner -->
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row justify-content-center">
+          <div class="col-xs-12">
             <img src="img/banner.jpg" width="100%">
           </div>
         </div>
 
         <!--Phần main content hàng 1 -->
         <div class="row justify-content-center">
-          <div class="col-xs-1">
+          <div class="col-xs-3">
             <button @click="goto('/studyplan')" type="button" class="btn main">
               <div>
                 <img src="img/lichhoc.png" alt="Lịch học" height="45">
@@ -22,7 +22,7 @@
             </button>
           </div>
 
-          <div class="colxs-1">
+          <div class="col-xs-3">
             <button @click="goto('/testplan')" type="button" class="btn main">
               <div>
                 <img src="img/test.png" alt="Lịch thi" height="45">
@@ -31,7 +31,7 @@
             </button>
           </div>
 
-          <div class="col-xs-1">
+          <div class="col-xs-3">
             <button @click="goto('/survey')" type="button" class="btn main">
               <div>
                 <img src="img/survey.png" alt="Khảo sát" height="45">
@@ -39,7 +39,7 @@
               <div class="title_color">Khảo sát</div>
             </button>
           </div>
-          <div class="col-xs-1">
+          <div class="col-xs-3">
             <button @click="goto('/result')" type="button" class="btn main">
               <div>
                 <img src="img/result.png" alt="Kết quả" height="45">
@@ -51,7 +51,7 @@
         <br>
         <!--Phần main content hàng 2 -->
         <div class="row justify-content-center">
-          <div class="col-xs-1">
+          <div class="col-xs-3">
             <button @click="goto('/messenger')" type="button" class="btn main">
               <div>
                 <img src="img/mess.png" alt="Tin nhắn" height="45">
@@ -60,7 +60,7 @@
             </button>
           </div>
 
-          <div class="col-xs-1">
+          <div class="col-xs-3">
             <button @click="goto('/news')" type="button" class="btn main">
               <div>
                 <img src="img/news.png" alt="Bản tin" height="45">
@@ -69,7 +69,7 @@
             </button>
           </div>
 
-          <div class="col-xs-1">
+          <div class="col-xs-3">
             <button @click="goto('/one-gate')" type="button" class="btn main">
               <div>
                 <img src="img/1gate.png" alt="Một cửa" height="45">
@@ -78,7 +78,7 @@
             </button>
           </div>
 
-          <div class="col-xs-1">
+          <div class="col-xs-3">
             <button @click="goto('/finance')" type="button" class="btn main">
               <div>
                 <img src="img/taichinh.png" alt="Tài chính" height="45">

@@ -1,12 +1,16 @@
 <template>
   <div>
+
+
+
     <div>
       <span class="title">TIN NHẮN</span>
     </div>
-    <div>
+    <div  class="accordion" id="accordionExample">
+      <div class="card">
+       <b-card no-body class="mb-1">
       <b-btn
-        v-for="m in msg"
-        :key="m.ID"
+       v-for="m in msg" :key="m.ID"
         v-b-toggle.collapse1
         variant="primary"
         id="btnContent"
@@ -46,6 +50,8 @@
           </b-collapse>
         </b-card>
       </b-collapse>
+      </b-card>
+    </div>
     </div>
   </div>
 </template>
@@ -83,7 +89,7 @@ export default {
     getMsgById: function(msgID) {
       Users.getMsgDetail("Chat", msgID).then(lsDetail => {
         this.msgDetail = lsDetail;
-        // console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
+       console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
       });
     },
 

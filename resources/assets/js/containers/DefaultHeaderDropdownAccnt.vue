@@ -3,7 +3,6 @@
     <template slot="header">
       <div>
         <div>
-        
           <img :src="Img.avatar" class="img-avatar" :alt="Img.avatar">
         </div>
       </div>
@@ -45,7 +44,7 @@ export default {
   computed: {
     Img() {
       if (this.currentUser["Image_Url"] == null) {
-        return { avatar: "img/avatars/vinhpq.png" };
+        return { avatar: "img/avatars/u2.png" };
       } else {
         return {
           avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
