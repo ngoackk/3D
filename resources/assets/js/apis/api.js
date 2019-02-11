@@ -1,5 +1,8 @@
 import axios from "axios";
+
+var baseURL = "http://103.28.37.34:806";
 export const Users = {
+
   studentLogin(crendential) {
     return new Promise((resolve, reject) => {
       var url = new URL("http://103.28.37.34:806/api/login"),
@@ -35,7 +38,7 @@ export const Users = {
   callServer(url) {
     return new Promise((resolve, reject) => {
       let token = localStorage.getItem("access_token");
-      fetch("http://103.28.37.34:806/api/" + url + "?accessToken=" + token, {
+      fetch(baseURL + "/api/" + url + "?accessToken=" + token, {
           method: "POST",
           headers: {
             'Accept': 'application/json',
@@ -57,7 +60,7 @@ export const Users = {
   getMsgDetail(url, chatId) {
     return new Promise((resolve, reject) => {
       let token = localStorage.getItem("access_token");
-      fetch("http://103.28.37.34:806/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
+      fetch(baseURL + "/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
           method: "POST",
           headers: {
             'Accept': 'application/json',
@@ -85,46 +88,12 @@ export const Users = {
 
 
   },
-  login(crendential) {
-    return new Promise((resolve, reject) => {
-      // console.log(crendential);
-      axios.post("https://tinchi.hau.edu.vn/DangNhap/Login", crendential).then((response) => {
-        // console.log(response);
-        resolve(response);
-      }).catch((error) => {
-        // console.log(error);
-        reject(error);
-      });
 
-    });
-  },
 
 };
 
 export const Data = {
-  search(...params) {
-    return new Promise((resolve, reject) => {
-      let uri = params.join('/');
-      const instance = axios.create({
-        //baseURL: '"http://localhost:3001'
-      });
-      instance.defaults.headers.common.Authorization = 'Bearer ' + localStorage.getItem('access_token');
-      instance.get("https://tinchi.hau.edu.vn/DangNhap/Login/" + uri).then(response => {
-        resolve(response.data);
-      }).catch(err => {
-        resolve({
-          Id: '1212212121',
-          Username: 'Test',
-          FullName: 'Nguyen Van A',
-          Email: 'test@test'
-        });
-        //reject(err)
-      });
-      // console.log(filter);
-      // console.log(reject);
-      //resolve(filter);
-    });
-  },
+
 };
 
 export default {

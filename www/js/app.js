@@ -12011,6 +12011,8 @@ exports.ValueService = ValueService;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Users; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Data; });
 
+
+var baseURL = "http://103.28.37.34:806";
 var Users = {
   studentLogin: function studentLogin(crendential) {
     return new Promise(function (resolve, reject) {
@@ -12045,7 +12047,7 @@ var Users = {
   callServer: function callServer(url) {
     return new Promise(function (resolve, reject) {
       var token = localStorage.getItem("access_token");
-      fetch("http://103.28.37.34:806/api/" + url + "?accessToken=" + token, {
+      fetch(baseURL + "/api/" + url + "?accessToken=" + token, {
         method: "POST",
         headers: {
           'Accept': 'application/json',
@@ -12064,7 +12066,7 @@ var Users = {
   getMsgDetail: function getMsgDetail(url, chatId) {
     return new Promise(function (resolve, reject) {
       var token = localStorage.getItem("access_token");
-      fetch("http://103.28.37.34:806/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
+      fetch(baseURL + "/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
         method: "POST",
         headers: {
           'Accept': 'application/json',
@@ -12084,50 +12086,10 @@ var Users = {
 
     // alert("Gọi được hàm từ Users");
     return JSON.parse(localStorage.getItem("user"));
-  },
-  login: function login(crendential) {
-    return new Promise(function (resolve, reject) {
-      // console.log(crendential);
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post("https://tinchi.hau.edu.vn/DangNhap/Login", crendential).then(function (response) {
-        // console.log(response);
-        resolve(response);
-      }).catch(function (error) {
-        // console.log(error);
-        reject(error);
-      });
-    });
   }
 };
 
-var Data = {
-  search: function search() {
-    for (var _len = arguments.length, params = Array(_len), _key = 0; _key < _len; _key++) {
-      params[_key] = arguments[_key];
-    }
-
-    return new Promise(function (resolve, reject) {
-      var uri = params.join('/');
-      var instance = __WEBPACK_IMPORTED_MODULE_0_axios___default.a.create({
-        //baseURL: '"http://localhost:3001'
-      });
-      instance.defaults.headers.common.Authorization = 'Bearer ' + localStorage.getItem('access_token');
-      instance.get("https://tinchi.hau.edu.vn/DangNhap/Login/" + uri).then(function (response) {
-        resolve(response.data);
-      }).catch(function (err) {
-        resolve({
-          Id: '1212212121',
-          Username: 'Test',
-          FullName: 'Nguyen Van A',
-          Email: 'test@test'
-        });
-        //reject(err)
-      });
-      // console.log(filter);
-      // console.log(reject);
-      //resolve(filter);
-    });
-  }
-};
+var Data = {};
 
 /* unused harmony default export */ var _unused_webpack_default_export = ({
   Users: Users,
@@ -65271,6 +65233,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }).catch(function (err) {
       alert(err);
     });
+  },
+
+  computed: {
+    currentName: function currentName() {
+      return { name: __WEBPACK_IMPORTED_MODULE_1__apis_api__["a" /* Users */].getCurrent().Ho_ten };
+    }
   }
 });
 
@@ -65862,11 +65830,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return this.currentUser["Ten_lop"];
     },
     img: function img() {
-      if (this.currentUser["Image_Url"] == null) {
+      if (Users.getCurrent().Image_Url == null) {
         return { avatar: "img/avatars/u2.png" };
       } else {
         return {
-          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
         };
       }
     }
@@ -81402,7 +81370,7 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v("Sinh viên: " + _vm._s(_vm.currentUser["Ho_ten"]))])]), _vm._v(" "), _c('ag-grid-vue', {
+  }, [_vm._v("Sinh viên: " + _vm._s(_vm.currentName.name))])]), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
