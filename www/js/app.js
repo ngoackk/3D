@@ -65488,12 +65488,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   computed: {
-    kk: function kk() {
+    curr: function curr() {
       return __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].getCurrent();
     }
   }
@@ -82511,12 +82516,18 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', [_vm._v(_vm._s(_vm.kk))]), _vm._v(" "), _c('div', [_c('button', {
-    on: {
-      "click": _vm.kk
-    }
-  }, [_vm._v("SHOW ME")])])])
-},staticRenderFns: []}
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div'), _vm._v(" "), _c('div', [_c('h5', [_vm._v("ESSOFT VERSION 1.0")])]), _vm._v(" "), _c('div', {
+    staticClass: "title"
+  }, [_vm._v("Phát triển bởi: Công ty Cổ phần")]), _vm._v(" "), _c('div', {
+    staticClass: "title"
+  }, [_vm._v("Giải pháp Giáo dục - Y tế Nam Việt")]), _vm._v(" "), _c('div', {
+    staticClass: "title"
+  }, [_vm._v("Website: http://namvietjsc.edu.vn")]), _vm._v(" "), _c('div', {
+    staticClass: "title"
+  }, [_vm._v("Hotline: 0912681066")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
