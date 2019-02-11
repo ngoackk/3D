@@ -80,7 +80,7 @@ export default new Router({
           component: Finance
         },
         {
-          path: 'news',
+          path: 'news/:id?',
           name: 'News',
           component: News
         },
