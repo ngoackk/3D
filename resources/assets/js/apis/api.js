@@ -22,27 +22,11 @@ export const Users = {
       });
     });
   },
+
+
   getUserInfor() {
     return this.callServer("Profile");
-    // return new Promise((resolve, reject) => {
-    //   let token = localStorage.getItem("access_token");
-    //   fetch("http://103.28.37.34:806/api/Profile?accessToken=" + token, {
-    //       method: "POST",
-    //       headers: {
-    //         'Accept': 'application/json',
-    //         'Content-Type': 'application/json'
-    //       }
 
-    //     })
-    //     .then(data => {
-    //       console.log("Lấy dữ liệu thành công: ", data);
-    //       resolve(data.json())
-    //     })
-    //     .catch(error => {
-    //       console.log("Lấy dữ liệu thất bại: ", error);
-    //       reject(error)
-    //     });
-    // })
   },
   getLearningPoint() {
     return this.callServer("LearningPoints");
@@ -92,6 +76,15 @@ export const Users = {
     });
   },
 
+  getCurrent() {
+
+    // alert("Gọi được hàm từ Users");
+    return JSON.parse(localStorage.getItem("user"));
+
+
+
+
+  },
   login(crendential) {
     return new Promise((resolve, reject) => {
       // console.log(crendential);

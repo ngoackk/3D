@@ -25,6 +25,7 @@
 
 <script>
 import { HeaderDropdown as AppHeaderDropdown } from "@coreui/vue";
+import { Users } from "../apis/api";
 export default {
   inject: ["currentUser"],
   name: "DefaultHeaderDropdownAccnt",
@@ -43,11 +44,11 @@ export default {
 
   computed: {
     Img() {
-      if (this.currentUser["Image_Url"] == null) {
+      if (Users.getCurrent().Image_Url == null) {
         return { avatar: "img/avatars/u2.png" };
       } else {
         return {
-          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
         };
       }
     }
