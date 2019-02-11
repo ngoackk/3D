@@ -32,7 +32,7 @@ export default {
   components: {
     AppHeaderDropdown
   },
-  data: () => {
+  data() {
     return {
       itemsCount: 42,
       imgLink: "http://103.28.37.34:806",
