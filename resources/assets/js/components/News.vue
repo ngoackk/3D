@@ -17,7 +17,7 @@
 
       </li>
     </ul>
-    <div>     
+    <!-- <div>     
       <ul>
         <li v-for="mss in msg" :key="mss.ID">
            <router-link :to="'/news/'+ mss.ID">
@@ -25,7 +25,7 @@
            </router-link>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
