@@ -63,14 +63,14 @@ export default {
     },
 
     img() {
-      if (this.currentUser["Image_Url"] == null) {
+      if (Users.getCurrent().Image_Url == null) {
         return { avatar: "img/avatars/u2.png" };
       } else {
         return {
-          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
         };
       }
-    }
   }
-};
+}
+}
 </script>
