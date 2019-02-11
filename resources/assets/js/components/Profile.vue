@@ -6,24 +6,24 @@
 
     <div>
       <span class="title">Họ và tên:</span>
-      {{Name}}
+      {{user.Ho_ten}}
     </div>
     <div>
       <span class="title">Mã sinh viên:</span>
-      {{StudentNo}}
+      {{user.Ma_sv}}
     </div>
     <div>
       <span class="title">Lớp:</span>
-      {{ClassName}}
+      {{user.Ten_lop}}
     </div>
 
     <div>
       <span class="title">Điện thoại:</span>
-      {{Tel}}
+      {{user.Dien_thoai}}
     </div>
     <div>
       <span class="title">Email:</span>
-      {{Email}}
+      {{user.Email}}
     </div>
 
     <div>
@@ -32,9 +32,9 @@
   </div>
 </template>
 <script>
+import { Users, Date } from "../apis/api";
 export default {
   inject: ["currentUser"],
-
   data() {
     return { 
       success: "Thành công !"    
@@ -45,25 +45,6 @@ export default {
   computed: {
     user(){
       return this.currentUser();
-    },
-    Name() {
-      return this.user["Ho_ten"];
-    },
-    imgURL() {
-      return this.user["Image_Url"];
-    },
-    Tel() {
-      return this.user["Dien_thoai"];
-    },
-
-    Email() {
-      return this.user["Email"];
-    },
-    StudentNo() {
-      return this.user["Ma_sv"];
-    },
-    ClassName() {
-      return this.user["Ten_lop"];
     }
   }
 }
