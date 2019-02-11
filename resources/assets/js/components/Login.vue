@@ -19,11 +19,7 @@
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Tài khoản"
-          >
-          <!-- <small
-            id="emailHelp"
-            class="form-text text-muted"
-          >We'll never share your email with anyone else.</small>-->
+          >          
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Mật khẩu</label>
@@ -40,12 +36,10 @@
           <label class="form-check-label" for="exampleCheck1">Lưu mật khẩu</label>
         </div>
         <button @click="login" class="btn btn-primary btn-block">Đăng nhập</button>
-        <!-- <button @click="getUserData" class="btn btn-primary">Check me</button> -->
+      </form>
         <div class="text-center">
           <button v-b-modal.modal1 class="btn btn-link">[Quên mật khẩu sinh viên]</button>
-          <!-- <b-btn v-b-modal.modal1>Launch demo modal</b-btn> -->
-        </div>
-        <!-- Modal Component -->
+        
         <b-modal id="modal1" centered title="Lấy lại mật khẩu">
           <p
             class="my-4"
@@ -59,12 +53,12 @@
             >Lấy lại mật khẩu</b-btn>
           </div>
         </b-modal>
-      </form>
+          </div>
     </div>
     <nav class="navbar bg-white fixed-bottom">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">&copy; 2018</a>
+           &copy; 2018 
         </li>
       </ul>
       <ul class="nav justify-content-end">
@@ -81,37 +75,15 @@ export default {
     return {
       //Role: 0,
       UserName: "",
-      Password: "",
-      encrypted: "",
-      rememberme: false
+      Password: "",      
+      rememberme: false,
+      DeviceId: "",
     };
   },
   mounted() {
     this.logout();
-  },
-  watch: {
-    Password(newVal, oldVal) {
-      this.encrypted = md5.base64(newVal);
-      //console.log(this.encrypted)
-    }
-  },
+  },  
   methods: {
-    loginSubmit() {
-      this.$store
-        .dispatch("user/login", this.form)
-        .then(this.success)
-        .catch(this.unauthorized);
-    },
-    success() {
-      this.$notify({ group: "alerts", text: this.$t("users.sessions.valid") });
-      this.$router.push("/");
-    },
-    unauthorized() {
-      this.$notify({
-        group: "alerts",
-        text: this.$t("users.sessions.invalid")
-      });
-    },
     logout() {
       localStorage.removeItem("access_token");
       localStorage.removeItem("user");
@@ -129,30 +101,24 @@ export default {
             Users.getUserInfor()
               .then(user => {
                 //console.log(user);
-                localStorage.setItem("user", JSON.stringify(user));
-
+                localStorage.setItem("user", JSON.stringify(user));                
                 if (JSON.parse(localStorage.getItem("user") != null)) {
                   this.$router.push("/");
                 }
               })
               .catch(err => {
+                this.$notify({ group: "alerts", text: this.$t("users.sessions.valid") });
                 console.error(err);
               });
           } else {
+            this.$notify({ group: "alerts", text: this.$t("users.sessions.valid") });
             console.error(response);
           }
         })
         .catch(error => {
           console.error(error);
         });
-    },
-    getUserData() {
-      Data.search({ ID: "59" })
-        .then(data => {
-          alert("thanh cong" + data);
-        })
-        .catch(err => {});
-    }
+    },    
   }
 };
 </script>
