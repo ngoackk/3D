@@ -13,16 +13,8 @@
               <b-badge variant="success" class="avatar-status"></b-badge>
             </div>
           </div>
-          <div>
-            <small class="text-muted">{{currentUser["Ho_ten"]}}</small>
-            <small class="text-muted float-right mt-1">1:52 PM</small>
-          </div>
-          <div class="text-truncate font-weight-bold">Tin nhắn từ sinh viên</div>
-          <small
-            class="text-truncate text-muted">Chào nhà trường</small>
         </b-dropdown-item>
       </div>
-      
     </template>
   </AppHeaderDropdown>
 </template>
@@ -46,11 +38,11 @@ export default {
 
   computed: {
     Img() {
-      if (this.currentUser["Image_Url"] == null) {
-        return { avatar: "img/avatars/vinhpq.png" };
+      if (Users.getCurrent().Image_Url == null) {
+        return { avatar: "img/avatars/u2.png" };
       } else {
         return {
-          avatar: "http://103.28.37.34:806" + this.currentUser["Image_Url"]
+          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
         };
       }
     }

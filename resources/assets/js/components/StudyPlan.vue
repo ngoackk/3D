@@ -1,8 +1,10 @@
 <template>
   <div>
-     <div><span class="title">LỊCH HỌC</span></div>
     <div>
-      <span class="title">Sinh viên: {{currentUser["Ho_ten"]}}</span>
+      <span class="title">LỊCH HỌC</span>
+    </div>
+    <div>
+      <span class="title">Sinh viên: {{currentName.name}}</span>
     </div>
     <ag-grid-vue
       style="width: 100%; height: 100%;"
@@ -90,6 +92,11 @@ export default {
     //   .then(rowData => (this.rowData = rowData));
   },
 
+  computed: {
+    currentName() {
+      return { name: Users.getCurrent().Ho_ten };
+    }
+  },
   mounted() {
     Users.callServer("StudySchedule")
       .then(points => {
