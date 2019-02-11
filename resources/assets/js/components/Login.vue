@@ -130,7 +130,10 @@ export default {
               .then(user => {
                 //console.log(user);
                 localStorage.setItem("user", JSON.stringify(user));
-                this.$router.push("/");
+
+                if (JSON.parse(localStorage.getItem("user") != null)) {
+                  this.$router.push("/");
+                }
               })
               .catch(err => {
                 console.error(err);

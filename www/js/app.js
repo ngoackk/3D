@@ -65556,7 +65556,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
           __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].getUserInfor().then(function (user) {
             //console.log(user);
             localStorage.setItem("user", JSON.stringify(user));
-            _this.$router.push("/");
+
+            if (JSON.parse(localStorage.getItem("user") != null)) {
+              _this.$router.push("/");
+            }
           }).catch(function (err) {
             console.error(err);
           });
@@ -82003,7 +82006,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(4), _vm._v(" "), _c('div', {
     staticClass: "title_color"
-  }, [_vm._v("Kết quả")])])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
+  }, [_vm._v("Kết quả")])])])]), _vm._v(" "), _c('div', {
     staticClass: "row justify-content-center"
   }, [_c('div', {
     staticClass: "col-xs-3"
