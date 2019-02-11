@@ -85,7 +85,7 @@ import {
 import DefaultAside from "./DefaultAside";
 import DefaultHeaderDropdownAccnt from "./DefaultHeaderDropdownAccnt";
 import DefaultHeaderDropdownMsg from "./DefaultHeaderDropdownMsg";
-
+ 
 export default {
   
   name: "DefaultContainer",
@@ -110,6 +110,14 @@ export default {
     return {
       nav: nav.items
     };
+  },
+  mounted(){
+    this.$Hub.$on("notification", data=>{
+      console.log("On Notification ", data)
+    }) 
+  },
+  destroyed(){
+    this.$Hub.$off("notification")
   },
   computed: {
     name() {

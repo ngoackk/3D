@@ -41,7 +41,6 @@ export default {
   mounted() {
     Users.callServer("Notification")
       .then(msgList => {
-        console.log(msgList)
         this.msg = msgList;
       })
 
