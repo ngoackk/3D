@@ -38,13 +38,9 @@ export default {
 
   computed: {
     Img() {
-      if (Users.getCurrent().Image_Url == null) {
-        return { avatar: "img/avatars/u2.png" };
-      } else {
-        return {
-          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
-        };
-      }
+      return {
+        avatar: Users.getCurrent().Image_Url
+      };
     }
   },
 

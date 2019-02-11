@@ -1,6 +1,7 @@
 import axios from "axios";
 
 var baseURL = "http://103.28.37.34:806";
+var noImage = "img/avatars/u2.png";
 export const Users = {
 
   studentLogin(crendential) {
@@ -82,11 +83,19 @@ export const Users = {
   getCurrent() {
 
     // alert("Gọi được hàm từ Users");
-    return JSON.parse(localStorage.getItem("user"));
+    // return JSON.parse(localStorage.getItem("user"));
 
+    var user = JSON.parse(localStorage.getItem("user"));
+    var tmpImg = user.Image_Url;
+    if (user.Image_Url != null) {
+      user.Image_Url = baseURL + tmpImg;
+    } else {
+      user.Image_Url = noImage;
+    }
 
+    alert(user.Image_Url);
 
-
+    return user;
   },
 
 

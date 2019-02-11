@@ -12013,6 +12013,7 @@ exports.ValueService = ValueService;
 
 
 var baseURL = "http://103.28.37.34:806";
+var noImage = "img/avatars/u2.png";
 var Users = {
   studentLogin: function studentLogin(crendential) {
     return new Promise(function (resolve, reject) {
@@ -12085,7 +12086,19 @@ var Users = {
   getCurrent: function getCurrent() {
 
     // alert("Gọi được hàm từ Users");
-    return JSON.parse(localStorage.getItem("user"));
+    // return JSON.parse(localStorage.getItem("user"));
+
+    var user = JSON.parse(localStorage.getItem("user"));
+    var tmpImg = user.Image_Url;
+    if (user.Image_Url != null) {
+      user.Image_Url = baseURL + tmpImg;
+    } else {
+      user.Image_Url = noImage;
+    }
+
+    alert(user.Image_Url);
+
+    return user;
   }
 };
 
@@ -66620,8 +66633,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   data: function data() {
     return {
-      itemsCount: 42,
-      imgLink: "http://103.28.37.34:806"
+      itemsCount: 42
     };
   },
   mounted: function mounted() {
@@ -66631,13 +66643,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   computed: {
     Img: function Img() {
-      if (__WEBPACK_IMPORTED_MODULE_1__apis_api__["a" /* Users */].getCurrent().Image_Url == null) {
-        return { avatar: "img/avatars/u2.png" };
-      } else {
-        return {
-          avatar: "http://103.28.37.34:806" + __WEBPACK_IMPORTED_MODULE_1__apis_api__["a" /* Users */].getCurrent().Image_Url
-        };
-      }
+      return {
+        avatar: __WEBPACK_IMPORTED_MODULE_1__apis_api__["a" /* Users */].getCurrent().Image_Url
+      };
     }
   },
   // Hết phần computed
@@ -66699,13 +66707,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   computed: {
     Img: function Img() {
-      if (__WEBPACK_IMPORTED_MODULE_1__apis_api__["a" /* Users */].getCurrent().Image_Url == null) {
-        return { avatar: "img/avatars/u2.png" };
-      } else {
-        return {
-          avatar: "http://103.28.37.34:806" + __WEBPACK_IMPORTED_MODULE_1__apis_api__["a" /* Users */].getCurrent().Image_Url
-        };
-      }
+      return {
+        avatar: __WEBPACK_IMPORTED_MODULE_1__apis_api__["a" /* Users */].getCurrent().Image_Url
+      };
     }
   },
 
