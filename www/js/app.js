@@ -65636,9 +65636,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 
 
@@ -65674,7 +65671,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       __WEBPACK_IMPORTED_MODULE_0__apis_api__["a" /* Users */].getMsgDetail("Chat", msgID).then(function (lsDetail) {
         _this2.msgDetail = lsDetail;
-        console.log("Dữ liệu tin nhắn chi tiết: ", _this2.msgDetail);
+        //console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
       });
     },
 
@@ -82437,19 +82434,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "accordion",
-    attrs: {
-      "id": "accordionExample"
-    }
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('b-card', {
-    staticClass: "mb-1",
-    attrs: {
-      "no-body": ""
-    }
-  }, [_vm._l((_vm.msg), function(m) {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_vm._l((_vm.msg), function(m) {
     return _c('b-btn', {
       directives: [{
         name: "b-toggle",
@@ -82459,6 +82444,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }],
       key: m.ID,
+      staticClass: "m-1",
       attrs: {
         "variant": "primary",
         "id": "btnContent"
@@ -82474,19 +82460,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "collapse1"
     }
-  }, [_c('b-card', [_c('p', {
-    staticClass: "card-text"
-  }, _vm._l((_vm.msgDetail), function(msd) {
-    return _c('span', {
-      key: msd.ID
-    }, [_c('div', [_c('span', {
+  }, [_c('b-card', [_vm._l((_vm.msgDetail), function(msd) {
+    return _c('p', {
+      key: msd.ID,
+      staticClass: "card-text"
+    }, [_c('span', [_c('div', [_c('span', {
       staticClass: "title"
-    }, [_vm._v(_vm._s(_vm.currentUser["Ho_ten"]) + ":")]), _vm._v("\n              " + _vm._s(msd.Noi_dung) + "\n            ")]), _vm._v(" "), _c('div', [_c('span', {
+    }, [_vm._v("Người gửi: " + _vm._s(msd.NguoiGui))]), _vm._v(" "), _c('span', {
+      domProps: {
+        "innerHTML": _vm._s(msd.Noi_dung)
+      }
+    })]), _vm._v(" "), _c('div', [_c('span', {
       staticClass: "title"
     }, [_vm._v("Người nhận:")]), _vm._v("\n              " + _vm._s(msd.Nguoi_nhan) + "\n            ")]), _vm._v(" "), _c('div', [_c('span', {
       staticClass: "title"
-    }, [_vm._v("Ngày gửi:")]), _vm._v("\n              " + _vm._s(msd.NgayGui) + "\n            ")])])
-  }), 0), _vm._v(" "), _c('b-btn', {
+    }, [_vm._v("Ngày gửi:")]), _vm._v("\n              " + _vm._s(msd.NgayGui) + "\n            ")])])])
+  }), _vm._v(" "), _c('b-btn', {
     directives: [{
       name: "b-toggle",
       rawName: "v-b-toggle.collapse1_inner",
@@ -82513,7 +82502,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.sendMsg(_vm.message)
       }
     }
-  }, [_vm._v("Gửi")])], 1)])])])], 1)], 1)], 1)], 2)], 1)])])
+  }, [_vm._v("Gửi")])], 1)])])])], 1)], 2)], 1)], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
