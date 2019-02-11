@@ -27,7 +27,7 @@
     </div>
 
     <div>
-      <img :src="img.avatar" class="img-circle" :alt="img.avatar">
+      <img :src="user.avatar" class="img-circle" :alt="user.avatar">
     </div>
   </div>
 </template>
@@ -36,41 +36,35 @@ export default {
   inject: ["currentUser"],
 
   data() {
-    return { success: "Thành công !" };
+    return { 
+      success: "Thành công !"    
+      };
   },
   mounted() {},
 
   computed: {
+    user(){
+      return this.currentUser();
+    },
     Name() {
-      return this.currentUser["Ho_ten"];
+      return this.user["Ho_ten"];
     },
     imgURL() {
-      return this.currentUser["Image_Url"];
+      return this.user["Image_Url"];
     },
     Tel() {
-      return this.currentUser["Dien_thoai"];
+      return this.user["Dien_thoai"];
     },
 
     Email() {
-      return this.currentUser["Email"];
+      return this.user["Email"];
     },
     StudentNo() {
-      return this.currentUser["Ma_sv"];
+      return this.user["Ma_sv"];
     },
-
     ClassName() {
-      return this.currentUser["Ten_lop"];
-    },
-
-    img() {
-      if (Users.getCurrent().Image_Url == null) {
-        return { avatar: "img/avatars/u2.png" };
-      } else {
-        return {
-          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
-        };
-      }
+      return this.user["Ten_lop"];
+    }
   }
-}
 }
 </script>

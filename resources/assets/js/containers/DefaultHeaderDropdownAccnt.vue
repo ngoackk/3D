@@ -3,7 +3,7 @@
     <template slot="header">
       <div>
         <div>
-          <img :src="Img.avatar" class="img-avatar" :alt="Img.avatar">
+          <img :src="user.avatar" class="img-avatar" :alt="user.avatar">
         </div>
       </div>
     </template>
@@ -35,7 +35,8 @@ export default {
   data: () => {
     return {
       itemsCount: 42,
-      imgLink: "http://103.28.37.34:806"
+      imgLink: "http://103.28.37.34:806",
+      
     };
   },
   mounted() {
@@ -43,15 +44,18 @@ export default {
   },
 
   computed: {
-    Img() {
-      if (Users.getCurrent().Image_Url == null) {
-        return { avatar: "img/avatars/u2.png" };
-      } else {
-        return {
-          avatar: "http://103.28.37.34:806" + Users.getCurrent().Image_Url
-        };
-      }
+    user() {
+      return this.currentUser()
     }
+    // Img() {
+    //   if (this.currentUser() == null || this.currentUser().Image_Url == null) {
+    //     return { avatar: "img/avatars/u2.png" };
+    //   } else {
+    //     return {
+    //       avatar: this.$Settings.BASEURL + this.currentUser().Image_Url
+    //     };
+    //   }
+    // }
   },
   // Hết phần computed
   methods: {

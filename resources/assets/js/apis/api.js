@@ -1,11 +1,13 @@
-import axios from "axios";
-
-var baseURL = "http://103.28.37.34:806";
+export const Settings = {
+  BASEURL : "http://103.28.37.34:806",
+  TEST: "TEST STRING"
+}
 export const Users = {
 
   studentLogin(crendential) {
     return new Promise((resolve, reject) => {
-      var url = new URL("http://103.28.37.34:806/api/login"),
+      //Vi du dung base url de thay the cac cho khai bao cung
+      var url = new URL(Settings.BASEURL+"/api/login"),
         params = {
           userName: crendential.UserName, //  "60.58.01.02",
           password: crendential.Password, //"mhl9QmgbrLq8W8pV5u/lpQ==",
@@ -38,7 +40,7 @@ export const Users = {
   callServer(url) {
     return new Promise((resolve, reject) => {
       let token = localStorage.getItem("access_token");
-      fetch(baseURL + "/api/" + url + "?accessToken=" + token, {
+      fetch(Settings.BASEURL + "/api/" + url + "?accessToken=" + token, {
           method: "POST",
           headers: {
             'Accept': 'application/json',
@@ -60,7 +62,7 @@ export const Users = {
   getMsgDetail(url, chatId) {
     return new Promise((resolve, reject) => {
       let token = localStorage.getItem("access_token");
-      fetch(baseURL + "/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
+      fetch(Settings.BASEURL + "/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
           method: "POST",
           headers: {
             'Accept': 'application/json',
@@ -80,15 +82,14 @@ export const Users = {
   },
 
   getCurrent() {
-
     // alert("Gọi được hàm từ Users");
-    return JSON.parse(localStorage.getItem("user"));
-
-
-
-
+    let user = JSON.parse(localStorage.getItem("user"));
+    user.avatar = "img/avatars/u2.png";
+    if(user.Image_Url != null && user.Image_Url.trim() != ""){
+      user.avatar = Settings.BASEURL + user.Image_Url
+    }
+    return user;
   },
-
 
 };
 
@@ -99,4 +100,5 @@ export const Data = {
 export default {
   Users,
   Data,
+  Settings
 };

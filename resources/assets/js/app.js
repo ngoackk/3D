@@ -9,12 +9,14 @@ import BootstrapVue from 'bootstrap-vue';
 import App from './Mobile';
 import router from './router';
 import store from '../js/store';
+import {Settings} from '../js/apis/api'
 
 // todo
 // cssVars()
 
 Vue.use(BootstrapVue)
-
+// Khai bao bien toan cuc de su dung trong vue component
+Vue.prototype.$Settings = Settings;
 /* eslint-disable no-new */
 window.onload = function () {
   new Vue({

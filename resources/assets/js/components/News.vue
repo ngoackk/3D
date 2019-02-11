@@ -37,7 +37,7 @@ export default {
 
   computed: {
     Name() {
-      return this.currentUser["Ho_ten"];
+      return this.currentUser()["Ho_ten"];
     }
   }
 };

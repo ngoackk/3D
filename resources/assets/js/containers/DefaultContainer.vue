@@ -87,9 +87,7 @@ import DefaultHeaderDropdownAccnt from "./DefaultHeaderDropdownAccnt";
 import DefaultHeaderDropdownMsg from "./DefaultHeaderDropdownMsg";
 
 export default {
-  provide: {
-    currentUser: JSON.parse(localStorage.getItem("user"))
-  },
+  
   name: "DefaultContainer",
   components: {
     AsideToggler,
@@ -115,6 +113,8 @@ export default {
   },
   computed: {
     name() {
+      console.log("In thu bien global trong settings")
+      console.log(this.$Settings)
       return this.$route.name;
     },
     list() {
