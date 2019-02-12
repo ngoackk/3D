@@ -66,7 +66,7 @@
 export default {
   methods: {
     goto() {
-      alert("goto ");
+      //alert("goto ");
       this.$router.push("/goto");
     }
   }

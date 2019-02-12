@@ -85,7 +85,8 @@ export default {
         this.rowData = points;
       })
       .catch(err => {
-        alert(err);
+         console.error(err)
+        //alert(err);
       });
   },
   computed: {

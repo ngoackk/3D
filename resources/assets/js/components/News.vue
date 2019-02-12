@@ -45,7 +45,8 @@ export default {
       })
 
       .catch(err => {
-        alert(err);
+        console.error(err)
+       // alert(err);
       });
   },
 
