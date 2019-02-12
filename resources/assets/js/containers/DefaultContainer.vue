@@ -43,7 +43,7 @@
       </AppSidebar>
       <main class="main">
         <!-- <Breadcrumb :list="list"/> -->
-        <div class="container">
+        <div>
           <router-view></router-view>
         </div>
       </main>
@@ -54,9 +54,8 @@
     </div>
     <TheFooter>
       <!--footer-->
-      <div>
-        Đại học Kiến trúc Hà Nội
-        <span class="ml-1">&copy; 2018 .</span>
+      <div>    
+        <span class="ml-1">&copy; 2019 .</span>
       </div>
       <div class="ml-auto">
         <span class="mr-1">Powered by</span>
