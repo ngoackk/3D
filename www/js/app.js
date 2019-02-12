@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 533);
+/******/ 	return __webpack_require__(__webpack_require__.s = 534);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3927,15 +3927,15 @@ var columnFactory_1 = __webpack_require__(68);
 var displayedGroupCreator_1 = __webpack_require__(88);
 var autoWidthCalculator_1 = __webpack_require__(74);
 var eventService_1 = __webpack_require__(3);
-var columnUtils_1 = __webpack_require__(55);
+var columnUtils_1 = __webpack_require__(56);
 var logger_1 = __webpack_require__(20);
 var events_1 = __webpack_require__(7);
-var originalColumnGroup_1 = __webpack_require__(56);
+var originalColumnGroup_1 = __webpack_require__(57);
 var groupInstanceIdCreator_1 = __webpack_require__(118);
 var context_1 = __webpack_require__(0);
 var columnAnimationService_1 = __webpack_require__(95);
 var autoGroupColService_1 = __webpack_require__(167);
-var valueCache_1 = __webpack_require__(59);
+var valueCache_1 = __webpack_require__(60);
 var gridApi_1 = __webpack_require__(9);
 var columnApi_1 = __webpack_require__(11);
 var utils_1 = __webpack_require__(1);
@@ -6582,10 +6582,10 @@ var cellRendererFactory_1 = __webpack_require__(93);
 var cellEditorFactory_1 = __webpack_require__(92);
 var paginationProxy_1 = __webpack_require__(51);
 var immutableService_1 = __webpack_require__(193);
-var valueCache_1 = __webpack_require__(59);
+var valueCache_1 = __webpack_require__(60);
 var alignedGridsService_1 = __webpack_require__(87);
 var pinnedRowModel_1 = __webpack_require__(52);
-var animationFrameService_1 = __webpack_require__(57);
+var animationFrameService_1 = __webpack_require__(58);
 var utils_1 = __webpack_require__(1);
 var GridApi = /** @class */ (function () {
     function GridApi() {
@@ -8582,7 +8582,7 @@ var eventService_1 = __webpack_require__(3);
 var utils_1 = __webpack_require__(1);
 var context_1 = __webpack_require__(0);
 var gridOptionsWrapper_1 = __webpack_require__(2);
-var columnUtils_1 = __webpack_require__(55);
+var columnUtils_1 = __webpack_require__(56);
 var columnApi_1 = __webpack_require__(11);
 var gridApi_1 = __webpack_require__(9);
 // Wrapper around a user provide column definition. The grid treats the column definition as ready only.
@@ -9608,10 +9608,11 @@ exports.Logger = Logger;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Settings; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Users; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Data; });
+/* unused harmony export Data */
 var Settings = {
   BASEURL: "http://103.28.37.34:806",
-  TEST: "TEST STRING"
+  TEST: "TEST STRING",
+  NOIMAGE: "img/avatars/u2.png"
 };
 var Users = {
   studentLogin: function studentLogin(crendential) {
@@ -9686,7 +9687,7 @@ var Users = {
   getCurrent: function getCurrent() {
     // alert("Gọi được hàm từ Users");
     var user = JSON.parse(localStorage.getItem("user"));
-    user.avatar = "img/avatars/u2.png";
+    user.avatar = NOIMAGE;
     if (user.Image_Url != null && user.Image_Url.trim() != "") {
       user.avatar = Settings.BASEURL + user.Image_Url;
     }
@@ -9709,7 +9710,7 @@ var Data = {};
 var global = __webpack_require__(27);
 var core = __webpack_require__(44);
 var hide = __webpack_require__(54);
-var redefine = __webpack_require__(64);
+var redefine = __webpack_require__(65);
 var ctx = __webpack_require__(82);
 var PROTOTYPE = 'prototype';
 
@@ -10328,7 +10329,7 @@ var columnController_1 = __webpack_require__(6);
 var columnApi_1 = __webpack_require__(11);
 var context_1 = __webpack_require__(0);
 var constants_1 = __webpack_require__(8);
-var valueCache_1 = __webpack_require__(59);
+var valueCache_1 = __webpack_require__(60);
 var gridApi_1 = __webpack_require__(9);
 var utils_1 = __webpack_require__(1);
 var RowNode = /** @class */ (function () {
@@ -10954,7 +10955,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var utils_1 = __webpack_require__(1);
 var gridOptionsWrapper_1 = __webpack_require__(2);
-var popupService_1 = __webpack_require__(60);
+var popupService_1 = __webpack_require__(61);
 var valueService_1 = __webpack_require__(30);
 var columnController_1 = __webpack_require__(6);
 var columnApi_1 = __webpack_require__(11);
@@ -11534,7 +11535,7 @@ var columnController_1 = __webpack_require__(6);
 var context_1 = __webpack_require__(0);
 var events_1 = __webpack_require__(7);
 var eventService_1 = __webpack_require__(3);
-var valueCache_1 = __webpack_require__(59);
+var valueCache_1 = __webpack_require__(60);
 var utils_1 = __webpack_require__(1);
 var ValueService = /** @class */ (function () {
     function ValueService() {
@@ -11813,7 +11814,7 @@ function warn(message) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
-var toInteger = __webpack_require__(65);
+var toInteger = __webpack_require__(66);
 var min = Math.min;
 module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -11866,7 +11867,7 @@ var eventService_1 = __webpack_require__(3);
 var rowComp_1 = __webpack_require__(98);
 var events_1 = __webpack_require__(7);
 var constants_1 = __webpack_require__(8);
-var cellComp_1 = __webpack_require__(58);
+var cellComp_1 = __webpack_require__(59);
 var context_1 = __webpack_require__(0);
 var gridCore_1 = __webpack_require__(71);
 var columnApi_1 = __webpack_require__(11);
@@ -11880,7 +11881,7 @@ var paginationProxy_1 = __webpack_require__(51);
 var gridApi_1 = __webpack_require__(9);
 var pinnedRowModel_1 = __webpack_require__(52);
 var beans_1 = __webpack_require__(50);
-var animationFrameService_1 = __webpack_require__(57);
+var animationFrameService_1 = __webpack_require__(58);
 var heightScaler_1 = __webpack_require__(97);
 var utils_1 = __webpack_require__(1);
 var RowRenderer = /** @class */ (function (_super) {
@@ -13862,7 +13863,7 @@ var columnApi_1 = __webpack_require__(11);
 var columnController_1 = __webpack_require__(6);
 var gridCell_1 = __webpack_require__(42);
 var gridApi_1 = __webpack_require__(9);
-var cellComp_1 = __webpack_require__(58);
+var cellComp_1 = __webpack_require__(59);
 var utils_1 = __webpack_require__(1);
 var FocusedCellController = /** @class */ (function () {
     function FocusedCellController() {
@@ -15196,13 +15197,13 @@ var columnAnimationService_1 = __webpack_require__(95);
 var focusedCellController_1 = __webpack_require__(38);
 var cellEditorFactory_1 = __webpack_require__(92);
 var cellRendererFactory_1 = __webpack_require__(93);
-var popupService_1 = __webpack_require__(60);
+var popupService_1 = __webpack_require__(61);
 var cellRendererService_1 = __webpack_require__(94);
 var valueFormatterService_1 = __webpack_require__(76);
 var stylingService_1 = __webpack_require__(144);
 var columnHoverService_1 = __webpack_require__(75);
 var paginationProxy_1 = __webpack_require__(51);
-var animationFrameService_1 = __webpack_require__(57);
+var animationFrameService_1 = __webpack_require__(58);
 var componentResolver_1 = __webpack_require__(41);
 var dragAndDropService_1 = __webpack_require__(25);
 var sortController_1 = __webpack_require__(39);
@@ -15889,2674 +15890,6 @@ module.exports = __webpack_require__(83) ? function (object, key, value) {
 
 /***/ }),
 /* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
- * @version v20.0.0
- * @link http://www.ag-grid.com/
- * @license MIT
- */
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var gridOptionsWrapper_1 = __webpack_require__(2);
-var columnGroup_1 = __webpack_require__(48);
-var originalColumnGroup_1 = __webpack_require__(56);
-var context_1 = __webpack_require__(0);
-var context_2 = __webpack_require__(0);
-// takes in a list of columns, as specified by the column definitions, and returns column groups
-var ColumnUtils = /** @class */ (function () {
-    function ColumnUtils() {
-    }
-    ColumnUtils.prototype.calculateColInitialWidth = function (colDef) {
-        if (!colDef.width) {
-            // if no width defined in colDef, use default
-            return this.gridOptionsWrapper.getColWidth();
-        }
-        else if (colDef.width < this.gridOptionsWrapper.getMinColWidth()) {
-            // if width in col def to small, set to min width
-            return this.gridOptionsWrapper.getMinColWidth();
-        }
-        else {
-            // otherwise use the provided width
-            return colDef.width;
-        }
-    };
-    ColumnUtils.prototype.getOriginalPathForColumn = function (column, originalBalancedTree) {
-        var result = [];
-        var found = false;
-        recursePath(originalBalancedTree, 0);
-        // we should always find the path, but in case there is a bug somewhere, returning null
-        // will make it fail rather than provide a 'hard to track down' bug
-        if (found) {
-            return result;
-        }
-        else {
-            return null;
-        }
-        function recursePath(balancedColumnTree, dept) {
-            for (var i = 0; i < balancedColumnTree.length; i++) {
-                if (found) {
-                    // quit the search, so 'result' is kept with the found result
-                    return;
-                }
-                var node = balancedColumnTree[i];
-                if (node instanceof originalColumnGroup_1.OriginalColumnGroup) {
-                    var nextNode = node;
-                    recursePath(nextNode.getChildren(), dept + 1);
-                    result[dept] = node;
-                }
-                else {
-                    if (node === column) {
-                        found = true;
-                    }
-                }
-            }
-        }
-    };
-    /*    public getPathForColumn(column: Column, allDisplayedColumnGroups: ColumnGroupChild[]): ColumnGroup[] {
-            let result: ColumnGroup[] = [];
-            let found = false;
-    
-            recursePath(allDisplayedColumnGroups, 0);
-    
-            // we should always find the path, but in case there is a bug somewhere, returning null
-            // will make it fail rather than provide a 'hard to track down' bug
-            if (found) {
-                return result;
-            } else {
-                return null;
-            }
-    
-            function recursePath(balancedColumnTree: ColumnGroupChild[], dept: number): void {
-    
-                for (let i = 0; i<balancedColumnTree.length; i++) {
-                    if (found) {
-                        // quit the search, so 'result' is kept with the found result
-                        return;
-                    }
-                    let node = balancedColumnTree[i];
-                    if (node instanceof ColumnGroup) {
-                        let nextNode = <ColumnGroup> node;
-                        recursePath(nextNode.getChildren(), dept+1);
-                        result[dept] = node;
-                    } else {
-                        if (node === column) {
-                            found = true;
-                        }
-                    }
-                }
-            }
-        }*/
-    ColumnUtils.prototype.depthFirstOriginalTreeSearch = function (tree, callback) {
-        var _this = this;
-        if (!tree) {
-            return;
-        }
-        tree.forEach(function (child) {
-            if (child instanceof originalColumnGroup_1.OriginalColumnGroup) {
-                _this.depthFirstOriginalTreeSearch(child.getChildren(), callback);
-            }
-            callback(child);
-        });
-    };
-    ColumnUtils.prototype.depthFirstAllColumnTreeSearch = function (tree, callback) {
-        var _this = this;
-        if (!tree) {
-            return;
-        }
-        tree.forEach(function (child) {
-            if (child instanceof columnGroup_1.ColumnGroup) {
-                _this.depthFirstAllColumnTreeSearch(child.getChildren(), callback);
-            }
-            callback(child);
-        });
-    };
-    ColumnUtils.prototype.depthFirstDisplayedColumnTreeSearch = function (tree, callback) {
-        var _this = this;
-        if (!tree) {
-            return;
-        }
-        tree.forEach(function (child) {
-            if (child instanceof columnGroup_1.ColumnGroup) {
-                _this.depthFirstDisplayedColumnTreeSearch(child.getDisplayedChildren(), callback);
-            }
-            callback(child);
-        });
-    };
-    __decorate([
-        context_2.Autowired('gridOptionsWrapper'),
-        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
-    ], ColumnUtils.prototype, "gridOptionsWrapper", void 0);
-    ColumnUtils = __decorate([
-        context_1.Bean('columnUtils')
-    ], ColumnUtils);
-    return ColumnUtils;
-}());
-exports.ColumnUtils = ColumnUtils;
-
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
- * @version v20.0.0
- * @link http://www.ag-grid.com/
- * @license MIT
- */
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var context_1 = __webpack_require__(0);
-var columnGroup_1 = __webpack_require__(48);
-var column_1 = __webpack_require__(15);
-var eventService_1 = __webpack_require__(3);
-var columnApi_1 = __webpack_require__(11);
-var gridApi_1 = __webpack_require__(9);
-var OriginalColumnGroup = /** @class */ (function () {
-    function OriginalColumnGroup(colGroupDef, groupId, padding, level) {
-        this.localEventService = new eventService_1.EventService();
-        this.expandable = false;
-        this.colGroupDef = colGroupDef;
-        this.groupId = groupId;
-        this.expanded = colGroupDef && !!colGroupDef.openByDefault;
-        this.padding = padding;
-        this.level = level;
-    }
-    OriginalColumnGroup.prototype.getLevel = function () {
-        return this.level;
-    };
-    OriginalColumnGroup.prototype.isVisible = function () {
-        // return true if at least one child is visible
-        if (this.children) {
-            return this.children.some(function (child) { return child.isVisible(); });
-        }
-        else {
-            return false;
-        }
-    };
-    OriginalColumnGroup.prototype.isPadding = function () {
-        return this.padding;
-    };
-    OriginalColumnGroup.prototype.setExpanded = function (expanded) {
-        this.expanded = expanded === undefined ? false : expanded;
-        var event = {
-            type: OriginalColumnGroup.EVENT_EXPANDED_CHANGED
-        };
-        this.localEventService.dispatchEvent(event);
-    };
-    OriginalColumnGroup.prototype.isExpandable = function () {
-        return this.expandable;
-    };
-    OriginalColumnGroup.prototype.isExpanded = function () {
-        return this.expanded;
-    };
-    OriginalColumnGroup.prototype.getGroupId = function () {
-        return this.groupId;
-    };
-    OriginalColumnGroup.prototype.getId = function () {
-        return this.getGroupId();
-    };
-    OriginalColumnGroup.prototype.setChildren = function (children) {
-        this.children = children;
-    };
-    OriginalColumnGroup.prototype.getChildren = function () {
-        return this.children;
-    };
-    OriginalColumnGroup.prototype.getColGroupDef = function () {
-        return this.colGroupDef;
-    };
-    OriginalColumnGroup.prototype.getLeafColumns = function () {
-        var result = [];
-        this.addLeafColumns(result);
-        return result;
-    };
-    OriginalColumnGroup.prototype.addLeafColumns = function (leafColumns) {
-        if (!this.children) {
-            return;
-        }
-        this.children.forEach(function (child) {
-            if (child instanceof column_1.Column) {
-                leafColumns.push(child);
-            }
-            else if (child instanceof OriginalColumnGroup) {
-                child.addLeafColumns(leafColumns);
-            }
-        });
-    };
-    OriginalColumnGroup.prototype.getColumnGroupShow = function () {
-        if (!this.padding) {
-            return this.colGroupDef.columnGroupShow;
-        }
-        else {
-            // if this is padding we have exactly only child. we then
-            // take the value from the child and push it up, making
-            // this group 'invisible'.
-            return this.children[0].getColumnGroupShow();
-        }
-    };
-    // need to check that this group has at least one col showing when both expanded and contracted.
-    // if not, then we don't allow expanding and contracting on this group
-    OriginalColumnGroup.prototype.setupExpandable = function () {
-        var _this = this;
-        this.setExpandable();
-        // note - we should be removing this event listener
-        this.getLeafColumns().forEach(function (col) { return col.addEventListener(column_1.Column.EVENT_VISIBLE_CHANGED, _this.onColumnVisibilityChanged.bind(_this)); });
-    };
-    OriginalColumnGroup.prototype.setExpandable = function () {
-        // want to make sure the group doesn't disappear when it's open
-        var atLeastOneShowingWhenOpen = false;
-        // want to make sure the group doesn't disappear when it's closed
-        var atLeastOneShowingWhenClosed = false;
-        // want to make sure the group has something to show / hide
-        var atLeastOneChangeable = false;
-        for (var i = 0, j = this.children.length; i < j; i++) {
-            var abstractColumn = this.children[i];
-            if (!abstractColumn.isVisible()) {
-                continue;
-            }
-            // if the abstractColumn is a grid generated group, there will be no colDef
-            var headerGroupShow = abstractColumn.getColumnGroupShow();
-            if (headerGroupShow === columnGroup_1.ColumnGroup.HEADER_GROUP_SHOW_OPEN) {
-                atLeastOneShowingWhenOpen = true;
-                atLeastOneChangeable = true;
-            }
-            else if (headerGroupShow === columnGroup_1.ColumnGroup.HEADER_GROUP_SHOW_CLOSED) {
-                atLeastOneShowingWhenClosed = true;
-                atLeastOneChangeable = true;
-            }
-            else {
-                atLeastOneShowingWhenOpen = true;
-                atLeastOneShowingWhenClosed = true;
-            }
-        }
-        var expandable = atLeastOneShowingWhenOpen && atLeastOneShowingWhenClosed && atLeastOneChangeable;
-        if (this.expandable !== expandable) {
-            this.expandable = expandable;
-            var event_1 = {
-                type: OriginalColumnGroup.EVENT_EXPANDABLE_CHANGED
-            };
-            this.localEventService.dispatchEvent(event_1);
-        }
-    };
-    OriginalColumnGroup.prototype.onColumnVisibilityChanged = function () {
-        this.setExpandable();
-    };
-    OriginalColumnGroup.prototype.addEventListener = function (eventType, listener) {
-        this.localEventService.addEventListener(eventType, listener);
-    };
-    OriginalColumnGroup.prototype.removeEventListener = function (eventType, listener) {
-        this.localEventService.removeEventListener(eventType, listener);
-    };
-    OriginalColumnGroup.EVENT_EXPANDED_CHANGED = 'expandedChanged';
-    OriginalColumnGroup.EVENT_EXPANDABLE_CHANGED = 'expandableChanged';
-    __decorate([
-        context_1.Autowired('columnApi'),
-        __metadata("design:type", columnApi_1.ColumnApi)
-    ], OriginalColumnGroup.prototype, "columnApi", void 0);
-    __decorate([
-        context_1.Autowired('gridApi'),
-        __metadata("design:type", gridApi_1.GridApi)
-    ], OriginalColumnGroup.prototype, "gridApi", void 0);
-    return OriginalColumnGroup;
-}());
-exports.OriginalColumnGroup = OriginalColumnGroup;
-
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
- * @version v20.0.0
- * @link http://www.ag-grid.com/
- * @license MIT
- */
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var context_1 = __webpack_require__(0);
-var gridOptionsWrapper_1 = __webpack_require__(2);
-var eventKeys_1 = __webpack_require__(49);
-var eventService_1 = __webpack_require__(3);
-var AnimationFrameService = /** @class */ (function () {
-    function AnimationFrameService() {
-        // create tasks are to do with row creation. for them we want to execute according to row order, so we use
-        // TaskItem so we know what index the item is for.
-        this.createRowTasks = [];
-        // destroy tasks are to do with row removal. they are done after row creation as the user will need to see new
-        // rows first (as blank is scrolled into view), when we remove the old rows (no longer in view) is not as
-        // important.
-        this.destroyRowTasks = [];
-        this.ticking = false;
-        // we need to know direction of scroll, to build up rows in the direction of
-        // the scroll. eg if user scrolls down, we extend the rows by building down.
-        this.scrollGoingDown = true;
-        this.lastScrollTop = 0;
-    }
-    AnimationFrameService.prototype.setScrollTop = function (scrollTop) {
-        this.scrollGoingDown = scrollTop > this.lastScrollTop;
-        this.lastScrollTop = scrollTop;
-    };
-    AnimationFrameService.prototype.init = function () {
-        this.useAnimationFrame = !this.gridOptionsWrapper.isSuppressAnimationFrame();
-    };
-    // this method is for our ag-Grid sanity only - if animation frames are turned off,
-    // then no place in the code should be looking to add any work to be done in animation
-    // frames. this stops bugs - where some code is asking for a frame to be executed
-    // when it should not.
-    AnimationFrameService.prototype.verifyAnimationFrameOn = function (methodName) {
-        if (this.useAnimationFrame === false) {
-            console.warn("ag-Grid: AnimationFrameService." + methodName + " called but animation frames are off");
-        }
-    };
-    AnimationFrameService.prototype.addP1Task = function (task, index) {
-        this.verifyAnimationFrameOn('addP1Task');
-        var taskItem = { task: task, index: index };
-        this.createRowTasks.push(taskItem);
-        this.schedule();
-    };
-    AnimationFrameService.prototype.addP2Task = function (task) {
-        this.verifyAnimationFrameOn('addP2Task');
-        this.destroyRowTasks.push(task);
-        this.schedule();
-    };
-    AnimationFrameService.prototype.executeFrame = function (millis) {
-        this.verifyAnimationFrameOn('executeFrame');
-        if (this.scrollGoingDown) {
-            this.createRowTasks.sort(function (a, b) { return b.index - a.index; });
-        }
-        else {
-            this.createRowTasks.sort(function (a, b) { return a.index - b.index; });
-        }
-        var frameStart = new Date().getTime();
-        var duration = (new Date().getTime()) - frameStart;
-        // 16ms is 60 fps
-        var noMaxMillis = millis <= 0;
-        while (noMaxMillis || duration < millis) {
-            if (this.createRowTasks.length > 0) {
-                var taskItem = this.createRowTasks.pop();
-                taskItem.task();
-            }
-            else if (this.destroyRowTasks.length > 0) {
-                var task = this.destroyRowTasks.pop();
-                task();
-            }
-            else {
-                break;
-            }
-            duration = (new Date().getTime()) - frameStart;
-        }
-        if (this.createRowTasks.length > 0 || this.destroyRowTasks.length > 0) {
-            this.requestFrame();
-        }
-        else {
-            this.stopTicking();
-        }
-    };
-    AnimationFrameService.prototype.stopTicking = function () {
-        this.ticking = false;
-        var event = {
-            type: eventKeys_1.Events.EVENT_ANIMATION_QUEUE_EMPTY,
-            columnApi: this.gridOptionsWrapper.getColumnApi(),
-            api: this.gridOptionsWrapper.getApi()
-        };
-        this.eventService.dispatchEvent(event);
-    };
-    AnimationFrameService.prototype.flushAllFrames = function () {
-        if (!this.useAnimationFrame) {
-            return;
-        }
-        this.executeFrame(-1);
-    };
-    AnimationFrameService.prototype.schedule = function () {
-        if (!this.useAnimationFrame) {
-            return;
-        }
-        if (!this.ticking) {
-            this.ticking = true;
-            this.requestFrame();
-        }
-    };
-    AnimationFrameService.prototype.requestFrame = function () {
-        // check for the existence of requestAnimationFrame, and if
-        // it's missing, then we polyfill it with setTimeout()
-        var callback = this.executeFrame.bind(this, 60);
-        if (window.requestAnimationFrame) {
-            window.requestAnimationFrame(callback);
-        }
-        else if (window.webkitRequestAnimationFrame) {
-            window.webkitRequestAnimationFrame(callback);
-        }
-        else {
-            window.setTimeout(callback, 0);
-        }
-    };
-    AnimationFrameService.prototype.isQueueEmpty = function () {
-        return this.ticking;
-    };
-    __decorate([
-        context_1.Autowired('gridOptionsWrapper'),
-        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
-    ], AnimationFrameService.prototype, "gridOptionsWrapper", void 0);
-    __decorate([
-        context_1.Autowired('eventService'),
-        __metadata("design:type", eventService_1.EventService)
-    ], AnimationFrameService.prototype, "eventService", void 0);
-    __decorate([
-        context_1.PostConstruct,
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", []),
-        __metadata("design:returntype", void 0)
-    ], AnimationFrameService.prototype, "init", null);
-    AnimationFrameService = __decorate([
-        context_1.Bean('animationFrameService')
-    ], AnimationFrameService);
-    return AnimationFrameService;
-}());
-exports.AnimationFrameService = AnimationFrameService;
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
- * @version v20.0.0
- * @link http://www.ag-grid.com/
- * @license MIT
- */
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var column_1 = __webpack_require__(15);
-var rowNode_1 = __webpack_require__(28);
-var constants_1 = __webpack_require__(8);
-var events_1 = __webpack_require__(7);
-var gridCell_1 = __webpack_require__(42);
-var component_1 = __webpack_require__(12);
-var checkboxSelectionComponent_1 = __webpack_require__(140);
-var rowDragComp_1 = __webpack_require__(266);
-var utils_1 = __webpack_require__(1);
-var CellComp = /** @class */ (function (_super) {
-    __extends(CellComp, _super);
-    function CellComp(scope, beans, column, rowNode, rowComp, autoHeightCell, printLayout) {
-        var _this = _super.call(this) || this;
-        _this.editingCell = false;
-        // every time we go into edit mode, or back again, this gets incremented.
-        // it's the components way of dealing with the async nature of framework components,
-        // so if a framework component takes a while to be created, we know if the object
-        // is still relevant when creating is finished. eg we could click edit / unedit 20
-        // times before the first React edit component comes back - we should discard
-        // the first 19.
-        _this.cellEditorVersion = 0;
-        _this.cellRendererVersion = 0;
-        _this.scope = scope;
-        _this.beans = beans;
-        _this.column = column;
-        _this.rowNode = rowNode;
-        _this.rowComp = rowComp;
-        _this.autoHeightCell = autoHeightCell;
-        _this.printLayout = printLayout;
-        _this.createGridCellVo();
-        _this.rangeSelectionEnabled = beans.enterprise && beans.gridOptionsWrapper.isEnableRangeSelection();
-        _this.cellFocused = _this.beans.focusedCellController.isCellFocused(_this.gridCell);
-        _this.firstRightPinned = _this.column.isFirstRightPinned();
-        _this.lastLeftPinned = _this.column.isLastLeftPinned();
-        if (_this.rangeSelectionEnabled) {
-            _this.rangeCount = _this.beans.rangeController.getCellRangeCount(_this.gridCell);
-        }
-        _this.getValueAndFormat();
-        _this.setUsingWrapper();
-        _this.chooseCellRenderer();
-        _this.setupColSpan();
-        _this.rowSpan = _this.column.getRowSpan(_this.rowNode);
-        return _this;
-    }
-    CellComp.prototype.getCreateTemplate = function () {
-        var templateParts = [];
-        var col = this.column;
-        var width = this.getCellWidth();
-        var left = this.modifyLeftForPrintLayout(col.getLeft());
-        var valueToRender = this.getInitialValueToRender();
-        var valueSanitised = utils_1._.get(this.column, 'colDef.template', null) ? valueToRender : utils_1._.escape(valueToRender);
-        this.tooltip = this.getToolTip();
-        var tooltipSanitised = utils_1._.escape(this.tooltip);
-        var colIdSanitised = utils_1._.escape(col.getId());
-        var wrapperStartTemplate = '';
-        var wrapperEndTemplate = '';
-        var stylesFromColDef = this.preProcessStylesFromColDef();
-        var cssClasses = this.getInitialCssClasses();
-        var stylesForRowSpanning = this.getStylesForRowSpanning();
-        if (this.usingWrapper) {
-            wrapperStartTemplate = '<span ref="eCellWrapper" class="ag-cell-wrapper"><span ref="eCellValue" class="ag-cell-value">';
-            wrapperEndTemplate = '</span></span>';
-        }
-        // hey, this looks like React!!!
-        templateParts.push("<div");
-        templateParts.push(" tabindex=\"-1\"");
-        templateParts.push(" unselectable=\"on\""); // THIS IS FOR IE ONLY so text selection doesn't bubble outside of the grid
-        templateParts.push(" role=\"gridcell\"");
-        templateParts.push(" comp-id=\"" + this.getCompId() + "\" ");
-        templateParts.push(" col-id=\"" + colIdSanitised + "\"");
-        templateParts.push(" class=\"" + cssClasses.join(' ') + "\"");
-        templateParts.push(utils_1._.exists(tooltipSanitised) ? " title=\"" + tooltipSanitised + "\"" : "");
-        templateParts.push(" style=\"width: " + width + "px; left: " + left + "px; " + stylesFromColDef + " " + stylesForRowSpanning + "\" >");
-        templateParts.push(wrapperStartTemplate);
-        if (utils_1._.exists(valueSanitised, true)) {
-            templateParts.push(valueSanitised);
-        }
-        templateParts.push(wrapperEndTemplate);
-        templateParts.push("</div>");
-        return templateParts.join('');
-    };
-    CellComp.prototype.getStylesForRowSpanning = function () {
-        if (this.rowSpan === 1) {
-            return '';
-        }
-        var singleRowHeight = this.beans.gridOptionsWrapper.getRowHeightAsNumber();
-        var totalRowHeight = singleRowHeight * this.rowSpan;
-        return "height: " + totalRowHeight + "px; z-index: 1;";
-    };
-    CellComp.prototype.afterAttached = function () {
-        var querySelector = "[comp-id=\"" + this.getCompId() + "\"]";
-        var eGui = this.eParentRow.querySelector(querySelector);
-        this.setGui(eGui);
-        // all of these have dependencies on the eGui, so only do them after eGui is set
-        this.addDomData();
-        this.populateTemplate();
-        this.attachCellRenderer();
-        this.angular1Compile();
-        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_CELL_FOCUSED, this.onCellFocused.bind(this));
-        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_FLASH_CELLS, this.onFlashCells.bind(this));
-        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_COLUMN_HOVER_CHANGED, this.onColumnHover.bind(this));
-        this.addDestroyableEventListener(this.rowNode, rowNode_1.RowNode.EVENT_ROW_INDEX_CHANGED, this.onRowIndexChanged.bind(this));
-        this.addDestroyableEventListener(this.rowNode, rowNode_1.RowNode.EVENT_CELL_CHANGED, this.onCellChanged.bind(this));
-        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_LEFT_CHANGED, this.onLeftChanged.bind(this));
-        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_WIDTH_CHANGED, this.onWidthChanged.bind(this));
-        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_FIRST_RIGHT_PINNED_CHANGED, this.onFirstRightPinnedChanged.bind(this));
-        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_LAST_LEFT_PINNED_CHANGED, this.onLastLeftPinnedChanged.bind(this));
-        // only for printLayout - because we are rendering all the cells in the same row, regardless of pinned state,
-        // then changing the width of the containers will impact left position. eg the center cols all have their
-        // left position adjusted by the width of the left pinned column, so if the pinned left column width changes,
-        // all the center cols need to be shifted to accommodate this. when in normal layout, the pinned cols are
-        // in different containers so doesn't impact.
-        if (this.printLayout) {
-            this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_DISPLAYED_COLUMNS_WIDTH_CHANGED, this.onLeftChanged.bind(this));
-        }
-        // if not doing enterprise, then range selection service would be missing
-        // so need to check before trying to use it
-        if (this.rangeSelectionEnabled) {
-            this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_RANGE_SELECTION_CHANGED, this.onRangeSelectionChanged.bind(this));
-        }
-    };
-    CellComp.prototype.onColumnHover = function () {
-        var isHovered = this.beans.columnHoverService.isHovered(this.column);
-        utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-column-hover', isHovered);
-    };
-    CellComp.prototype.onCellChanged = function (event) {
-        var eventImpactsThisCell = event.column === this.column;
-        if (eventImpactsThisCell) {
-            this.refreshCell({});
-        }
-    };
-    CellComp.prototype.getCellLeft = function () {
-        var mostLeftCol;
-        if (this.beans.gridOptionsWrapper.isEnableRtl() && this.colsSpanning) {
-            mostLeftCol = this.colsSpanning[this.colsSpanning.length - 1];
-        }
-        else {
-            mostLeftCol = this.column;
-        }
-        return mostLeftCol.getLeft();
-    };
-    CellComp.prototype.getCellWidth = function () {
-        if (!this.colsSpanning) {
-            return this.column.getActualWidth();
-        }
-        var result = 0;
-        this.colsSpanning.forEach(function (col) { return result += col.getActualWidth(); });
-        return result;
-    };
-    CellComp.prototype.onFlashCells = function (event) {
-        var cellId = this.gridCell.createId();
-        var shouldFlash = event.cells[cellId];
-        if (shouldFlash) {
-            this.animateCell('highlight');
-        }
-    };
-    CellComp.prototype.setupColSpan = function () {
-        // if no col span is active, then we don't set it up, as it would be wasteful of CPU
-        if (utils_1._.missing(this.column.getColDef().colSpan)) {
-            return;
-        }
-        // because we are col spanning, a reorder of the cols can change what cols we are spanning over
-        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_DISPLAYED_COLUMNS_CHANGED, this.onDisplayColumnsChanged.bind(this));
-        // because we are spanning over multiple cols, we check for width any time any cols width changes.
-        // this is expensive - really we should be explicitly checking only the cols we are spanning over
-        // instead of every col, however it would be tricky code to track the cols we are spanning over, so
-        // because hardly anyone will be using colSpan, am favoring this easier way for more maintainable code.
-        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_DISPLAYED_COLUMNS_WIDTH_CHANGED, this.onWidthChanged.bind(this));
-        this.colsSpanning = this.getColSpanningList();
-    };
-    CellComp.prototype.getColSpanningList = function () {
-        var colSpan = this.column.getColSpan(this.rowNode);
-        var colsSpanning = [];
-        // if just one col, the col span is just the column we are in
-        if (colSpan === 1) {
-            colsSpanning.push(this.column);
-        }
-        else {
-            var pointer = this.column;
-            var pinned = this.column.getPinned();
-            for (var i = 0; pointer && i < colSpan; i++) {
-                colsSpanning.push(pointer);
-                pointer = this.beans.columnController.getDisplayedColAfter(pointer);
-                if (!pointer || utils_1._.missing(pointer)) {
-                    break;
-                }
-                // we do not allow col spanning to span outside of pinned areas
-                if (pinned !== pointer.getPinned()) {
-                    break;
-                }
-            }
-        }
-        return colsSpanning;
-    };
-    CellComp.prototype.onDisplayColumnsChanged = function () {
-        var colsSpanning = this.getColSpanningList();
-        if (!utils_1._.compareArrays(this.colsSpanning, colsSpanning)) {
-            this.colsSpanning = colsSpanning;
-            this.onWidthChanged();
-            this.onLeftChanged(); // left changes when doing RTL
-        }
-    };
-    CellComp.prototype.getInitialCssClasses = function () {
-        var cssClasses = ["ag-cell", "ag-cell-not-inline-editing"];
-        // if we are putting the cell into a dummy container, to work out it's height,
-        // then we don't put the height css in, as we want cell to fit height in that case.
-        if (!this.autoHeightCell) {
-            cssClasses.push('ag-cell-with-height');
-        }
-        var doingFocusCss = !this.beans.gridOptionsWrapper.isSuppressCellSelection();
-        if (doingFocusCss) {
-            // otherwise the class depends on the focus state
-            cssClasses.push(this.cellFocused ? 'ag-cell-focus' : 'ag-cell-no-focus');
-        }
-        else {
-            // if we are not doing cell selection, then ag-cell-no-focus gets put onto every cell
-            cssClasses.push('ag-cell-no-focus');
-        }
-        if (this.firstRightPinned) {
-            cssClasses.push('ag-cell-first-right-pinned');
-        }
-        if (this.lastLeftPinned) {
-            cssClasses.push('ag-cell-last-left-pinned');
-        }
-        if (this.beans.columnHoverService.isHovered(this.column)) {
-            cssClasses.push('ag-column-hover');
-        }
-        utils_1._.pushAll(cssClasses, this.preProcessClassesFromColDef());
-        utils_1._.pushAll(cssClasses, this.preProcessCellClassRules());
-        utils_1._.pushAll(cssClasses, this.getRangeClasses());
-        // if using the wrapper, this class goes on the wrapper instead
-        if (!this.usingWrapper) {
-            cssClasses.push('ag-cell-value');
-        }
-        return cssClasses;
-    };
-    CellComp.prototype.getInitialValueToRender = function () {
-        // if using a cellRenderer, then render the html from the cell renderer if it exists
-        if (this.usingCellRenderer) {
-            if (typeof this.cellRendererGui === 'string') {
-                return this.cellRendererGui;
-            }
-            else {
-                return '';
-            }
-        }
-        var colDef = this.column.getColDef();
-        if (colDef.template) {
-            // template is really only used for angular 1 - as people using ng1 are used to providing templates with
-            // bindings in it. in ng2, people will hopefully want to provide components, not templates.
-            return colDef.template;
-        }
-        else if (colDef.templateUrl) {
-            // likewise for templateUrl - it's for ng1 really - when we move away from ng1, we can take these out.
-            // niall was pro angular 1 when writing template and templateUrl, if writing from scratch now, would
-            // not do these, but would follow a pattern that was friendly towards components, not templates.
-            var template = this.beans.templateService.getTemplate(colDef.templateUrl, this.refreshCell.bind(this, true));
-            if (template) {
-                return template;
-            }
-            else {
-                return '';
-            }
-        }
-        else {
-            return this.getValueToUse();
-        }
-    };
-    CellComp.prototype.getRenderedRow = function () {
-        return this.rowComp;
-    };
-    CellComp.prototype.isSuppressNavigable = function () {
-        return this.column.isSuppressNavigable(this.rowNode);
-    };
-    CellComp.prototype.getCellRenderer = function () {
-        return this.cellRenderer;
-    };
-    CellComp.prototype.getCellEditor = function () {
-        return this.cellEditor;
-    };
-    // + stop editing {forceRefresh: true, suppressFlash: true}
-    // + event cellChanged {}
-    // + cellRenderer.params.refresh() {} -> method passes 'as is' to the cellRenderer, so params could be anything
-    // + rowComp: event dataChanged {animate: update, newData: !update}
-    // + rowComp: api refreshCells() {animate: true/false}
-    // + rowRenderer: api softRefreshView() {}
-    CellComp.prototype.refreshCell = function (params) {
-        if (this.editingCell) {
-            return;
-        }
-        var newData = params && params.newData;
-        var suppressFlash = (params && params.suppressFlash) || this.column.getColDef().suppressCellFlash;
-        var forceRefresh = params && params.forceRefresh;
-        var oldValue = this.value;
-        this.getValueAndFormat();
-        // for simple values only (not pojo's), see if the value is the same, and if it is, skip the refresh.
-        // when never allow skipping after an edit, as after editing, we need to put the GUI back to the way
-        // if was before the edit.
-        var valuesDifferent = !this.valuesAreEqual(oldValue, this.value);
-        var dataNeedsUpdating = forceRefresh || valuesDifferent;
-        if (dataNeedsUpdating) {
-            // if it's 'new data', then we don't refresh the cellRenderer, even if refresh method is available.
-            // this is because if the whole data is new (ie we are showing stock price 'BBA' now and not 'SSD')
-            // then we are not showing a movement in the stock price, rather we are showing different stock.
-            var cellRendererRefreshed = (newData || suppressFlash) ? false : this.attemptCellRendererRefresh();
-            // we do the replace if not doing refresh, or if refresh was unsuccessful.
-            // the refresh can be unsuccessful if we are using a framework (eg ng2 or react) and the framework
-            // wrapper has the refresh method, but the underlying component doesn't
-            if (!cellRendererRefreshed) {
-                this.replaceContentsAfterRefresh();
-            }
-            if (!suppressFlash) {
-                var flashCell = this.beans.gridOptionsWrapper.isEnableCellChangeFlash()
-                    || this.column.getColDef().enableCellChangeFlash;
-                if (flashCell) {
-                    this.flashCell();
-                }
-            }
-            // need to check rules. note, we ignore colDef classes and styles, these are assumed to be static
-            this.postProcessStylesFromColDef();
-            this.postProcessClassesFromColDef();
-        }
-        this.refreshToolTip();
-        // we do cellClassRules even if the value has not changed, so that users who have rules that
-        // look at other parts of the row (where the other part of the row might of changed) will work.
-        this.postProcessCellClassRules();
-    };
-    // user can also call this via API
-    CellComp.prototype.flashCell = function () {
-        this.animateCell('data-changed');
-    };
-    CellComp.prototype.animateCell = function (cssName) {
-        var fullName = 'ag-cell-' + cssName;
-        var animationFullName = 'ag-cell-' + cssName + '-animation';
-        var element = this.getGui();
-        // we want to highlight the cells, without any animation
-        utils_1._.addCssClass(element, fullName);
-        utils_1._.removeCssClass(element, animationFullName);
-        // then once that is applied, we remove the highlight with animation
-        window.setTimeout(function () {
-            utils_1._.removeCssClass(element, fullName);
-            utils_1._.addCssClass(element, animationFullName);
-            window.setTimeout(function () {
-                // and then to leave things as we got them, we remove the animation
-                utils_1._.removeCssClass(element, animationFullName);
-            }, 1000);
-        }, 500);
-    };
-    CellComp.prototype.replaceContentsAfterRefresh = function () {
-        // otherwise we rip out the cell and replace it
-        utils_1._.removeAllChildren(this.eParentOfValue);
-        // remove old renderer component if it exists
-        if (this.cellRenderer && this.cellRenderer.destroy) {
-            this.cellRenderer.destroy();
-        }
-        this.cellRenderer = null;
-        this.cellRendererGui = null;
-        // populate
-        this.putDataIntoCellAfterRefresh();
-        this.angular1Compile();
-    };
-    CellComp.prototype.angular1Compile = function () {
-        // if angular compiling, then need to also compile the cell again (angular compiling sucks, please wait...)
-        if (this.beans.gridOptionsWrapper.isAngularCompileRows()) {
-            var eGui = this.getGui();
-            var compiledElement_1 = this.beans.$compile(eGui)(this.scope);
-            this.addDestroyFunc(function () {
-                compiledElement_1.remove();
-            });
-        }
-    };
-    CellComp.prototype.postProcessStylesFromColDef = function () {
-        var stylesToUse = this.processStylesFromColDef();
-        if (stylesToUse) {
-            utils_1._.addStylesToElement(this.getGui(), stylesToUse);
-        }
-    };
-    CellComp.prototype.preProcessStylesFromColDef = function () {
-        var stylesToUse = this.processStylesFromColDef();
-        return utils_1._.cssStyleObjectToMarkup(stylesToUse);
-    };
-    CellComp.prototype.processStylesFromColDef = function () {
-        var colDef = this.column.getColDef();
-        if (colDef.cellStyle) {
-            var cssToUse = void 0;
-            if (typeof colDef.cellStyle === 'function') {
-                var cellStyleParams = {
-                    value: this.value,
-                    data: this.rowNode.data,
-                    node: this.rowNode,
-                    colDef: colDef,
-                    column: this.column,
-                    $scope: this.scope,
-                    context: this.beans.gridOptionsWrapper.getContext(),
-                    api: this.beans.gridOptionsWrapper.getApi()
-                };
-                var cellStyleFunc = colDef.cellStyle;
-                cssToUse = cellStyleFunc(cellStyleParams);
-            }
-            else {
-                cssToUse = colDef.cellStyle;
-            }
-            return cssToUse;
-        }
-    };
-    CellComp.prototype.postProcessClassesFromColDef = function () {
-        var _this = this;
-        this.processClassesFromColDef(function (className) { return utils_1._.addCssClass(_this.getGui(), className); });
-    };
-    CellComp.prototype.preProcessClassesFromColDef = function () {
-        var res = [];
-        this.processClassesFromColDef(function (className) { return res.push(className); });
-        return res;
-    };
-    CellComp.prototype.processClassesFromColDef = function (onApplicableClass) {
-        this.beans.stylingService.processStaticCellClasses(this.column.getColDef(), {
-            value: this.value,
-            data: this.rowNode.data,
-            node: this.rowNode,
-            colDef: this.column.getColDef(),
-            rowIndex: this.rowNode.rowIndex,
-            $scope: this.scope,
-            api: this.beans.gridOptionsWrapper.getApi(),
-            context: this.beans.gridOptionsWrapper.getContext()
-        }, onApplicableClass);
-    };
-    CellComp.prototype.putDataIntoCellAfterRefresh = function () {
-        // template gets preference, then cellRenderer, then do it ourselves
-        var colDef = this.column.getColDef();
-        if (colDef.template) {
-            // template is really only used for angular 1 - as people using ng1 are used to providing templates with
-            // bindings in it. in ng2, people will hopefully want to provide components, not templates.
-            this.eParentOfValue.innerHTML = colDef.template;
-        }
-        else if (colDef.templateUrl) {
-            // likewise for templateUrl - it's for ng1 really - when we move away from ng1, we can take these out.
-            // niall was pro angular 1 when writing template and templateUrl, if writing from scratch now, would
-            // not do these, but would follow a pattern that was friendly towards components, not templates.
-            var template = this.beans.templateService.getTemplate(colDef.templateUrl, this.refreshCell.bind(this, true));
-            if (template) {
-                this.eParentOfValue.innerHTML = template;
-            }
-            // use cell renderer if it exists
-        }
-        else if (this.usingCellRenderer) {
-            this.attachCellRenderer();
-        }
-        else {
-            var valueToUse = this.getValueToUse();
-            if (valueToUse !== null && valueToUse !== undefined) {
-                this.eParentOfValue.innerText = valueToUse;
-            }
-        }
-    };
-    CellComp.prototype.attemptCellRendererRefresh = function () {
-        if (utils_1._.missing(this.cellRenderer) || !this.cellRenderer || utils_1._.missing(this.cellRenderer.refresh)) {
-            return false;
-        }
-        // if the cell renderer has a refresh method, we call this instead of doing a refresh
-        // note: should pass in params here instead of value?? so that client has formattedValue
-        var params = this.createCellRendererParams();
-        var result = this.cellRenderer.refresh(params);
-        // NOTE on undefined: previous version of the cellRenderer.refresh() interface
-        // returned nothing, if the method existed, we assumed it refreshed. so for
-        // backwards compatibility, we assume if method exists and returns nothing,
-        // that it was successful.
-        return result === true || result === undefined;
-    };
-    CellComp.prototype.refreshToolTip = function () {
-        var newTooltip = this.getToolTip();
-        if (this.tooltip !== newTooltip) {
-            this.tooltip = newTooltip;
-            if (utils_1._.exists(newTooltip)) {
-                var tooltipSanitised = utils_1._.escape(this.tooltip);
-                this.eParentOfValue.setAttribute('title', tooltipSanitised);
-            }
-            else {
-                this.eParentOfValue.removeAttribute('title');
-            }
-        }
-    };
-    CellComp.prototype.valuesAreEqual = function (val1, val2) {
-        // if the user provided an equals method, use that, otherwise do simple comparison
-        var colDef = this.column.getColDef();
-        var equalsMethod = colDef ? colDef.equals : null;
-        if (equalsMethod) {
-            return equalsMethod(val1, val2);
-        }
-        else {
-            return val1 === val2;
-        }
-    };
-    CellComp.prototype.getToolTip = function () {
-        var colDef = this.column.getColDef();
-        var data = this.rowNode.data;
-        if (colDef.tooltipField && utils_1._.exists(data)) {
-            return utils_1._.getValueUsingField(data, colDef.tooltipField, this.column.isTooltipFieldContainsDots());
-        }
-        if (colDef.tooltip) {
-            return colDef.tooltip({
-                value: this.value,
-                valueFormatted: this.valueFormatted,
-                data: this.rowNode.data,
-                node: this.rowNode,
-                colDef: this.column.getColDef(),
-                api: this.beans.gridOptionsWrapper.getApi(),
-                $scope: this.scope,
-                context: this.beans.gridOptionsWrapper.getContext(),
-                rowIndex: this.gridCell.rowIndex
-            });
-        }
-        return null;
-    };
-    CellComp.prototype.processCellClassRules = function (onApplicableClass, onNotApplicableClass) {
-        this.beans.stylingService.processClassRules(this.column.getColDef().cellClassRules, {
-            value: this.value,
-            data: this.rowNode.data,
-            node: this.rowNode,
-            colDef: this.column.getColDef(),
-            rowIndex: this.gridCell.rowIndex,
-            api: this.beans.gridOptionsWrapper.getApi(),
-            $scope: this.scope,
-            context: this.beans.gridOptionsWrapper.getContext()
-        }, onApplicableClass, onNotApplicableClass);
-    };
-    CellComp.prototype.postProcessCellClassRules = function () {
-        var _this = this;
-        this.processCellClassRules(function (className) {
-            utils_1._.addCssClass(_this.getGui(), className);
-        }, function (className) {
-            utils_1._.removeCssClass(_this.getGui(), className);
-        });
-    };
-    CellComp.prototype.preProcessCellClassRules = function () {
-        var res = [];
-        this.processCellClassRules(function (className) {
-            res.push(className);
-        }, function (className) {
-            // not catered for, if creating, no need
-            // to remove class as it was never there
-        });
-        return res;
-    };
-    // a wrapper is used when we are putting a selection checkbox in the cell with the value
-    CellComp.prototype.setUsingWrapper = function () {
-        var colDef = this.column.getColDef();
-        // never allow selection or dragging on pinned rows
-        if (this.rowNode.rowPinned) {
-            this.usingWrapper = false;
-            this.includeSelectionComponent = false;
-            this.includeRowDraggingComponent = false;
-            return;
-        }
-        var cbSelectionIsFunc = typeof colDef.checkboxSelection === 'function';
-        var rowDraggableIsFunc = typeof colDef.rowDrag === 'function';
-        this.includeSelectionComponent = cbSelectionIsFunc || colDef.checkboxSelection === true;
-        this.includeRowDraggingComponent = rowDraggableIsFunc || colDef.rowDrag === true;
-        this.usingWrapper = this.includeRowDraggingComponent || this.includeSelectionComponent;
-    };
-    CellComp.prototype.chooseCellRenderer = function () {
-        // template gets preference, then cellRenderer, then do it ourselves
-        var colDef = this.column.getColDef();
-        // templates are for ng1, ideally we wouldn't have these, they are ng1 support
-        // inside the core which is bad
-        if (colDef.template || colDef.templateUrl) {
-            this.usingCellRenderer = false;
-            return;
-        }
-        var params = this.createCellRendererParams();
-        var cellRenderer = this.beans.componentResolver.getComponentToUse(colDef, 'cellRenderer', params);
-        var pinnedRowCellRenderer = this.beans.componentResolver.getComponentToUse(colDef, 'pinnedRowCellRenderer', params);
-        if (pinnedRowCellRenderer && this.rowNode.rowPinned) {
-            this.cellRendererType = 'pinnedRowCellRenderer';
-            this.usingCellRenderer = true;
-        }
-        else if (cellRenderer) {
-            this.cellRendererType = 'cellRenderer';
-            this.usingCellRenderer = true;
-        }
-        else {
-            this.usingCellRenderer = false;
-        }
-    };
-    CellComp.prototype.createCellRendererInstance = function () {
-        var params = this.createCellRendererParams();
-        this.cellRendererVersion++;
-        var callback = this.afterCellRendererCreated.bind(this, this.cellRendererVersion);
-        this.beans.componentResolver.createAgGridComponent(this.column.getColDef(), params, this.cellRendererType, params).then(callback);
-    };
-    CellComp.prototype.afterCellRendererCreated = function (cellRendererVersion, cellRenderer) {
-        // see if daemon
-        if (!this.isAlive() || (cellRendererVersion !== this.cellRendererVersion)) {
-            if (cellRenderer.destroy) {
-                cellRenderer.destroy();
-            }
-            return;
-        }
-        this.cellRenderer = cellRenderer;
-        this.cellRendererGui = this.cellRenderer.getGui();
-        if (utils_1._.missing(this.cellRendererGui)) {
-            return;
-        }
-        // if async components, then it's possible the user started editing since
-        // this call was made
-        if (!this.editingCell) {
-            this.eParentOfValue.appendChild(this.cellRendererGui);
-        }
-    };
-    CellComp.prototype.attachCellRenderer = function () {
-        if (!this.usingCellRenderer) {
-            return;
-        }
-        this.createCellRendererInstance();
-    };
-    CellComp.prototype.createCellRendererParams = function () {
-        var _this = this;
-        var params = {
-            value: this.value,
-            valueFormatted: this.valueFormatted,
-            getValue: this.getValue.bind(this),
-            setValue: function (value) {
-                _this.beans.valueService.setValue(_this.rowNode, _this.column, value);
-            },
-            formatValue: this.formatValue.bind(this),
-            data: this.rowNode.data,
-            node: this.rowNode,
-            colDef: this.column.getColDef(),
-            column: this.column,
-            $scope: this.scope,
-            rowIndex: this.gridCell.rowIndex,
-            api: this.beans.gridOptionsWrapper.getApi(),
-            columnApi: this.beans.gridOptionsWrapper.getColumnApi(),
-            context: this.beans.gridOptionsWrapper.getContext(),
-            refreshCell: this.refreshCell.bind(this),
-            eGridCell: this.getGui(),
-            eParentOfValue: this.eParentOfValue,
-            // these bits are not documented anywhere, so we could drop them?
-            // it was in the olden days to allow user to register for when rendered
-            // row was removed (the row comp was removed), however now that the user
-            // can provide components for cells, the destroy method gets call when this
-            // happens so no longer need to fire event.
-            addRowCompListener: this.rowComp ? this.rowComp.addEventListener.bind(this.rowComp) : null,
-            addRenderedRowListener: function (eventType, listener) {
-                console.warn('ag-Grid: since ag-Grid .v11, params.addRenderedRowListener() is now params.addRowCompListener()');
-                if (_this.rowComp) {
-                    _this.rowComp.addEventListener(eventType, listener);
-                }
-            }
-        };
-        return params;
-    };
-    CellComp.prototype.formatValue = function (value) {
-        var valueFormatted = this.beans.valueFormatterService.formatValue(this.column, this.rowNode, this.scope, value);
-        var valueFormattedExists = valueFormatted !== null && valueFormatted !== undefined;
-        return valueFormattedExists ? valueFormatted : value;
-    };
-    CellComp.prototype.getValueToUse = function () {
-        var valueFormattedExists = this.valueFormatted !== null && this.valueFormatted !== undefined;
-        return valueFormattedExists ? this.valueFormatted : this.value;
-    };
-    CellComp.prototype.getValueAndFormat = function () {
-        this.value = this.getValue();
-        this.valueFormatted = this.beans.valueFormatterService.formatValue(this.column, this.rowNode, this.scope, this.value);
-    };
-    CellComp.prototype.getValue = function () {
-        // if we don't check this, then the grid will render leaf groups as open even if we are not
-        // allowing the user to open leaf groups. confused? remember for pivot mode we don't allow
-        // opening leaf groups, so we have to force leafGroups to be closed in case the user expanded
-        // them via the API, or user user expanded them in the UI before turning on pivot mode
-        var lockedClosedGroup = this.rowNode.leafGroup && this.beans.columnController.isPivotMode();
-        var isOpenGroup = this.rowNode.group && this.rowNode.expanded && !this.rowNode.footer && !lockedClosedGroup;
-        // are we showing group footers
-        var groupFootersEnabled = this.beans.gridOptionsWrapper.isGroupIncludeFooter();
-        // if doing footers, we noramlly don't show agg data at group level when group is open
-        var groupAlwaysShowAggData = this.beans.gridOptionsWrapper.isGroupSuppressBlankHeader();
-        // if doing grouping and footers, we don't want to include the agg value
-        // in the header when the group is open
-        var ignoreAggData = (isOpenGroup && groupFootersEnabled) && !groupAlwaysShowAggData;
-        return this.beans.valueService.getValue(this.column, this.rowNode, false, ignoreAggData);
-    };
-    CellComp.prototype.onMouseEvent = function (eventName, mouseEvent) {
-        if (utils_1._.isStopPropagationForAgGrid(mouseEvent)) {
-            return;
-        }
-        switch (eventName) {
-            case 'click':
-                this.onCellClicked(mouseEvent);
-                break;
-            case 'mousedown':
-                this.onMouseDown(mouseEvent);
-                break;
-            case 'dblclick':
-                this.onCellDoubleClicked(mouseEvent);
-                break;
-            case 'mouseout':
-                this.onMouseOut(mouseEvent);
-                break;
-            case 'mouseover':
-                this.onMouseOver(mouseEvent);
-                break;
-        }
-    };
-    CellComp.prototype.dispatchCellContextMenuEvent = function (event) {
-        var colDef = this.column.getColDef();
-        var cellContextMenuEvent = this.createEvent(event, events_1.Events.EVENT_CELL_CONTEXT_MENU);
-        this.beans.eventService.dispatchEvent(cellContextMenuEvent);
-        if (colDef.onCellContextMenu) {
-            // to make the callback async, do in a timeout
-            window.setTimeout(function () { return colDef.onCellContextMenu(cellContextMenuEvent); }, 0);
-        }
-    };
-    CellComp.prototype.createEvent = function (domEvent, eventType) {
-        var event = {
-            node: this.rowNode,
-            data: this.rowNode.data,
-            value: this.value,
-            column: this.column,
-            colDef: this.column.getColDef(),
-            context: this.beans.gridOptionsWrapper.getContext(),
-            api: this.beans.gridApi,
-            columnApi: this.beans.columnApi,
-            rowPinned: this.rowNode.rowPinned,
-            event: domEvent,
-            type: eventType,
-            rowIndex: this.rowNode.rowIndex
-        };
-        // because we are hacking in $scope for angular 1, we have to de-reference
-        if (this.scope) {
-            event.$scope = this.scope;
-        }
-        return event;
-    };
-    CellComp.prototype.onMouseOut = function (mouseEvent) {
-        var cellMouseOutEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_MOUSE_OUT);
-        this.beans.eventService.dispatchEvent(cellMouseOutEvent);
-        this.beans.columnHoverService.clearMouseOver();
-    };
-    CellComp.prototype.onMouseOver = function (mouseEvent) {
-        var cellMouseOverEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_MOUSE_OVER);
-        this.beans.eventService.dispatchEvent(cellMouseOverEvent);
-        this.beans.columnHoverService.setMouseOver([this.column]);
-    };
-    CellComp.prototype.onCellDoubleClicked = function (mouseEvent) {
-        var colDef = this.column.getColDef();
-        // always dispatch event to eventService
-        var cellDoubleClickedEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_DOUBLE_CLICKED);
-        this.beans.eventService.dispatchEvent(cellDoubleClickedEvent);
-        // check if colDef also wants to handle event
-        if (typeof colDef.onCellDoubleClicked === 'function') {
-            // to make the callback async, do in a timeout
-            window.setTimeout(function () { return colDef.onCellDoubleClicked(cellDoubleClickedEvent); }, 0);
-        }
-        var editOnDoubleClick = !this.beans.gridOptionsWrapper.isSingleClickEdit()
-            && !this.beans.gridOptionsWrapper.isSuppressClickEdit();
-        if (editOnDoubleClick) {
-            this.startRowOrCellEdit();
-        }
-    };
-    // called by rowRenderer when user navigates via tab key
-    CellComp.prototype.startRowOrCellEdit = function (keyPress, charPress) {
-        if (this.beans.gridOptionsWrapper.isFullRowEdit()) {
-            this.rowComp.startRowEditing(keyPress, charPress, this);
-        }
-        else {
-            this.startEditingIfEnabled(keyPress, charPress, true);
-        }
-    };
-    CellComp.prototype.isCellEditable = function () {
-        return this.column.isCellEditable(this.rowNode);
-    };
-    // either called internally if single cell editing, or called by rowRenderer if row editing
-    CellComp.prototype.startEditingIfEnabled = function (keyPress, charPress, cellStartedEdit) {
-        if (keyPress === void 0) { keyPress = null; }
-        if (charPress === void 0) { charPress = null; }
-        if (cellStartedEdit === void 0) { cellStartedEdit = false; }
-        // don't do it if not editable
-        if (!this.isCellEditable()) {
-            return;
-        }
-        // don't do it if already editing
-        if (this.editingCell) {
-            return;
-        }
-        this.editingCell = true;
-        this.cellEditorVersion++;
-        var callback = this.afterCellEditorCreated.bind(this, this.cellEditorVersion);
-        var params = this.createCellEditorParams(keyPress, charPress, cellStartedEdit);
-        this.beans.cellEditorFactory.createCellEditor(this.column.getColDef(), params).then(callback);
-        // if we don't do this, and editor component is async, then there will be a period
-        // when the component isn't present and keyboard navigation won't work - so example
-        // of user hitting tab quickly (more quickly than renderers getting created) won't work
-        var cellEditorAsync = utils_1._.missing(this.cellEditor);
-        if (cellEditorAsync && cellStartedEdit) {
-            this.focusCell(true);
-        }
-    };
-    CellComp.prototype.afterCellEditorCreated = function (cellEditorVersion, cellEditor) {
-        // if editingCell=false, means user cancelled the editor before component was ready.
-        // if versionMismatch, then user cancelled the edit, then started the edit again, and this
-        //   is the first editor which is now stale.
-        var versionMismatch = cellEditorVersion !== this.cellEditorVersion;
-        if (versionMismatch || !this.editingCell) {
-            if (cellEditor.destroy) {
-                cellEditor.destroy();
-            }
-            return;
-        }
-        if (cellEditor.isCancelBeforeStart && cellEditor.isCancelBeforeStart()) {
-            if (cellEditor.destroy) {
-                cellEditor.destroy();
-            }
-            this.editingCell = false;
-            return;
-        }
-        if (!cellEditor.getGui) {
-            console.warn("ag-Grid: cellEditor for column " + this.column.getId() + " is missing getGui() method");
-            // no getGui, for React guys, see if they attached a react component directly
-            if (cellEditor.render) {
-                console.warn("ag-Grid: we found 'render' on the component, are you trying to set a React renderer but added it as colDef.cellEditor instead of colDef.cellEditorFmk?");
-            }
-            if (cellEditor.destroy) {
-                cellEditor.destroy();
-            }
-            this.editingCell = false;
-            return;
-        }
-        this.cellEditor = cellEditor;
-        this.cellEditorInPopup = cellEditor.isPopup !== undefined && cellEditor.isPopup();
-        this.setInlineEditingClass();
-        if (this.cellEditorInPopup) {
-            this.addPopupCellEditor();
-        }
-        else {
-            this.addInCellEditor();
-        }
-        if (cellEditor.afterGuiAttached) {
-            cellEditor.afterGuiAttached();
-        }
-        var event = this.createEvent(null, events_1.Events.EVENT_CELL_EDITING_STARTED);
-        this.beans.eventService.dispatchEvent(event);
-    };
-    CellComp.prototype.addInCellEditor = function () {
-        utils_1._.removeAllChildren(this.getGui());
-        if (this.cellEditor) {
-            this.getGui().appendChild(this.cellEditor.getGui());
-        }
-        this.angular1Compile();
-    };
-    CellComp.prototype.addPopupCellEditor = function () {
-        var _this = this;
-        var ePopupGui = this.cellEditor ? this.cellEditor.getGui() : null;
-        this.hideEditorPopup = this.beans.popupService.addAsModalPopup(ePopupGui, true, 
-        // callback for when popup disappears
-        function () {
-            _this.onPopupEditorClosed();
-        });
-        this.beans.popupService.positionPopupOverComponent({
-            column: this.column,
-            rowNode: this.rowNode,
-            type: 'popupCellEditor',
-            eventSource: this.getGui(),
-            ePopup: ePopupGui,
-            keepWithinBounds: true
-        });
-        this.angular1Compile();
-    };
-    CellComp.prototype.onPopupEditorClosed = function () {
-        // we only call stopEditing if we are editing, as
-        // it's possible the popup called 'stop editing'
-        // before this, eg if 'enter key' was pressed on
-        // the editor.
-        if (this.editingCell) {
-            // note: this only happens when use clicks outside of the grid. if use clicks on another
-            // cell, then the editing will have already stopped on this cell
-            this.stopRowOrCellEdit();
-            // we only focus cell again if this cell is still focused. it is possible
-            // it is not focused if the user cancelled the edit by clicking on another
-            // cell outside of this one
-            if (this.beans.focusedCellController.isCellFocused(this.gridCell)) {
-                this.focusCell(true);
-            }
-        }
-    };
-    // if we are editing inline, then we don't have the padding in the cell (set in the themes)
-    // to allow the text editor full access to the entire cell
-    CellComp.prototype.setInlineEditingClass = function () {
-        // ag-cell-inline-editing - appears when user is inline editing
-        // ag-cell-not-inline-editing - appears when user is no inline editing
-        // ag-cell-popup-editing - appears when user is editing cell in popup (appears on the cell, not on the popup)
-        // note: one of {ag-cell-inline-editing, ag-cell-not-inline-editing} is always present, they toggle.
-        //       however {ag-cell-popup-editing} shows when popup, so you have both {ag-cell-popup-editing}
-        //       and {ag-cell-not-inline-editing} showing at the same time.
-        var editingInline = this.editingCell && !this.cellEditorInPopup;
-        var popupEditorShowing = this.editingCell && this.cellEditorInPopup;
-        utils_1._.addOrRemoveCssClass(this.getGui(), "ag-cell-inline-editing", editingInline);
-        utils_1._.addOrRemoveCssClass(this.getGui(), "ag-cell-not-inline-editing", !editingInline);
-        utils_1._.addOrRemoveCssClass(this.getGui(), "ag-cell-popup-editing", popupEditorShowing);
-        utils_1._.addOrRemoveCssClass(this.getGui().parentNode, "ag-row-inline-editing", editingInline);
-        utils_1._.addOrRemoveCssClass(this.getGui().parentNode, "ag-row-not-inline-editing", !editingInline);
-    };
-    CellComp.prototype.createCellEditorParams = function (keyPress, charPress, cellStartedEdit) {
-        var params = {
-            value: this.getValue(),
-            keyPress: keyPress,
-            charPress: charPress,
-            column: this.column,
-            rowIndex: this.gridCell.rowIndex,
-            node: this.rowNode,
-            api: this.beans.gridOptionsWrapper.getApi(),
-            cellStartedEdit: cellStartedEdit,
-            columnApi: this.beans.gridOptionsWrapper.getColumnApi(),
-            context: this.beans.gridOptionsWrapper.getContext(),
-            $scope: this.scope,
-            onKeyDown: this.onKeyDown.bind(this),
-            stopEditing: this.stopEditingAndFocus.bind(this),
-            eGridCell: this.getGui(),
-            parseValue: this.parseValue.bind(this),
-            formatValue: this.formatValue.bind(this)
-        };
-        return params;
-    };
-    // cell editors call this, when they want to stop for reasons other
-    // than what we pick up on. eg selecting from a dropdown ends editing.
-    CellComp.prototype.stopEditingAndFocus = function (suppressNavigateAfterEdit) {
-        if (suppressNavigateAfterEdit === void 0) { suppressNavigateAfterEdit = false; }
-        this.stopRowOrCellEdit();
-        this.focusCell(true);
-        if (!suppressNavigateAfterEdit) {
-            this.navigateAfterEdit();
-        }
-    };
-    CellComp.prototype.parseValue = function (newValue) {
-        var params = {
-            node: this.rowNode,
-            data: this.rowNode.data,
-            oldValue: this.value,
-            newValue: newValue,
-            colDef: this.column.getColDef(),
-            column: this.column,
-            api: this.beans.gridOptionsWrapper.getApi(),
-            columnApi: this.beans.gridOptionsWrapper.getColumnApi(),
-            context: this.beans.gridOptionsWrapper.getContext()
-        };
-        var valueParser = this.column.getColDef().valueParser;
-        return utils_1._.exists(valueParser) ? this.beans.expressionService.evaluate(valueParser, params) : newValue;
-    };
-    CellComp.prototype.focusCell = function (forceBrowserFocus) {
-        if (forceBrowserFocus === void 0) { forceBrowserFocus = false; }
-        this.beans.focusedCellController.setFocusedCell(this.gridCell.rowIndex, this.column, this.rowNode.rowPinned, forceBrowserFocus);
-    };
-    CellComp.prototype.setFocusInOnEditor = function () {
-        if (this.editingCell) {
-            if (this.cellEditor && this.cellEditor.focusIn) {
-                // if the editor is present, then we just focus it
-                this.cellEditor.focusIn();
-            }
-            else {
-                // if the editor is not present, it means async cell editor (eg React fibre)
-                // and we are trying to set focus before the cell editor is present, so we
-                // focus the cell instead
-                this.focusCell(true);
-            }
-        }
-    };
-    CellComp.prototype.isEditing = function () {
-        return this.editingCell;
-    };
-    CellComp.prototype.onKeyDown = function (event) {
-        var key = event.which || event.keyCode;
-        // give user a chance to cancel event processing
-        if (this.doesUserWantToCancelKeyboardEvent(event)) {
-            return;
-        }
-        switch (key) {
-            case constants_1.Constants.KEY_ENTER:
-                this.onEnterKeyDown();
-                break;
-            case constants_1.Constants.KEY_F2:
-                this.onF2KeyDown();
-                break;
-            case constants_1.Constants.KEY_ESCAPE:
-                this.onEscapeKeyDown();
-                break;
-            case constants_1.Constants.KEY_TAB:
-                this.onTabKeyDown(event);
-                break;
-            case constants_1.Constants.KEY_BACKSPACE:
-            case constants_1.Constants.KEY_DELETE:
-                this.onBackspaceOrDeleteKeyPressed(key);
-                break;
-            case constants_1.Constants.KEY_DOWN:
-            case constants_1.Constants.KEY_UP:
-            case constants_1.Constants.KEY_RIGHT:
-            case constants_1.Constants.KEY_LEFT:
-                this.onNavigationKeyPressed(event, key);
-                break;
-        }
-    };
-    CellComp.prototype.doesUserWantToCancelKeyboardEvent = function (event) {
-        var callback = this.column.getColDef().suppressKeyboardEvent;
-        if (!callback || utils_1._.missing(callback)) {
-            return false;
-        }
-        else {
-            // if editing is null or undefined, this sets it to false
-            var params = {
-                event: event,
-                editing: this.editingCell,
-                column: this.column,
-                api: this.beans.gridOptionsWrapper.getApi(),
-                node: this.rowNode,
-                data: this.rowNode.data,
-                colDef: this.column.getColDef(),
-                context: this.beans.gridOptionsWrapper.getContext(),
-                columnApi: this.beans.gridOptionsWrapper.getColumnApi()
-            };
-            return callback(params);
-        }
-    };
-    CellComp.prototype.setFocusOutOnEditor = function () {
-        if (this.editingCell && this.cellEditor && this.cellEditor.focusOut) {
-            this.cellEditor.focusOut();
-        }
-    };
-    CellComp.prototype.onNavigationKeyPressed = function (event, key) {
-        if (this.editingCell) {
-            this.stopRowOrCellEdit();
-        }
-        if (event.shiftKey && this.rangeSelectionEnabled) {
-            this.onShiftRangeSelect(key);
-        }
-        else {
-            this.beans.rowRenderer.navigateToNextCell(event, key, this.gridCell, true);
-        }
-        // if we don't prevent default, the grid will scroll with the navigation keys
-        event.preventDefault();
-    };
-    CellComp.prototype.onShiftRangeSelect = function (key) {
-        var success = this.beans.rangeController.extendRangeInDirection(this.gridCell, key);
-        if (!success) {
-            return;
-        }
-        var ranges = this.beans.rangeController.getCellRanges();
-        // this should never happen, as extendRangeFromCell should always have one range after getting called
-        if (utils_1._.missing(ranges) || !ranges || ranges.length !== 1) {
-            return;
-        }
-        var endCell = ranges[0].end;
-        this.beans.rowRenderer.ensureCellVisible(endCell);
-    };
-    CellComp.prototype.onTabKeyDown = function (event) {
-        if (this.beans.gridOptionsWrapper.isSuppressTabbing()) {
-            return;
-        }
-        this.beans.rowRenderer.onTabKeyDown(this, event);
-    };
-    CellComp.prototype.onBackspaceOrDeleteKeyPressed = function (key) {
-        if (!this.editingCell) {
-            this.startRowOrCellEdit(key);
-        }
-    };
-    CellComp.prototype.onEnterKeyDown = function () {
-        if (this.editingCell || this.rowComp.isEditing()) {
-            this.stopEditingAndFocus();
-        }
-        else {
-            if (this.beans.gridOptionsWrapper.isEnterMovesDown()) {
-                this.beans.rowRenderer.navigateToNextCell(null, constants_1.Constants.KEY_DOWN, this.gridCell, false);
-            }
-            else {
-                this.startRowOrCellEdit(constants_1.Constants.KEY_ENTER);
-            }
-        }
-    };
-    CellComp.prototype.navigateAfterEdit = function () {
-        var fullRowEdit = this.beans.gridOptionsWrapper.isFullRowEdit();
-        if (fullRowEdit) {
-            return;
-        }
-        var enterMovesDownAfterEdit = this.beans.gridOptionsWrapper.isEnterMovesDownAfterEdit();
-        if (enterMovesDownAfterEdit) {
-            this.beans.rowRenderer.navigateToNextCell(null, constants_1.Constants.KEY_DOWN, this.gridCell, false);
-        }
-    };
-    CellComp.prototype.onF2KeyDown = function () {
-        if (!this.editingCell) {
-            this.startRowOrCellEdit(constants_1.Constants.KEY_F2);
-        }
-    };
-    CellComp.prototype.onEscapeKeyDown = function () {
-        if (this.editingCell) {
-            this.stopRowOrCellEdit(true);
-            this.focusCell(true);
-        }
-    };
-    CellComp.prototype.onKeyPress = function (event) {
-        // check this, in case focus is on a (for example) a text field inside the cell,
-        // in which cse we should not be listening for these key pressed
-        var eventTarget = utils_1._.getTarget(event);
-        var eventOnChildComponent = eventTarget !== this.getGui();
-        if (eventOnChildComponent) {
-            return;
-        }
-        if (!this.editingCell) {
-            var pressedChar = String.fromCharCode(event.charCode);
-            if (pressedChar === ' ') {
-                this.onSpaceKeyPressed(event);
-            }
-            else {
-                if (utils_1._.isEventFromPrintableCharacter(event)) {
-                    this.startRowOrCellEdit(null, pressedChar);
-                    // if we don't prevent default, then the keypress also gets applied to the text field
-                    // (at least when doing the default editor), but we need to allow the editor to decide
-                    // what it wants to do. we only do this IF editing was started - otherwise it messes
-                    // up when the use is not doing editing, but using rendering with text fields in cellRenderer
-                    // (as it would block the the user from typing into text fields).
-                    event.preventDefault();
-                }
-            }
-        }
-    };
-    CellComp.prototype.onSpaceKeyPressed = function (event) {
-        if (!this.editingCell && this.beans.gridOptionsWrapper.isRowSelection()) {
-            var selected = this.rowNode.isSelected();
-            this.rowNode.setSelected(!selected);
-        }
-        // prevent default as space key, by default, moves browser scroll down
-        event.preventDefault();
-    };
-    CellComp.prototype.onMouseDown = function (mouseEvent) {
-        // we only need to pass true to focusCell in when the browser is IE
-        // and we are trying to focus a cell (has ag-cell class), otherwise
-        // we pass false, as we don't want the cell to focus also get the browser
-        // focus. if we did, then the cellRenderer could have a text field in it,
-        // for example, and as the user clicks on the text field, the text field,
-        // the focus doesn't get to the text field, instead to goes to the div
-        // behind, making it impossible to select the text field.
-        var forceBrowserFocus = false;
-        if (utils_1._.isBrowserIE()) {
-            var target = mouseEvent.target;
-            if (target.classList.contains('ag-cell')) {
-                forceBrowserFocus = true;
-            }
-        }
-        this.focusCell(forceBrowserFocus);
-        // if it's a right click, then if the cell is already in range,
-        // don't change the range, however if the cell is not in a range,
-        // we set a new range
-        var leftMouseButtonClick = utils_1._.isLeftClick(mouseEvent);
-        if (leftMouseButtonClick && this.beans.rangeController) {
-            var thisCell = this.gridCell;
-            if (mouseEvent.shiftKey) {
-                this.beans.rangeController.extendRangeToCell(thisCell);
-            }
-            else {
-                var ctrlKeyPressed = mouseEvent.ctrlKey || mouseEvent.metaKey;
-                this.beans.rangeController.setRangeToCell(thisCell, ctrlKeyPressed);
-            }
-        }
-        var cellMouseDownEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_MOUSE_DOWN);
-        this.beans.eventService.dispatchEvent(cellMouseDownEvent);
-    };
-    // returns true if on iPad and this is second 'click' event in 200ms
-    CellComp.prototype.isDoubleClickOnIPad = function () {
-        if (!utils_1._.isUserAgentIPad()) {
-            return false;
-        }
-        var nowMillis = new Date().getTime();
-        var res = nowMillis - this.lastIPadMouseClickEvent < 200;
-        this.lastIPadMouseClickEvent = nowMillis;
-        return res;
-    };
-    CellComp.prototype.onCellClicked = function (mouseEvent) {
-        // iPad doesn't have double click - so we need to mimic it do enable editing for
-        // iPad.
-        if (this.isDoubleClickOnIPad()) {
-            this.onCellDoubleClicked(mouseEvent);
-            mouseEvent.preventDefault(); // if we don't do this, then ipad zooms in
-            return;
-        }
-        var cellClickedEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_CLICKED);
-        this.beans.eventService.dispatchEvent(cellClickedEvent);
-        var colDef = this.column.getColDef();
-        if (colDef.onCellClicked) {
-            // to make callback async, do in a timeout
-            window.setTimeout(function () { return colDef.onCellClicked(cellClickedEvent); }, 0);
-        }
-        var editOnSingleClick = (this.beans.gridOptionsWrapper.isSingleClickEdit() || colDef.singleClickEdit)
-            && !this.beans.gridOptionsWrapper.isSuppressClickEdit();
-        if (editOnSingleClick) {
-            this.startRowOrCellEdit();
-        }
-        this.doIeFocusHack();
-    };
-    // https://ag-grid.com/forum/showthread.php?tid=4362
-    // when in IE or Edge, when you are editing a cell, then click on another cell,
-    // the other cell doesn't keep focus, so navigation keys, type to start edit etc
-    // don't work. appears that when you update the dom in IE it looses focus
-    CellComp.prototype.doIeFocusHack = function () {
-        if (utils_1._.isBrowserIE() || utils_1._.isBrowserEdge()) {
-            if (utils_1._.missing(document.activeElement) || document.activeElement === document.body) {
-                // console.log('missing focus');
-                this.getGui().focus();
-            }
-        }
-    };
-    CellComp.prototype.createGridCellVo = function () {
-        var gridCellDef = {
-            rowIndex: this.rowNode.rowIndex,
-            floating: this.rowNode.rowPinned,
-            column: this.column
-        };
-        this.gridCell = new gridCell_1.GridCell(gridCellDef);
-    };
-    CellComp.prototype.getGridCell = function () {
-        return this.gridCell;
-    };
-    CellComp.prototype.getParentRow = function () {
-        return this.eParentRow;
-    };
-    CellComp.prototype.setParentRow = function (eParentRow) {
-        this.eParentRow = eParentRow;
-    };
-    CellComp.prototype.getColumn = function () {
-        return this.column;
-    };
-    CellComp.prototype.detach = function () {
-        this.eParentRow.removeChild(this.getGui());
-    };
-    // if the row is also getting destroyed, then we don't need to remove from dom,
-    // as the row will also get removed, so no need to take out the cells from the row
-    // if the row is going (removing is an expensive operation, so only need to remove
-    // the top part)
-    CellComp.prototype.destroy = function () {
-        _super.prototype.destroy.call(this);
-        if (this.cellEditor && this.cellEditor.destroy) {
-            this.cellEditor.destroy();
-            this.cellEditor = null;
-        }
-        if (this.cellRenderer && this.cellRenderer.destroy) {
-            this.cellRenderer.destroy();
-            this.cellRenderer = null;
-        }
-    };
-    CellComp.prototype.onLeftChanged = function () {
-        var left = this.modifyLeftForPrintLayout(this.getCellLeft());
-        this.getGui().style.left = left + 'px';
-    };
-    CellComp.prototype.modifyLeftForPrintLayout = function (leftPosition) {
-        if (!this.printLayout) {
-            return leftPosition;
-        }
-        if (this.column.getPinned() === column_1.Column.PINNED_LEFT) {
-            return leftPosition;
-        }
-        if (this.column.getPinned() === column_1.Column.PINNED_RIGHT) {
-            var leftWidth_1 = this.beans.columnController.getPinnedLeftContainerWidth();
-            var bodyWidth = this.beans.columnController.getBodyContainerWidth();
-            return leftWidth_1 + bodyWidth + leftPosition;
-        }
-        // is in body
-        var leftWidth = this.beans.columnController.getPinnedLeftContainerWidth();
-        return leftWidth + leftPosition;
-    };
-    CellComp.prototype.onWidthChanged = function () {
-        var width = this.getCellWidth();
-        this.getGui().style.width = width + 'px';
-    };
-    CellComp.prototype.getRangeClasses = function () {
-        var res = [];
-        if (!this.rangeSelectionEnabled) {
-            return res;
-        }
-        if (this.rangeCount !== 0) {
-            res.push('ag-cell-range-selected');
-        }
-        if (this.rangeCount === 1) {
-            res.push('ag-cell-range-selected-1');
-        }
-        if (this.rangeCount === 2) {
-            res.push('ag-cell-range-selected-2');
-        }
-        if (this.rangeCount === 3) {
-            res.push('ag-cell-range-selected-3');
-        }
-        if (this.rangeCount >= 4) {
-            res.push('ag-cell-range-selected-4');
-        }
-        return res;
-    };
-    CellComp.prototype.onRowIndexChanged = function () {
-        // when index changes, this influences items that need the index, so we update the
-        // grid cell so they are working off the new index.
-        this.createGridCellVo();
-        // when the index of the row changes, ie means the cell may have lost or gained focus
-        this.onCellFocused();
-        // check range selection
-        this.onRangeSelectionChanged();
-    };
-    CellComp.prototype.onRangeSelectionChanged = function () {
-        if (!this.beans.enterprise) {
-            return;
-        }
-        var newRangeCount = this.beans.rangeController.getCellRangeCount(this.gridCell);
-        var element = this.getGui();
-        if (this.rangeCount !== newRangeCount) {
-            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected', newRangeCount !== 0);
-            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-1', newRangeCount === 1);
-            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-2', newRangeCount === 2);
-            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-3', newRangeCount === 3);
-            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-4', newRangeCount >= 4);
-            this.rangeCount = newRangeCount;
-        }
-    };
-    CellComp.prototype.onFirstRightPinnedChanged = function () {
-        var firstRightPinned = this.column.isFirstRightPinned();
-        if (this.firstRightPinned !== firstRightPinned) {
-            this.firstRightPinned = firstRightPinned;
-            utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-first-right-pinned', firstRightPinned);
-        }
-    };
-    CellComp.prototype.onLastLeftPinnedChanged = function () {
-        var lastLeftPinned = this.column.isLastLeftPinned();
-        if (this.lastLeftPinned !== lastLeftPinned) {
-            this.lastLeftPinned = lastLeftPinned;
-            utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-last-left-pinned', lastLeftPinned);
-        }
-    };
-    CellComp.prototype.populateTemplate = function () {
-        if (this.usingWrapper) {
-            this.eParentOfValue = this.getRefElement('eCellValue');
-            this.eCellWrapper = this.getRefElement('eCellWrapper');
-            if (this.includeRowDraggingComponent) {
-                this.addRowDragging();
-            }
-            if (this.includeSelectionComponent) {
-                this.addSelectionCheckbox();
-            }
-        }
-        else {
-            this.eParentOfValue = this.getGui();
-        }
-    };
-    CellComp.prototype.addRowDragging = function () {
-        // row dragging only available in default row model
-        if (!this.beans.gridOptionsWrapper.isRowModelDefault()) {
-            utils_1._.doOnce(function () { return console.warn('ag-Grid: row dragging is only allowed in the In Memory Row Model'); }, 'CellComp.addRowDragging');
-            return;
-        }
-        if (this.beans.gridOptionsWrapper.isPagination()) {
-            utils_1._.doOnce(function () { return console.warn('ag-Grid: row dragging is not possible when doing pagination'); }, 'CellComp.addRowDragging');
-            return;
-        }
-        var rowDraggingComp = new rowDragComp_1.RowDragComp(this.rowNode, this.column, this.getValueToUse(), this.beans);
-        this.addFeature(this.beans.context, rowDraggingComp);
-        // let visibleFunc = this.column.getColDef().checkboxSelection;
-        // visibleFunc = typeof visibleFunc === 'function' ? visibleFunc : null;
-        // cbSelectionComponent.init({rowNode: this.rowNode, column: this.column, visibleFunc: visibleFunc});
-        // put the checkbox in before the value
-        this.eCellWrapper.insertBefore(rowDraggingComp.getGui(), this.eParentOfValue);
-    };
-    CellComp.prototype.addSelectionCheckbox = function () {
-        var cbSelectionComponent = new checkboxSelectionComponent_1.CheckboxSelectionComponent();
-        this.beans.context.wireBean(cbSelectionComponent);
-        var visibleFunc = this.column.getColDef().checkboxSelection;
-        visibleFunc = typeof visibleFunc === 'function' ? visibleFunc : null;
-        cbSelectionComponent.init({ rowNode: this.rowNode, column: this.column, visibleFunc: visibleFunc });
-        this.addDestroyFunc(function () { return cbSelectionComponent.destroy(); });
-        // put the checkbox in before the value
-        this.eCellWrapper.insertBefore(cbSelectionComponent.getGui(), this.eParentOfValue);
-    };
-    CellComp.prototype.addDomData = function () {
-        var _this = this;
-        var element = this.getGui();
-        this.beans.gridOptionsWrapper.setDomData(element, CellComp.DOM_DATA_KEY_CELL_COMP, this);
-        this.addDestroyFunc(function () {
-            return _this.beans.gridOptionsWrapper.setDomData(element, CellComp.DOM_DATA_KEY_CELL_COMP, null);
-        });
-    };
-    CellComp.prototype.onCellFocused = function (event) {
-        var cellFocused = this.beans.focusedCellController.isCellFocused(this.gridCell);
-        // see if we need to change the classes on this cell
-        if (cellFocused !== this.cellFocused) {
-            // if we are not doing cell selection, then the focus class does not change, all cells will
-            // stay with ag-cell-no-focus class
-            var doingFocusCss = !this.beans.gridOptionsWrapper.isSuppressCellSelection();
-            if (doingFocusCss) {
-                utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-focus', cellFocused);
-                utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-no-focus', !cellFocused);
-            }
-            this.cellFocused = cellFocused;
-        }
-        // if this cell was just focused, see if we need to force browser focus, his can
-        // happen if focus is programmatically set.
-        if (cellFocused && event && event.forceBrowserFocus) {
-            this.getGui().focus();
-        }
-        // if another cell was focused, and we are editing, then stop editing
-        var fullRowEdit = this.beans.gridOptionsWrapper.isFullRowEdit();
-        if (!cellFocused && !fullRowEdit && this.editingCell) {
-            this.stopRowOrCellEdit();
-        }
-    };
-    // pass in 'true' to cancel the editing.
-    CellComp.prototype.stopRowOrCellEdit = function (cancel) {
-        if (cancel === void 0) { cancel = false; }
-        if (this.beans.gridOptionsWrapper.isFullRowEdit()) {
-            this.rowComp.stopRowEditing(cancel);
-        }
-        else {
-            this.stopEditing(cancel);
-        }
-    };
-    CellComp.prototype.stopEditing = function (cancel) {
-        if (cancel === void 0) { cancel = false; }
-        if (!this.editingCell) {
-            return;
-        }
-        // if no cell editor, this means due to async, that the cell editor never got initialised,
-        // so we just carry on regardless as if the editing was never started.
-        if (!this.cellEditor) {
-            this.editingCell = false;
-            return;
-        }
-        var newValueExists = false;
-        var newValue;
-        if (!cancel) {
-            // also have another option here to cancel after editing, so for example user could have a popup editor and
-            // it is closed by user clicking outside the editor. then the editor will close automatically (with false
-            // passed above) and we need to see if the editor wants to accept the new value.
-            var userWantsToCancel = this.cellEditor.isCancelAfterEnd && this.cellEditor.isCancelAfterEnd();
-            if (!userWantsToCancel) {
-                newValue = this.cellEditor.getValue();
-                newValueExists = true;
-            }
-        }
-        // it is important we set this after setValue() above, as otherwise the cell will flash
-        // when editing stops. the 'refresh' method checks editing, and doesn't refresh editing cells.
-        // thus it will skip the refresh on this cell until the end of this method where we call
-        // refresh directly and we suppress the flash.
-        this.editingCell = false;
-        if (this.cellEditor.destroy) {
-            this.cellEditor.destroy();
-        }
-        // important to clear this out - as parts of the code will check for
-        // this to see if an async cellEditor has yet to be created
-        this.cellEditor = null;
-        if (this.cellEditorInPopup && this.hideEditorPopup) {
-            this.hideEditorPopup();
-            this.hideEditorPopup = null;
-        }
-        else {
-            utils_1._.removeAllChildren(this.getGui());
-            // put the cell back the way it was before editing
-            if (this.usingWrapper) {
-                // if wrapper, then put the wrapper back
-                this.getGui().appendChild(this.eCellWrapper);
-            }
-            else {
-                // if cellRenderer, then put the gui back in. if the renderer has
-                // a refresh, it will be called. however if it doesn't, then later
-                // the renderer will be destroyed and a new one will be created.
-                if (this.cellRenderer) {
-                    // we know it's a dom element (not a string) because we converted
-                    // it after the gui was attached if it was a string.
-                    var eCell = this.cellRendererGui;
-                    // can be null if cell was previously null / contained empty string,
-                    // this will result in new value not being rendered.
-                    if (eCell) {
-                        this.getGui().appendChild(eCell);
-                    }
-                }
-            }
-        }
-        this.setInlineEditingClass();
-        if (newValueExists) {
-            this.rowNode.setDataValue(this.column, newValue);
-            this.getValueAndFormat();
-        }
-        // we suppress the flash, as it is not correct to flash the cell the user has finished editing,
-        // the user doesn't need to flash as they were the one who did the edit, the flash is pointless
-        // (as the flash is meant to draw the user to a change that they didn't manually do themselves).
-        this.refreshCell({ forceRefresh: true, suppressFlash: true });
-        var event = this.createEvent(null, events_1.Events.EVENT_CELL_EDITING_STOPPED);
-        this.beans.eventService.dispatchEvent(event);
-    };
-    CellComp.DOM_DATA_KEY_CELL_COMP = 'cellComp';
-    return CellComp;
-}(component_1.Component));
-exports.CellComp = CellComp;
-
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
- * @version v20.0.0
- * @link http://www.ag-grid.com/
- * @license MIT
- */
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var context_1 = __webpack_require__(0);
-var gridOptionsWrapper_1 = __webpack_require__(2);
-var ValueCache = /** @class */ (function () {
-    function ValueCache() {
-        this.cacheVersion = 0;
-    }
-    ValueCache.prototype.init = function () {
-        this.active = this.gridOptionsWrapper.isValueCache();
-        this.neverExpires = this.gridOptionsWrapper.isValueCacheNeverExpires();
-    };
-    ValueCache.prototype.onDataChanged = function () {
-        if (this.neverExpires) {
-            return;
-        }
-        this.expire();
-    };
-    ValueCache.prototype.expire = function () {
-        this.cacheVersion++;
-    };
-    ValueCache.prototype.setValue = function (rowNode, colId, value) {
-        if (this.active) {
-            if (rowNode.__cacheVersion !== this.cacheVersion) {
-                rowNode.__cacheVersion = this.cacheVersion;
-                rowNode.__cacheData = {};
-            }
-            rowNode.__cacheData[colId] = value;
-        }
-    };
-    ValueCache.prototype.getValue = function (rowNode, colId) {
-        var valueInCache = this.active
-            && rowNode.__cacheVersion === this.cacheVersion
-            && rowNode.__cacheData[colId] !== undefined;
-        if (valueInCache) {
-            return rowNode.__cacheData[colId];
-        }
-        else {
-            return undefined;
-        }
-    };
-    __decorate([
-        context_1.Autowired('gridOptionsWrapper'),
-        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
-    ], ValueCache.prototype, "gridOptionsWrapper", void 0);
-    __decorate([
-        context_1.PostConstruct,
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", []),
-        __metadata("design:returntype", void 0)
-    ], ValueCache.prototype, "init", null);
-    ValueCache = __decorate([
-        context_1.Bean('valueCache')
-    ], ValueCache);
-    return ValueCache;
-}());
-exports.ValueCache = ValueCache;
-
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
- * @version v20.0.0
- * @link http://www.ag-grid.com/
- * @license MIT
- */
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var constants_1 = __webpack_require__(8);
-var context_1 = __webpack_require__(0);
-var gridCore_1 = __webpack_require__(71);
-var gridOptionsWrapper_1 = __webpack_require__(2);
-var environment_1 = __webpack_require__(70);
-var eventService_1 = __webpack_require__(3);
-var events_1 = __webpack_require__(7);
-var utils_1 = __webpack_require__(1);
-var PopupService = /** @class */ (function () {
-    function PopupService() {
-        this.activePopupElements = [];
-    }
-    PopupService.prototype.getDocument = function () {
-        return this.gridOptionsWrapper.getDocument();
-    };
-    PopupService.prototype.getPopupParent = function () {
-        var ePopupParent = this.gridOptionsWrapper.getPopupParent();
-        if (ePopupParent) {
-            // user provided popup parent, may not have the right theme applied
-            return ePopupParent;
-        }
-        else {
-            return this.gridCore.getRootGui();
-        }
-    };
-    PopupService.prototype.positionPopupForMenu = function (params) {
-        var sourceRect = params.eventSource.getBoundingClientRect();
-        var eDocument = this.getDocument();
-        var popupParent = this.getPopupParent();
-        var parentRect;
-        if (popupParent === eDocument.body) {
-            parentRect = eDocument.documentElement.getBoundingClientRect();
-        }
-        else {
-            parentRect = popupParent.getBoundingClientRect();
-        }
-        var y = sourceRect.top - parentRect.top;
-        y = this.keepYWithinBounds(params, y);
-        var minWidth = (params.ePopup.clientWidth > 0) ? params.ePopup.clientWidth : 200;
-        params.ePopup.style.minWidth = minWidth + "px";
-        var widthOfParent = parentRect.right - parentRect.left;
-        var maxX = widthOfParent - minWidth;
-        // the x position of the popup depends on RTL or LTR. for normal cases, LTR, we put the child popup
-        // to the right, unless it doesn't fit and we then put it to the left. for RTL it's the other way around,
-        // we try place it first to the left, and then if not to the right.
-        var x;
-        if (this.gridOptionsWrapper.isEnableRtl()) {
-            // for RTL, try left first
-            x = xLeftPosition();
-            if (x < 0) {
-                x = xRightPosition();
-            }
-            if (x > maxX) {
-                x = 0;
-            }
-        }
-        else {
-            // for LTR, try right first
-            x = xRightPosition();
-            if (x > maxX) {
-                x = xLeftPosition();
-            }
-            if (x < 0) {
-                x = 0;
-            }
-        }
-        params.ePopup.style.left = x + "px";
-        params.ePopup.style.top = y + "px";
-        function xRightPosition() {
-            return sourceRect.right - parentRect.left - 2;
-        }
-        function xLeftPosition() {
-            return sourceRect.left - parentRect.left - minWidth;
-        }
-    };
-    PopupService.prototype.positionPopupUnderMouseEvent = function (params) {
-        var _a = this.calculatePointerAlign(params.mouseEvent), x = _a.x, y = _a.y;
-        this.positionPopup({
-            ePopup: params.ePopup,
-            x: x,
-            y: y,
-            keepWithinBounds: true
-        });
-        this.callPostProcessPopup(params.ePopup, null, params.mouseEvent, params.type, params.column, params.rowNode);
-    };
-    PopupService.prototype.calculatePointerAlign = function (e) {
-        var eDocument = this.getDocument();
-        var popupParent = this.getPopupParent();
-        var parentRect = popupParent.getBoundingClientRect();
-        var documentRect = eDocument.documentElement.getBoundingClientRect();
-        return {
-            x: e.clientX - (popupParent === eDocument.body ? documentRect.left : parentRect.left),
-            y: e.clientY - (popupParent === eDocument.body ? documentRect.top : parentRect.top)
-        };
-    };
-    PopupService.prototype.positionPopupUnderComponent = function (params) {
-        var sourceRect = params.eventSource.getBoundingClientRect();
-        var eDocument = this.getDocument();
-        var popupParent = this.getPopupParent();
-        var parentRect;
-        if (popupParent === eDocument.body) {
-            parentRect = eDocument.documentElement.getBoundingClientRect();
-        }
-        else {
-            parentRect = popupParent.getBoundingClientRect();
-        }
-        this.positionPopup({
-            ePopup: params.ePopup,
-            minWidth: params.minWidth,
-            minHeight: params.minHeight,
-            nudgeX: params.nudgeX,
-            nudgeY: params.nudgeY,
-            x: sourceRect.left - parentRect.left,
-            y: sourceRect.top - parentRect.top + sourceRect.height,
-            keepWithinBounds: params.keepWithinBounds
-        });
-        this.callPostProcessPopup(params.ePopup, params.eventSource, null, params.type, params.column, params.rowNode);
-    };
-    PopupService.prototype.callPostProcessPopup = function (ePopup, eventSource, mouseEvent, type, column, rowNode) {
-        var callback = this.gridOptionsWrapper.getPostProcessPopupFunc();
-        if (callback) {
-            var params = {
-                column: column,
-                rowNode: rowNode,
-                ePopup: ePopup,
-                type: type,
-                eventSource: eventSource,
-                mouseEvent: mouseEvent
-            };
-            callback(params);
-        }
-    };
-    PopupService.prototype.positionPopupOverComponent = function (params) {
-        var sourceRect = params.eventSource.getBoundingClientRect();
-        var eDocument = this.getDocument();
-        var popupParent = this.getPopupParent();
-        var parentRect;
-        if (popupParent === eDocument.body) {
-            parentRect = eDocument.documentElement.getBoundingClientRect();
-        }
-        else {
-            parentRect = popupParent.getBoundingClientRect();
-        }
-        this.positionPopup({
-            ePopup: params.ePopup,
-            minWidth: params.minWidth,
-            nudgeX: params.nudgeX,
-            nudgeY: params.nudgeY,
-            x: sourceRect.left - parentRect.left,
-            y: sourceRect.top - parentRect.top,
-            keepWithinBounds: params.keepWithinBounds
-        });
-        this.callPostProcessPopup(params.ePopup, params.eventSource, null, params.type, params.column, params.rowNode);
-    };
-    PopupService.prototype.positionPopup = function (params) {
-        var x = params.x;
-        var y = params.y;
-        if (params.nudgeX) {
-            x += params.nudgeX;
-        }
-        if (params.nudgeY) {
-            y += params.nudgeY;
-        }
-        // if popup is overflowing to the bottom, move it up
-        if (params.keepWithinBounds) {
-            x = this.keepXWithinBounds(params, x);
-            y = this.keepYWithinBounds(params, y);
-        }
-        params.ePopup.style.left = x + "px";
-        params.ePopup.style.top = y + "px";
-    };
-    PopupService.prototype.keepYWithinBounds = function (params, y) {
-        var eDocument = this.gridOptionsWrapper.getDocument();
-        var docElement = eDocument.documentElement;
-        var popupParent = this.getPopupParent();
-        var parentRect = popupParent.getBoundingClientRect();
-        var documentRect = eDocument.documentElement.getBoundingClientRect();
-        var isBody = popupParent === eDocument.body;
-        var defaultPadding = 3;
-        var minHeight = Math.min(200, parentRect.height);
-        var diff = 0;
-        if (params.minHeight && params.minHeight < minHeight) {
-            minHeight = params.minHeight;
-        }
-        else if (params.ePopup.offsetHeight > 0) {
-            minHeight = params.ePopup.clientHeight;
-            diff = utils_1._.getAbsoluteHeight(params.ePopup) - minHeight;
-        }
-        var heightOfParent = isBody ? (utils_1._.getAbsoluteHeight(docElement) + docElement.scrollTop) : parentRect.height;
-        if (isBody) {
-            heightOfParent -= Math.abs(documentRect.top - parentRect.top);
-        }
-        var maxY = heightOfParent - minHeight - diff - defaultPadding;
-        return Math.min(Math.max(y, 0), Math.abs(maxY));
-    };
-    PopupService.prototype.keepXWithinBounds = function (params, x) {
-        var eDocument = this.gridOptionsWrapper.getDocument();
-        var docElement = eDocument.documentElement;
-        var popupParent = this.getPopupParent();
-        var parentRect = popupParent.getBoundingClientRect();
-        var documentRect = eDocument.documentElement.getBoundingClientRect();
-        var isBody = popupParent === eDocument.body;
-        var defaultPadding = 3;
-        var minWidth = Math.min(200, parentRect.width);
-        var diff = 0;
-        if (params.minWidth && params.minWidth < minWidth) {
-            minWidth = params.minWidth;
-        }
-        else if (params.ePopup.clientWidth > 0) {
-            minWidth = params.ePopup.clientWidth;
-            params.ePopup.style.minWidth = minWidth + "px";
-            diff = utils_1._.getAbsoluteWidth(params.ePopup) - minWidth;
-        }
-        var widthOfParent = isBody ? (utils_1._.getAbsoluteWidth(docElement) + docElement.scrollLeft) : parentRect.width;
-        if (isBody) {
-            widthOfParent -= Math.abs(documentRect.left - parentRect.left);
-        }
-        var maxX = widthOfParent - minWidth - diff - defaultPadding;
-        return Math.min(Math.max(x, 0), Math.abs(maxX));
-    };
-    //adds an element to a div, but also listens to background checking for clicks,
-    //so that when the background is clicked, the child is removed again, giving
-    //a model look to popups.
-    PopupService.prototype.addAsModalPopup = function (eChild, closeOnEsc, closedCallback, click) {
-        return this.addPopup(true, eChild, closeOnEsc, closedCallback, click);
-    };
-    PopupService.prototype.addPopup = function (modal, eChild, closeOnEsc, closedCallback, click) {
-        var _this = this;
-        var eDocument = this.gridOptionsWrapper.getDocument();
-        if (!eDocument) {
-            console.warn('ag-grid: could not find the document, document is empty');
-            return function () {
-            };
-        }
-        eChild.style.top = '0px';
-        eChild.style.left = '0px';
-        var popupAlreadyShown = utils_1._.isVisible(eChild);
-        if (popupAlreadyShown) {
-            return function () {
-            };
-        }
-        var ePopupParent = this.getPopupParent();
-        // add env CSS class to child, in case user provided a popup parent, which means
-        // theme class may be missing
-        var eWrapper = document.createElement('div');
-        utils_1._.addCssClass(eWrapper, this.environment.getTheme());
-        eWrapper.appendChild(eChild);
-        ePopupParent.appendChild(eWrapper);
-        this.activePopupElements.push(eChild);
-        var popupHidden = false;
-        var hidePopupOnKeyboardEvent = function (event) {
-            var key = event.which || event.keyCode;
-            if (key === constants_1.Constants.KEY_ESCAPE) {
-                hidePopup(null);
-            }
-        };
-        var hidePopupOnMouseEvent = function (event) {
-            hidePopup(event);
-        };
-        var hidePopupOnTouchEvent = function (event) {
-            hidePopup(null, event);
-        };
-        var hidePopup = function (mouseEvent, touchEvent) {
-            // we don't hide popup if the event was on the child, or any
-            // children of this child
-            if (_this.isEventFromCurrentPopup(mouseEvent, touchEvent, eChild)) {
-                return;
-            }
-            // if the event to close is actually the open event, then ignore it
-            if (_this.isEventSameChainAsOriginalEvent(click, mouseEvent, touchEvent)) {
-                return;
-            }
-            // this method should only be called once. the client can have different
-            // paths, each one wanting to close, so this method may be called multiple times.
-            if (popupHidden) {
-                return;
-            }
-            popupHidden = true;
-            ePopupParent.removeChild(eWrapper);
-            utils_1._.removeFromArray(_this.activePopupElements, eChild);
-            eDocument.removeEventListener('keydown', hidePopupOnKeyboardEvent);
-            eDocument.removeEventListener('click', hidePopupOnMouseEvent);
-            eDocument.removeEventListener('touchstart', hidePopupOnTouchEvent);
-            eDocument.removeEventListener('contextmenu', hidePopupOnMouseEvent);
-            _this.eventService.removeEventListener(events_1.Events.EVENT_DRAG_STARTED, hidePopupOnMouseEvent);
-            if (closedCallback) {
-                closedCallback();
-            }
-        };
-        // if we add these listeners now, then the current mouse
-        // click will be included, which we don't want
-        window.setTimeout(function () {
-            if (closeOnEsc) {
-                eDocument.addEventListener('keydown', hidePopupOnKeyboardEvent);
-            }
-            if (modal) {
-                eDocument.addEventListener('click', hidePopupOnMouseEvent);
-                _this.eventService.addEventListener(events_1.Events.EVENT_DRAG_STARTED, hidePopupOnMouseEvent);
-                eDocument.addEventListener('touchstart', hidePopupOnTouchEvent);
-                eDocument.addEventListener('contextmenu', hidePopupOnMouseEvent);
-            }
-        }, 0);
-        return hidePopup;
-    };
-    PopupService.prototype.isEventFromCurrentPopup = function (mouseEvent, touchEvent, eChild) {
-        var event = mouseEvent ? mouseEvent : touchEvent;
-        if (event) {
-            var indexOfThisChild = this.activePopupElements.indexOf(eChild);
-            for (var i = indexOfThisChild; i < this.activePopupElements.length; i++) {
-                var element = this.activePopupElements[i];
-                if (utils_1._.isElementInEventPath(element, event)) {
-                    return true;
-                }
-            }
-            // if the user did not write their own Custom Element to be rendered as popup
-            // and this component has additional popup element, they should have the
-            // `ag-custom-component-popup` class to be detected as part of the Custom Component
-            var el = event.target;
-            while (el && el != document.body) {
-                if (el.classList.contains('ag-custom-component-popup')) {
-                    return true;
-                }
-                el = el.parentElement;
-            }
-        }
-        return false;
-    };
-    // in some browsers, the context menu event can be fired before the click event, which means
-    // the context menu event could open the popup, but then the click event closes it straight away.
-    PopupService.prototype.isEventSameChainAsOriginalEvent = function (originalClick, mouseEvent, touchEvent) {
-        // we check the coordinates of the event, to see if it's the same event. there is a 1 / 1000 chance that
-        // the event is a different event, however that is an edge case that is not very relevant (the user clicking
-        // twice on the same location isn't a normal path).
-        // event could be mouse event or touch event.
-        var mouseEventOrTouch = null;
-        if (mouseEvent) {
-            // mouse event can be used direction, it has coordinates
-            mouseEventOrTouch = mouseEvent;
-        }
-        else if (touchEvent) {
-            // touch event doesn't have coordinates, need it's touch object
-            mouseEventOrTouch = touchEvent.touches[0];
-        }
-        if (mouseEventOrTouch && originalClick) {
-            // for x, allow 4px margin, to cover iPads, where touch (which opens menu) is followed
-            // by browser click (when you life finger up, touch is interrupted as click in browser)
-            var screenX_1 = mouseEvent ? mouseEvent.screenX : 0;
-            var screenY_1 = mouseEvent ? mouseEvent.screenY : 0;
-            var xMatch = Math.abs(originalClick.screenX - screenX_1) < 5;
-            var yMatch = Math.abs(originalClick.screenY - screenY_1) < 5;
-            if (xMatch && yMatch) {
-                return true;
-            }
-        }
-        return false;
-    };
-    __decorate([
-        context_1.Autowired('gridCore'),
-        __metadata("design:type", gridCore_1.GridCore)
-    ], PopupService.prototype, "gridCore", void 0);
-    __decorate([
-        context_1.Autowired('gridOptionsWrapper'),
-        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
-    ], PopupService.prototype, "gridOptionsWrapper", void 0);
-    __decorate([
-        context_1.Autowired('environment'),
-        __metadata("design:type", environment_1.Environment)
-    ], PopupService.prototype, "environment", void 0);
-    __decorate([
-        context_1.Autowired('eventService'),
-        __metadata("design:type", eventService_1.EventService)
-    ], PopupService.prototype, "eventService", void 0);
-    PopupService = __decorate([
-        context_1.Bean('popupService')
-    ], PopupService);
-    return PopupService;
-}());
-exports.PopupService = PopupService;
-
-
-/***/ }),
-/* 61 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-  props: {
-    size: {
-      type: String,
-      default: null
-    }
-  },
-  computed: {
-    sizeFormClass: function sizeFormClass() {
-      return [this.size ? "form-control-" + this.size : null];
-    },
-    sizeBtnClass: function sizeBtnClass() {
-      return [this.size ? "btn-" + this.size : null];
-    }
-  }
-});
-
-/***/ }),
-/* 62 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__object__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(224);
-/* harmony export (immutable) */ __webpack_exports__["a"] = pluckProps;
-
-
-
-
-/**
- * Given an array of properties or an object of property keys,
- * plucks all the values off the target object.
- * @param {{}|string[]} keysToPluck
- * @param {{}} objToPluck
- * @param {Function} transformFn
- * @return {{}}
- */
-function pluckProps(keysToPluck, objToPluck) {
-  var transformFn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : __WEBPACK_IMPORTED_MODULE_2__identity__["a" /* default */];
-
-  return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__array__["b" /* isArray */])(keysToPluck) ? keysToPluck.slice() : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__object__["b" /* keys */])(keysToPluck)).reduce(function (memo, prop) {
-    // eslint-disable-next-line no-sequences
-    return memo[transformFn(prop)] = objToPluck[prop], memo;
-  }, {});
-}
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = function (it) {
-  return toString.call(it).slice(8, -1);
-};
-
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(27);
-var hide = __webpack_require__(54);
-var has = __webpack_require__(110);
-var SRC = __webpack_require__(165)('src');
-var TO_STRING = 'toString';
-var $toString = Function[TO_STRING];
-var TPL = ('' + $toString).split(TO_STRING);
-
-__webpack_require__(44).inspectSource = function (it) {
-  return $toString.call(it);
-};
-
-(module.exports = function (O, key, val, safe) {
-  var isFunction = typeof val == 'function';
-  if (isFunction) has(val, 'name') || hide(val, 'name', key);
-  if (O[key] === val) return;
-  if (isFunction) has(val, SRC) || hide(val, SRC, O[key] ? '' + O[key] : TPL.join(String(key)));
-  if (O === global) {
-    O[key] = val;
-  } else if (!safe) {
-    delete O[key];
-    hide(O, key, val);
-  } else if (O[key]) {
-    O[key] = val;
-  } else {
-    hide(O, key, val);
-  }
-// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative
-})(Function.prototype, TO_STRING, function toString() {
-  return typeof this == 'function' && this[SRC] || $toString.call(this);
-});
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports) {
-
-// 7.1.4 ToInteger
-var ceil = Math.ceil;
-var floor = Math.floor;
-module.exports = function (it) {
-  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-};
-
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function() {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		var result = [];
-		for(var i = 0; i < this.length; i++) {
-			var item = this[i];
-			if(item[2]) {
-				result.push("@media " + item[2] + "{" + item[1] + "}");
-			} else {
-				result.push(item[1]);
-			}
-		}
-		return result.join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-
-/***/ }),
-/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29650,7 +26983,2675 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47), __webpack_require__(481).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47), __webpack_require__(482).setImmediate))
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
+ * @version v20.0.0
+ * @link http://www.ag-grid.com/
+ * @license MIT
+ */
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var gridOptionsWrapper_1 = __webpack_require__(2);
+var columnGroup_1 = __webpack_require__(48);
+var originalColumnGroup_1 = __webpack_require__(57);
+var context_1 = __webpack_require__(0);
+var context_2 = __webpack_require__(0);
+// takes in a list of columns, as specified by the column definitions, and returns column groups
+var ColumnUtils = /** @class */ (function () {
+    function ColumnUtils() {
+    }
+    ColumnUtils.prototype.calculateColInitialWidth = function (colDef) {
+        if (!colDef.width) {
+            // if no width defined in colDef, use default
+            return this.gridOptionsWrapper.getColWidth();
+        }
+        else if (colDef.width < this.gridOptionsWrapper.getMinColWidth()) {
+            // if width in col def to small, set to min width
+            return this.gridOptionsWrapper.getMinColWidth();
+        }
+        else {
+            // otherwise use the provided width
+            return colDef.width;
+        }
+    };
+    ColumnUtils.prototype.getOriginalPathForColumn = function (column, originalBalancedTree) {
+        var result = [];
+        var found = false;
+        recursePath(originalBalancedTree, 0);
+        // we should always find the path, but in case there is a bug somewhere, returning null
+        // will make it fail rather than provide a 'hard to track down' bug
+        if (found) {
+            return result;
+        }
+        else {
+            return null;
+        }
+        function recursePath(balancedColumnTree, dept) {
+            for (var i = 0; i < balancedColumnTree.length; i++) {
+                if (found) {
+                    // quit the search, so 'result' is kept with the found result
+                    return;
+                }
+                var node = balancedColumnTree[i];
+                if (node instanceof originalColumnGroup_1.OriginalColumnGroup) {
+                    var nextNode = node;
+                    recursePath(nextNode.getChildren(), dept + 1);
+                    result[dept] = node;
+                }
+                else {
+                    if (node === column) {
+                        found = true;
+                    }
+                }
+            }
+        }
+    };
+    /*    public getPathForColumn(column: Column, allDisplayedColumnGroups: ColumnGroupChild[]): ColumnGroup[] {
+            let result: ColumnGroup[] = [];
+            let found = false;
+    
+            recursePath(allDisplayedColumnGroups, 0);
+    
+            // we should always find the path, but in case there is a bug somewhere, returning null
+            // will make it fail rather than provide a 'hard to track down' bug
+            if (found) {
+                return result;
+            } else {
+                return null;
+            }
+    
+            function recursePath(balancedColumnTree: ColumnGroupChild[], dept: number): void {
+    
+                for (let i = 0; i<balancedColumnTree.length; i++) {
+                    if (found) {
+                        // quit the search, so 'result' is kept with the found result
+                        return;
+                    }
+                    let node = balancedColumnTree[i];
+                    if (node instanceof ColumnGroup) {
+                        let nextNode = <ColumnGroup> node;
+                        recursePath(nextNode.getChildren(), dept+1);
+                        result[dept] = node;
+                    } else {
+                        if (node === column) {
+                            found = true;
+                        }
+                    }
+                }
+            }
+        }*/
+    ColumnUtils.prototype.depthFirstOriginalTreeSearch = function (tree, callback) {
+        var _this = this;
+        if (!tree) {
+            return;
+        }
+        tree.forEach(function (child) {
+            if (child instanceof originalColumnGroup_1.OriginalColumnGroup) {
+                _this.depthFirstOriginalTreeSearch(child.getChildren(), callback);
+            }
+            callback(child);
+        });
+    };
+    ColumnUtils.prototype.depthFirstAllColumnTreeSearch = function (tree, callback) {
+        var _this = this;
+        if (!tree) {
+            return;
+        }
+        tree.forEach(function (child) {
+            if (child instanceof columnGroup_1.ColumnGroup) {
+                _this.depthFirstAllColumnTreeSearch(child.getChildren(), callback);
+            }
+            callback(child);
+        });
+    };
+    ColumnUtils.prototype.depthFirstDisplayedColumnTreeSearch = function (tree, callback) {
+        var _this = this;
+        if (!tree) {
+            return;
+        }
+        tree.forEach(function (child) {
+            if (child instanceof columnGroup_1.ColumnGroup) {
+                _this.depthFirstDisplayedColumnTreeSearch(child.getDisplayedChildren(), callback);
+            }
+            callback(child);
+        });
+    };
+    __decorate([
+        context_2.Autowired('gridOptionsWrapper'),
+        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
+    ], ColumnUtils.prototype, "gridOptionsWrapper", void 0);
+    ColumnUtils = __decorate([
+        context_1.Bean('columnUtils')
+    ], ColumnUtils);
+    return ColumnUtils;
+}());
+exports.ColumnUtils = ColumnUtils;
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
+ * @version v20.0.0
+ * @link http://www.ag-grid.com/
+ * @license MIT
+ */
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var context_1 = __webpack_require__(0);
+var columnGroup_1 = __webpack_require__(48);
+var column_1 = __webpack_require__(15);
+var eventService_1 = __webpack_require__(3);
+var columnApi_1 = __webpack_require__(11);
+var gridApi_1 = __webpack_require__(9);
+var OriginalColumnGroup = /** @class */ (function () {
+    function OriginalColumnGroup(colGroupDef, groupId, padding, level) {
+        this.localEventService = new eventService_1.EventService();
+        this.expandable = false;
+        this.colGroupDef = colGroupDef;
+        this.groupId = groupId;
+        this.expanded = colGroupDef && !!colGroupDef.openByDefault;
+        this.padding = padding;
+        this.level = level;
+    }
+    OriginalColumnGroup.prototype.getLevel = function () {
+        return this.level;
+    };
+    OriginalColumnGroup.prototype.isVisible = function () {
+        // return true if at least one child is visible
+        if (this.children) {
+            return this.children.some(function (child) { return child.isVisible(); });
+        }
+        else {
+            return false;
+        }
+    };
+    OriginalColumnGroup.prototype.isPadding = function () {
+        return this.padding;
+    };
+    OriginalColumnGroup.prototype.setExpanded = function (expanded) {
+        this.expanded = expanded === undefined ? false : expanded;
+        var event = {
+            type: OriginalColumnGroup.EVENT_EXPANDED_CHANGED
+        };
+        this.localEventService.dispatchEvent(event);
+    };
+    OriginalColumnGroup.prototype.isExpandable = function () {
+        return this.expandable;
+    };
+    OriginalColumnGroup.prototype.isExpanded = function () {
+        return this.expanded;
+    };
+    OriginalColumnGroup.prototype.getGroupId = function () {
+        return this.groupId;
+    };
+    OriginalColumnGroup.prototype.getId = function () {
+        return this.getGroupId();
+    };
+    OriginalColumnGroup.prototype.setChildren = function (children) {
+        this.children = children;
+    };
+    OriginalColumnGroup.prototype.getChildren = function () {
+        return this.children;
+    };
+    OriginalColumnGroup.prototype.getColGroupDef = function () {
+        return this.colGroupDef;
+    };
+    OriginalColumnGroup.prototype.getLeafColumns = function () {
+        var result = [];
+        this.addLeafColumns(result);
+        return result;
+    };
+    OriginalColumnGroup.prototype.addLeafColumns = function (leafColumns) {
+        if (!this.children) {
+            return;
+        }
+        this.children.forEach(function (child) {
+            if (child instanceof column_1.Column) {
+                leafColumns.push(child);
+            }
+            else if (child instanceof OriginalColumnGroup) {
+                child.addLeafColumns(leafColumns);
+            }
+        });
+    };
+    OriginalColumnGroup.prototype.getColumnGroupShow = function () {
+        if (!this.padding) {
+            return this.colGroupDef.columnGroupShow;
+        }
+        else {
+            // if this is padding we have exactly only child. we then
+            // take the value from the child and push it up, making
+            // this group 'invisible'.
+            return this.children[0].getColumnGroupShow();
+        }
+    };
+    // need to check that this group has at least one col showing when both expanded and contracted.
+    // if not, then we don't allow expanding and contracting on this group
+    OriginalColumnGroup.prototype.setupExpandable = function () {
+        var _this = this;
+        this.setExpandable();
+        // note - we should be removing this event listener
+        this.getLeafColumns().forEach(function (col) { return col.addEventListener(column_1.Column.EVENT_VISIBLE_CHANGED, _this.onColumnVisibilityChanged.bind(_this)); });
+    };
+    OriginalColumnGroup.prototype.setExpandable = function () {
+        // want to make sure the group doesn't disappear when it's open
+        var atLeastOneShowingWhenOpen = false;
+        // want to make sure the group doesn't disappear when it's closed
+        var atLeastOneShowingWhenClosed = false;
+        // want to make sure the group has something to show / hide
+        var atLeastOneChangeable = false;
+        for (var i = 0, j = this.children.length; i < j; i++) {
+            var abstractColumn = this.children[i];
+            if (!abstractColumn.isVisible()) {
+                continue;
+            }
+            // if the abstractColumn is a grid generated group, there will be no colDef
+            var headerGroupShow = abstractColumn.getColumnGroupShow();
+            if (headerGroupShow === columnGroup_1.ColumnGroup.HEADER_GROUP_SHOW_OPEN) {
+                atLeastOneShowingWhenOpen = true;
+                atLeastOneChangeable = true;
+            }
+            else if (headerGroupShow === columnGroup_1.ColumnGroup.HEADER_GROUP_SHOW_CLOSED) {
+                atLeastOneShowingWhenClosed = true;
+                atLeastOneChangeable = true;
+            }
+            else {
+                atLeastOneShowingWhenOpen = true;
+                atLeastOneShowingWhenClosed = true;
+            }
+        }
+        var expandable = atLeastOneShowingWhenOpen && atLeastOneShowingWhenClosed && atLeastOneChangeable;
+        if (this.expandable !== expandable) {
+            this.expandable = expandable;
+            var event_1 = {
+                type: OriginalColumnGroup.EVENT_EXPANDABLE_CHANGED
+            };
+            this.localEventService.dispatchEvent(event_1);
+        }
+    };
+    OriginalColumnGroup.prototype.onColumnVisibilityChanged = function () {
+        this.setExpandable();
+    };
+    OriginalColumnGroup.prototype.addEventListener = function (eventType, listener) {
+        this.localEventService.addEventListener(eventType, listener);
+    };
+    OriginalColumnGroup.prototype.removeEventListener = function (eventType, listener) {
+        this.localEventService.removeEventListener(eventType, listener);
+    };
+    OriginalColumnGroup.EVENT_EXPANDED_CHANGED = 'expandedChanged';
+    OriginalColumnGroup.EVENT_EXPANDABLE_CHANGED = 'expandableChanged';
+    __decorate([
+        context_1.Autowired('columnApi'),
+        __metadata("design:type", columnApi_1.ColumnApi)
+    ], OriginalColumnGroup.prototype, "columnApi", void 0);
+    __decorate([
+        context_1.Autowired('gridApi'),
+        __metadata("design:type", gridApi_1.GridApi)
+    ], OriginalColumnGroup.prototype, "gridApi", void 0);
+    return OriginalColumnGroup;
+}());
+exports.OriginalColumnGroup = OriginalColumnGroup;
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
+ * @version v20.0.0
+ * @link http://www.ag-grid.com/
+ * @license MIT
+ */
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var context_1 = __webpack_require__(0);
+var gridOptionsWrapper_1 = __webpack_require__(2);
+var eventKeys_1 = __webpack_require__(49);
+var eventService_1 = __webpack_require__(3);
+var AnimationFrameService = /** @class */ (function () {
+    function AnimationFrameService() {
+        // create tasks are to do with row creation. for them we want to execute according to row order, so we use
+        // TaskItem so we know what index the item is for.
+        this.createRowTasks = [];
+        // destroy tasks are to do with row removal. they are done after row creation as the user will need to see new
+        // rows first (as blank is scrolled into view), when we remove the old rows (no longer in view) is not as
+        // important.
+        this.destroyRowTasks = [];
+        this.ticking = false;
+        // we need to know direction of scroll, to build up rows in the direction of
+        // the scroll. eg if user scrolls down, we extend the rows by building down.
+        this.scrollGoingDown = true;
+        this.lastScrollTop = 0;
+    }
+    AnimationFrameService.prototype.setScrollTop = function (scrollTop) {
+        this.scrollGoingDown = scrollTop > this.lastScrollTop;
+        this.lastScrollTop = scrollTop;
+    };
+    AnimationFrameService.prototype.init = function () {
+        this.useAnimationFrame = !this.gridOptionsWrapper.isSuppressAnimationFrame();
+    };
+    // this method is for our ag-Grid sanity only - if animation frames are turned off,
+    // then no place in the code should be looking to add any work to be done in animation
+    // frames. this stops bugs - where some code is asking for a frame to be executed
+    // when it should not.
+    AnimationFrameService.prototype.verifyAnimationFrameOn = function (methodName) {
+        if (this.useAnimationFrame === false) {
+            console.warn("ag-Grid: AnimationFrameService." + methodName + " called but animation frames are off");
+        }
+    };
+    AnimationFrameService.prototype.addP1Task = function (task, index) {
+        this.verifyAnimationFrameOn('addP1Task');
+        var taskItem = { task: task, index: index };
+        this.createRowTasks.push(taskItem);
+        this.schedule();
+    };
+    AnimationFrameService.prototype.addP2Task = function (task) {
+        this.verifyAnimationFrameOn('addP2Task');
+        this.destroyRowTasks.push(task);
+        this.schedule();
+    };
+    AnimationFrameService.prototype.executeFrame = function (millis) {
+        this.verifyAnimationFrameOn('executeFrame');
+        if (this.scrollGoingDown) {
+            this.createRowTasks.sort(function (a, b) { return b.index - a.index; });
+        }
+        else {
+            this.createRowTasks.sort(function (a, b) { return a.index - b.index; });
+        }
+        var frameStart = new Date().getTime();
+        var duration = (new Date().getTime()) - frameStart;
+        // 16ms is 60 fps
+        var noMaxMillis = millis <= 0;
+        while (noMaxMillis || duration < millis) {
+            if (this.createRowTasks.length > 0) {
+                var taskItem = this.createRowTasks.pop();
+                taskItem.task();
+            }
+            else if (this.destroyRowTasks.length > 0) {
+                var task = this.destroyRowTasks.pop();
+                task();
+            }
+            else {
+                break;
+            }
+            duration = (new Date().getTime()) - frameStart;
+        }
+        if (this.createRowTasks.length > 0 || this.destroyRowTasks.length > 0) {
+            this.requestFrame();
+        }
+        else {
+            this.stopTicking();
+        }
+    };
+    AnimationFrameService.prototype.stopTicking = function () {
+        this.ticking = false;
+        var event = {
+            type: eventKeys_1.Events.EVENT_ANIMATION_QUEUE_EMPTY,
+            columnApi: this.gridOptionsWrapper.getColumnApi(),
+            api: this.gridOptionsWrapper.getApi()
+        };
+        this.eventService.dispatchEvent(event);
+    };
+    AnimationFrameService.prototype.flushAllFrames = function () {
+        if (!this.useAnimationFrame) {
+            return;
+        }
+        this.executeFrame(-1);
+    };
+    AnimationFrameService.prototype.schedule = function () {
+        if (!this.useAnimationFrame) {
+            return;
+        }
+        if (!this.ticking) {
+            this.ticking = true;
+            this.requestFrame();
+        }
+    };
+    AnimationFrameService.prototype.requestFrame = function () {
+        // check for the existence of requestAnimationFrame, and if
+        // it's missing, then we polyfill it with setTimeout()
+        var callback = this.executeFrame.bind(this, 60);
+        if (window.requestAnimationFrame) {
+            window.requestAnimationFrame(callback);
+        }
+        else if (window.webkitRequestAnimationFrame) {
+            window.webkitRequestAnimationFrame(callback);
+        }
+        else {
+            window.setTimeout(callback, 0);
+        }
+    };
+    AnimationFrameService.prototype.isQueueEmpty = function () {
+        return this.ticking;
+    };
+    __decorate([
+        context_1.Autowired('gridOptionsWrapper'),
+        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
+    ], AnimationFrameService.prototype, "gridOptionsWrapper", void 0);
+    __decorate([
+        context_1.Autowired('eventService'),
+        __metadata("design:type", eventService_1.EventService)
+    ], AnimationFrameService.prototype, "eventService", void 0);
+    __decorate([
+        context_1.PostConstruct,
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], AnimationFrameService.prototype, "init", null);
+    AnimationFrameService = __decorate([
+        context_1.Bean('animationFrameService')
+    ], AnimationFrameService);
+    return AnimationFrameService;
+}());
+exports.AnimationFrameService = AnimationFrameService;
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
+ * @version v20.0.0
+ * @link http://www.ag-grid.com/
+ * @license MIT
+ */
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var column_1 = __webpack_require__(15);
+var rowNode_1 = __webpack_require__(28);
+var constants_1 = __webpack_require__(8);
+var events_1 = __webpack_require__(7);
+var gridCell_1 = __webpack_require__(42);
+var component_1 = __webpack_require__(12);
+var checkboxSelectionComponent_1 = __webpack_require__(140);
+var rowDragComp_1 = __webpack_require__(266);
+var utils_1 = __webpack_require__(1);
+var CellComp = /** @class */ (function (_super) {
+    __extends(CellComp, _super);
+    function CellComp(scope, beans, column, rowNode, rowComp, autoHeightCell, printLayout) {
+        var _this = _super.call(this) || this;
+        _this.editingCell = false;
+        // every time we go into edit mode, or back again, this gets incremented.
+        // it's the components way of dealing with the async nature of framework components,
+        // so if a framework component takes a while to be created, we know if the object
+        // is still relevant when creating is finished. eg we could click edit / unedit 20
+        // times before the first React edit component comes back - we should discard
+        // the first 19.
+        _this.cellEditorVersion = 0;
+        _this.cellRendererVersion = 0;
+        _this.scope = scope;
+        _this.beans = beans;
+        _this.column = column;
+        _this.rowNode = rowNode;
+        _this.rowComp = rowComp;
+        _this.autoHeightCell = autoHeightCell;
+        _this.printLayout = printLayout;
+        _this.createGridCellVo();
+        _this.rangeSelectionEnabled = beans.enterprise && beans.gridOptionsWrapper.isEnableRangeSelection();
+        _this.cellFocused = _this.beans.focusedCellController.isCellFocused(_this.gridCell);
+        _this.firstRightPinned = _this.column.isFirstRightPinned();
+        _this.lastLeftPinned = _this.column.isLastLeftPinned();
+        if (_this.rangeSelectionEnabled) {
+            _this.rangeCount = _this.beans.rangeController.getCellRangeCount(_this.gridCell);
+        }
+        _this.getValueAndFormat();
+        _this.setUsingWrapper();
+        _this.chooseCellRenderer();
+        _this.setupColSpan();
+        _this.rowSpan = _this.column.getRowSpan(_this.rowNode);
+        return _this;
+    }
+    CellComp.prototype.getCreateTemplate = function () {
+        var templateParts = [];
+        var col = this.column;
+        var width = this.getCellWidth();
+        var left = this.modifyLeftForPrintLayout(col.getLeft());
+        var valueToRender = this.getInitialValueToRender();
+        var valueSanitised = utils_1._.get(this.column, 'colDef.template', null) ? valueToRender : utils_1._.escape(valueToRender);
+        this.tooltip = this.getToolTip();
+        var tooltipSanitised = utils_1._.escape(this.tooltip);
+        var colIdSanitised = utils_1._.escape(col.getId());
+        var wrapperStartTemplate = '';
+        var wrapperEndTemplate = '';
+        var stylesFromColDef = this.preProcessStylesFromColDef();
+        var cssClasses = this.getInitialCssClasses();
+        var stylesForRowSpanning = this.getStylesForRowSpanning();
+        if (this.usingWrapper) {
+            wrapperStartTemplate = '<span ref="eCellWrapper" class="ag-cell-wrapper"><span ref="eCellValue" class="ag-cell-value">';
+            wrapperEndTemplate = '</span></span>';
+        }
+        // hey, this looks like React!!!
+        templateParts.push("<div");
+        templateParts.push(" tabindex=\"-1\"");
+        templateParts.push(" unselectable=\"on\""); // THIS IS FOR IE ONLY so text selection doesn't bubble outside of the grid
+        templateParts.push(" role=\"gridcell\"");
+        templateParts.push(" comp-id=\"" + this.getCompId() + "\" ");
+        templateParts.push(" col-id=\"" + colIdSanitised + "\"");
+        templateParts.push(" class=\"" + cssClasses.join(' ') + "\"");
+        templateParts.push(utils_1._.exists(tooltipSanitised) ? " title=\"" + tooltipSanitised + "\"" : "");
+        templateParts.push(" style=\"width: " + width + "px; left: " + left + "px; " + stylesFromColDef + " " + stylesForRowSpanning + "\" >");
+        templateParts.push(wrapperStartTemplate);
+        if (utils_1._.exists(valueSanitised, true)) {
+            templateParts.push(valueSanitised);
+        }
+        templateParts.push(wrapperEndTemplate);
+        templateParts.push("</div>");
+        return templateParts.join('');
+    };
+    CellComp.prototype.getStylesForRowSpanning = function () {
+        if (this.rowSpan === 1) {
+            return '';
+        }
+        var singleRowHeight = this.beans.gridOptionsWrapper.getRowHeightAsNumber();
+        var totalRowHeight = singleRowHeight * this.rowSpan;
+        return "height: " + totalRowHeight + "px; z-index: 1;";
+    };
+    CellComp.prototype.afterAttached = function () {
+        var querySelector = "[comp-id=\"" + this.getCompId() + "\"]";
+        var eGui = this.eParentRow.querySelector(querySelector);
+        this.setGui(eGui);
+        // all of these have dependencies on the eGui, so only do them after eGui is set
+        this.addDomData();
+        this.populateTemplate();
+        this.attachCellRenderer();
+        this.angular1Compile();
+        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_CELL_FOCUSED, this.onCellFocused.bind(this));
+        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_FLASH_CELLS, this.onFlashCells.bind(this));
+        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_COLUMN_HOVER_CHANGED, this.onColumnHover.bind(this));
+        this.addDestroyableEventListener(this.rowNode, rowNode_1.RowNode.EVENT_ROW_INDEX_CHANGED, this.onRowIndexChanged.bind(this));
+        this.addDestroyableEventListener(this.rowNode, rowNode_1.RowNode.EVENT_CELL_CHANGED, this.onCellChanged.bind(this));
+        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_LEFT_CHANGED, this.onLeftChanged.bind(this));
+        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_WIDTH_CHANGED, this.onWidthChanged.bind(this));
+        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_FIRST_RIGHT_PINNED_CHANGED, this.onFirstRightPinnedChanged.bind(this));
+        this.addDestroyableEventListener(this.column, column_1.Column.EVENT_LAST_LEFT_PINNED_CHANGED, this.onLastLeftPinnedChanged.bind(this));
+        // only for printLayout - because we are rendering all the cells in the same row, regardless of pinned state,
+        // then changing the width of the containers will impact left position. eg the center cols all have their
+        // left position adjusted by the width of the left pinned column, so if the pinned left column width changes,
+        // all the center cols need to be shifted to accommodate this. when in normal layout, the pinned cols are
+        // in different containers so doesn't impact.
+        if (this.printLayout) {
+            this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_DISPLAYED_COLUMNS_WIDTH_CHANGED, this.onLeftChanged.bind(this));
+        }
+        // if not doing enterprise, then range selection service would be missing
+        // so need to check before trying to use it
+        if (this.rangeSelectionEnabled) {
+            this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_RANGE_SELECTION_CHANGED, this.onRangeSelectionChanged.bind(this));
+        }
+    };
+    CellComp.prototype.onColumnHover = function () {
+        var isHovered = this.beans.columnHoverService.isHovered(this.column);
+        utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-column-hover', isHovered);
+    };
+    CellComp.prototype.onCellChanged = function (event) {
+        var eventImpactsThisCell = event.column === this.column;
+        if (eventImpactsThisCell) {
+            this.refreshCell({});
+        }
+    };
+    CellComp.prototype.getCellLeft = function () {
+        var mostLeftCol;
+        if (this.beans.gridOptionsWrapper.isEnableRtl() && this.colsSpanning) {
+            mostLeftCol = this.colsSpanning[this.colsSpanning.length - 1];
+        }
+        else {
+            mostLeftCol = this.column;
+        }
+        return mostLeftCol.getLeft();
+    };
+    CellComp.prototype.getCellWidth = function () {
+        if (!this.colsSpanning) {
+            return this.column.getActualWidth();
+        }
+        var result = 0;
+        this.colsSpanning.forEach(function (col) { return result += col.getActualWidth(); });
+        return result;
+    };
+    CellComp.prototype.onFlashCells = function (event) {
+        var cellId = this.gridCell.createId();
+        var shouldFlash = event.cells[cellId];
+        if (shouldFlash) {
+            this.animateCell('highlight');
+        }
+    };
+    CellComp.prototype.setupColSpan = function () {
+        // if no col span is active, then we don't set it up, as it would be wasteful of CPU
+        if (utils_1._.missing(this.column.getColDef().colSpan)) {
+            return;
+        }
+        // because we are col spanning, a reorder of the cols can change what cols we are spanning over
+        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_DISPLAYED_COLUMNS_CHANGED, this.onDisplayColumnsChanged.bind(this));
+        // because we are spanning over multiple cols, we check for width any time any cols width changes.
+        // this is expensive - really we should be explicitly checking only the cols we are spanning over
+        // instead of every col, however it would be tricky code to track the cols we are spanning over, so
+        // because hardly anyone will be using colSpan, am favoring this easier way for more maintainable code.
+        this.addDestroyableEventListener(this.beans.eventService, events_1.Events.EVENT_DISPLAYED_COLUMNS_WIDTH_CHANGED, this.onWidthChanged.bind(this));
+        this.colsSpanning = this.getColSpanningList();
+    };
+    CellComp.prototype.getColSpanningList = function () {
+        var colSpan = this.column.getColSpan(this.rowNode);
+        var colsSpanning = [];
+        // if just one col, the col span is just the column we are in
+        if (colSpan === 1) {
+            colsSpanning.push(this.column);
+        }
+        else {
+            var pointer = this.column;
+            var pinned = this.column.getPinned();
+            for (var i = 0; pointer && i < colSpan; i++) {
+                colsSpanning.push(pointer);
+                pointer = this.beans.columnController.getDisplayedColAfter(pointer);
+                if (!pointer || utils_1._.missing(pointer)) {
+                    break;
+                }
+                // we do not allow col spanning to span outside of pinned areas
+                if (pinned !== pointer.getPinned()) {
+                    break;
+                }
+            }
+        }
+        return colsSpanning;
+    };
+    CellComp.prototype.onDisplayColumnsChanged = function () {
+        var colsSpanning = this.getColSpanningList();
+        if (!utils_1._.compareArrays(this.colsSpanning, colsSpanning)) {
+            this.colsSpanning = colsSpanning;
+            this.onWidthChanged();
+            this.onLeftChanged(); // left changes when doing RTL
+        }
+    };
+    CellComp.prototype.getInitialCssClasses = function () {
+        var cssClasses = ["ag-cell", "ag-cell-not-inline-editing"];
+        // if we are putting the cell into a dummy container, to work out it's height,
+        // then we don't put the height css in, as we want cell to fit height in that case.
+        if (!this.autoHeightCell) {
+            cssClasses.push('ag-cell-with-height');
+        }
+        var doingFocusCss = !this.beans.gridOptionsWrapper.isSuppressCellSelection();
+        if (doingFocusCss) {
+            // otherwise the class depends on the focus state
+            cssClasses.push(this.cellFocused ? 'ag-cell-focus' : 'ag-cell-no-focus');
+        }
+        else {
+            // if we are not doing cell selection, then ag-cell-no-focus gets put onto every cell
+            cssClasses.push('ag-cell-no-focus');
+        }
+        if (this.firstRightPinned) {
+            cssClasses.push('ag-cell-first-right-pinned');
+        }
+        if (this.lastLeftPinned) {
+            cssClasses.push('ag-cell-last-left-pinned');
+        }
+        if (this.beans.columnHoverService.isHovered(this.column)) {
+            cssClasses.push('ag-column-hover');
+        }
+        utils_1._.pushAll(cssClasses, this.preProcessClassesFromColDef());
+        utils_1._.pushAll(cssClasses, this.preProcessCellClassRules());
+        utils_1._.pushAll(cssClasses, this.getRangeClasses());
+        // if using the wrapper, this class goes on the wrapper instead
+        if (!this.usingWrapper) {
+            cssClasses.push('ag-cell-value');
+        }
+        return cssClasses;
+    };
+    CellComp.prototype.getInitialValueToRender = function () {
+        // if using a cellRenderer, then render the html from the cell renderer if it exists
+        if (this.usingCellRenderer) {
+            if (typeof this.cellRendererGui === 'string') {
+                return this.cellRendererGui;
+            }
+            else {
+                return '';
+            }
+        }
+        var colDef = this.column.getColDef();
+        if (colDef.template) {
+            // template is really only used for angular 1 - as people using ng1 are used to providing templates with
+            // bindings in it. in ng2, people will hopefully want to provide components, not templates.
+            return colDef.template;
+        }
+        else if (colDef.templateUrl) {
+            // likewise for templateUrl - it's for ng1 really - when we move away from ng1, we can take these out.
+            // niall was pro angular 1 when writing template and templateUrl, if writing from scratch now, would
+            // not do these, but would follow a pattern that was friendly towards components, not templates.
+            var template = this.beans.templateService.getTemplate(colDef.templateUrl, this.refreshCell.bind(this, true));
+            if (template) {
+                return template;
+            }
+            else {
+                return '';
+            }
+        }
+        else {
+            return this.getValueToUse();
+        }
+    };
+    CellComp.prototype.getRenderedRow = function () {
+        return this.rowComp;
+    };
+    CellComp.prototype.isSuppressNavigable = function () {
+        return this.column.isSuppressNavigable(this.rowNode);
+    };
+    CellComp.prototype.getCellRenderer = function () {
+        return this.cellRenderer;
+    };
+    CellComp.prototype.getCellEditor = function () {
+        return this.cellEditor;
+    };
+    // + stop editing {forceRefresh: true, suppressFlash: true}
+    // + event cellChanged {}
+    // + cellRenderer.params.refresh() {} -> method passes 'as is' to the cellRenderer, so params could be anything
+    // + rowComp: event dataChanged {animate: update, newData: !update}
+    // + rowComp: api refreshCells() {animate: true/false}
+    // + rowRenderer: api softRefreshView() {}
+    CellComp.prototype.refreshCell = function (params) {
+        if (this.editingCell) {
+            return;
+        }
+        var newData = params && params.newData;
+        var suppressFlash = (params && params.suppressFlash) || this.column.getColDef().suppressCellFlash;
+        var forceRefresh = params && params.forceRefresh;
+        var oldValue = this.value;
+        this.getValueAndFormat();
+        // for simple values only (not pojo's), see if the value is the same, and if it is, skip the refresh.
+        // when never allow skipping after an edit, as after editing, we need to put the GUI back to the way
+        // if was before the edit.
+        var valuesDifferent = !this.valuesAreEqual(oldValue, this.value);
+        var dataNeedsUpdating = forceRefresh || valuesDifferent;
+        if (dataNeedsUpdating) {
+            // if it's 'new data', then we don't refresh the cellRenderer, even if refresh method is available.
+            // this is because if the whole data is new (ie we are showing stock price 'BBA' now and not 'SSD')
+            // then we are not showing a movement in the stock price, rather we are showing different stock.
+            var cellRendererRefreshed = (newData || suppressFlash) ? false : this.attemptCellRendererRefresh();
+            // we do the replace if not doing refresh, or if refresh was unsuccessful.
+            // the refresh can be unsuccessful if we are using a framework (eg ng2 or react) and the framework
+            // wrapper has the refresh method, but the underlying component doesn't
+            if (!cellRendererRefreshed) {
+                this.replaceContentsAfterRefresh();
+            }
+            if (!suppressFlash) {
+                var flashCell = this.beans.gridOptionsWrapper.isEnableCellChangeFlash()
+                    || this.column.getColDef().enableCellChangeFlash;
+                if (flashCell) {
+                    this.flashCell();
+                }
+            }
+            // need to check rules. note, we ignore colDef classes and styles, these are assumed to be static
+            this.postProcessStylesFromColDef();
+            this.postProcessClassesFromColDef();
+        }
+        this.refreshToolTip();
+        // we do cellClassRules even if the value has not changed, so that users who have rules that
+        // look at other parts of the row (where the other part of the row might of changed) will work.
+        this.postProcessCellClassRules();
+    };
+    // user can also call this via API
+    CellComp.prototype.flashCell = function () {
+        this.animateCell('data-changed');
+    };
+    CellComp.prototype.animateCell = function (cssName) {
+        var fullName = 'ag-cell-' + cssName;
+        var animationFullName = 'ag-cell-' + cssName + '-animation';
+        var element = this.getGui();
+        // we want to highlight the cells, without any animation
+        utils_1._.addCssClass(element, fullName);
+        utils_1._.removeCssClass(element, animationFullName);
+        // then once that is applied, we remove the highlight with animation
+        window.setTimeout(function () {
+            utils_1._.removeCssClass(element, fullName);
+            utils_1._.addCssClass(element, animationFullName);
+            window.setTimeout(function () {
+                // and then to leave things as we got them, we remove the animation
+                utils_1._.removeCssClass(element, animationFullName);
+            }, 1000);
+        }, 500);
+    };
+    CellComp.prototype.replaceContentsAfterRefresh = function () {
+        // otherwise we rip out the cell and replace it
+        utils_1._.removeAllChildren(this.eParentOfValue);
+        // remove old renderer component if it exists
+        if (this.cellRenderer && this.cellRenderer.destroy) {
+            this.cellRenderer.destroy();
+        }
+        this.cellRenderer = null;
+        this.cellRendererGui = null;
+        // populate
+        this.putDataIntoCellAfterRefresh();
+        this.angular1Compile();
+    };
+    CellComp.prototype.angular1Compile = function () {
+        // if angular compiling, then need to also compile the cell again (angular compiling sucks, please wait...)
+        if (this.beans.gridOptionsWrapper.isAngularCompileRows()) {
+            var eGui = this.getGui();
+            var compiledElement_1 = this.beans.$compile(eGui)(this.scope);
+            this.addDestroyFunc(function () {
+                compiledElement_1.remove();
+            });
+        }
+    };
+    CellComp.prototype.postProcessStylesFromColDef = function () {
+        var stylesToUse = this.processStylesFromColDef();
+        if (stylesToUse) {
+            utils_1._.addStylesToElement(this.getGui(), stylesToUse);
+        }
+    };
+    CellComp.prototype.preProcessStylesFromColDef = function () {
+        var stylesToUse = this.processStylesFromColDef();
+        return utils_1._.cssStyleObjectToMarkup(stylesToUse);
+    };
+    CellComp.prototype.processStylesFromColDef = function () {
+        var colDef = this.column.getColDef();
+        if (colDef.cellStyle) {
+            var cssToUse = void 0;
+            if (typeof colDef.cellStyle === 'function') {
+                var cellStyleParams = {
+                    value: this.value,
+                    data: this.rowNode.data,
+                    node: this.rowNode,
+                    colDef: colDef,
+                    column: this.column,
+                    $scope: this.scope,
+                    context: this.beans.gridOptionsWrapper.getContext(),
+                    api: this.beans.gridOptionsWrapper.getApi()
+                };
+                var cellStyleFunc = colDef.cellStyle;
+                cssToUse = cellStyleFunc(cellStyleParams);
+            }
+            else {
+                cssToUse = colDef.cellStyle;
+            }
+            return cssToUse;
+        }
+    };
+    CellComp.prototype.postProcessClassesFromColDef = function () {
+        var _this = this;
+        this.processClassesFromColDef(function (className) { return utils_1._.addCssClass(_this.getGui(), className); });
+    };
+    CellComp.prototype.preProcessClassesFromColDef = function () {
+        var res = [];
+        this.processClassesFromColDef(function (className) { return res.push(className); });
+        return res;
+    };
+    CellComp.prototype.processClassesFromColDef = function (onApplicableClass) {
+        this.beans.stylingService.processStaticCellClasses(this.column.getColDef(), {
+            value: this.value,
+            data: this.rowNode.data,
+            node: this.rowNode,
+            colDef: this.column.getColDef(),
+            rowIndex: this.rowNode.rowIndex,
+            $scope: this.scope,
+            api: this.beans.gridOptionsWrapper.getApi(),
+            context: this.beans.gridOptionsWrapper.getContext()
+        }, onApplicableClass);
+    };
+    CellComp.prototype.putDataIntoCellAfterRefresh = function () {
+        // template gets preference, then cellRenderer, then do it ourselves
+        var colDef = this.column.getColDef();
+        if (colDef.template) {
+            // template is really only used for angular 1 - as people using ng1 are used to providing templates with
+            // bindings in it. in ng2, people will hopefully want to provide components, not templates.
+            this.eParentOfValue.innerHTML = colDef.template;
+        }
+        else if (colDef.templateUrl) {
+            // likewise for templateUrl - it's for ng1 really - when we move away from ng1, we can take these out.
+            // niall was pro angular 1 when writing template and templateUrl, if writing from scratch now, would
+            // not do these, but would follow a pattern that was friendly towards components, not templates.
+            var template = this.beans.templateService.getTemplate(colDef.templateUrl, this.refreshCell.bind(this, true));
+            if (template) {
+                this.eParentOfValue.innerHTML = template;
+            }
+            // use cell renderer if it exists
+        }
+        else if (this.usingCellRenderer) {
+            this.attachCellRenderer();
+        }
+        else {
+            var valueToUse = this.getValueToUse();
+            if (valueToUse !== null && valueToUse !== undefined) {
+                this.eParentOfValue.innerText = valueToUse;
+            }
+        }
+    };
+    CellComp.prototype.attemptCellRendererRefresh = function () {
+        if (utils_1._.missing(this.cellRenderer) || !this.cellRenderer || utils_1._.missing(this.cellRenderer.refresh)) {
+            return false;
+        }
+        // if the cell renderer has a refresh method, we call this instead of doing a refresh
+        // note: should pass in params here instead of value?? so that client has formattedValue
+        var params = this.createCellRendererParams();
+        var result = this.cellRenderer.refresh(params);
+        // NOTE on undefined: previous version of the cellRenderer.refresh() interface
+        // returned nothing, if the method existed, we assumed it refreshed. so for
+        // backwards compatibility, we assume if method exists and returns nothing,
+        // that it was successful.
+        return result === true || result === undefined;
+    };
+    CellComp.prototype.refreshToolTip = function () {
+        var newTooltip = this.getToolTip();
+        if (this.tooltip !== newTooltip) {
+            this.tooltip = newTooltip;
+            if (utils_1._.exists(newTooltip)) {
+                var tooltipSanitised = utils_1._.escape(this.tooltip);
+                this.eParentOfValue.setAttribute('title', tooltipSanitised);
+            }
+            else {
+                this.eParentOfValue.removeAttribute('title');
+            }
+        }
+    };
+    CellComp.prototype.valuesAreEqual = function (val1, val2) {
+        // if the user provided an equals method, use that, otherwise do simple comparison
+        var colDef = this.column.getColDef();
+        var equalsMethod = colDef ? colDef.equals : null;
+        if (equalsMethod) {
+            return equalsMethod(val1, val2);
+        }
+        else {
+            return val1 === val2;
+        }
+    };
+    CellComp.prototype.getToolTip = function () {
+        var colDef = this.column.getColDef();
+        var data = this.rowNode.data;
+        if (colDef.tooltipField && utils_1._.exists(data)) {
+            return utils_1._.getValueUsingField(data, colDef.tooltipField, this.column.isTooltipFieldContainsDots());
+        }
+        if (colDef.tooltip) {
+            return colDef.tooltip({
+                value: this.value,
+                valueFormatted: this.valueFormatted,
+                data: this.rowNode.data,
+                node: this.rowNode,
+                colDef: this.column.getColDef(),
+                api: this.beans.gridOptionsWrapper.getApi(),
+                $scope: this.scope,
+                context: this.beans.gridOptionsWrapper.getContext(),
+                rowIndex: this.gridCell.rowIndex
+            });
+        }
+        return null;
+    };
+    CellComp.prototype.processCellClassRules = function (onApplicableClass, onNotApplicableClass) {
+        this.beans.stylingService.processClassRules(this.column.getColDef().cellClassRules, {
+            value: this.value,
+            data: this.rowNode.data,
+            node: this.rowNode,
+            colDef: this.column.getColDef(),
+            rowIndex: this.gridCell.rowIndex,
+            api: this.beans.gridOptionsWrapper.getApi(),
+            $scope: this.scope,
+            context: this.beans.gridOptionsWrapper.getContext()
+        }, onApplicableClass, onNotApplicableClass);
+    };
+    CellComp.prototype.postProcessCellClassRules = function () {
+        var _this = this;
+        this.processCellClassRules(function (className) {
+            utils_1._.addCssClass(_this.getGui(), className);
+        }, function (className) {
+            utils_1._.removeCssClass(_this.getGui(), className);
+        });
+    };
+    CellComp.prototype.preProcessCellClassRules = function () {
+        var res = [];
+        this.processCellClassRules(function (className) {
+            res.push(className);
+        }, function (className) {
+            // not catered for, if creating, no need
+            // to remove class as it was never there
+        });
+        return res;
+    };
+    // a wrapper is used when we are putting a selection checkbox in the cell with the value
+    CellComp.prototype.setUsingWrapper = function () {
+        var colDef = this.column.getColDef();
+        // never allow selection or dragging on pinned rows
+        if (this.rowNode.rowPinned) {
+            this.usingWrapper = false;
+            this.includeSelectionComponent = false;
+            this.includeRowDraggingComponent = false;
+            return;
+        }
+        var cbSelectionIsFunc = typeof colDef.checkboxSelection === 'function';
+        var rowDraggableIsFunc = typeof colDef.rowDrag === 'function';
+        this.includeSelectionComponent = cbSelectionIsFunc || colDef.checkboxSelection === true;
+        this.includeRowDraggingComponent = rowDraggableIsFunc || colDef.rowDrag === true;
+        this.usingWrapper = this.includeRowDraggingComponent || this.includeSelectionComponent;
+    };
+    CellComp.prototype.chooseCellRenderer = function () {
+        // template gets preference, then cellRenderer, then do it ourselves
+        var colDef = this.column.getColDef();
+        // templates are for ng1, ideally we wouldn't have these, they are ng1 support
+        // inside the core which is bad
+        if (colDef.template || colDef.templateUrl) {
+            this.usingCellRenderer = false;
+            return;
+        }
+        var params = this.createCellRendererParams();
+        var cellRenderer = this.beans.componentResolver.getComponentToUse(colDef, 'cellRenderer', params);
+        var pinnedRowCellRenderer = this.beans.componentResolver.getComponentToUse(colDef, 'pinnedRowCellRenderer', params);
+        if (pinnedRowCellRenderer && this.rowNode.rowPinned) {
+            this.cellRendererType = 'pinnedRowCellRenderer';
+            this.usingCellRenderer = true;
+        }
+        else if (cellRenderer) {
+            this.cellRendererType = 'cellRenderer';
+            this.usingCellRenderer = true;
+        }
+        else {
+            this.usingCellRenderer = false;
+        }
+    };
+    CellComp.prototype.createCellRendererInstance = function () {
+        var params = this.createCellRendererParams();
+        this.cellRendererVersion++;
+        var callback = this.afterCellRendererCreated.bind(this, this.cellRendererVersion);
+        this.beans.componentResolver.createAgGridComponent(this.column.getColDef(), params, this.cellRendererType, params).then(callback);
+    };
+    CellComp.prototype.afterCellRendererCreated = function (cellRendererVersion, cellRenderer) {
+        // see if daemon
+        if (!this.isAlive() || (cellRendererVersion !== this.cellRendererVersion)) {
+            if (cellRenderer.destroy) {
+                cellRenderer.destroy();
+            }
+            return;
+        }
+        this.cellRenderer = cellRenderer;
+        this.cellRendererGui = this.cellRenderer.getGui();
+        if (utils_1._.missing(this.cellRendererGui)) {
+            return;
+        }
+        // if async components, then it's possible the user started editing since
+        // this call was made
+        if (!this.editingCell) {
+            this.eParentOfValue.appendChild(this.cellRendererGui);
+        }
+    };
+    CellComp.prototype.attachCellRenderer = function () {
+        if (!this.usingCellRenderer) {
+            return;
+        }
+        this.createCellRendererInstance();
+    };
+    CellComp.prototype.createCellRendererParams = function () {
+        var _this = this;
+        var params = {
+            value: this.value,
+            valueFormatted: this.valueFormatted,
+            getValue: this.getValue.bind(this),
+            setValue: function (value) {
+                _this.beans.valueService.setValue(_this.rowNode, _this.column, value);
+            },
+            formatValue: this.formatValue.bind(this),
+            data: this.rowNode.data,
+            node: this.rowNode,
+            colDef: this.column.getColDef(),
+            column: this.column,
+            $scope: this.scope,
+            rowIndex: this.gridCell.rowIndex,
+            api: this.beans.gridOptionsWrapper.getApi(),
+            columnApi: this.beans.gridOptionsWrapper.getColumnApi(),
+            context: this.beans.gridOptionsWrapper.getContext(),
+            refreshCell: this.refreshCell.bind(this),
+            eGridCell: this.getGui(),
+            eParentOfValue: this.eParentOfValue,
+            // these bits are not documented anywhere, so we could drop them?
+            // it was in the olden days to allow user to register for when rendered
+            // row was removed (the row comp was removed), however now that the user
+            // can provide components for cells, the destroy method gets call when this
+            // happens so no longer need to fire event.
+            addRowCompListener: this.rowComp ? this.rowComp.addEventListener.bind(this.rowComp) : null,
+            addRenderedRowListener: function (eventType, listener) {
+                console.warn('ag-Grid: since ag-Grid .v11, params.addRenderedRowListener() is now params.addRowCompListener()');
+                if (_this.rowComp) {
+                    _this.rowComp.addEventListener(eventType, listener);
+                }
+            }
+        };
+        return params;
+    };
+    CellComp.prototype.formatValue = function (value) {
+        var valueFormatted = this.beans.valueFormatterService.formatValue(this.column, this.rowNode, this.scope, value);
+        var valueFormattedExists = valueFormatted !== null && valueFormatted !== undefined;
+        return valueFormattedExists ? valueFormatted : value;
+    };
+    CellComp.prototype.getValueToUse = function () {
+        var valueFormattedExists = this.valueFormatted !== null && this.valueFormatted !== undefined;
+        return valueFormattedExists ? this.valueFormatted : this.value;
+    };
+    CellComp.prototype.getValueAndFormat = function () {
+        this.value = this.getValue();
+        this.valueFormatted = this.beans.valueFormatterService.formatValue(this.column, this.rowNode, this.scope, this.value);
+    };
+    CellComp.prototype.getValue = function () {
+        // if we don't check this, then the grid will render leaf groups as open even if we are not
+        // allowing the user to open leaf groups. confused? remember for pivot mode we don't allow
+        // opening leaf groups, so we have to force leafGroups to be closed in case the user expanded
+        // them via the API, or user user expanded them in the UI before turning on pivot mode
+        var lockedClosedGroup = this.rowNode.leafGroup && this.beans.columnController.isPivotMode();
+        var isOpenGroup = this.rowNode.group && this.rowNode.expanded && !this.rowNode.footer && !lockedClosedGroup;
+        // are we showing group footers
+        var groupFootersEnabled = this.beans.gridOptionsWrapper.isGroupIncludeFooter();
+        // if doing footers, we noramlly don't show agg data at group level when group is open
+        var groupAlwaysShowAggData = this.beans.gridOptionsWrapper.isGroupSuppressBlankHeader();
+        // if doing grouping and footers, we don't want to include the agg value
+        // in the header when the group is open
+        var ignoreAggData = (isOpenGroup && groupFootersEnabled) && !groupAlwaysShowAggData;
+        return this.beans.valueService.getValue(this.column, this.rowNode, false, ignoreAggData);
+    };
+    CellComp.prototype.onMouseEvent = function (eventName, mouseEvent) {
+        if (utils_1._.isStopPropagationForAgGrid(mouseEvent)) {
+            return;
+        }
+        switch (eventName) {
+            case 'click':
+                this.onCellClicked(mouseEvent);
+                break;
+            case 'mousedown':
+                this.onMouseDown(mouseEvent);
+                break;
+            case 'dblclick':
+                this.onCellDoubleClicked(mouseEvent);
+                break;
+            case 'mouseout':
+                this.onMouseOut(mouseEvent);
+                break;
+            case 'mouseover':
+                this.onMouseOver(mouseEvent);
+                break;
+        }
+    };
+    CellComp.prototype.dispatchCellContextMenuEvent = function (event) {
+        var colDef = this.column.getColDef();
+        var cellContextMenuEvent = this.createEvent(event, events_1.Events.EVENT_CELL_CONTEXT_MENU);
+        this.beans.eventService.dispatchEvent(cellContextMenuEvent);
+        if (colDef.onCellContextMenu) {
+            // to make the callback async, do in a timeout
+            window.setTimeout(function () { return colDef.onCellContextMenu(cellContextMenuEvent); }, 0);
+        }
+    };
+    CellComp.prototype.createEvent = function (domEvent, eventType) {
+        var event = {
+            node: this.rowNode,
+            data: this.rowNode.data,
+            value: this.value,
+            column: this.column,
+            colDef: this.column.getColDef(),
+            context: this.beans.gridOptionsWrapper.getContext(),
+            api: this.beans.gridApi,
+            columnApi: this.beans.columnApi,
+            rowPinned: this.rowNode.rowPinned,
+            event: domEvent,
+            type: eventType,
+            rowIndex: this.rowNode.rowIndex
+        };
+        // because we are hacking in $scope for angular 1, we have to de-reference
+        if (this.scope) {
+            event.$scope = this.scope;
+        }
+        return event;
+    };
+    CellComp.prototype.onMouseOut = function (mouseEvent) {
+        var cellMouseOutEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_MOUSE_OUT);
+        this.beans.eventService.dispatchEvent(cellMouseOutEvent);
+        this.beans.columnHoverService.clearMouseOver();
+    };
+    CellComp.prototype.onMouseOver = function (mouseEvent) {
+        var cellMouseOverEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_MOUSE_OVER);
+        this.beans.eventService.dispatchEvent(cellMouseOverEvent);
+        this.beans.columnHoverService.setMouseOver([this.column]);
+    };
+    CellComp.prototype.onCellDoubleClicked = function (mouseEvent) {
+        var colDef = this.column.getColDef();
+        // always dispatch event to eventService
+        var cellDoubleClickedEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_DOUBLE_CLICKED);
+        this.beans.eventService.dispatchEvent(cellDoubleClickedEvent);
+        // check if colDef also wants to handle event
+        if (typeof colDef.onCellDoubleClicked === 'function') {
+            // to make the callback async, do in a timeout
+            window.setTimeout(function () { return colDef.onCellDoubleClicked(cellDoubleClickedEvent); }, 0);
+        }
+        var editOnDoubleClick = !this.beans.gridOptionsWrapper.isSingleClickEdit()
+            && !this.beans.gridOptionsWrapper.isSuppressClickEdit();
+        if (editOnDoubleClick) {
+            this.startRowOrCellEdit();
+        }
+    };
+    // called by rowRenderer when user navigates via tab key
+    CellComp.prototype.startRowOrCellEdit = function (keyPress, charPress) {
+        if (this.beans.gridOptionsWrapper.isFullRowEdit()) {
+            this.rowComp.startRowEditing(keyPress, charPress, this);
+        }
+        else {
+            this.startEditingIfEnabled(keyPress, charPress, true);
+        }
+    };
+    CellComp.prototype.isCellEditable = function () {
+        return this.column.isCellEditable(this.rowNode);
+    };
+    // either called internally if single cell editing, or called by rowRenderer if row editing
+    CellComp.prototype.startEditingIfEnabled = function (keyPress, charPress, cellStartedEdit) {
+        if (keyPress === void 0) { keyPress = null; }
+        if (charPress === void 0) { charPress = null; }
+        if (cellStartedEdit === void 0) { cellStartedEdit = false; }
+        // don't do it if not editable
+        if (!this.isCellEditable()) {
+            return;
+        }
+        // don't do it if already editing
+        if (this.editingCell) {
+            return;
+        }
+        this.editingCell = true;
+        this.cellEditorVersion++;
+        var callback = this.afterCellEditorCreated.bind(this, this.cellEditorVersion);
+        var params = this.createCellEditorParams(keyPress, charPress, cellStartedEdit);
+        this.beans.cellEditorFactory.createCellEditor(this.column.getColDef(), params).then(callback);
+        // if we don't do this, and editor component is async, then there will be a period
+        // when the component isn't present and keyboard navigation won't work - so example
+        // of user hitting tab quickly (more quickly than renderers getting created) won't work
+        var cellEditorAsync = utils_1._.missing(this.cellEditor);
+        if (cellEditorAsync && cellStartedEdit) {
+            this.focusCell(true);
+        }
+    };
+    CellComp.prototype.afterCellEditorCreated = function (cellEditorVersion, cellEditor) {
+        // if editingCell=false, means user cancelled the editor before component was ready.
+        // if versionMismatch, then user cancelled the edit, then started the edit again, and this
+        //   is the first editor which is now stale.
+        var versionMismatch = cellEditorVersion !== this.cellEditorVersion;
+        if (versionMismatch || !this.editingCell) {
+            if (cellEditor.destroy) {
+                cellEditor.destroy();
+            }
+            return;
+        }
+        if (cellEditor.isCancelBeforeStart && cellEditor.isCancelBeforeStart()) {
+            if (cellEditor.destroy) {
+                cellEditor.destroy();
+            }
+            this.editingCell = false;
+            return;
+        }
+        if (!cellEditor.getGui) {
+            console.warn("ag-Grid: cellEditor for column " + this.column.getId() + " is missing getGui() method");
+            // no getGui, for React guys, see if they attached a react component directly
+            if (cellEditor.render) {
+                console.warn("ag-Grid: we found 'render' on the component, are you trying to set a React renderer but added it as colDef.cellEditor instead of colDef.cellEditorFmk?");
+            }
+            if (cellEditor.destroy) {
+                cellEditor.destroy();
+            }
+            this.editingCell = false;
+            return;
+        }
+        this.cellEditor = cellEditor;
+        this.cellEditorInPopup = cellEditor.isPopup !== undefined && cellEditor.isPopup();
+        this.setInlineEditingClass();
+        if (this.cellEditorInPopup) {
+            this.addPopupCellEditor();
+        }
+        else {
+            this.addInCellEditor();
+        }
+        if (cellEditor.afterGuiAttached) {
+            cellEditor.afterGuiAttached();
+        }
+        var event = this.createEvent(null, events_1.Events.EVENT_CELL_EDITING_STARTED);
+        this.beans.eventService.dispatchEvent(event);
+    };
+    CellComp.prototype.addInCellEditor = function () {
+        utils_1._.removeAllChildren(this.getGui());
+        if (this.cellEditor) {
+            this.getGui().appendChild(this.cellEditor.getGui());
+        }
+        this.angular1Compile();
+    };
+    CellComp.prototype.addPopupCellEditor = function () {
+        var _this = this;
+        var ePopupGui = this.cellEditor ? this.cellEditor.getGui() : null;
+        this.hideEditorPopup = this.beans.popupService.addAsModalPopup(ePopupGui, true, 
+        // callback for when popup disappears
+        function () {
+            _this.onPopupEditorClosed();
+        });
+        this.beans.popupService.positionPopupOverComponent({
+            column: this.column,
+            rowNode: this.rowNode,
+            type: 'popupCellEditor',
+            eventSource: this.getGui(),
+            ePopup: ePopupGui,
+            keepWithinBounds: true
+        });
+        this.angular1Compile();
+    };
+    CellComp.prototype.onPopupEditorClosed = function () {
+        // we only call stopEditing if we are editing, as
+        // it's possible the popup called 'stop editing'
+        // before this, eg if 'enter key' was pressed on
+        // the editor.
+        if (this.editingCell) {
+            // note: this only happens when use clicks outside of the grid. if use clicks on another
+            // cell, then the editing will have already stopped on this cell
+            this.stopRowOrCellEdit();
+            // we only focus cell again if this cell is still focused. it is possible
+            // it is not focused if the user cancelled the edit by clicking on another
+            // cell outside of this one
+            if (this.beans.focusedCellController.isCellFocused(this.gridCell)) {
+                this.focusCell(true);
+            }
+        }
+    };
+    // if we are editing inline, then we don't have the padding in the cell (set in the themes)
+    // to allow the text editor full access to the entire cell
+    CellComp.prototype.setInlineEditingClass = function () {
+        // ag-cell-inline-editing - appears when user is inline editing
+        // ag-cell-not-inline-editing - appears when user is no inline editing
+        // ag-cell-popup-editing - appears when user is editing cell in popup (appears on the cell, not on the popup)
+        // note: one of {ag-cell-inline-editing, ag-cell-not-inline-editing} is always present, they toggle.
+        //       however {ag-cell-popup-editing} shows when popup, so you have both {ag-cell-popup-editing}
+        //       and {ag-cell-not-inline-editing} showing at the same time.
+        var editingInline = this.editingCell && !this.cellEditorInPopup;
+        var popupEditorShowing = this.editingCell && this.cellEditorInPopup;
+        utils_1._.addOrRemoveCssClass(this.getGui(), "ag-cell-inline-editing", editingInline);
+        utils_1._.addOrRemoveCssClass(this.getGui(), "ag-cell-not-inline-editing", !editingInline);
+        utils_1._.addOrRemoveCssClass(this.getGui(), "ag-cell-popup-editing", popupEditorShowing);
+        utils_1._.addOrRemoveCssClass(this.getGui().parentNode, "ag-row-inline-editing", editingInline);
+        utils_1._.addOrRemoveCssClass(this.getGui().parentNode, "ag-row-not-inline-editing", !editingInline);
+    };
+    CellComp.prototype.createCellEditorParams = function (keyPress, charPress, cellStartedEdit) {
+        var params = {
+            value: this.getValue(),
+            keyPress: keyPress,
+            charPress: charPress,
+            column: this.column,
+            rowIndex: this.gridCell.rowIndex,
+            node: this.rowNode,
+            api: this.beans.gridOptionsWrapper.getApi(),
+            cellStartedEdit: cellStartedEdit,
+            columnApi: this.beans.gridOptionsWrapper.getColumnApi(),
+            context: this.beans.gridOptionsWrapper.getContext(),
+            $scope: this.scope,
+            onKeyDown: this.onKeyDown.bind(this),
+            stopEditing: this.stopEditingAndFocus.bind(this),
+            eGridCell: this.getGui(),
+            parseValue: this.parseValue.bind(this),
+            formatValue: this.formatValue.bind(this)
+        };
+        return params;
+    };
+    // cell editors call this, when they want to stop for reasons other
+    // than what we pick up on. eg selecting from a dropdown ends editing.
+    CellComp.prototype.stopEditingAndFocus = function (suppressNavigateAfterEdit) {
+        if (suppressNavigateAfterEdit === void 0) { suppressNavigateAfterEdit = false; }
+        this.stopRowOrCellEdit();
+        this.focusCell(true);
+        if (!suppressNavigateAfterEdit) {
+            this.navigateAfterEdit();
+        }
+    };
+    CellComp.prototype.parseValue = function (newValue) {
+        var params = {
+            node: this.rowNode,
+            data: this.rowNode.data,
+            oldValue: this.value,
+            newValue: newValue,
+            colDef: this.column.getColDef(),
+            column: this.column,
+            api: this.beans.gridOptionsWrapper.getApi(),
+            columnApi: this.beans.gridOptionsWrapper.getColumnApi(),
+            context: this.beans.gridOptionsWrapper.getContext()
+        };
+        var valueParser = this.column.getColDef().valueParser;
+        return utils_1._.exists(valueParser) ? this.beans.expressionService.evaluate(valueParser, params) : newValue;
+    };
+    CellComp.prototype.focusCell = function (forceBrowserFocus) {
+        if (forceBrowserFocus === void 0) { forceBrowserFocus = false; }
+        this.beans.focusedCellController.setFocusedCell(this.gridCell.rowIndex, this.column, this.rowNode.rowPinned, forceBrowserFocus);
+    };
+    CellComp.prototype.setFocusInOnEditor = function () {
+        if (this.editingCell) {
+            if (this.cellEditor && this.cellEditor.focusIn) {
+                // if the editor is present, then we just focus it
+                this.cellEditor.focusIn();
+            }
+            else {
+                // if the editor is not present, it means async cell editor (eg React fibre)
+                // and we are trying to set focus before the cell editor is present, so we
+                // focus the cell instead
+                this.focusCell(true);
+            }
+        }
+    };
+    CellComp.prototype.isEditing = function () {
+        return this.editingCell;
+    };
+    CellComp.prototype.onKeyDown = function (event) {
+        var key = event.which || event.keyCode;
+        // give user a chance to cancel event processing
+        if (this.doesUserWantToCancelKeyboardEvent(event)) {
+            return;
+        }
+        switch (key) {
+            case constants_1.Constants.KEY_ENTER:
+                this.onEnterKeyDown();
+                break;
+            case constants_1.Constants.KEY_F2:
+                this.onF2KeyDown();
+                break;
+            case constants_1.Constants.KEY_ESCAPE:
+                this.onEscapeKeyDown();
+                break;
+            case constants_1.Constants.KEY_TAB:
+                this.onTabKeyDown(event);
+                break;
+            case constants_1.Constants.KEY_BACKSPACE:
+            case constants_1.Constants.KEY_DELETE:
+                this.onBackspaceOrDeleteKeyPressed(key);
+                break;
+            case constants_1.Constants.KEY_DOWN:
+            case constants_1.Constants.KEY_UP:
+            case constants_1.Constants.KEY_RIGHT:
+            case constants_1.Constants.KEY_LEFT:
+                this.onNavigationKeyPressed(event, key);
+                break;
+        }
+    };
+    CellComp.prototype.doesUserWantToCancelKeyboardEvent = function (event) {
+        var callback = this.column.getColDef().suppressKeyboardEvent;
+        if (!callback || utils_1._.missing(callback)) {
+            return false;
+        }
+        else {
+            // if editing is null or undefined, this sets it to false
+            var params = {
+                event: event,
+                editing: this.editingCell,
+                column: this.column,
+                api: this.beans.gridOptionsWrapper.getApi(),
+                node: this.rowNode,
+                data: this.rowNode.data,
+                colDef: this.column.getColDef(),
+                context: this.beans.gridOptionsWrapper.getContext(),
+                columnApi: this.beans.gridOptionsWrapper.getColumnApi()
+            };
+            return callback(params);
+        }
+    };
+    CellComp.prototype.setFocusOutOnEditor = function () {
+        if (this.editingCell && this.cellEditor && this.cellEditor.focusOut) {
+            this.cellEditor.focusOut();
+        }
+    };
+    CellComp.prototype.onNavigationKeyPressed = function (event, key) {
+        if (this.editingCell) {
+            this.stopRowOrCellEdit();
+        }
+        if (event.shiftKey && this.rangeSelectionEnabled) {
+            this.onShiftRangeSelect(key);
+        }
+        else {
+            this.beans.rowRenderer.navigateToNextCell(event, key, this.gridCell, true);
+        }
+        // if we don't prevent default, the grid will scroll with the navigation keys
+        event.preventDefault();
+    };
+    CellComp.prototype.onShiftRangeSelect = function (key) {
+        var success = this.beans.rangeController.extendRangeInDirection(this.gridCell, key);
+        if (!success) {
+            return;
+        }
+        var ranges = this.beans.rangeController.getCellRanges();
+        // this should never happen, as extendRangeFromCell should always have one range after getting called
+        if (utils_1._.missing(ranges) || !ranges || ranges.length !== 1) {
+            return;
+        }
+        var endCell = ranges[0].end;
+        this.beans.rowRenderer.ensureCellVisible(endCell);
+    };
+    CellComp.prototype.onTabKeyDown = function (event) {
+        if (this.beans.gridOptionsWrapper.isSuppressTabbing()) {
+            return;
+        }
+        this.beans.rowRenderer.onTabKeyDown(this, event);
+    };
+    CellComp.prototype.onBackspaceOrDeleteKeyPressed = function (key) {
+        if (!this.editingCell) {
+            this.startRowOrCellEdit(key);
+        }
+    };
+    CellComp.prototype.onEnterKeyDown = function () {
+        if (this.editingCell || this.rowComp.isEditing()) {
+            this.stopEditingAndFocus();
+        }
+        else {
+            if (this.beans.gridOptionsWrapper.isEnterMovesDown()) {
+                this.beans.rowRenderer.navigateToNextCell(null, constants_1.Constants.KEY_DOWN, this.gridCell, false);
+            }
+            else {
+                this.startRowOrCellEdit(constants_1.Constants.KEY_ENTER);
+            }
+        }
+    };
+    CellComp.prototype.navigateAfterEdit = function () {
+        var fullRowEdit = this.beans.gridOptionsWrapper.isFullRowEdit();
+        if (fullRowEdit) {
+            return;
+        }
+        var enterMovesDownAfterEdit = this.beans.gridOptionsWrapper.isEnterMovesDownAfterEdit();
+        if (enterMovesDownAfterEdit) {
+            this.beans.rowRenderer.navigateToNextCell(null, constants_1.Constants.KEY_DOWN, this.gridCell, false);
+        }
+    };
+    CellComp.prototype.onF2KeyDown = function () {
+        if (!this.editingCell) {
+            this.startRowOrCellEdit(constants_1.Constants.KEY_F2);
+        }
+    };
+    CellComp.prototype.onEscapeKeyDown = function () {
+        if (this.editingCell) {
+            this.stopRowOrCellEdit(true);
+            this.focusCell(true);
+        }
+    };
+    CellComp.prototype.onKeyPress = function (event) {
+        // check this, in case focus is on a (for example) a text field inside the cell,
+        // in which cse we should not be listening for these key pressed
+        var eventTarget = utils_1._.getTarget(event);
+        var eventOnChildComponent = eventTarget !== this.getGui();
+        if (eventOnChildComponent) {
+            return;
+        }
+        if (!this.editingCell) {
+            var pressedChar = String.fromCharCode(event.charCode);
+            if (pressedChar === ' ') {
+                this.onSpaceKeyPressed(event);
+            }
+            else {
+                if (utils_1._.isEventFromPrintableCharacter(event)) {
+                    this.startRowOrCellEdit(null, pressedChar);
+                    // if we don't prevent default, then the keypress also gets applied to the text field
+                    // (at least when doing the default editor), but we need to allow the editor to decide
+                    // what it wants to do. we only do this IF editing was started - otherwise it messes
+                    // up when the use is not doing editing, but using rendering with text fields in cellRenderer
+                    // (as it would block the the user from typing into text fields).
+                    event.preventDefault();
+                }
+            }
+        }
+    };
+    CellComp.prototype.onSpaceKeyPressed = function (event) {
+        if (!this.editingCell && this.beans.gridOptionsWrapper.isRowSelection()) {
+            var selected = this.rowNode.isSelected();
+            this.rowNode.setSelected(!selected);
+        }
+        // prevent default as space key, by default, moves browser scroll down
+        event.preventDefault();
+    };
+    CellComp.prototype.onMouseDown = function (mouseEvent) {
+        // we only need to pass true to focusCell in when the browser is IE
+        // and we are trying to focus a cell (has ag-cell class), otherwise
+        // we pass false, as we don't want the cell to focus also get the browser
+        // focus. if we did, then the cellRenderer could have a text field in it,
+        // for example, and as the user clicks on the text field, the text field,
+        // the focus doesn't get to the text field, instead to goes to the div
+        // behind, making it impossible to select the text field.
+        var forceBrowserFocus = false;
+        if (utils_1._.isBrowserIE()) {
+            var target = mouseEvent.target;
+            if (target.classList.contains('ag-cell')) {
+                forceBrowserFocus = true;
+            }
+        }
+        this.focusCell(forceBrowserFocus);
+        // if it's a right click, then if the cell is already in range,
+        // don't change the range, however if the cell is not in a range,
+        // we set a new range
+        var leftMouseButtonClick = utils_1._.isLeftClick(mouseEvent);
+        if (leftMouseButtonClick && this.beans.rangeController) {
+            var thisCell = this.gridCell;
+            if (mouseEvent.shiftKey) {
+                this.beans.rangeController.extendRangeToCell(thisCell);
+            }
+            else {
+                var ctrlKeyPressed = mouseEvent.ctrlKey || mouseEvent.metaKey;
+                this.beans.rangeController.setRangeToCell(thisCell, ctrlKeyPressed);
+            }
+        }
+        var cellMouseDownEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_MOUSE_DOWN);
+        this.beans.eventService.dispatchEvent(cellMouseDownEvent);
+    };
+    // returns true if on iPad and this is second 'click' event in 200ms
+    CellComp.prototype.isDoubleClickOnIPad = function () {
+        if (!utils_1._.isUserAgentIPad()) {
+            return false;
+        }
+        var nowMillis = new Date().getTime();
+        var res = nowMillis - this.lastIPadMouseClickEvent < 200;
+        this.lastIPadMouseClickEvent = nowMillis;
+        return res;
+    };
+    CellComp.prototype.onCellClicked = function (mouseEvent) {
+        // iPad doesn't have double click - so we need to mimic it do enable editing for
+        // iPad.
+        if (this.isDoubleClickOnIPad()) {
+            this.onCellDoubleClicked(mouseEvent);
+            mouseEvent.preventDefault(); // if we don't do this, then ipad zooms in
+            return;
+        }
+        var cellClickedEvent = this.createEvent(mouseEvent, events_1.Events.EVENT_CELL_CLICKED);
+        this.beans.eventService.dispatchEvent(cellClickedEvent);
+        var colDef = this.column.getColDef();
+        if (colDef.onCellClicked) {
+            // to make callback async, do in a timeout
+            window.setTimeout(function () { return colDef.onCellClicked(cellClickedEvent); }, 0);
+        }
+        var editOnSingleClick = (this.beans.gridOptionsWrapper.isSingleClickEdit() || colDef.singleClickEdit)
+            && !this.beans.gridOptionsWrapper.isSuppressClickEdit();
+        if (editOnSingleClick) {
+            this.startRowOrCellEdit();
+        }
+        this.doIeFocusHack();
+    };
+    // https://ag-grid.com/forum/showthread.php?tid=4362
+    // when in IE or Edge, when you are editing a cell, then click on another cell,
+    // the other cell doesn't keep focus, so navigation keys, type to start edit etc
+    // don't work. appears that when you update the dom in IE it looses focus
+    CellComp.prototype.doIeFocusHack = function () {
+        if (utils_1._.isBrowserIE() || utils_1._.isBrowserEdge()) {
+            if (utils_1._.missing(document.activeElement) || document.activeElement === document.body) {
+                // console.log('missing focus');
+                this.getGui().focus();
+            }
+        }
+    };
+    CellComp.prototype.createGridCellVo = function () {
+        var gridCellDef = {
+            rowIndex: this.rowNode.rowIndex,
+            floating: this.rowNode.rowPinned,
+            column: this.column
+        };
+        this.gridCell = new gridCell_1.GridCell(gridCellDef);
+    };
+    CellComp.prototype.getGridCell = function () {
+        return this.gridCell;
+    };
+    CellComp.prototype.getParentRow = function () {
+        return this.eParentRow;
+    };
+    CellComp.prototype.setParentRow = function (eParentRow) {
+        this.eParentRow = eParentRow;
+    };
+    CellComp.prototype.getColumn = function () {
+        return this.column;
+    };
+    CellComp.prototype.detach = function () {
+        this.eParentRow.removeChild(this.getGui());
+    };
+    // if the row is also getting destroyed, then we don't need to remove from dom,
+    // as the row will also get removed, so no need to take out the cells from the row
+    // if the row is going (removing is an expensive operation, so only need to remove
+    // the top part)
+    CellComp.prototype.destroy = function () {
+        _super.prototype.destroy.call(this);
+        if (this.cellEditor && this.cellEditor.destroy) {
+            this.cellEditor.destroy();
+            this.cellEditor = null;
+        }
+        if (this.cellRenderer && this.cellRenderer.destroy) {
+            this.cellRenderer.destroy();
+            this.cellRenderer = null;
+        }
+    };
+    CellComp.prototype.onLeftChanged = function () {
+        var left = this.modifyLeftForPrintLayout(this.getCellLeft());
+        this.getGui().style.left = left + 'px';
+    };
+    CellComp.prototype.modifyLeftForPrintLayout = function (leftPosition) {
+        if (!this.printLayout) {
+            return leftPosition;
+        }
+        if (this.column.getPinned() === column_1.Column.PINNED_LEFT) {
+            return leftPosition;
+        }
+        if (this.column.getPinned() === column_1.Column.PINNED_RIGHT) {
+            var leftWidth_1 = this.beans.columnController.getPinnedLeftContainerWidth();
+            var bodyWidth = this.beans.columnController.getBodyContainerWidth();
+            return leftWidth_1 + bodyWidth + leftPosition;
+        }
+        // is in body
+        var leftWidth = this.beans.columnController.getPinnedLeftContainerWidth();
+        return leftWidth + leftPosition;
+    };
+    CellComp.prototype.onWidthChanged = function () {
+        var width = this.getCellWidth();
+        this.getGui().style.width = width + 'px';
+    };
+    CellComp.prototype.getRangeClasses = function () {
+        var res = [];
+        if (!this.rangeSelectionEnabled) {
+            return res;
+        }
+        if (this.rangeCount !== 0) {
+            res.push('ag-cell-range-selected');
+        }
+        if (this.rangeCount === 1) {
+            res.push('ag-cell-range-selected-1');
+        }
+        if (this.rangeCount === 2) {
+            res.push('ag-cell-range-selected-2');
+        }
+        if (this.rangeCount === 3) {
+            res.push('ag-cell-range-selected-3');
+        }
+        if (this.rangeCount >= 4) {
+            res.push('ag-cell-range-selected-4');
+        }
+        return res;
+    };
+    CellComp.prototype.onRowIndexChanged = function () {
+        // when index changes, this influences items that need the index, so we update the
+        // grid cell so they are working off the new index.
+        this.createGridCellVo();
+        // when the index of the row changes, ie means the cell may have lost or gained focus
+        this.onCellFocused();
+        // check range selection
+        this.onRangeSelectionChanged();
+    };
+    CellComp.prototype.onRangeSelectionChanged = function () {
+        if (!this.beans.enterprise) {
+            return;
+        }
+        var newRangeCount = this.beans.rangeController.getCellRangeCount(this.gridCell);
+        var element = this.getGui();
+        if (this.rangeCount !== newRangeCount) {
+            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected', newRangeCount !== 0);
+            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-1', newRangeCount === 1);
+            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-2', newRangeCount === 2);
+            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-3', newRangeCount === 3);
+            utils_1._.addOrRemoveCssClass(element, 'ag-cell-range-selected-4', newRangeCount >= 4);
+            this.rangeCount = newRangeCount;
+        }
+    };
+    CellComp.prototype.onFirstRightPinnedChanged = function () {
+        var firstRightPinned = this.column.isFirstRightPinned();
+        if (this.firstRightPinned !== firstRightPinned) {
+            this.firstRightPinned = firstRightPinned;
+            utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-first-right-pinned', firstRightPinned);
+        }
+    };
+    CellComp.prototype.onLastLeftPinnedChanged = function () {
+        var lastLeftPinned = this.column.isLastLeftPinned();
+        if (this.lastLeftPinned !== lastLeftPinned) {
+            this.lastLeftPinned = lastLeftPinned;
+            utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-last-left-pinned', lastLeftPinned);
+        }
+    };
+    CellComp.prototype.populateTemplate = function () {
+        if (this.usingWrapper) {
+            this.eParentOfValue = this.getRefElement('eCellValue');
+            this.eCellWrapper = this.getRefElement('eCellWrapper');
+            if (this.includeRowDraggingComponent) {
+                this.addRowDragging();
+            }
+            if (this.includeSelectionComponent) {
+                this.addSelectionCheckbox();
+            }
+        }
+        else {
+            this.eParentOfValue = this.getGui();
+        }
+    };
+    CellComp.prototype.addRowDragging = function () {
+        // row dragging only available in default row model
+        if (!this.beans.gridOptionsWrapper.isRowModelDefault()) {
+            utils_1._.doOnce(function () { return console.warn('ag-Grid: row dragging is only allowed in the In Memory Row Model'); }, 'CellComp.addRowDragging');
+            return;
+        }
+        if (this.beans.gridOptionsWrapper.isPagination()) {
+            utils_1._.doOnce(function () { return console.warn('ag-Grid: row dragging is not possible when doing pagination'); }, 'CellComp.addRowDragging');
+            return;
+        }
+        var rowDraggingComp = new rowDragComp_1.RowDragComp(this.rowNode, this.column, this.getValueToUse(), this.beans);
+        this.addFeature(this.beans.context, rowDraggingComp);
+        // let visibleFunc = this.column.getColDef().checkboxSelection;
+        // visibleFunc = typeof visibleFunc === 'function' ? visibleFunc : null;
+        // cbSelectionComponent.init({rowNode: this.rowNode, column: this.column, visibleFunc: visibleFunc});
+        // put the checkbox in before the value
+        this.eCellWrapper.insertBefore(rowDraggingComp.getGui(), this.eParentOfValue);
+    };
+    CellComp.prototype.addSelectionCheckbox = function () {
+        var cbSelectionComponent = new checkboxSelectionComponent_1.CheckboxSelectionComponent();
+        this.beans.context.wireBean(cbSelectionComponent);
+        var visibleFunc = this.column.getColDef().checkboxSelection;
+        visibleFunc = typeof visibleFunc === 'function' ? visibleFunc : null;
+        cbSelectionComponent.init({ rowNode: this.rowNode, column: this.column, visibleFunc: visibleFunc });
+        this.addDestroyFunc(function () { return cbSelectionComponent.destroy(); });
+        // put the checkbox in before the value
+        this.eCellWrapper.insertBefore(cbSelectionComponent.getGui(), this.eParentOfValue);
+    };
+    CellComp.prototype.addDomData = function () {
+        var _this = this;
+        var element = this.getGui();
+        this.beans.gridOptionsWrapper.setDomData(element, CellComp.DOM_DATA_KEY_CELL_COMP, this);
+        this.addDestroyFunc(function () {
+            return _this.beans.gridOptionsWrapper.setDomData(element, CellComp.DOM_DATA_KEY_CELL_COMP, null);
+        });
+    };
+    CellComp.prototype.onCellFocused = function (event) {
+        var cellFocused = this.beans.focusedCellController.isCellFocused(this.gridCell);
+        // see if we need to change the classes on this cell
+        if (cellFocused !== this.cellFocused) {
+            // if we are not doing cell selection, then the focus class does not change, all cells will
+            // stay with ag-cell-no-focus class
+            var doingFocusCss = !this.beans.gridOptionsWrapper.isSuppressCellSelection();
+            if (doingFocusCss) {
+                utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-focus', cellFocused);
+                utils_1._.addOrRemoveCssClass(this.getGui(), 'ag-cell-no-focus', !cellFocused);
+            }
+            this.cellFocused = cellFocused;
+        }
+        // if this cell was just focused, see if we need to force browser focus, his can
+        // happen if focus is programmatically set.
+        if (cellFocused && event && event.forceBrowserFocus) {
+            this.getGui().focus();
+        }
+        // if another cell was focused, and we are editing, then stop editing
+        var fullRowEdit = this.beans.gridOptionsWrapper.isFullRowEdit();
+        if (!cellFocused && !fullRowEdit && this.editingCell) {
+            this.stopRowOrCellEdit();
+        }
+    };
+    // pass in 'true' to cancel the editing.
+    CellComp.prototype.stopRowOrCellEdit = function (cancel) {
+        if (cancel === void 0) { cancel = false; }
+        if (this.beans.gridOptionsWrapper.isFullRowEdit()) {
+            this.rowComp.stopRowEditing(cancel);
+        }
+        else {
+            this.stopEditing(cancel);
+        }
+    };
+    CellComp.prototype.stopEditing = function (cancel) {
+        if (cancel === void 0) { cancel = false; }
+        if (!this.editingCell) {
+            return;
+        }
+        // if no cell editor, this means due to async, that the cell editor never got initialised,
+        // so we just carry on regardless as if the editing was never started.
+        if (!this.cellEditor) {
+            this.editingCell = false;
+            return;
+        }
+        var newValueExists = false;
+        var newValue;
+        if (!cancel) {
+            // also have another option here to cancel after editing, so for example user could have a popup editor and
+            // it is closed by user clicking outside the editor. then the editor will close automatically (with false
+            // passed above) and we need to see if the editor wants to accept the new value.
+            var userWantsToCancel = this.cellEditor.isCancelAfterEnd && this.cellEditor.isCancelAfterEnd();
+            if (!userWantsToCancel) {
+                newValue = this.cellEditor.getValue();
+                newValueExists = true;
+            }
+        }
+        // it is important we set this after setValue() above, as otherwise the cell will flash
+        // when editing stops. the 'refresh' method checks editing, and doesn't refresh editing cells.
+        // thus it will skip the refresh on this cell until the end of this method where we call
+        // refresh directly and we suppress the flash.
+        this.editingCell = false;
+        if (this.cellEditor.destroy) {
+            this.cellEditor.destroy();
+        }
+        // important to clear this out - as parts of the code will check for
+        // this to see if an async cellEditor has yet to be created
+        this.cellEditor = null;
+        if (this.cellEditorInPopup && this.hideEditorPopup) {
+            this.hideEditorPopup();
+            this.hideEditorPopup = null;
+        }
+        else {
+            utils_1._.removeAllChildren(this.getGui());
+            // put the cell back the way it was before editing
+            if (this.usingWrapper) {
+                // if wrapper, then put the wrapper back
+                this.getGui().appendChild(this.eCellWrapper);
+            }
+            else {
+                // if cellRenderer, then put the gui back in. if the renderer has
+                // a refresh, it will be called. however if it doesn't, then later
+                // the renderer will be destroyed and a new one will be created.
+                if (this.cellRenderer) {
+                    // we know it's a dom element (not a string) because we converted
+                    // it after the gui was attached if it was a string.
+                    var eCell = this.cellRendererGui;
+                    // can be null if cell was previously null / contained empty string,
+                    // this will result in new value not being rendered.
+                    if (eCell) {
+                        this.getGui().appendChild(eCell);
+                    }
+                }
+            }
+        }
+        this.setInlineEditingClass();
+        if (newValueExists) {
+            this.rowNode.setDataValue(this.column, newValue);
+            this.getValueAndFormat();
+        }
+        // we suppress the flash, as it is not correct to flash the cell the user has finished editing,
+        // the user doesn't need to flash as they were the one who did the edit, the flash is pointless
+        // (as the flash is meant to draw the user to a change that they didn't manually do themselves).
+        this.refreshCell({ forceRefresh: true, suppressFlash: true });
+        var event = this.createEvent(null, events_1.Events.EVENT_CELL_EDITING_STOPPED);
+        this.beans.eventService.dispatchEvent(event);
+    };
+    CellComp.DOM_DATA_KEY_CELL_COMP = 'cellComp';
+    return CellComp;
+}(component_1.Component));
+exports.CellComp = CellComp;
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
+ * @version v20.0.0
+ * @link http://www.ag-grid.com/
+ * @license MIT
+ */
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var context_1 = __webpack_require__(0);
+var gridOptionsWrapper_1 = __webpack_require__(2);
+var ValueCache = /** @class */ (function () {
+    function ValueCache() {
+        this.cacheVersion = 0;
+    }
+    ValueCache.prototype.init = function () {
+        this.active = this.gridOptionsWrapper.isValueCache();
+        this.neverExpires = this.gridOptionsWrapper.isValueCacheNeverExpires();
+    };
+    ValueCache.prototype.onDataChanged = function () {
+        if (this.neverExpires) {
+            return;
+        }
+        this.expire();
+    };
+    ValueCache.prototype.expire = function () {
+        this.cacheVersion++;
+    };
+    ValueCache.prototype.setValue = function (rowNode, colId, value) {
+        if (this.active) {
+            if (rowNode.__cacheVersion !== this.cacheVersion) {
+                rowNode.__cacheVersion = this.cacheVersion;
+                rowNode.__cacheData = {};
+            }
+            rowNode.__cacheData[colId] = value;
+        }
+    };
+    ValueCache.prototype.getValue = function (rowNode, colId) {
+        var valueInCache = this.active
+            && rowNode.__cacheVersion === this.cacheVersion
+            && rowNode.__cacheData[colId] !== undefined;
+        if (valueInCache) {
+            return rowNode.__cacheData[colId];
+        }
+        else {
+            return undefined;
+        }
+    };
+    __decorate([
+        context_1.Autowired('gridOptionsWrapper'),
+        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
+    ], ValueCache.prototype, "gridOptionsWrapper", void 0);
+    __decorate([
+        context_1.PostConstruct,
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], ValueCache.prototype, "init", null);
+    ValueCache = __decorate([
+        context_1.Bean('valueCache')
+    ], ValueCache);
+    return ValueCache;
+}());
+exports.ValueCache = ValueCache;
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * ag-grid-community - Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components
+ * @version v20.0.0
+ * @link http://www.ag-grid.com/
+ * @license MIT
+ */
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var constants_1 = __webpack_require__(8);
+var context_1 = __webpack_require__(0);
+var gridCore_1 = __webpack_require__(71);
+var gridOptionsWrapper_1 = __webpack_require__(2);
+var environment_1 = __webpack_require__(70);
+var eventService_1 = __webpack_require__(3);
+var events_1 = __webpack_require__(7);
+var utils_1 = __webpack_require__(1);
+var PopupService = /** @class */ (function () {
+    function PopupService() {
+        this.activePopupElements = [];
+    }
+    PopupService.prototype.getDocument = function () {
+        return this.gridOptionsWrapper.getDocument();
+    };
+    PopupService.prototype.getPopupParent = function () {
+        var ePopupParent = this.gridOptionsWrapper.getPopupParent();
+        if (ePopupParent) {
+            // user provided popup parent, may not have the right theme applied
+            return ePopupParent;
+        }
+        else {
+            return this.gridCore.getRootGui();
+        }
+    };
+    PopupService.prototype.positionPopupForMenu = function (params) {
+        var sourceRect = params.eventSource.getBoundingClientRect();
+        var eDocument = this.getDocument();
+        var popupParent = this.getPopupParent();
+        var parentRect;
+        if (popupParent === eDocument.body) {
+            parentRect = eDocument.documentElement.getBoundingClientRect();
+        }
+        else {
+            parentRect = popupParent.getBoundingClientRect();
+        }
+        var y = sourceRect.top - parentRect.top;
+        y = this.keepYWithinBounds(params, y);
+        var minWidth = (params.ePopup.clientWidth > 0) ? params.ePopup.clientWidth : 200;
+        params.ePopup.style.minWidth = minWidth + "px";
+        var widthOfParent = parentRect.right - parentRect.left;
+        var maxX = widthOfParent - minWidth;
+        // the x position of the popup depends on RTL or LTR. for normal cases, LTR, we put the child popup
+        // to the right, unless it doesn't fit and we then put it to the left. for RTL it's the other way around,
+        // we try place it first to the left, and then if not to the right.
+        var x;
+        if (this.gridOptionsWrapper.isEnableRtl()) {
+            // for RTL, try left first
+            x = xLeftPosition();
+            if (x < 0) {
+                x = xRightPosition();
+            }
+            if (x > maxX) {
+                x = 0;
+            }
+        }
+        else {
+            // for LTR, try right first
+            x = xRightPosition();
+            if (x > maxX) {
+                x = xLeftPosition();
+            }
+            if (x < 0) {
+                x = 0;
+            }
+        }
+        params.ePopup.style.left = x + "px";
+        params.ePopup.style.top = y + "px";
+        function xRightPosition() {
+            return sourceRect.right - parentRect.left - 2;
+        }
+        function xLeftPosition() {
+            return sourceRect.left - parentRect.left - minWidth;
+        }
+    };
+    PopupService.prototype.positionPopupUnderMouseEvent = function (params) {
+        var _a = this.calculatePointerAlign(params.mouseEvent), x = _a.x, y = _a.y;
+        this.positionPopup({
+            ePopup: params.ePopup,
+            x: x,
+            y: y,
+            keepWithinBounds: true
+        });
+        this.callPostProcessPopup(params.ePopup, null, params.mouseEvent, params.type, params.column, params.rowNode);
+    };
+    PopupService.prototype.calculatePointerAlign = function (e) {
+        var eDocument = this.getDocument();
+        var popupParent = this.getPopupParent();
+        var parentRect = popupParent.getBoundingClientRect();
+        var documentRect = eDocument.documentElement.getBoundingClientRect();
+        return {
+            x: e.clientX - (popupParent === eDocument.body ? documentRect.left : parentRect.left),
+            y: e.clientY - (popupParent === eDocument.body ? documentRect.top : parentRect.top)
+        };
+    };
+    PopupService.prototype.positionPopupUnderComponent = function (params) {
+        var sourceRect = params.eventSource.getBoundingClientRect();
+        var eDocument = this.getDocument();
+        var popupParent = this.getPopupParent();
+        var parentRect;
+        if (popupParent === eDocument.body) {
+            parentRect = eDocument.documentElement.getBoundingClientRect();
+        }
+        else {
+            parentRect = popupParent.getBoundingClientRect();
+        }
+        this.positionPopup({
+            ePopup: params.ePopup,
+            minWidth: params.minWidth,
+            minHeight: params.minHeight,
+            nudgeX: params.nudgeX,
+            nudgeY: params.nudgeY,
+            x: sourceRect.left - parentRect.left,
+            y: sourceRect.top - parentRect.top + sourceRect.height,
+            keepWithinBounds: params.keepWithinBounds
+        });
+        this.callPostProcessPopup(params.ePopup, params.eventSource, null, params.type, params.column, params.rowNode);
+    };
+    PopupService.prototype.callPostProcessPopup = function (ePopup, eventSource, mouseEvent, type, column, rowNode) {
+        var callback = this.gridOptionsWrapper.getPostProcessPopupFunc();
+        if (callback) {
+            var params = {
+                column: column,
+                rowNode: rowNode,
+                ePopup: ePopup,
+                type: type,
+                eventSource: eventSource,
+                mouseEvent: mouseEvent
+            };
+            callback(params);
+        }
+    };
+    PopupService.prototype.positionPopupOverComponent = function (params) {
+        var sourceRect = params.eventSource.getBoundingClientRect();
+        var eDocument = this.getDocument();
+        var popupParent = this.getPopupParent();
+        var parentRect;
+        if (popupParent === eDocument.body) {
+            parentRect = eDocument.documentElement.getBoundingClientRect();
+        }
+        else {
+            parentRect = popupParent.getBoundingClientRect();
+        }
+        this.positionPopup({
+            ePopup: params.ePopup,
+            minWidth: params.minWidth,
+            nudgeX: params.nudgeX,
+            nudgeY: params.nudgeY,
+            x: sourceRect.left - parentRect.left,
+            y: sourceRect.top - parentRect.top,
+            keepWithinBounds: params.keepWithinBounds
+        });
+        this.callPostProcessPopup(params.ePopup, params.eventSource, null, params.type, params.column, params.rowNode);
+    };
+    PopupService.prototype.positionPopup = function (params) {
+        var x = params.x;
+        var y = params.y;
+        if (params.nudgeX) {
+            x += params.nudgeX;
+        }
+        if (params.nudgeY) {
+            y += params.nudgeY;
+        }
+        // if popup is overflowing to the bottom, move it up
+        if (params.keepWithinBounds) {
+            x = this.keepXWithinBounds(params, x);
+            y = this.keepYWithinBounds(params, y);
+        }
+        params.ePopup.style.left = x + "px";
+        params.ePopup.style.top = y + "px";
+    };
+    PopupService.prototype.keepYWithinBounds = function (params, y) {
+        var eDocument = this.gridOptionsWrapper.getDocument();
+        var docElement = eDocument.documentElement;
+        var popupParent = this.getPopupParent();
+        var parentRect = popupParent.getBoundingClientRect();
+        var documentRect = eDocument.documentElement.getBoundingClientRect();
+        var isBody = popupParent === eDocument.body;
+        var defaultPadding = 3;
+        var minHeight = Math.min(200, parentRect.height);
+        var diff = 0;
+        if (params.minHeight && params.minHeight < minHeight) {
+            minHeight = params.minHeight;
+        }
+        else if (params.ePopup.offsetHeight > 0) {
+            minHeight = params.ePopup.clientHeight;
+            diff = utils_1._.getAbsoluteHeight(params.ePopup) - minHeight;
+        }
+        var heightOfParent = isBody ? (utils_1._.getAbsoluteHeight(docElement) + docElement.scrollTop) : parentRect.height;
+        if (isBody) {
+            heightOfParent -= Math.abs(documentRect.top - parentRect.top);
+        }
+        var maxY = heightOfParent - minHeight - diff - defaultPadding;
+        return Math.min(Math.max(y, 0), Math.abs(maxY));
+    };
+    PopupService.prototype.keepXWithinBounds = function (params, x) {
+        var eDocument = this.gridOptionsWrapper.getDocument();
+        var docElement = eDocument.documentElement;
+        var popupParent = this.getPopupParent();
+        var parentRect = popupParent.getBoundingClientRect();
+        var documentRect = eDocument.documentElement.getBoundingClientRect();
+        var isBody = popupParent === eDocument.body;
+        var defaultPadding = 3;
+        var minWidth = Math.min(200, parentRect.width);
+        var diff = 0;
+        if (params.minWidth && params.minWidth < minWidth) {
+            minWidth = params.minWidth;
+        }
+        else if (params.ePopup.clientWidth > 0) {
+            minWidth = params.ePopup.clientWidth;
+            params.ePopup.style.minWidth = minWidth + "px";
+            diff = utils_1._.getAbsoluteWidth(params.ePopup) - minWidth;
+        }
+        var widthOfParent = isBody ? (utils_1._.getAbsoluteWidth(docElement) + docElement.scrollLeft) : parentRect.width;
+        if (isBody) {
+            widthOfParent -= Math.abs(documentRect.left - parentRect.left);
+        }
+        var maxX = widthOfParent - minWidth - diff - defaultPadding;
+        return Math.min(Math.max(x, 0), Math.abs(maxX));
+    };
+    //adds an element to a div, but also listens to background checking for clicks,
+    //so that when the background is clicked, the child is removed again, giving
+    //a model look to popups.
+    PopupService.prototype.addAsModalPopup = function (eChild, closeOnEsc, closedCallback, click) {
+        return this.addPopup(true, eChild, closeOnEsc, closedCallback, click);
+    };
+    PopupService.prototype.addPopup = function (modal, eChild, closeOnEsc, closedCallback, click) {
+        var _this = this;
+        var eDocument = this.gridOptionsWrapper.getDocument();
+        if (!eDocument) {
+            console.warn('ag-grid: could not find the document, document is empty');
+            return function () {
+            };
+        }
+        eChild.style.top = '0px';
+        eChild.style.left = '0px';
+        var popupAlreadyShown = utils_1._.isVisible(eChild);
+        if (popupAlreadyShown) {
+            return function () {
+            };
+        }
+        var ePopupParent = this.getPopupParent();
+        // add env CSS class to child, in case user provided a popup parent, which means
+        // theme class may be missing
+        var eWrapper = document.createElement('div');
+        utils_1._.addCssClass(eWrapper, this.environment.getTheme());
+        eWrapper.appendChild(eChild);
+        ePopupParent.appendChild(eWrapper);
+        this.activePopupElements.push(eChild);
+        var popupHidden = false;
+        var hidePopupOnKeyboardEvent = function (event) {
+            var key = event.which || event.keyCode;
+            if (key === constants_1.Constants.KEY_ESCAPE) {
+                hidePopup(null);
+            }
+        };
+        var hidePopupOnMouseEvent = function (event) {
+            hidePopup(event);
+        };
+        var hidePopupOnTouchEvent = function (event) {
+            hidePopup(null, event);
+        };
+        var hidePopup = function (mouseEvent, touchEvent) {
+            // we don't hide popup if the event was on the child, or any
+            // children of this child
+            if (_this.isEventFromCurrentPopup(mouseEvent, touchEvent, eChild)) {
+                return;
+            }
+            // if the event to close is actually the open event, then ignore it
+            if (_this.isEventSameChainAsOriginalEvent(click, mouseEvent, touchEvent)) {
+                return;
+            }
+            // this method should only be called once. the client can have different
+            // paths, each one wanting to close, so this method may be called multiple times.
+            if (popupHidden) {
+                return;
+            }
+            popupHidden = true;
+            ePopupParent.removeChild(eWrapper);
+            utils_1._.removeFromArray(_this.activePopupElements, eChild);
+            eDocument.removeEventListener('keydown', hidePopupOnKeyboardEvent);
+            eDocument.removeEventListener('click', hidePopupOnMouseEvent);
+            eDocument.removeEventListener('touchstart', hidePopupOnTouchEvent);
+            eDocument.removeEventListener('contextmenu', hidePopupOnMouseEvent);
+            _this.eventService.removeEventListener(events_1.Events.EVENT_DRAG_STARTED, hidePopupOnMouseEvent);
+            if (closedCallback) {
+                closedCallback();
+            }
+        };
+        // if we add these listeners now, then the current mouse
+        // click will be included, which we don't want
+        window.setTimeout(function () {
+            if (closeOnEsc) {
+                eDocument.addEventListener('keydown', hidePopupOnKeyboardEvent);
+            }
+            if (modal) {
+                eDocument.addEventListener('click', hidePopupOnMouseEvent);
+                _this.eventService.addEventListener(events_1.Events.EVENT_DRAG_STARTED, hidePopupOnMouseEvent);
+                eDocument.addEventListener('touchstart', hidePopupOnTouchEvent);
+                eDocument.addEventListener('contextmenu', hidePopupOnMouseEvent);
+            }
+        }, 0);
+        return hidePopup;
+    };
+    PopupService.prototype.isEventFromCurrentPopup = function (mouseEvent, touchEvent, eChild) {
+        var event = mouseEvent ? mouseEvent : touchEvent;
+        if (event) {
+            var indexOfThisChild = this.activePopupElements.indexOf(eChild);
+            for (var i = indexOfThisChild; i < this.activePopupElements.length; i++) {
+                var element = this.activePopupElements[i];
+                if (utils_1._.isElementInEventPath(element, event)) {
+                    return true;
+                }
+            }
+            // if the user did not write their own Custom Element to be rendered as popup
+            // and this component has additional popup element, they should have the
+            // `ag-custom-component-popup` class to be detected as part of the Custom Component
+            var el = event.target;
+            while (el && el != document.body) {
+                if (el.classList.contains('ag-custom-component-popup')) {
+                    return true;
+                }
+                el = el.parentElement;
+            }
+        }
+        return false;
+    };
+    // in some browsers, the context menu event can be fired before the click event, which means
+    // the context menu event could open the popup, but then the click event closes it straight away.
+    PopupService.prototype.isEventSameChainAsOriginalEvent = function (originalClick, mouseEvent, touchEvent) {
+        // we check the coordinates of the event, to see if it's the same event. there is a 1 / 1000 chance that
+        // the event is a different event, however that is an edge case that is not very relevant (the user clicking
+        // twice on the same location isn't a normal path).
+        // event could be mouse event or touch event.
+        var mouseEventOrTouch = null;
+        if (mouseEvent) {
+            // mouse event can be used direction, it has coordinates
+            mouseEventOrTouch = mouseEvent;
+        }
+        else if (touchEvent) {
+            // touch event doesn't have coordinates, need it's touch object
+            mouseEventOrTouch = touchEvent.touches[0];
+        }
+        if (mouseEventOrTouch && originalClick) {
+            // for x, allow 4px margin, to cover iPads, where touch (which opens menu) is followed
+            // by browser click (when you life finger up, touch is interrupted as click in browser)
+            var screenX_1 = mouseEvent ? mouseEvent.screenX : 0;
+            var screenY_1 = mouseEvent ? mouseEvent.screenY : 0;
+            var xMatch = Math.abs(originalClick.screenX - screenX_1) < 5;
+            var yMatch = Math.abs(originalClick.screenY - screenY_1) < 5;
+            if (xMatch && yMatch) {
+                return true;
+            }
+        }
+        return false;
+    };
+    __decorate([
+        context_1.Autowired('gridCore'),
+        __metadata("design:type", gridCore_1.GridCore)
+    ], PopupService.prototype, "gridCore", void 0);
+    __decorate([
+        context_1.Autowired('gridOptionsWrapper'),
+        __metadata("design:type", gridOptionsWrapper_1.GridOptionsWrapper)
+    ], PopupService.prototype, "gridOptionsWrapper", void 0);
+    __decorate([
+        context_1.Autowired('environment'),
+        __metadata("design:type", environment_1.Environment)
+    ], PopupService.prototype, "environment", void 0);
+    __decorate([
+        context_1.Autowired('eventService'),
+        __metadata("design:type", eventService_1.EventService)
+    ], PopupService.prototype, "eventService", void 0);
+    PopupService = __decorate([
+        context_1.Bean('popupService')
+    ], PopupService);
+    return PopupService;
+}());
+exports.PopupService = PopupService;
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+  props: {
+    size: {
+      type: String,
+      default: null
+    }
+  },
+  computed: {
+    sizeFormClass: function sizeFormClass() {
+      return [this.size ? "form-control-" + this.size : null];
+    },
+    sizeBtnClass: function sizeBtnClass() {
+      return [this.size ? "btn-" + this.size : null];
+    }
+  }
+});
+
+/***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__object__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(224);
+/* harmony export (immutable) */ __webpack_exports__["a"] = pluckProps;
+
+
+
+
+/**
+ * Given an array of properties or an object of property keys,
+ * plucks all the values off the target object.
+ * @param {{}|string[]} keysToPluck
+ * @param {{}} objToPluck
+ * @param {Function} transformFn
+ * @return {{}}
+ */
+function pluckProps(keysToPluck, objToPluck) {
+  var transformFn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : __WEBPACK_IMPORTED_MODULE_2__identity__["a" /* default */];
+
+  return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__array__["b" /* isArray */])(keysToPluck) ? keysToPluck.slice() : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__object__["b" /* keys */])(keysToPluck)).reduce(function (memo, prop) {
+    // eslint-disable-next-line no-sequences
+    return memo[transformFn(prop)] = objToPluck[prop], memo;
+  }, {});
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = function (it) {
+  return toString.call(it).slice(8, -1);
+};
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(27);
+var hide = __webpack_require__(54);
+var has = __webpack_require__(110);
+var SRC = __webpack_require__(165)('src');
+var TO_STRING = 'toString';
+var $toString = Function[TO_STRING];
+var TPL = ('' + $toString).split(TO_STRING);
+
+__webpack_require__(44).inspectSource = function (it) {
+  return $toString.call(it);
+};
+
+(module.exports = function (O, key, val, safe) {
+  var isFunction = typeof val == 'function';
+  if (isFunction) has(val, 'name') || hide(val, 'name', key);
+  if (O[key] === val) return;
+  if (isFunction) has(val, SRC) || hide(val, SRC, O[key] ? '' + O[key] : TPL.join(String(key)));
+  if (O === global) {
+    O[key] = val;
+  } else if (!safe) {
+    delete O[key];
+    hide(O, key, val);
+  } else if (O[key]) {
+    O[key] = val;
+  } else {
+    hide(O, key, val);
+  }
+// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative
+})(Function.prototype, TO_STRING, function toString() {
+  return typeof this == 'function' && this[SRC] || $toString.call(this);
+});
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports) {
+
+// 7.1.4 ToInteger
+var ceil = Math.ceil;
+var floor = Math.floor;
+module.exports = function (it) {
+  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+};
+
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function() {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		var result = [];
+		for(var i = 0; i < this.length; i++) {
+			var item = this[i];
+			if(item[2]) {
+				result.push("@media " + item[2] + "{" + item[1] + "}");
+			} else {
+				result.push(item[1]);
+			}
+		}
+		return result.join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
 
 /***/ }),
 /* 68 */
@@ -29679,9 +29680,9 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var gridOptionsWrapper_1 = __webpack_require__(2);
 var logger_1 = __webpack_require__(20);
-var columnUtils_1 = __webpack_require__(55);
+var columnUtils_1 = __webpack_require__(56);
 var columnKeyCreator_1 = __webpack_require__(168);
-var originalColumnGroup_1 = __webpack_require__(56);
+var originalColumnGroup_1 = __webpack_require__(57);
 var column_1 = __webpack_require__(15);
 var context_1 = __webpack_require__(0);
 var defaultColumnTypes_1 = __webpack_require__(251);
@@ -30418,7 +30419,7 @@ var filterManager_1 = __webpack_require__(29);
 var eventService_1 = __webpack_require__(3);
 var gridPanel_1 = __webpack_require__(128);
 var logger_1 = __webpack_require__(20);
-var popupService_1 = __webpack_require__(60);
+var popupService_1 = __webpack_require__(61);
 var context_1 = __webpack_require__(0);
 var focusedCellController_1 = __webpack_require__(38);
 var component_1 = __webpack_require__(12);
@@ -30718,7 +30719,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var context_1 = __webpack_require__(0);
 var context_2 = __webpack_require__(0);
 var gridOptionsWrapper_1 = __webpack_require__(2);
-var cellComp_1 = __webpack_require__(58);
+var cellComp_1 = __webpack_require__(59);
 var utils_1 = __webpack_require__(1);
 var MouseEventService = /** @class */ (function () {
     function MouseEventService() {
@@ -31547,9 +31548,9 @@ module.exports = {};
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clickaway__ = __webpack_require__(483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clickaway__ = __webpack_require__(484);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clickaway___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_clickaway__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar__ = __webpack_require__(527);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_perfect_scrollbar__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Aside; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AsideToggler; });
@@ -34825,9 +34826,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var context_1 = __webpack_require__(0);
-var columnUtils_1 = __webpack_require__(55);
+var columnUtils_1 = __webpack_require__(56);
 var columnGroup_1 = __webpack_require__(48);
-var originalColumnGroup_1 = __webpack_require__(56);
+var originalColumnGroup_1 = __webpack_require__(57);
 var context_2 = __webpack_require__(0);
 var utils_1 = __webpack_require__(1);
 // takes in a list of columns, as specified by the column definitions, and returns column groups
@@ -36714,7 +36715,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var cellComp_1 = __webpack_require__(58);
+var cellComp_1 = __webpack_require__(59);
 var rowNode_1 = __webpack_require__(28);
 var gridOptionsWrapper_1 = __webpack_require__(2);
 var column_1 = __webpack_require__(15);
@@ -38487,7 +38488,7 @@ var columnController_1 = __webpack_require__(6);
 exports.ColumnController = columnController_1.ColumnController;
 var columnKeyCreator_1 = __webpack_require__(168);
 exports.ColumnKeyCreator = columnKeyCreator_1.ColumnKeyCreator;
-var columnUtils_1 = __webpack_require__(55);
+var columnUtils_1 = __webpack_require__(56);
 exports.ColumnUtils = columnUtils_1.ColumnUtils;
 var displayedGroupCreator_1 = __webpack_require__(88);
 exports.DisplayedGroupCreator = displayedGroupCreator_1.DisplayedGroupCreator;
@@ -38539,7 +38540,7 @@ var gridCell_1 = __webpack_require__(42);
 exports.GridCell = gridCell_1.GridCell;
 var gridRow_1 = __webpack_require__(123);
 exports.GridRow = gridRow_1.GridRow;
-var originalColumnGroup_1 = __webpack_require__(56);
+var originalColumnGroup_1 = __webpack_require__(57);
 exports.OriginalColumnGroup = originalColumnGroup_1.OriginalColumnGroup;
 var rowNode_1 = __webpack_require__(28);
 exports.RowNode = rowNode_1.RowNode;
@@ -38620,7 +38621,7 @@ var cellRendererService_1 = __webpack_require__(94);
 exports.CellRendererService = cellRendererService_1.CellRendererService;
 var checkboxSelectionComponent_1 = __webpack_require__(140);
 exports.CheckboxSelectionComponent = checkboxSelectionComponent_1.CheckboxSelectionComponent;
-var cellComp_1 = __webpack_require__(58);
+var cellComp_1 = __webpack_require__(59);
 exports.CellComp = cellComp_1.CellComp;
 var rowComp_1 = __webpack_require__(98);
 exports.RowComp = rowComp_1.RowComp;
@@ -38660,7 +38661,7 @@ var agCheckbox_1 = __webpack_require__(101);
 exports.AgCheckbox = agCheckbox_1.AgCheckbox;
 var component_1 = __webpack_require__(12);
 exports.Component = component_1.Component;
-var popupService_1 = __webpack_require__(60);
+var popupService_1 = __webpack_require__(61);
 exports.PopupService = popupService_1.PopupService;
 var touchListener_1 = __webpack_require__(77);
 exports.TouchListener = touchListener_1.TouchListener;
@@ -38849,7 +38850,7 @@ module.exports = function (key) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // getting tag from 19.1.3.6 Object.prototype.toString()
-var cof = __webpack_require__(63);
+var cof = __webpack_require__(64);
 var TAG = __webpack_require__(16)('toStringTag');
 // ES3 wrong here
 var ARG = cof(function () { return arguments; }()) == 'Arguments';
@@ -38879,8 +38880,8 @@ module.exports = function (it) {
 
 "use strict";
 
-__webpack_require__(437);
-var redefine = __webpack_require__(64);
+__webpack_require__(438);
+var redefine = __webpack_require__(65);
 var hide = __webpack_require__(54);
 var fails = __webpack_require__(84);
 var defined = __webpack_require__(45);
@@ -38991,8 +38992,8 @@ module.exports = function (it, key) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(26);
-var IE8_DOM_DEFINE = __webpack_require__(410);
-var toPrimitive = __webpack_require__(431);
+var IE8_DOM_DEFINE = __webpack_require__(411);
+var toPrimitive = __webpack_require__(432);
 var dP = Object.defineProperty;
 
 exports.f = __webpack_require__(83) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
@@ -39041,7 +39042,7 @@ module.exports = function (R, S) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(412);
+var IObject = __webpack_require__(413);
 var defined = __webpack_require__(45);
 module.exports = function (it) {
   return IObject(defined(it));
@@ -43699,9 +43700,9 @@ var columnFactory_1 = __webpack_require__(68);
 var displayedGroupCreator_1 = __webpack_require__(88);
 var expressionService_1 = __webpack_require__(35);
 var templateService_1 = __webpack_require__(100);
-var popupService_1 = __webpack_require__(60);
+var popupService_1 = __webpack_require__(61);
 var logger_1 = __webpack_require__(20);
-var columnUtils_1 = __webpack_require__(55);
+var columnUtils_1 = __webpack_require__(56);
 var autoWidthCalculator_1 = __webpack_require__(74);
 var horizontalResizeService_1 = __webpack_require__(91);
 var context_1 = __webpack_require__(0);
@@ -43739,7 +43740,7 @@ var autoGroupColService_1 = __webpack_require__(167);
 var paginationProxy_1 = __webpack_require__(51);
 var immutableService_1 = __webpack_require__(193);
 var constants_1 = __webpack_require__(8);
-var valueCache_1 = __webpack_require__(59);
+var valueCache_1 = __webpack_require__(60);
 var changeDetectionService_1 = __webpack_require__(270);
 var alignedGridsService_1 = __webpack_require__(87);
 var pinnedRowModel_1 = __webpack_require__(52);
@@ -43750,7 +43751,7 @@ var agComponentUtils_1 = __webpack_require__(120);
 var componentMetadataProvider_1 = __webpack_require__(121);
 var beans_1 = __webpack_require__(50);
 var environment_1 = __webpack_require__(70);
-var animationFrameService_1 = __webpack_require__(57);
+var animationFrameService_1 = __webpack_require__(58);
 var navigationService_1 = __webpack_require__(176);
 var heightScaler_1 = __webpack_require__(97);
 var selectableService_1 = __webpack_require__(143);
@@ -43964,7 +43965,7 @@ var popupEditorWrapper_1 = __webpack_require__(134);
 var alignedGridsService_1 = __webpack_require__(87);
 var pinnedRowModel_1 = __webpack_require__(52);
 var gridApi_1 = __webpack_require__(9);
-var animationFrameService_1 = __webpack_require__(57);
+var animationFrameService_1 = __webpack_require__(58);
 var rowComp_1 = __webpack_require__(98);
 var navigationService_1 = __webpack_require__(176);
 var valueService_1 = __webpack_require__(30);
@@ -45693,7 +45694,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var context_1 = __webpack_require__(0);
 var beans_1 = __webpack_require__(50);
-var cellComp_1 = __webpack_require__(58);
+var cellComp_1 = __webpack_require__(59);
 var columnController_1 = __webpack_require__(6);
 var utils_1 = __webpack_require__(1);
 var AutoHeightCalculator = /** @class */ (function () {
@@ -47522,7 +47523,7 @@ var props = {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_dom__ = __webpack_require__(19);
@@ -47644,11 +47645,11 @@ function handleFocus(evt) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(319);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_plugins__ = __webpack_require__(5);
 
 
@@ -49326,7 +49327,7 @@ module.exports = false;
 "use strict";
 
 
-var regexpFlags = __webpack_require__(408);
+var regexpFlags = __webpack_require__(409);
 
 var nativeExec = RegExp.prototype.exec;
 // This always refers to the native implementation, because the
@@ -49412,7 +49413,7 @@ module.exports = function (key) {
 /* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(65);
+var toInteger = __webpack_require__(66);
 var defined = __webpack_require__(45);
 // true  -> String#at
 // false -> String#codePointAt
@@ -51165,7 +51166,7 @@ var constants_1 = __webpack_require__(8);
 var mouseEventService_1 = __webpack_require__(72);
 var paginationProxy_1 = __webpack_require__(51);
 var focusedCellController_1 = __webpack_require__(38);
-var animationFrameService_1 = __webpack_require__(57);
+var animationFrameService_1 = __webpack_require__(58);
 var columnController_1 = __webpack_require__(6);
 var gridOptionsWrapper_1 = __webpack_require__(2);
 var utils_1 = __webpack_require__(1);
@@ -52921,7 +52922,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var context_1 = __webpack_require__(0);
 var filterManager_1 = __webpack_require__(29);
-var popupService_1 = __webpack_require__(60);
+var popupService_1 = __webpack_require__(61);
 var gridOptionsWrapper_1 = __webpack_require__(2);
 var eventService_1 = __webpack_require__(3);
 var utils_1 = __webpack_require__(1);
@@ -53765,7 +53766,7 @@ var selectionController_1 = __webpack_require__(34);
 var clientSideNodeManager_1 = __webpack_require__(189);
 var changedPath_1 = __webpack_require__(142);
 var valueService_1 = __webpack_require__(30);
-var valueCache_1 = __webpack_require__(59);
+var valueCache_1 = __webpack_require__(60);
 var gridApi_1 = __webpack_require__(9);
 var utils_1 = __webpack_require__(1);
 var RecursionType;
@@ -55671,7 +55672,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__link_link__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return props; });
@@ -55959,7 +55960,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_toggle__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
@@ -55989,7 +55990,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_form_radio_check__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_form_state__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mixins_form_custom__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_array__ = __webpack_require__(13);
@@ -56566,11 +56567,11 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(362);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(359);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown__ = __webpack_require__(361);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_plugins__ = __webpack_require__(5);
 
@@ -56721,7 +56722,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["a" /* vueUse
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(386);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -56745,7 +56746,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(392);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -56770,7 +56771,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(396);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listen_on_root__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_object__ = __webpack_require__(10);
@@ -57326,7 +57327,7 @@ var AttachmentMap = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_range__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_range__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_key_codes__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_dom__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_link_link__ = __webpack_require__(36);
@@ -57764,7 +57765,7 @@ var props = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_dom__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_ssr__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_ssr__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_observe_dom__ = __webpack_require__(80);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -58368,7 +58369,7 @@ module.exports = function (IS_INCLUDES) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(407);
+var speciesConstructor = __webpack_require__(408);
 
 module.exports = function (original, length) {
   return new (speciesConstructor(original))(length);
@@ -58444,7 +58445,7 @@ module.exports = document && document.documentElement;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
-var cof = __webpack_require__(63);
+var cof = __webpack_require__(64);
 module.exports = Array.isArray || function isArray(arg) {
   return cof(arg) == 'Array';
 };
@@ -58456,7 +58457,7 @@ module.exports = Array.isArray || function isArray(arg) {
 
 // 7.2.8 IsRegExp(argument)
 var isObject = __webpack_require__(46);
-var cof = __webpack_require__(63);
+var cof = __webpack_require__(64);
 var MATCH = __webpack_require__(16)('match');
 module.exports = function (it) {
   var isRegExp;
@@ -58472,12 +58473,12 @@ module.exports = function (it) {
 
 var LIBRARY = __webpack_require__(159);
 var $export = __webpack_require__(22);
-var redefine = __webpack_require__(64);
+var redefine = __webpack_require__(65);
 var hide = __webpack_require__(54);
 var Iterators = __webpack_require__(85);
-var $iterCreate = __webpack_require__(415);
+var $iterCreate = __webpack_require__(416);
 var setToStringTag = __webpack_require__(161);
-var getPrototypeOf = __webpack_require__(421);
+var getPrototypeOf = __webpack_require__(422);
 var ITERATOR = __webpack_require__(16)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
@@ -58570,7 +58571,7 @@ module.exports.f = function (C) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(422);
+var $keys = __webpack_require__(423);
 var enumBugKeys = __webpack_require__(230);
 
 module.exports = Object.keys || function keys(O) {
@@ -58630,7 +58631,7 @@ module.exports = function (O, D) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(82);
-var invoke = __webpack_require__(411);
+var invoke = __webpack_require__(412);
 var html = __webpack_require__(232);
 var cel = __webpack_require__(157);
 var global = __webpack_require__(27);
@@ -58672,7 +58673,7 @@ if (!setTask || !clearTask) {
     delete queue[id];
   };
   // Node.js 0.8-
-  if (__webpack_require__(63)(process) == 'process') {
+  if (__webpack_require__(64)(process) == 'process') {
     defer = function (id) {
       process.nextTick(ctx(run, id, 1));
     };
@@ -58719,7 +58720,7 @@ module.exports = {
 /* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(65);
+var toInteger = __webpack_require__(66);
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -58962,7 +58963,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(531)
+var listToStyles = __webpack_require__(532)
 
 /*
 type StyleObject = {
@@ -59169,21 +59170,22 @@ function applyToTag (styleElement, obj) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_string__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_string__ = __webpack_require__(405);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es7_array__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es7_array__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es7_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es7_array__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Mobile__ = __webpack_require__(484);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Mobile__ = __webpack_require__(485);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Mobile___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Mobile__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_store__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_store__ = __webpack_require__(300);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__js_store__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__js_apis_api__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__js_apis_hub__ = __webpack_require__(297);
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 
@@ -59197,12 +59199,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
 // todo
 // cssVars()
 
 __WEBPACK_IMPORTED_MODULE_3_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__["a" /* default */]);
 // Khai bao bien toan cuc de su dung trong vue component
 __WEBPACK_IMPORTED_MODULE_3_vue___default.a.prototype.$Settings = __WEBPACK_IMPORTED_MODULE_8__js_apis_api__["a" /* Settings */];
+__WEBPACK_IMPORTED_MODULE_3_vue___default.a.prototype.$Hub = __WEBPACK_IMPORTED_MODULE_9__js_apis_hub__["a" /* default */];
 /* eslint-disable no-new */
 window.onload = function () {
   new __WEBPACK_IMPORTED_MODULE_3_vue___default.a({
@@ -59944,7 +59948,7 @@ var gridOptionsWrapper_1 = __webpack_require__(2);
 var context_1 = __webpack_require__(0);
 var touchListener_1 = __webpack_require__(77);
 var componentAnnotations_1 = __webpack_require__(17);
-var originalColumnGroup_1 = __webpack_require__(56);
+var originalColumnGroup_1 = __webpack_require__(57);
 var utils_1 = __webpack_require__(1);
 var HeaderGroupComp = /** @class */ (function (_super) {
     __extends(HeaderGroupComp, _super);
@@ -62479,7 +62483,7 @@ var AgGridColumn = /** @class */ (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ag_grid_community__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ag_grid_community___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ag_grid_community__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__VueFrameworkComponentWrapper__ = __webpack_require__(275);
@@ -62720,7 +62724,7 @@ var getAgGridProperties = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VueComponentFactory; });
 
@@ -62918,7 +62922,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return user;
     }
   }
-
 });
 
 /***/ }),
@@ -63005,16 +63008,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       filter: true,
       suppressSizeToFit: true
     }];
-
-    // this.rowData = [
-    //   { make: "Toyota", model: "Celica", price: 35000 },
-    //   { make: "Ford", model: "Mondeo", price: 32000 },
-    //   { make: "Porsche", model: "Boxter", price: 72000 }
-    // ];
-
-    // fetch("http://103.28.37.34:98/api/huyen")
-    //   .then(result => result.json())
-    //   .then(rowData => (this.rowData = rowData));
   },
   mounted: function mounted() {
     var _this = this;
@@ -63028,8 +63021,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   computed: {
-    currentName: function currentName() {
-      return { name: __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].getCurrent().Ho_ten };
+    user: function user() {
+      return this.currentUser();
     }
   }
 });
@@ -63170,14 +63163,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__apis_api__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_js_md5__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_js_md5__ = __webpack_require__(474);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_js_md5___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_js_md5__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -63256,34 +63243,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       //Role: 0,
       UserName: "",
       Password: "",
-      encrypted: "",
-      rememberme: false
+      rememberme: false,
+      DeviceId: ""
     };
   },
   mounted: function mounted() {
     this.logout();
   },
 
-  watch: {
-    Password: function Password(newVal, oldVal) {
-      this.encrypted = __WEBPACK_IMPORTED_MODULE_1_js_md5___default.a.base64(newVal);
-      //console.log(this.encrypted)
-    }
-  },
   methods: {
-    loginSubmit: function loginSubmit() {
-      this.$store.dispatch("user/login", this.form).then(this.success).catch(this.unauthorized);
-    },
-    success: function success() {
-      this.$notify({ group: "alerts", text: this.$t("users.sessions.valid") });
-      this.$router.push("/");
-    },
-    unauthorized: function unauthorized() {
-      this.$notify({
-        group: "alerts",
-        text: this.$t("users.sessions.invalid")
-      });
-    },
     logout: function logout() {
       localStorage.removeItem("access_token");
       localStorage.removeItem("user");
@@ -63302,24 +63270,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
           __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].getUserInfor().then(function (user) {
             //console.log(user);
             localStorage.setItem("user", JSON.stringify(user));
-
             if (JSON.parse(localStorage.getItem("user") != null)) {
               _this.$router.push("/");
             }
           }).catch(function (err) {
+            _this.$notify({ group: "alerts", text: _this.$t("users.sessions.valid") });
             console.error(err);
           });
         } else {
+          _this.$notify({ group: "alerts", text: _this.$t("users.sessions.valid") });
           console.error(response);
         }
       }).catch(function (error) {
         console.error(error);
       });
-    },
-    getUserData: function getUserData() {
-      __WEBPACK_IMPORTED_MODULE_0__apis_api__["c" /* Data */].search({ ID: "59" }).then(function (data) {
-        alert("thanh cong" + data);
-      }).catch(function (err) {});
     }
   }
 });
@@ -63386,6 +63350,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -63394,7 +63392,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       msg: [],
-      msgDetail: []
+      msgDetail: {},
+      form: {
+        email: "",
+        name: "",
+        food: null,
+        checked: [],
+        selected: "first"
+      },
+      foods: [{ text: "--Chọn--", value: null }, "Phòng giáo vụ", "Ban học viên", "Phòng công nghệ", "Phòng kế toán"],
+      show: true
     };
   },
   mounted: function mounted() {
@@ -63402,31 +63409,76 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].callServer("Chat").then(function (listThongTin) {
       _this.msg = listThongTin;
-      // console.log(this.msg);
+
+      if (_this.msg && _this.msg.length > 0) {
+        _this.msg.forEach(function (ms) {
+          _this.readMsgDetail(ms.ID).then(function (detail) {
+            _this.$set(_this.msgDetail, ms.ID + "", detail);
+          }).catch(function (err) {
+            _this.$Hub.$emit("notification", { type: "error", msg: err });
+          });
+        });
+      }
     }).catch(function (err) {
-      alert("Lỗi phần dữ liệu Tin nhắn: " + err);
+      //alert("Lỗi phần dữ liệu Tin nhắn: " + err);
+      _this.$Hub.$emit("notification", { type: "error", msg: err });
     });
   },
 
 
   computed: {
+    user: function user() {
+      return this.currentUser();
+    },
     Name: function Name() {
       return this.currentUser()["Ho_ten"];
     }
   },
 
   methods: {
-    getMsgById: function getMsgById(msgID) {
+    onSubmit: function onSubmit(evt) {
+      evt.preventDefault();
+      //alert(JSON.stringify(this.form));
+      //Thu test gui tin nhan update js data
+      this.msg.push({
+        Tieude: this.form.email,
+        NgayGui: new Date(),
+        NguoiGui: this.Name
+      });
+    },
+    onReset: function onReset(evt) {
       var _this2 = this;
 
+      evt.preventDefault();
+      /* Reset our form values */
+      this.form.email = "";
+      this.form.name = "";
+      this.form.food = null;
+      this.form.checked = [];
+      this.selected = "first";
+      /* Trick to reset/clear native browser form validation state */
+      this.show = false;
+      this.$nextTick(function () {
+        _this2.show = true;
+      });
+    },
+    readMsgDetail: function readMsgDetail(id) {
+      return __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].getMsgDetail("Chat", id);
+    },
+    getMsgById: function getMsgById(msgID) {
+      var _this3 = this;
+
       __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].getMsgDetail("Chat", msgID).then(function (lsDetail) {
-        _this2.msgDetail = lsDetail;
+        _this3.msgDetail = lsDetail;
         //console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
       });
     },
-
-    sendMsg: function sendMsg(msgToSend) {
-      alert("Đã gửi: " + msgToSend);
+    sendMsg: function sendMsg() {
+      //alert("Đã gửi: " + msgToSend);
+      this.$Hub.$emit("notification", {
+        type: "success",
+        msg: "Đã gửi : " + this.msgToSend
+      });
     }
   }
 });
@@ -63481,7 +63533,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     var _this = this;
 
     __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].callServer("Notification").then(function (msgList) {
-      console.log(msgList);
       _this.msg = msgList;
     }).catch(function (err) {
       alert(err);
@@ -63543,7 +63594,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   inject: ["currentUser"],
   result: [],
@@ -63572,8 +63622,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   computed: {
-    curr: function curr() {
-      return __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].getCurrent();
+    user: function user() {
+      return this.currentUser();
     }
   }
 });
@@ -63720,8 +63770,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
   computed: {
-    curr: function curr() {
-      return __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].getCurrent();
+    user: function user() {
+      return this.currentUser();
     }
   }
 });
@@ -63825,8 +63875,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
   computed: {
-    curr: function curr() {
-      return __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].getCurrent();
+    user: function user() {
+      return this.currentUser();
     }
   },
   mounted: function mounted() {
@@ -63857,14 +63907,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  inject: ["currentUser"],
   data: function data() {
     return { success: "Thành công" };
   },
 
   computed: {
-    curr: function curr() {
-      return __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].getCurrent();
+    user: function user() {
+      return this.currentUser();
     }
   }
 });
@@ -63964,8 +64016,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   computed: {
-    curr: function curr() {
-      return __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].getCurrent();
+    user: function user() {
+      return this.currentUser();
     }
   }
 });
@@ -63992,13 +64044,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   computed: {
-    curr: function curr() {
-      return __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].getCurrent();
+    user: function user() {
+      return this.currentUser();
     }
   }
 });
@@ -64267,13 +64320,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(298);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__coreui_vue__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DefaultAside__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DefaultAside__ = __webpack_require__(499);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DefaultAside___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__DefaultAside__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt__ = __webpack_require__(500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt__ = __webpack_require__(501);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__ = __webpack_require__(501);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__ = __webpack_require__(502);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__);
 //
 //
@@ -64374,6 +64427,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       nav: __WEBPACK_IMPORTED_MODULE_0__nav__["a" /* default */].items
     };
+  },
+  mounted: function mounted() {
+    this.$Hub.$on("notification", function (data) {
+      console.log("On Notification ", data);
+    });
+  },
+  destroyed: function destroyed() {
+    this.$Hub.$off("notification");
   },
 
   computed: {
@@ -64498,6 +64559,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -64510,13 +64579,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     AppHeaderDropdown: __WEBPACK_IMPORTED_MODULE_0__coreui_vue__["l" /* HeaderDropdown */]
   },
   data: function data() {
-    return { itemsCount: 5 };
+    return {
+      msg: []
+    };
   },
+  mounted: function mounted() {
+    var _this = this;
 
-  mounted: function mounted() {},
+    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("Chat").then(function (listThongTin) {
+      _this.msg = listThongTin;
+    }).catch(function (err) {
+      console.log(err);
+    });
+  },
 
 
   computed: {
+    itemsCount: function itemsCount() {
+      return this.msg.length;
+    },
+    user: function user() {
+      return this.currentUser();
+    },
     Img: function Img() {
       return {
         avatar: __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].getCurrent().Image_Url
@@ -64707,6 +64791,18 @@ var Session = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+
+
+var Hub = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
+/* harmony default export */ __webpack_exports__["a"] = (Hub);
+
+/***/ }),
+/* 298 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
   items: [{
     name: 'Trang chủ',
@@ -64795,46 +64891,46 @@ var Session = {
 });
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer__ = __webpack_require__(499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer__ = __webpack_require__(500);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__containers_DefaultContainer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home__ = __webpack_require__(487);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home__ = __webpack_require__(488);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Home__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Finance__ = __webpack_require__(486);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Finance__ = __webpack_require__(487);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Finance___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_Finance__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_StudyPlan__ = __webpack_require__(494);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_StudyPlan__ = __webpack_require__(495);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_StudyPlan___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_StudyPlan__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_TestPlan__ = __webpack_require__(496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_TestPlan__ = __webpack_require__(497);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_TestPlan___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_TestPlan__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Survey__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Survey__ = __webpack_require__(496);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Survey___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_Survey__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_OneGate__ = __webpack_require__(491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_OneGate__ = __webpack_require__(492);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_OneGate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_OneGate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Messenger__ = __webpack_require__(489);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Messenger__ = __webpack_require__(490);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Messenger___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_Messenger__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Login__ = __webpack_require__(488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Login__ = __webpack_require__(489);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_Login__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Profile__ = __webpack_require__(492);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Profile__ = __webpack_require__(493);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Profile___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_Profile__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_News__ = __webpack_require__(490);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_News__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_News___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_News__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_inform__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_inform__ = __webpack_require__(498);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_inform___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_inform__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_ChangePass__ = __webpack_require__(485);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_ChangePass__ = __webpack_require__(486);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_ChangePass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_ChangePass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Result__ = __webpack_require__(493);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Result__ = __webpack_require__(494);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Result___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_Result__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__views_pages_Page404__ = __webpack_require__(502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__views_pages_Page404__ = __webpack_require__(503);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__views_pages_Page404___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__views_pages_Page404__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__views_pages_Page500__ = __webpack_require__(503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__views_pages_Page500__ = __webpack_require__(504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__views_pages_Page500___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__views_pages_Page500__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__views_pages_Register__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__views_pages_Register__ = __webpack_require__(505);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__views_pages_Register___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__views_pages_Register__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__apis_auth_js__ = __webpack_require__(296);
 
@@ -64966,18 +65062,18 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 }));
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_button_close__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css__ = __webpack_require__(477);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css__ = __webpack_require__(478);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__alert_css__);
 
 
@@ -65102,11 +65198,11 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 });
 
 /***/ }),
-/* 301 */
+/* 302 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(301);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -65126,12 +65222,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 302 */
+/* 303 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__link_link__ = __webpack_require__(36);
 /* unused harmony export props */
@@ -65185,11 +65281,11 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a
 });
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -65209,7 +65305,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65267,11 +65363,11 @@ var props = {
 });
 
 /***/ }),
-/* 305 */
+/* 306 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__breadcrumb_item__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb_link__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_plugins__ = __webpack_require__(5);
@@ -65297,7 +65393,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 306 */
+/* 307 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65350,11 +65446,11 @@ var props = {
 });
 
 /***/ }),
-/* 307 */
+/* 308 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -65375,7 +65471,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 308 */
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65501,11 +65597,11 @@ var ITEM_SELECTOR = ['.btn:not(.disabled):not([disabled]):not(.dropdown-item)', 
 });
 
 /***/ }),
-/* 309 */
+/* 310 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(309);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -65526,7 +65622,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 310 */
+/* 311 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65555,7 +65651,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 311 */
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65599,15 +65695,15 @@ var props = {
 });
 
 /***/ }),
-/* 312 */
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_prefix_prop_name__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_unprefix_prop_name__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_unprefix_prop_name__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_copyProps__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_pluck_props__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_pluck_props__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mixins_card_mixin__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card_body__ = __webpack_require__(200);
@@ -65693,16 +65789,16 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_object__["a
 });
 
 /***/ }),
-/* 313 */
+/* 314 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(313);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_header__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_body__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__card_footer__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__card_img__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(312);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_plugins__ = __webpack_require__(5);
 
 
@@ -65732,7 +65828,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 314 */
+/* 315 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65848,7 +65944,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 315 */
+/* 316 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66309,12 +66405,12 @@ var TransitionEndEvents = {
 });
 
 /***/ }),
-/* 316 */
+/* 317 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(315);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -66336,7 +66432,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 317 */
+/* 318 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66533,7 +66629,7 @@ var EVENT_TOGGLE = 'bv::toggle::collapse';
 });
 
 /***/ }),
-/* 318 */
+/* 319 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66563,7 +66659,7 @@ var props = {
 });
 
 /***/ }),
-/* 319 */
+/* 320 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66598,7 +66694,7 @@ var props = {
 });
 
 /***/ }),
-/* 320 */
+/* 321 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66636,7 +66732,7 @@ var props = {
 });
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66665,14 +66761,14 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /
 });
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_dropdown__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css__ = __webpack_require__(479);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__dropdown_css__);
 
 
@@ -66801,7 +66897,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /
 });
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66848,11 +66944,11 @@ var props = {
 });
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(324);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -66872,14 +66968,14 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_form__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form_options__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_form_state__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mixins_form_custom__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_checkbox__ = __webpack_require__(205);
@@ -66992,12 +67088,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -67023,7 +67119,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67281,11 +67377,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -67306,7 +67402,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67610,11 +67706,11 @@ var SELECTOR = 'input:not(:disabled),textarea:not(:disabled),select:not(:disable
 });
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -67635,16 +67731,16 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_form__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form_size__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form_size__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_state__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_array__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css__ = __webpack_require__(480);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__form_input_css__);
 
 
@@ -67797,11 +67893,11 @@ var TYPES = ['text', 'password', 'email', 'number', 'url', 'tel', 'search', 'ran
 });
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -67822,14 +67918,14 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_form_options__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_form_state__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mixins_form_custom__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_radio__ = __webpack_require__(206);
@@ -67942,12 +68038,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -67971,14 +68067,14 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_form_options__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_size__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_form_state__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mixins_form_custom__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_array__ = __webpack_require__(13);
@@ -68088,11 +68184,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68113,13 +68209,13 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_form__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form_size__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form_size__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_state__ = __webpack_require__(40);
 
 
@@ -68269,11 +68365,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(338);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68294,7 +68390,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68304,12 +68400,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__layout_form_row__["a" /* default */]);
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_row__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_row__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__form_text__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_invalid_feedback__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__form_valid_feedback__ = __webpack_require__(209);
@@ -68341,7 +68437,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68533,12 +68629,12 @@ var THROTTLE = 100;
 });
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68560,47 +68656,47 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(301);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(350);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__collapse__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(351);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(358);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__nav__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(375);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(383);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return __WEBPACK_IMPORTED_MODULE_0__alert__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Badge", function() { return __WEBPACK_IMPORTED_MODULE_1__badge__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Breadcrumb", function() { return __WEBPACK_IMPORTED_MODULE_2__breadcrumb__["a"]; });
@@ -68677,12 +68773,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_plugins__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_group__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_group__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__input_group_addon__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__input_group_prepend__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__input_group_append__ = __webpack_require__(211);
@@ -68714,7 +68810,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68800,11 +68896,11 @@ var props = {
 });
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -68824,7 +68920,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68931,13 +69027,13 @@ var props = {
 });
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_memoize__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_suffix_prop_name__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_memoize__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_suffix_prop_name__ = __webpack_require__(402);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_array__ = __webpack_require__(13);
 /* unused harmony export computeBkPtClass */
@@ -69084,13 +69180,13 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_object__["a
 });
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__container__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(350);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_row__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_plugins__ = __webpack_require__(5);
 
@@ -69117,7 +69213,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69183,7 +69279,7 @@ var props = {
 });
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69207,12 +69303,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(354);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(354);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -69234,12 +69330,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_pluck_props__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__link_link__ = __webpack_require__(36);
@@ -69300,7 +69396,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a
 });
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69337,11 +69433,11 @@ var props = {
 });
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__media_aside__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__media_body__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_plugins__ = __webpack_require__(5);
@@ -69367,7 +69463,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69427,11 +69523,11 @@ var props = {
 });
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(359);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_modal__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
@@ -69454,7 +69550,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70213,7 +70309,7 @@ var Selector = {
 });
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70240,7 +70336,7 @@ var Selector = {
 });
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70317,7 +70413,7 @@ var Selector = {
 });
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70344,7 +70440,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /
 });
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70372,7 +70468,7 @@ var props = {
 });
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70439,14 +70535,14 @@ var props = {
 });
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(368);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collapse__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown__ = __webpack_require__(147);
@@ -70482,13 +70578,13 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__link_link__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_functional_data_merge__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_pluck_props__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_pluck_props__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_object__ = __webpack_require__(10);
 /* unused harmony export props */
 
@@ -70526,7 +70622,7 @@ var props = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_object__["a
 });
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70568,7 +70664,7 @@ var props = {
 });
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70621,7 +70717,7 @@ var props = {
 });
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70680,11 +70776,11 @@ var props = {
 });
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(371);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -70704,7 +70800,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 370 */
+/* 371 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70798,11 +70894,11 @@ routerProps);
 });
 
 /***/ }),
-/* 371 */
+/* 372 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -70822,7 +70918,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 372 */
+/* 373 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70888,11 +70984,11 @@ var props = {
 });
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -70912,7 +71008,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70970,11 +71066,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__progress_bar__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
@@ -70997,7 +71093,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71073,11 +71169,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -71097,23 +71193,23 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase__ = __webpack_require__(476);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash_startcase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get__ = __webpack_require__(475);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash_get__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_loose_equal__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_stable_sort__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_stable_sort__ = __webpack_require__(401);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_key_codes__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warn__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_object__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_array__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mixins_id__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__mixins_listen_on_root__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css__ = __webpack_require__(480);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css__ = __webpack_require__(481);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__table_css__);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -72045,12 +72141,12 @@ function processField(key, value) {
 });
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(381);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -72072,7 +72168,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72196,7 +72292,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72583,11 +72679,11 @@ var bTabButtonHelper = {
 });
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(384);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -72607,7 +72703,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72657,16 +72753,16 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modal__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(387);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Toggle", function() { return __WEBPACK_IMPORTED_MODULE_0__toggle__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Modal", function() { return __WEBPACK_IMPORTED_MODULE_1__modal__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Scrollspy", function() { return __WEBPACK_IMPORTED_MODULE_2__scrollspy__["a"]; });
@@ -72681,7 +72777,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72718,11 +72814,11 @@ var listenTypes = { click: true };
 });
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -72742,7 +72838,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 387 */
+/* 388 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72917,11 +73013,11 @@ function removeBVPO(el) {
 });
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -72941,7 +73037,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73430,11 +73526,11 @@ var ScrollSpy = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ScrollSpy);
 
 /***/ }),
-/* 390 */
+/* 391 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(10);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -73543,7 +73639,7 @@ function removeBVSS(el) {
 });
 
 /***/ }),
-/* 391 */
+/* 392 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73615,11 +73711,11 @@ var EVENT_STATE = 'bv::collapse::state';
 });
 
 /***/ }),
-/* 392 */
+/* 393 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(394);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(5);
 
 
@@ -73639,7 +73735,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 393 */
+/* 394 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73814,12 +73910,12 @@ function removeBVTT(el) {
 });
 
 /***/ }),
-/* 394 */
+/* 395 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(5);
 
 
@@ -73850,7 +73946,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 395 */
+/* 396 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73878,7 +73974,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["a" /* vueUse
 });
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73894,7 +73990,7 @@ function lowerFirst(str) {
 }
 
 /***/ }),
-/* 397 */
+/* 398 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73912,7 +74008,7 @@ function memoize(fn) {
 }
 
 /***/ }),
-/* 398 */
+/* 399 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73925,7 +74021,7 @@ function memoize(fn) {
 });
 
 /***/ }),
-/* 399 */
+/* 400 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73937,7 +74033,7 @@ var isSSR = typeof window === 'undefined';
 var HTMLElement = isSSR ? Object : window.HTMLElement;
 
 /***/ }),
-/* 400 */
+/* 401 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73975,7 +74071,7 @@ function stableSort(array, compareFn) {
 }
 
 /***/ }),
-/* 401 */
+/* 402 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73995,11 +74091,11 @@ function suffixPropName(suffix, str) {
 }
 
 /***/ }),
-/* 402 */
+/* 403 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lower_first__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lower_first__ = __webpack_require__(397);
 /* harmony export (immutable) */ __webpack_exports__["a"] = unPrefixPropName;
 
 
@@ -74012,61 +74108,61 @@ function unPrefixPropName(prefix, value) {
 }
 
 /***/ }),
-/* 403 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(435);
-__webpack_require__(243);
-__webpack_require__(466);
-__webpack_require__(436);
-module.exports = __webpack_require__(44).Promise;
-
-
-/***/ }),
 /* 404 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(451);
-__webpack_require__(455);
-__webpack_require__(462);
+__webpack_require__(436);
 __webpack_require__(243);
-__webpack_require__(446);
-__webpack_require__(447);
-__webpack_require__(452);
-__webpack_require__(456);
-__webpack_require__(458);
-__webpack_require__(442);
-__webpack_require__(443);
-__webpack_require__(444);
-__webpack_require__(445);
-__webpack_require__(448);
-__webpack_require__(449);
-__webpack_require__(450);
-__webpack_require__(453);
-__webpack_require__(454);
-__webpack_require__(457);
-__webpack_require__(459);
-__webpack_require__(460);
-__webpack_require__(461);
-__webpack_require__(438);
-__webpack_require__(439);
-__webpack_require__(440);
-__webpack_require__(441);
-module.exports = __webpack_require__(44).String;
+__webpack_require__(467);
+__webpack_require__(437);
+module.exports = __webpack_require__(44).Promise;
 
 
 /***/ }),
 /* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(465);
+__webpack_require__(452);
+__webpack_require__(456);
 __webpack_require__(463);
-__webpack_require__(464);
-module.exports = __webpack_require__(44).Array;
+__webpack_require__(243);
+__webpack_require__(447);
+__webpack_require__(448);
+__webpack_require__(453);
+__webpack_require__(457);
+__webpack_require__(459);
+__webpack_require__(443);
+__webpack_require__(444);
+__webpack_require__(445);
+__webpack_require__(446);
+__webpack_require__(449);
+__webpack_require__(450);
+__webpack_require__(451);
+__webpack_require__(454);
+__webpack_require__(455);
+__webpack_require__(458);
+__webpack_require__(460);
+__webpack_require__(461);
+__webpack_require__(462);
+__webpack_require__(439);
+__webpack_require__(440);
+__webpack_require__(441);
+__webpack_require__(442);
+module.exports = __webpack_require__(44).String;
 
 
 /***/ }),
 /* 406 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(466);
+__webpack_require__(464);
+__webpack_require__(465);
+module.exports = __webpack_require__(44).Array;
+
+
+/***/ }),
+/* 407 */
 /***/ (function(module, exports) {
 
 module.exports = function (it, Constructor, name, forbiddenField) {
@@ -74077,7 +74173,7 @@ module.exports = function (it, Constructor, name, forbiddenField) {
 
 
 /***/ }),
-/* 407 */
+/* 408 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(46);
@@ -74099,7 +74195,7 @@ module.exports = function (original) {
 
 
 /***/ }),
-/* 408 */
+/* 409 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74119,15 +74215,15 @@ module.exports = function () {
 
 
 /***/ }),
-/* 409 */
+/* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(82);
-var call = __webpack_require__(414);
-var isArrayIter = __webpack_require__(413);
+var call = __webpack_require__(415);
+var isArrayIter = __webpack_require__(414);
 var anObject = __webpack_require__(26);
 var toLength = __webpack_require__(32);
-var getIterFn = __webpack_require__(433);
+var getIterFn = __webpack_require__(434);
 var BREAK = {};
 var RETURN = {};
 var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
@@ -74150,7 +74246,7 @@ exports.RETURN = RETURN;
 
 
 /***/ }),
-/* 410 */
+/* 411 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = !__webpack_require__(83) && !__webpack_require__(84)(function () {
@@ -74159,7 +74255,7 @@ module.exports = !__webpack_require__(83) && !__webpack_require__(84)(function (
 
 
 /***/ }),
-/* 411 */
+/* 412 */
 /***/ (function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -74181,11 +74277,11 @@ module.exports = function (fn, args, that) {
 
 
 /***/ }),
-/* 412 */
+/* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(63);
+var cof = __webpack_require__(64);
 // eslint-disable-next-line no-prototype-builtins
 module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
   return cof(it) == 'String' ? it.split('') : Object(it);
@@ -74193,7 +74289,7 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 413 */
+/* 414 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
@@ -74207,7 +74303,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 414 */
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
@@ -74225,12 +74321,12 @@ module.exports = function (iterator, fn, value, entries) {
 
 
 /***/ }),
-/* 415 */
+/* 416 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var create = __webpack_require__(419);
+var create = __webpack_require__(420);
 var descriptor = __webpack_require__(238);
 var setToStringTag = __webpack_require__(161);
 var IteratorPrototype = {};
@@ -74245,7 +74341,7 @@ module.exports = function (Constructor, NAME, next) {
 
 
 /***/ }),
-/* 416 */
+/* 417 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ITERATOR = __webpack_require__(16)('iterator');
@@ -74273,7 +74369,7 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
-/* 417 */
+/* 418 */
 /***/ (function(module, exports) {
 
 module.exports = function (done, value) {
@@ -74282,7 +74378,7 @@ module.exports = function (done, value) {
 
 
 /***/ }),
-/* 418 */
+/* 419 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(27);
@@ -74290,7 +74386,7 @@ var macrotask = __webpack_require__(241).set;
 var Observer = global.MutationObserver || global.WebKitMutationObserver;
 var process = global.process;
 var Promise = global.Promise;
-var isNode = __webpack_require__(63)(process) == 'process';
+var isNode = __webpack_require__(64)(process) == 'process';
 
 module.exports = function () {
   var head, last, notify;
@@ -74357,12 +74453,12 @@ module.exports = function () {
 
 
 /***/ }),
-/* 419 */
+/* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(26);
-var dPs = __webpack_require__(420);
+var dPs = __webpack_require__(421);
 var enumBugKeys = __webpack_require__(230);
 var IE_PROTO = __webpack_require__(162)('IE_PROTO');
 var Empty = function () { /* empty */ };
@@ -74404,7 +74500,7 @@ module.exports = Object.create || function create(O, Properties) {
 
 
 /***/ }),
-/* 420 */
+/* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(111);
@@ -74423,7 +74519,7 @@ module.exports = __webpack_require__(83) ? Object.defineProperties : function de
 
 
 /***/ }),
-/* 421 */
+/* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
@@ -74442,7 +74538,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 422 */
+/* 423 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var has = __webpack_require__(110);
@@ -74465,7 +74561,7 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 423 */
+/* 424 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -74478,7 +74574,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 424 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(26);
@@ -74496,10 +74592,10 @@ module.exports = function (C, x) {
 
 
 /***/ }),
-/* 425 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var redefine = __webpack_require__(64);
+var redefine = __webpack_require__(65);
 module.exports = function (target, src, safe) {
   for (var key in src) redefine(target, key, src[key], safe);
   return target;
@@ -74507,7 +74603,7 @@ module.exports = function (target, src, safe) {
 
 
 /***/ }),
-/* 426 */
+/* 427 */
 /***/ (function(module, exports) {
 
 // 7.2.9 SameValue(x, y)
@@ -74518,7 +74614,7 @@ module.exports = Object.is || function is(x, y) {
 
 
 /***/ }),
-/* 427 */
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74538,12 +74634,12 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 428 */
+/* 429 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var toInteger = __webpack_require__(65);
+var toInteger = __webpack_require__(66);
 var defined = __webpack_require__(45);
 
 module.exports = function repeat(count) {
@@ -74557,13 +74653,13 @@ module.exports = function repeat(count) {
 
 
 /***/ }),
-/* 429 */
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(22);
 var defined = __webpack_require__(45);
 var fails = __webpack_require__(84);
-var spaces = __webpack_require__(430);
+var spaces = __webpack_require__(431);
 var space = '[' + spaces + ']';
 var non = '\u200b\u0085';
 var ltrim = RegExp('^' + space + space + '*');
@@ -74593,7 +74689,7 @@ module.exports = exporter;
 
 
 /***/ }),
-/* 430 */
+/* 431 */
 /***/ (function(module, exports) {
 
 module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
@@ -74601,7 +74697,7 @@ module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u20
 
 
 /***/ }),
-/* 431 */
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
@@ -74619,7 +74715,7 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 432 */
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(27);
@@ -74629,7 +74725,7 @@ module.exports = navigator && navigator.userAgent || '';
 
 
 /***/ }),
-/* 433 */
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var classof = __webpack_require__(108);
@@ -74643,13 +74739,13 @@ module.exports = __webpack_require__(44).getIteratorMethod = function (it) {
 
 
 /***/ }),
-/* 434 */
+/* 435 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var addToUnscopables = __webpack_require__(107);
-var step = __webpack_require__(417);
+var step = __webpack_require__(418);
 var Iterators = __webpack_require__(85);
 var toIObject = __webpack_require__(113);
 
@@ -74684,7 +74780,7 @@ addToUnscopables('entries');
 
 
 /***/ }),
-/* 435 */
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74694,14 +74790,14 @@ var classof = __webpack_require__(108);
 var test = {};
 test[__webpack_require__(16)('toStringTag')] = 'z';
 if (test + '' != '[object z]') {
-  __webpack_require__(64)(Object.prototype, 'toString', function toString() {
+  __webpack_require__(65)(Object.prototype, 'toString', function toString() {
     return '[object ' + classof(this) + ']';
   }, true);
 }
 
 
 /***/ }),
-/* 436 */
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74713,15 +74809,15 @@ var classof = __webpack_require__(108);
 var $export = __webpack_require__(22);
 var isObject = __webpack_require__(46);
 var aFunction = __webpack_require__(81);
-var anInstance = __webpack_require__(406);
-var forOf = __webpack_require__(409);
+var anInstance = __webpack_require__(407);
+var forOf = __webpack_require__(410);
 var speciesConstructor = __webpack_require__(240);
 var task = __webpack_require__(241).set;
-var microtask = __webpack_require__(418)();
+var microtask = __webpack_require__(419)();
 var newPromiseCapabilityModule = __webpack_require__(236);
-var perform = __webpack_require__(423);
-var userAgent = __webpack_require__(432);
-var promiseResolve = __webpack_require__(424);
+var perform = __webpack_require__(424);
+var userAgent = __webpack_require__(433);
+var promiseResolve = __webpack_require__(425);
 var PROMISE = 'Promise';
 var TypeError = global.TypeError;
 var process = global.process;
@@ -74896,7 +74992,7 @@ if (!USE_NATIVE) {
     this._h = 0;              // <- rejection state, 0 - default, 1 - handled, 2 - unhandled
     this._n = false;          // <- notify
   };
-  Internal.prototype = __webpack_require__(425)($Promise.prototype, {
+  Internal.prototype = __webpack_require__(426)($Promise.prototype, {
     // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
     then: function then(onFulfilled, onRejected) {
       var reaction = newPromiseCapability(speciesConstructor(this, $Promise));
@@ -74928,7 +75024,7 @@ if (!USE_NATIVE) {
 
 $export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
 __webpack_require__(161)($Promise, PROMISE);
-__webpack_require__(427)(PROMISE);
+__webpack_require__(428)(PROMISE);
 Wrapper = __webpack_require__(44)[PROMISE];
 
 // statics
@@ -74947,7 +75043,7 @@ $export($export.S + $export.F * (LIBRARY || !USE_NATIVE), PROMISE, {
     return promiseResolve(LIBRARY && this === Wrapper ? $Promise : this, x);
   }
 });
-$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(416)(function (iter) {
+$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(417)(function (iter) {
   $Promise.all(iter)['catch'](empty);
 })), PROMISE, {
   // 25.4.4.1 Promise.all(iterable)
@@ -74994,7 +75090,7 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(416)(functio
 
 
 /***/ }),
-/* 437 */
+/* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75010,7 +75106,7 @@ __webpack_require__(22)({
 
 
 /***/ }),
-/* 438 */
+/* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75057,7 +75153,7 @@ __webpack_require__(109)('match', 1, function (defined, MATCH, $match, maybeCall
 
 
 /***/ }),
-/* 439 */
+/* 440 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75066,7 +75162,7 @@ __webpack_require__(109)('match', 1, function (defined, MATCH, $match, maybeCall
 var anObject = __webpack_require__(26);
 var toObject = __webpack_require__(114);
 var toLength = __webpack_require__(32);
-var toInteger = __webpack_require__(65);
+var toInteger = __webpack_require__(66);
 var advanceStringIndex = __webpack_require__(156);
 var regExpExec = __webpack_require__(112);
 var max = Math.max;
@@ -75182,14 +75278,14 @@ __webpack_require__(109)('replace', 2, function (defined, REPLACE, $replace, may
 
 
 /***/ }),
-/* 440 */
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var anObject = __webpack_require__(26);
-var sameValue = __webpack_require__(426);
+var sameValue = __webpack_require__(427);
 var regExpExec = __webpack_require__(112);
 
 // @@search logic
@@ -75220,7 +75316,7 @@ __webpack_require__(109)('search', 1, function (defined, SEARCH, $search, maybeC
 
 
 /***/ }),
-/* 441 */
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75359,7 +75455,7 @@ __webpack_require__(109)('split', 2, function (defined, SPLIT, $split, maybeCall
 
 
 /***/ }),
-/* 442 */
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75373,7 +75469,7 @@ __webpack_require__(24)('anchor', function (createHTML) {
 
 
 /***/ }),
-/* 443 */
+/* 444 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75387,7 +75483,7 @@ __webpack_require__(24)('big', function (createHTML) {
 
 
 /***/ }),
-/* 444 */
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75401,7 +75497,7 @@ __webpack_require__(24)('blink', function (createHTML) {
 
 
 /***/ }),
-/* 445 */
+/* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75415,7 +75511,7 @@ __webpack_require__(24)('bold', function (createHTML) {
 
 
 /***/ }),
-/* 446 */
+/* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75431,7 +75527,7 @@ $export($export.P, 'String', {
 
 
 /***/ }),
-/* 447 */
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75458,7 +75554,7 @@ $export($export.P + $export.F * __webpack_require__(158)(ENDS_WITH), 'String', {
 
 
 /***/ }),
-/* 448 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75472,7 +75568,7 @@ __webpack_require__(24)('fixed', function (createHTML) {
 
 
 /***/ }),
-/* 449 */
+/* 450 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75486,7 +75582,7 @@ __webpack_require__(24)('fontcolor', function (createHTML) {
 
 
 /***/ }),
-/* 450 */
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75500,7 +75596,7 @@ __webpack_require__(24)('fontsize', function (createHTML) {
 
 
 /***/ }),
-/* 451 */
+/* 452 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(22);
@@ -75529,7 +75625,7 @@ $export($export.S + $export.F * (!!$fromCodePoint && $fromCodePoint.length != 1)
 
 
 /***/ }),
-/* 452 */
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75548,7 +75644,7 @@ $export($export.P + $export.F * __webpack_require__(158)(INCLUDES), 'String', {
 
 
 /***/ }),
-/* 453 */
+/* 454 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75562,7 +75658,7 @@ __webpack_require__(24)('italics', function (createHTML) {
 
 
 /***/ }),
-/* 454 */
+/* 455 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75576,7 +75672,7 @@ __webpack_require__(24)('link', function (createHTML) {
 
 
 /***/ }),
-/* 455 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(22);
@@ -75600,19 +75696,19 @@ $export($export.S, 'String', {
 
 
 /***/ }),
-/* 456 */
+/* 457 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(22);
 
 $export($export.P, 'String', {
   // 21.1.3.13 String.prototype.repeat(count)
-  repeat: __webpack_require__(428)
+  repeat: __webpack_require__(429)
 });
 
 
 /***/ }),
-/* 457 */
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75626,7 +75722,7 @@ __webpack_require__(24)('small', function (createHTML) {
 
 
 /***/ }),
-/* 458 */
+/* 459 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75651,7 +75747,7 @@ $export($export.P + $export.F * __webpack_require__(158)(STARTS_WITH), 'String',
 
 
 /***/ }),
-/* 459 */
+/* 460 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75665,7 +75761,7 @@ __webpack_require__(24)('strike', function (createHTML) {
 
 
 /***/ }),
-/* 460 */
+/* 461 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75679,7 +75775,7 @@ __webpack_require__(24)('sub', function (createHTML) {
 
 
 /***/ }),
-/* 461 */
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75693,13 +75789,13 @@ __webpack_require__(24)('sup', function (createHTML) {
 
 
 /***/ }),
-/* 462 */
+/* 463 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 21.1.3.25 String.prototype.trim()
-__webpack_require__(429)('trim', function ($trim) {
+__webpack_require__(430)('trim', function ($trim) {
   return function trim() {
     return $trim(this, 3);
   };
@@ -75707,7 +75803,7 @@ __webpack_require__(429)('trim', function ($trim) {
 
 
 /***/ }),
-/* 463 */
+/* 464 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75736,7 +75832,7 @@ __webpack_require__(107)('flatMap');
 
 
 /***/ }),
-/* 464 */
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75746,7 +75842,7 @@ var $export = __webpack_require__(22);
 var flattenIntoArray = __webpack_require__(231);
 var toObject = __webpack_require__(114);
 var toLength = __webpack_require__(32);
-var toInteger = __webpack_require__(65);
+var toInteger = __webpack_require__(66);
 var arraySpeciesCreate = __webpack_require__(229);
 
 $export($export.P, 'Array', {
@@ -75764,7 +75860,7 @@ __webpack_require__(107)('flatten');
 
 
 /***/ }),
-/* 465 */
+/* 466 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75783,12 +75879,12 @@ __webpack_require__(107)('includes');
 
 
 /***/ }),
-/* 466 */
+/* 467 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $iterators = __webpack_require__(434);
+var $iterators = __webpack_require__(435);
 var getKeys = __webpack_require__(237);
-var redefine = __webpack_require__(64);
+var redefine = __webpack_require__(65);
 var global = __webpack_require__(27);
 var hide = __webpack_require__(54);
 var Iterators = __webpack_require__(85);
@@ -75847,49 +75943,49 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
 
 
 /***/ }),
-/* 467 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transition: opacity .15s linear;\n}\n.fade-enter, .fade-leave-to {\n    opacity: 0;\n}\n", ""]);
-
-/***/ }),
 /* 468 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "/* workaround for https://github.com/bootstrap-vue/bootstrap-vue/issues/1560 */\n/* source: _input-group.scss */\n\n.input-group > .input-group-prepend > .b-dropdown > .btn,\n.input-group > .input-group-append:not(:last-child) > .b-dropdown > .btn,\n.input-group > .input-group-append:last-child > .b-dropdown:not(:last-child):not(.dropdown-toggle) > .btn {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n}\n\n.input-group > .input-group-append > .b-dropdown > .btn,\n.input-group > .input-group-prepend:not(:first-child) > .b-dropdown > .btn,\n.input-group > .input-group-prepend:first-child > .b-dropdown:not(:first-child) > .btn {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n}\n", ""]);
+exports = module.exports = __webpack_require__(67)();
+exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transition: opacity .15s linear;\n}\n.fade-enter, .fade-leave-to {\n    opacity: 0;\n}\n", ""]);
 
 /***/ }),
 /* 469 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "/* Special styling for type=range and type=color input */\ninput.form-control[type=\"range\"],\ninput.form-control[type=\"color\"] {\n    height: 2.25rem;\n}\ninput.form-control.form-control-sm[type=\"range\"],\ninput.form-control.form-control-sm[type=\"color\"] {\n    height: 1.9375rem;\n}\ninput.form-control.form-control-lg[type=\"range\"],\ninput.form-control.form-control-lg[type=\"color\"] {\n    height: 3rem;\n}\n\n/* Less padding on type=color */\ninput.form-control[type=\"color\"] {\n    padding: 0.25rem 0.25rem;\n}\ninput.form-control.form-control-sm[type=\"color\"] {\n    padding: 0.125rem 0.125rem;\n}\n", ""]);
+exports = module.exports = __webpack_require__(67)();
+exports.push([module.i, "/* workaround for https://github.com/bootstrap-vue/bootstrap-vue/issues/1560 */\n/* source: _input-group.scss */\n\n.input-group > .input-group-prepend > .b-dropdown > .btn,\n.input-group > .input-group-append:not(:last-child) > .b-dropdown > .btn,\n.input-group > .input-group-append:last-child > .b-dropdown:not(:last-child):not(.dropdown-toggle) > .btn {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n}\n\n.input-group > .input-group-append > .b-dropdown > .btn,\n.input-group > .input-group-prepend:not(:first-child) > .b-dropdown > .btn,\n.input-group > .input-group-prepend:first-child > .b-dropdown:not(:first-child) > .btn {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n}\n", ""]);
 
 /***/ }),
 /* 470 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table.b-table-fixed {\n    table-layout: fixed;\n}\n\n/* Busy table styling */\ntable.b-table[aria-busy='false'] {\n    opacity: 1;\n}\ntable.b-table[aria-busy='true'] {\n    opacity: 0.6;\n}\n\n/* Sort styling */\ntable.b-table > thead > tr > th,\ntable.b-table > tfoot > tr > th {\n    position: relative;\n}\ntable.b-table > thead > tr > th.sorting,\ntable.b-table > tfoot > tr > th.sorting {\n    padding-right: 1.5em;\n    cursor: pointer;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::after {\n    position: absolute;\n    bottom: 0;\n    display: block;\n    opacity: 0.4;\n    padding-bottom: inherit;\n    font-size: inherit;\n    line-height: 180%;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::before {\n    right: 0.75em;\n    content: '\\2191';\n}\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::after {\n    right: 0.25em;\n    content: '\\2193';\n}\ntable.b-table > thead > tr > th.sorting_asc::after,\ntable.b-table > thead > tr > th.sorting_desc::before,\ntable.b-table > tfoot > tr > th.sorting_asc::after,\ntable.b-table > tfoot > tr > th.sorting_desc::before {\n    opacity: 1;\n}\n\n/* Stacked table layout */\n/* Derived from http://blog.adrianroselli.com/2017/11/a-responsive-accessible-table.html */\n/* Always stacked */\ntable.b-table.b-table-stacked {\n    width: 100%;\n}\ntable.b-table.b-table-stacked,\ntable.b-table.b-table-stacked > tbody,\ntable.b-table.b-table-stacked > tbody > tr,\ntable.b-table.b-table-stacked > tbody > tr > td,\ntable.b-table.b-table-stacked > tbody > tr > th,\ntable.b-table.b-table-stacked > caption {\n    display: block;\n}\n\n/* Hide stuff we can't deal with, or shouldn't show */\ntable.b-table.b-table-stacked > thead,\ntable.b-table.b-table-stacked > tfoot,\ntable.b-table.b-table-stacked > tbody > tr.b-table-top-row,\ntable.b-table.b-table-stacked > tbody > tr.b-table-bottom-row {\n    display: none;\n}\n\n/* inter-row top border */\ntable.b-table.b-table-stacked > tbody > tr > :first-child {\n    border-top-width: 0.4rem;\n}\n\n/* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\ntable.b-table.b-table-stacked > tbody > tr > [data-label] {\n    display: grid;\n    grid-template-columns: 40% auto;\n    grid-gap: 0.25rem 1rem;\n}\n\n/* generate row cell \"heading\" */\ntable.b-table.b-table-stacked > tbody > tr > [data-label]::before {\n    content: attr(data-label);\n    display: inline;\n    text-align: right;\n    overflow-wrap: break-word;\n    font-weight: bold;\n    font-style: normal;\n}\n\n@media all and (max-width: 575.99px) {\n    /* Under SM */\n    table.b-table.b-table-stacked-sm {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-sm,\n    table.b-table.b-table-stacked-sm > tbody,\n    table.b-table.b-table-stacked-sm > tbody > tr,\n    table.b-table.b-table-stacked-sm > tbody > tr > td,\n    table.b-table.b-table-stacked-sm > tbody > tr > th,\n    table.b-table.b-table-stacked-sm > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-sm > thead,\n    table.b-table.b-table-stacked-sm > tfoot,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-sm > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 767.99px) {\n    /* under MD  */\n    table.b-table.b-table-stacked-md {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-md,\n    table.b-table.b-table-stacked-md > tbody,\n    table.b-table.b-table-stacked-md > tbody > tr,\n    table.b-table.b-table-stacked-md > tbody > tr > td,\n    table.b-table.b-table-stacked-md > tbody > tr > th,\n    table.b-table.b-table-stacked-md > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-md > thead,\n    table.b-table.b-table-stacked-md > tfoot,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-md > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 991.99px) {\n    /* under LG  */\n    table.b-table.b-table-stacked-lg {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-lg,\n    table.b-table.b-table-stacked-lg > tbody,\n    table.b-table.b-table-stacked-lg > tbody > tr,\n    table.b-table.b-table-stacked-lg > tbody > tr > td,\n    table.b-table.b-table-stacked-lg > tbody > tr > th,\n    table.b-table.b-table-stacked-lg > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-lg > thead,\n    table.b-table.b-table-stacked-lg > tfoot,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-lg > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 1199.99px) {\n    /* under XL  */\n    table.b-table.b-table-stacked-xl {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-xl,\n    table.b-table.b-table-stacked-xl > tbody,\n    table.b-table.b-table-stacked-xl > tbody > tr,\n    table.b-table.b-table-stacked-xl > tbody > tr > td,\n    table.b-table.b-table-stacked-xl > tbody > tr > th,\n    table.b-table.b-table-stacked-xl > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-xl > thead,\n    table.b-table.b-table-stacked-xl > tfoot,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-xl > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n/* Details row styling */\ntable.b-table > tbody > tr.b-table-details > td {\n    border-top: none;\n}\n", ""]);
+exports = module.exports = __webpack_require__(67)();
+exports.push([module.i, "/* Special styling for type=range and type=color input */\ninput.form-control[type=\"range\"],\ninput.form-control[type=\"color\"] {\n    height: 2.25rem;\n}\ninput.form-control.form-control-sm[type=\"range\"],\ninput.form-control.form-control-sm[type=\"color\"] {\n    height: 1.9375rem;\n}\ninput.form-control.form-control-lg[type=\"range\"],\ninput.form-control.form-control-lg[type=\"color\"] {\n    height: 3rem;\n}\n\n/* Less padding on type=color */\ninput.form-control[type=\"color\"] {\n    padding: 0.25rem 0.25rem;\n}\ninput.form-control.form-control-sm[type=\"color\"] {\n    padding: 0.125rem 0.125rem;\n}\n", ""]);
 
 /***/ }),
 /* 471 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n.subject {\n  font-family: Arial;\n  font-weight: bold;\n}\n.img-avatar {\n  width: 30px;\n}\n.frame {\n  border-style: solid;\n  border-color: coral;\n  border-width: 1px;\n  width: 100%;\n  margin: 0px 0px 0px 0px;\n}\n", ""]);
+exports = module.exports = __webpack_require__(67)();
+exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table.b-table-fixed {\n    table-layout: fixed;\n}\n\n/* Busy table styling */\ntable.b-table[aria-busy='false'] {\n    opacity: 1;\n}\ntable.b-table[aria-busy='true'] {\n    opacity: 0.6;\n}\n\n/* Sort styling */\ntable.b-table > thead > tr > th,\ntable.b-table > tfoot > tr > th {\n    position: relative;\n}\ntable.b-table > thead > tr > th.sorting,\ntable.b-table > tfoot > tr > th.sorting {\n    padding-right: 1.5em;\n    cursor: pointer;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::after {\n    position: absolute;\n    bottom: 0;\n    display: block;\n    opacity: 0.4;\n    padding-bottom: inherit;\n    font-size: inherit;\n    line-height: 180%;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::before {\n    right: 0.75em;\n    content: '\\2191';\n}\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::after {\n    right: 0.25em;\n    content: '\\2193';\n}\ntable.b-table > thead > tr > th.sorting_asc::after,\ntable.b-table > thead > tr > th.sorting_desc::before,\ntable.b-table > tfoot > tr > th.sorting_asc::after,\ntable.b-table > tfoot > tr > th.sorting_desc::before {\n    opacity: 1;\n}\n\n/* Stacked table layout */\n/* Derived from http://blog.adrianroselli.com/2017/11/a-responsive-accessible-table.html */\n/* Always stacked */\ntable.b-table.b-table-stacked {\n    width: 100%;\n}\ntable.b-table.b-table-stacked,\ntable.b-table.b-table-stacked > tbody,\ntable.b-table.b-table-stacked > tbody > tr,\ntable.b-table.b-table-stacked > tbody > tr > td,\ntable.b-table.b-table-stacked > tbody > tr > th,\ntable.b-table.b-table-stacked > caption {\n    display: block;\n}\n\n/* Hide stuff we can't deal with, or shouldn't show */\ntable.b-table.b-table-stacked > thead,\ntable.b-table.b-table-stacked > tfoot,\ntable.b-table.b-table-stacked > tbody > tr.b-table-top-row,\ntable.b-table.b-table-stacked > tbody > tr.b-table-bottom-row {\n    display: none;\n}\n\n/* inter-row top border */\ntable.b-table.b-table-stacked > tbody > tr > :first-child {\n    border-top-width: 0.4rem;\n}\n\n/* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\ntable.b-table.b-table-stacked > tbody > tr > [data-label] {\n    display: grid;\n    grid-template-columns: 40% auto;\n    grid-gap: 0.25rem 1rem;\n}\n\n/* generate row cell \"heading\" */\ntable.b-table.b-table-stacked > tbody > tr > [data-label]::before {\n    content: attr(data-label);\n    display: inline;\n    text-align: right;\n    overflow-wrap: break-word;\n    font-weight: bold;\n    font-style: normal;\n}\n\n@media all and (max-width: 575.99px) {\n    /* Under SM */\n    table.b-table.b-table-stacked-sm {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-sm,\n    table.b-table.b-table-stacked-sm > tbody,\n    table.b-table.b-table-stacked-sm > tbody > tr,\n    table.b-table.b-table-stacked-sm > tbody > tr > td,\n    table.b-table.b-table-stacked-sm > tbody > tr > th,\n    table.b-table.b-table-stacked-sm > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-sm > thead,\n    table.b-table.b-table-stacked-sm > tfoot,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-sm > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 767.99px) {\n    /* under MD  */\n    table.b-table.b-table-stacked-md {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-md,\n    table.b-table.b-table-stacked-md > tbody,\n    table.b-table.b-table-stacked-md > tbody > tr,\n    table.b-table.b-table-stacked-md > tbody > tr > td,\n    table.b-table.b-table-stacked-md > tbody > tr > th,\n    table.b-table.b-table-stacked-md > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-md > thead,\n    table.b-table.b-table-stacked-md > tfoot,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-md > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 991.99px) {\n    /* under LG  */\n    table.b-table.b-table-stacked-lg {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-lg,\n    table.b-table.b-table-stacked-lg > tbody,\n    table.b-table.b-table-stacked-lg > tbody > tr,\n    table.b-table.b-table-stacked-lg > tbody > tr > td,\n    table.b-table.b-table-stacked-lg > tbody > tr > th,\n    table.b-table.b-table-stacked-lg > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-lg > thead,\n    table.b-table.b-table-stacked-lg > tfoot,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-lg > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 1199.99px) {\n    /* under XL  */\n    table.b-table.b-table-stacked-xl {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-xl,\n    table.b-table.b-table-stacked-xl > tbody,\n    table.b-table.b-table-stacked-xl > tbody > tr,\n    table.b-table.b-table-stacked-xl > tbody > tr > td,\n    table.b-table.b-table-stacked-xl > tbody > tr > th,\n    table.b-table.b-table-stacked-xl > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-xl > thead,\n    table.b-table.b-table-stacked-xl > tfoot,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-xl > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n/* Details row styling */\ntable.b-table > tbody > tr.b-table-details > td {\n    border-top: none;\n}\n", ""]);
 
 /***/ }),
 /* 472 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(66)();
-exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margin: 0;\n  top: 0;\n  left: 50px;\n  width: 0px;\n}\n", ""]);
+exports = module.exports = __webpack_require__(67)();
+exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n.subject {\n  font-family: Arial;\n  font-weight: bold;\n}\n.img-avatar {\n  width: 30px;\n}\n.frame {\n  border-style: solid;\n  border-color: coral;\n  border-width: 1px;\n  width: 100%;\n  margin: 0px 0px 0px 0px;\n}\n", ""]);
 
 /***/ }),
 /* 473 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(67)();
+exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margin: 0;\n  top: 0;\n  left: 50px;\n  width: 0px;\n}\n", ""]);
+
+/***/ }),
+/* 474 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -75918,7 +76014,7 @@ exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margi
     root = self;
   }
   var COMMON_JS = !root.JS_MD5_NO_COMMON_JS && typeof module === 'object' && module.exports;
-  var AMD = "function" === 'function' && __webpack_require__(532);
+  var AMD = "function" === 'function' && __webpack_require__(533);
   var ARRAY_BUFFER = !root.JS_MD5_NO_ARRAY_BUFFER && typeof ArrayBuffer !== 'undefined';
   var HEX_CHARS = '0123456789abcdef'.split('');
   var EXTRA = [128, 32768, 8388608, -2147483648];
@@ -76580,7 +76676,7 @@ exports.push([module.i, "\n.app-header .navbar-brand[data-v-e8dd165e] {\n  margi
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(244), __webpack_require__(47)))
 
 /***/ }),
-/* 474 */
+/* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -77518,7 +77614,7 @@ module.exports = get;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47)))
 
 /***/ }),
-/* 475 */
+/* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -78105,7 +78201,7 @@ module.exports = startCase;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47)))
 
 /***/ }),
-/* 476 */
+/* 477 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -78298,32 +78394,6 @@ module.exports = startCase;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47), __webpack_require__(244)))
 
 /***/ }),
-/* 477 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(467);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(116)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../../css-loader/index.js!./alert.css", function() {
-			var newContent = require("!!../../../../css-loader/index.js!./alert.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
 /* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -78339,8 +78409,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../css-loader/index.js!./dropdown.css", function() {
-			var newContent = require("!!../../../../css-loader/index.js!./dropdown.css");
+		module.hot.accept("!!../../../../css-loader/index.js!./alert.css", function() {
+			var newContent = require("!!../../../../css-loader/index.js!./alert.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -78365,8 +78435,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../css-loader/index.js!./form-input.css", function() {
-			var newContent = require("!!../../../../css-loader/index.js!./form-input.css");
+		module.hot.accept("!!../../../../css-loader/index.js!./dropdown.css", function() {
+			var newContent = require("!!../../../../css-loader/index.js!./dropdown.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -78391,6 +78461,32 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
+		module.hot.accept("!!../../../../css-loader/index.js!./form-input.css", function() {
+			var newContent = require("!!../../../../css-loader/index.js!./form-input.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 481 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(471);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(116)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
 		module.hot.accept("!!../../../../css-loader/index.js!./table.css", function() {
 			var newContent = require("!!../../../../css-loader/index.js!./table.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
@@ -78402,7 +78498,7 @@ if(false) {
 }
 
 /***/ }),
-/* 481 */
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -78458,7 +78554,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(476);
+__webpack_require__(477);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -78472,7 +78568,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47)))
 
 /***/ }),
-/* 482 */
+/* 483 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78487,7 +78583,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var Vue = _interopDefault(__webpack_require__(67));
+var Vue = _interopDefault(__webpack_require__(55));
 
 var reflectionIsSupported = typeof Reflect !== 'undefined' && Reflect.defineMetadata;
 function copyReflectionMetadata(to, from) {
@@ -78748,13 +78844,13 @@ exports.mixins = mixins;
 
 
 /***/ }),
-/* 483 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Vue = __webpack_require__(67);
+var Vue = __webpack_require__(55);
 Vue = 'default' in Vue ? Vue['default'] : Vue;
 
 var version = '2.2.2';
@@ -78837,24 +78933,24 @@ exports.directive = directive;
 exports.mixin = mixin;
 
 /***/ }),
-/* 484 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(529)
+__webpack_require__(530)
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(276),
   /* template */
-  __webpack_require__(509),
+  __webpack_require__(510),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\Mobile.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\Mobile.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Mobile.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -78875,20 +78971,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 485 */
+/* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   null,
   /* template */
-  __webpack_require__(523),
+  __webpack_require__(524),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\ChangePass.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\ChangePass.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChangePass.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -78909,20 +79005,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 486 */
+/* 487 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(277),
   /* template */
-  __webpack_require__(510),
+  __webpack_require__(511),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Finance.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Finance.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Finance.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -78943,20 +79039,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 487 */
+/* 488 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(278),
   /* template */
-  __webpack_require__(514),
+  __webpack_require__(515),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -78977,20 +79073,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 488 */
+/* 489 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(279),
   /* template */
-  __webpack_require__(507),
+  __webpack_require__(508),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79011,20 +79107,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 489 */
+/* 490 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(280),
   /* template */
-  __webpack_require__(520),
+  __webpack_require__(521),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Messenger.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Messenger.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Messenger.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79045,20 +79141,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 490 */
+/* 491 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(281),
   /* template */
-  __webpack_require__(517),
+  __webpack_require__(518),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\News.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\News.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] News.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79079,20 +79175,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 491 */
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(282),
   /* template */
-  __webpack_require__(516),
+  __webpack_require__(517),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\OneGate.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\OneGate.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] OneGate.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79113,20 +79209,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 492 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(283),
   /* template */
-  __webpack_require__(511),
+  __webpack_require__(512),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Profile.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Profile.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Profile.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79147,20 +79243,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 493 */
+/* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(284),
   /* template */
-  __webpack_require__(506),
+  __webpack_require__(507),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Result.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Result.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Result.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79181,20 +79277,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 494 */
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(285),
   /* template */
-  __webpack_require__(505),
+  __webpack_require__(506),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\StudyPlan.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\StudyPlan.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] StudyPlan.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79215,20 +79311,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 495 */
+/* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(286),
   /* template */
-  __webpack_require__(508),
+  __webpack_require__(509),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Survey.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\Survey.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Survey.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79249,20 +79345,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 496 */
+/* 497 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(287),
   /* template */
-  __webpack_require__(518),
+  __webpack_require__(519),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\TestPlan.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\TestPlan.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] TestPlan.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79283,20 +79379,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 497 */
+/* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(288),
   /* template */
-  __webpack_require__(521),
+  __webpack_require__(522),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\inform.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\components\\inform.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] inform.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79317,20 +79413,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 498 */
+/* 499 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(289),
   /* template */
-  __webpack_require__(512),
+  __webpack_require__(513),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultAside.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultAside.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultAside.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79351,24 +79447,24 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 499 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(530)
+__webpack_require__(531)
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(290),
   /* template */
-  __webpack_require__(525),
+  __webpack_require__(526),
   /* scopeId */
   "data-v-e8dd165e",
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultContainer.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultContainer.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultContainer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79389,20 +79485,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 500 */
+/* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(291),
   /* template */
-  __webpack_require__(515),
+  __webpack_require__(516),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownAccnt.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownAccnt.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultHeaderDropdownAccnt.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79423,20 +79519,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 501 */
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(292),
   /* template */
-  __webpack_require__(524),
+  __webpack_require__(525),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownMsg.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\containers\\DefaultHeaderDropdownMsg.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DefaultHeaderDropdownMsg.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79457,20 +79553,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 502 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(293),
   /* template */
-  __webpack_require__(522),
+  __webpack_require__(523),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page404.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page404.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page404.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79491,20 +79587,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 503 */
+/* 504 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(294),
   /* template */
-  __webpack_require__(513),
+  __webpack_require__(514),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page500.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Page500.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page500.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79525,20 +79621,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 504 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(14)(
   /* script */
   __webpack_require__(295),
   /* template */
-  __webpack_require__(519),
+  __webpack_require__(520),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Register.vue"
+Component.options.__file = "C:\\projects\\hybrid_cordova\\resources\\assets\\js\\views\\pages\\Register.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Register.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -79559,13 +79655,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 505 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v("Sinh viên: " + _vm._s(_vm.curr.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
+  }, [_vm._v("Sinh viên: " + _vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
@@ -79590,13 +79686,13 @@ if (false) {
 }
 
 /***/ }),
-/* 506 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.curr.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
+  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
@@ -79617,7 +79713,7 @@ if (false) {
 }
 
 /***/ }),
-/* 507 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -79709,7 +79805,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.login
     }
-  }, [_vm._v("Đăng nhập")]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Đăng nhập")])]), _vm._v(" "), _c('div', {
     staticClass: "text-center"
   }, [_c('button', {
     directives: [{
@@ -79720,7 +79816,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }],
     staticClass: "btn btn-link"
-  }, [_vm._v("[Quên mật khẩu sinh viên]")])]), _vm._v(" "), _c('b-modal', {
+  }, [_vm._v("[Quên mật khẩu sinh viên]")]), _vm._v(" "), _c('b-modal', {
     attrs: {
       "id": "modal1",
       "centered": "",
@@ -79791,12 +79887,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "nav"
   }, [_c('li', {
     staticClass: "nav-item"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("© 2018")])])]), _vm._v(" "), _c('ul', {
+  }, [_vm._v("\n         © 2018 \n      ")])]), _vm._v(" "), _c('ul', {
     staticClass: "nav justify-content-end"
   }, [_c('li', {
     staticClass: "nav-item"
@@ -79811,15 +79902,15 @@ if (false) {
 }
 
 /***/ }),
-/* 508 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
     staticClass: "title"
-  }, [_vm._v("Khảo sát")]), _vm._v(" "), _c('div', {
+  }, [_vm._v("KHẢO SÁT")]), _vm._v(" "), _c('div', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.curr.Ho_ten))])])
+  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -79830,7 +79921,7 @@ if (false) {
 }
 
 /***/ }),
-/* 509 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -79845,13 +79936,13 @@ if (false) {
 }
 
 /***/ }),
-/* 510 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v("Sinh viên: " + _vm._s(_vm.currentName.name))])]), _vm._v(" "), _c('ag-grid-vue', {
+  }, [_vm._v("Sinh viên: " + _vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
@@ -79876,7 +79967,7 @@ if (false) {
 }
 
 /***/ }),
-/* 511 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -79911,7 +80002,7 @@ if (false) {
 }
 
 /***/ }),
-/* 512 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -80358,7 +80449,7 @@ if (false) {
 }
 
 /***/ }),
-/* 513 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -80405,7 +80496,7 @@ if (false) {
 }
 
 /***/ }),
-/* 514 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -80624,7 +80715,7 @@ if (false) {
 }
 
 /***/ }),
-/* 515 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -80676,7 +80767,7 @@ if (false) {
 }
 
 /***/ }),
-/* 516 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -80729,7 +80820,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       key: msd.ID
     }, [_c('div', [_c('span', {
       staticClass: "title"
-    }, [_vm._v(_vm._s(_vm.curr.Ho_ten) + ":")]), _vm._v("\n              " + _vm._s(msd.content) + "\n            ")]), _vm._v(" "), _c('div', [_c('span', {
+    }, [_vm._v(_vm._s(_vm.user.Ho_ten) + ":")]), _vm._v("\n              " + _vm._s(msd.content) + "\n            ")]), _vm._v(" "), _c('div', [_c('span', {
       staticClass: "title"
     }, [_vm._v("Ngày:")]), _vm._v("\n              " + _vm._s(msd.date) + "\n            ")])])
   }), 0)])], 1)], 1)])
@@ -80747,7 +80838,7 @@ if (false) {
 }
 
 /***/ }),
-/* 517 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -80772,15 +80863,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "innerHTML": _vm._s(mss.Noi_dung)
       }
     })])], 1)], 1)
-  }), 0), _vm._v(" "), _c('div', [_c('ul', _vm._l((_vm.msg), function(mss) {
-    return _c('li', {
-      key: mss.ID
-    }, [_c('router-link', {
-      attrs: {
-        "to": '/news/' + mss.ID
-      }
-    }, [_vm._v("\n           " + _vm._s(mss.Tieu_de) + "\n         ")])], 1)
-  }), 0)])])
+  }), 0)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
@@ -80795,13 +80878,13 @@ if (false) {
 }
 
 /***/ }),
-/* 518 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.curr.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
+  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
@@ -80826,7 +80909,7 @@ if (false) {
 }
 
 /***/ }),
-/* 519 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -80929,79 +81012,167 @@ if (false) {
 }
 
 /***/ }),
-/* 520 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_vm._l((_vm.msg), function(m) {
-    return _c('b-btn', {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "container"
+  }, [(_vm.show) ? _c('b-form', {
+    on: {
+      "submit": _vm.onSubmit,
+      "reset": _vm.onReset
+    }
+  }, [_c('b-form-group', {
+    attrs: {
+      "id": "exampleInputGroup1",
+      "label": "Tiêu đề:",
+      "label-for": "exampleInput1",
+      "description": "Nhập tiêu đề ngắn gọn"
+    }
+  }, [_c('b-form-input', {
+    attrs: {
+      "id": "exampleInput1",
+      "type": "text",
+      "required": "",
+      "placeholder": "Nhập tiêu đề"
+    },
+    model: {
+      value: (_vm.form.email),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "email", $$v)
+      },
+      expression: "form.email"
+    }
+  })], 1), _vm._v(" "), _c('b-form-group', {
+    attrs: {
+      "id": "exampleInputGroup2",
+      "label": "Nội dung:",
+      "label-for": "exampleInput2"
+    }
+  }, [_c('b-form-textarea', {
+    attrs: {
+      "id": "exampleInput2",
+      "required": "",
+      "placeholder": "Nhập nội dung",
+      "rows": 3,
+      "max-rows": 6
+    },
+    model: {
+      value: (_vm.form.name),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "name", $$v)
+      },
+      expression: "form.name"
+    }
+  })], 1), _vm._v(" "), _c('b-form-group', {
+    attrs: {
+      "id": "exampleInputGroup3",
+      "label": "Gửi tới:",
+      "label-for": "exampleInput3"
+    }
+  }, [_c('b-form-select', {
+    attrs: {
+      "id": "exampleInput3",
+      "options": _vm.foods,
+      "required": ""
+    },
+    model: {
+      value: (_vm.form.food),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "food", $$v)
+      },
+      expression: "form.food"
+    }
+  })], 1), _vm._v(" "), _c('b-form-group', {
+    attrs: {
+      "id": "exampleGroup4"
+    }
+  }, [_c('b-form-radio-group', {
+    attrs: {
+      "id": "exampleChecks"
+    },
+    model: {
+      value: (_vm.form.selected),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "selected", $$v)
+      },
+      expression: "form.selected"
+    }
+  }, [_c('b-form-radio', {
+    attrs: {
+      "value": "first"
+    }
+  }, [_vm._v("Hỏi đáp")]), _vm._v(" "), _c('b-form-radio', {
+    attrs: {
+      "value": "second"
+    }
+  }, [_vm._v("Góp ý")]), _vm._v(" "), _c('b-form-radio', {
+    attrs: {
+      "value": "third"
+    }
+  }, [_vm._v("Báo lỗi")])], 1)], 1), _vm._v(" "), _c('b-button', {
+    attrs: {
+      "type": "submit",
+      "variant": "primary"
+    }
+  }, [_vm._v("Gửi")]), _vm._v(" "), _c('b-button', {
+    attrs: {
+      "type": "reset",
+      "variant": "danger"
+    }
+  }, [_vm._v("Làm lại")])], 1) : _vm._e()], 1), _vm._v(" "), _c('div', {
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, _vm._l((_vm.msg), function(mss) {
+    return _c('div', {
+      key: mss.ID,
+      staticClass: "blockquote-box blockquote-warning clearfix"
+    }, [_c('div', {
+      staticClass: "cycle pull-left"
+    }, [_c('img', {
+      staticClass: "img-avatar",
+      attrs: {
+        "src": _vm.user.avatar
+      }
+    })]), _vm._v(" "), _c('b-link', {
       directives: [{
         name: "b-toggle",
-        rawName: "v-b-toggle.collapse1",
-        modifiers: {
-          "collapse1": true
-        }
-      }],
-      key: m.ID,
-      staticClass: "m-1",
+        rawName: "v-b-toggle",
+        value: (mss.ID + ''),
+        expression: "mss.ID+''"
+      }]
+    }, [_vm._v(_vm._s(mss.Tieude))]), _vm._v(" "), _c('b-collapse', {
+      staticClass: "mt-2",
       attrs: {
-        "variant": "primary",
-        "id": "btnContent"
-      },
-      on: {
-        "click": function($event) {
-          _vm.getMsgById(m.ID)
+        "id": mss.ID + ''
+      }
+    }, [_c('b-card', _vm._l((_vm.msgDetail[mss.ID + '']), function(msd) {
+      return _c('p', {
+        key: msd.ID,
+        staticClass: "card-text"
+      }, [_c('span', [_c('div', [_c('span', {
+        staticClass: "title"
+      }, [_vm._v("Người gửi:")]), _vm._v(" "), _c('span', {
+        domProps: {
+          "innerHTML": _vm._s(msd.Nguoi_gui)
         }
-      }
-    }, [_vm._v(_vm._s(m.Tieude))])
-  }), _vm._v(" "), _c('b-collapse', {
-    staticClass: "mt-2",
-    attrs: {
-      "id": "collapse1"
-    }
-  }, [_c('b-card', [_vm._l((_vm.msgDetail), function(msd) {
-    return _c('p', {
-      key: msd.ID,
-      staticClass: "card-text"
-    }, [_c('span', [_c('div', [_c('span', {
-      staticClass: "title"
-    }, [_vm._v("Người gửi: " + _vm._s(msd.NguoiGui))]), _vm._v(" "), _c('span', {
-      domProps: {
-        "innerHTML": _vm._s(msd.Noi_dung)
-      }
-    })]), _vm._v(" "), _c('div', [_c('span', {
-      staticClass: "title"
-    }, [_vm._v("Người nhận:")]), _vm._v("\n              " + _vm._s(msd.Nguoi_nhan) + "\n            ")]), _vm._v(" "), _c('div', [_c('span', {
-      staticClass: "title"
-    }, [_vm._v("Ngày gửi:")]), _vm._v("\n              " + _vm._s(msd.NgayGui) + "\n            ")])])])
-  }), _vm._v(" "), _c('b-btn', {
-    directives: [{
-      name: "b-toggle",
-      rawName: "v-b-toggle.collapse1_inner",
-      modifiers: {
-        "collapse1_inner": true
-      }
-    }],
-    attrs: {
-      "size": "sm"
-    }
-  }, [_vm._v("Bắt đầu gửi tin nhắn")]), _vm._v(" "), _c('b-collapse', {
-    staticClass: "mt-2",
-    attrs: {
-      "id": "collapse1_inner"
-    }
-  }, [_c('b-card', [_c('div', [_c('form', [_c('textarea', {
-    attrs: {
-      "size": "200",
-      "placeholder": "Mời nhập vào tin nhắn"
-    }
-  }), _vm._v(" "), _c('div', [_c('b-btn', {
-    on: {
-      "click": function($event) {
-        _vm.sendMsg(_vm.message)
-      }
-    }
-  }, [_vm._v("Gửi")])], 1)])])])], 1)], 2)], 1)], 2)])
+      })]), _vm._v(" "), _c('div', [_c('span', {
+        staticClass: "title"
+      }, [_vm._v("Nội dung:")]), _vm._v(" "), _c('p', {
+        domProps: {
+          "innerHTML": _vm._s(msd.Noi_dung)
+        }
+      })]), _vm._v(" "), _c('div', [_c('span', {
+        staticClass: "title"
+      }, [_vm._v("Người nhận:")]), _vm._v("\n                    " + _vm._s(msd.Nguoi_nhan) + "\n                  ")]), _vm._v(" "), _c('div', [_c('span', {
+        staticClass: "title"
+      }, [_vm._v("Ngày gửi:")]), _vm._v("\n                    " + _vm._s(msd.NgayGui) + "\n                  ")]), _vm._v(" "), _c('div', [_vm._v("------")])])])
+    }), 0)], 1)], 1)
+  }), 0)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
@@ -81016,13 +81187,11 @@ if (false) {
 }
 
 /***/ }),
-/* 521 */
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div'), _vm._v(" "), _c('div', [_c('h5', [_vm._v("ESSOFT VERSION 1.0")])]), _vm._v(" "), _c('div', {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "title"
   }, [_vm._v("Phát triển bởi: Công ty Cổ phần")]), _vm._v(" "), _c('div', {
     staticClass: "title"
@@ -81030,7 +81199,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "title"
   }, [_vm._v("Website: http://namvietjsc.edu.vn")]), _vm._v(" "), _c('div', {
     staticClass: "title"
-  }, [_vm._v("Hotline: 0912681066")])])
+  }, [_vm._v("Hotline: 0912681066")]), _vm._v(" "), _c('div', [_vm._v("Người dùng:" + _vm._s(_vm.user.Ho_ten))])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('h5', [_vm._v("ESSOFT VERSION 1.0")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -81041,7 +81212,7 @@ if (false) {
 }
 
 /***/ }),
-/* 522 */
+/* 523 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -81088,7 +81259,7 @@ if (false) {
 }
 
 /***/ }),
-/* 523 */
+/* 524 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -81152,7 +81323,7 @@ if (false) {
 }
 
 /***/ }),
-/* 524 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -81172,26 +81343,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v(_vm._s(_vm.itemsCount))])], 1), _vm._v(" "), _c('template', {
     slot: "dropdown"
-  }, [_c('div', {
-    staticClass: "frame"
-  }, [_c('b-dropdown-item', {
-    staticClass: "message"
-  }, [_c('div', {
-    staticClass: "py-3 mr-3 float-left"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": _vm.Img.avatar,
-      "alt": _vm.Img.avatar
-    }
-  }), _vm._v(" "), _c('b-badge', {
-    staticClass: "avatar-status",
-    attrs: {
-      "variant": "success"
-    }
-  })], 1)])])], 1)])], 2)
+  }, _vm._l((_vm.msg), function(ms) {
+    return _c('b-dropdown-item', {
+      key: ms.ID,
+      on: {
+        "click": function($event) {
+          _vm.$router.push('/messenger')
+        }
+      }
+    }, [_c('div', {
+      staticClass: "py-3 mr-3 float-left"
+    }, [_c('div', {
+      staticClass: "avatar"
+    }, [_c('img', {
+      staticClass: "img-avatar",
+      attrs: {
+        "src": _vm.user.avatar,
+        "alt": _vm.user.avatar
+      }
+    }), _vm._v(" "), _c('b-badge', {
+      staticClass: "avatar-status",
+      attrs: {
+        "variant": "success"
+      }
+    })], 1)]), _vm._v(" "), _c('div', [_c('small', {
+      staticClass: "text-muted"
+    }, [_vm._v(_vm._s(ms.NguoiGui))])]), _vm._v(" "), _c('div', [_c('div', {
+      staticClass: "text-truncate font-weight-bold"
+    }, [_vm._v(_vm._s(ms.Tieude))])]), _vm._v(" "), _c('div', [_c('small', {
+      staticClass: "text-muted float-right mt-1"
+    }, [_vm._v(_vm._s(ms.NgayGui))])])])
+  }), 1)], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -81202,7 +81384,7 @@ if (false) {
 }
 
 /***/ }),
-/* 525 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -81283,20 +81465,20 @@ if (false) {
 }
 
 /***/ }),
-/* 526 */
+/* 527 */
 /***/ (function(module, exports) {
 
 module.exports=function(t){function e(o){if(r[o])return r[o].exports;var n=r[o]={i:o,l:!1,exports:{}};return t[o].call(n.exports,n,n.exports,e),n.l=!0,n.exports}var r={};return e.m=t,e.c=r,e.i=function(t){return t},e.d=function(t,r,o){e.o(t,r)||Object.defineProperty(t,r,{configurable:!1,enumerable:!0,get:o})},e.n=function(t){var r=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(r,"a",r),r},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/dist/",e(e.s=6)}([function(t,e,r){"use strict";function o(t,e){function r(){t.classList.add("ps--focus")}function o(){t.classList.remove("ps--focus")}var n=this;n.settings=a();for(var i in e)n.settings[i]=e[i];n.containerWidth=null,n.containerHeight=null,n.contentWidth=null,n.contentHeight=null,n.isRtl="rtl"===c.css(t,"direction"),n.isNegativeScroll=function(){var e=t.scrollLeft,r=null;return t.scrollLeft=-1,r=t.scrollLeft<0,t.scrollLeft=e,r}(),n.negativeScrollAdjustment=n.isNegativeScroll?t.scrollWidth-t.clientWidth:0,n.event=new u,n.ownerDocument=t.ownerDocument||document,n.scrollbarXRail=c.appendTo(c.create("div","ps__scrollbar-x-rail"),t),n.scrollbarX=c.appendTo(c.create("div","ps__scrollbar-x"),n.scrollbarXRail),n.scrollbarX.setAttribute("tabindex",0),n.event.bind(n.scrollbarX,"focus",r),n.event.bind(n.scrollbarX,"blur",o),n.scrollbarXActive=null,n.scrollbarXWidth=null,n.scrollbarXLeft=null,n.scrollbarXBottom=s.toInt(c.css(n.scrollbarXRail,"bottom")),n.isScrollbarXUsingBottom=n.scrollbarXBottom===n.scrollbarXBottom,n.scrollbarXTop=n.isScrollbarXUsingBottom?null:s.toInt(c.css(n.scrollbarXRail,"top")),n.railBorderXWidth=s.toInt(c.css(n.scrollbarXRail,"borderLeftWidth"))+s.toInt(c.css(n.scrollbarXRail,"borderRightWidth")),c.css(n.scrollbarXRail,"display","block"),n.railXMarginWidth=s.toInt(c.css(n.scrollbarXRail,"marginLeft"))+s.toInt(c.css(n.scrollbarXRail,"marginRight")),c.css(n.scrollbarXRail,"display",""),n.railXWidth=null,n.railXRatio=null,n.scrollbarYRail=c.appendTo(c.create("div","ps__scrollbar-y-rail"),t),n.scrollbarY=c.appendTo(c.create("div","ps__scrollbar-y"),n.scrollbarYRail),n.scrollbarY.setAttribute("tabindex",0),n.event.bind(n.scrollbarY,"focus",r),n.event.bind(n.scrollbarY,"blur",o),n.scrollbarYActive=null,n.scrollbarYHeight=null,n.scrollbarYTop=null,n.scrollbarYRight=s.toInt(c.css(n.scrollbarYRail,"right")),n.isScrollbarYUsingRight=n.scrollbarYRight===n.scrollbarYRight,n.scrollbarYLeft=n.isScrollbarYUsingRight?null:s.toInt(c.css(n.scrollbarYRail,"left")),n.scrollbarYOuterWidth=n.isRtl?s.outerWidth(n.scrollbarY):null,n.railBorderYWidth=s.toInt(c.css(n.scrollbarYRail,"borderTopWidth"))+s.toInt(c.css(n.scrollbarYRail,"borderBottomWidth")),c.css(n.scrollbarYRail,"display","block"),n.railYMarginHeight=s.toInt(c.css(n.scrollbarYRail,"marginTop"))+s.toInt(c.css(n.scrollbarYRail,"marginBottom")),c.css(n.scrollbarYRail,"display",""),n.railYHeight=null,n.railYRatio=null}function n(t){return t.getAttribute("data-ps-id")}function i(t,e){t.setAttribute("data-ps-id",e)}function l(t){t.removeAttribute("data-ps-id")}var s=r(2),a=r(14),c=r(4),u=r(11),p=r(12),d={};e.add=function(t,e){var r=p();return i(t,r),d[r]=new o(t,e),d[r]},e.remove=function(t){delete d[n(t)],l(t)},e.get=function(t){return d[n(t)]}},function(t,e,r){"use strict";function o(t,e){return t.settings.minScrollbarLength&&(e=Math.max(e,t.settings.minScrollbarLength)),t.settings.maxScrollbarLength&&(e=Math.min(e,t.settings.maxScrollbarLength)),e}function n(t,e){var r={width:e.railXWidth};e.isRtl?r.left=e.negativeScrollAdjustment+t.scrollLeft+e.containerWidth-e.contentWidth:r.left=t.scrollLeft,e.isScrollbarXUsingBottom?r.bottom=e.scrollbarXBottom-t.scrollTop:r.top=e.scrollbarXTop+t.scrollTop,l.css(e.scrollbarXRail,r);var o={top:t.scrollTop,height:e.railYHeight};e.isScrollbarYUsingRight?e.isRtl?o.right=e.contentWidth-(e.negativeScrollAdjustment+t.scrollLeft)-e.scrollbarYRight-e.scrollbarYOuterWidth:o.right=e.scrollbarYRight-t.scrollLeft:e.isRtl?o.left=e.negativeScrollAdjustment+t.scrollLeft+2*e.containerWidth-e.contentWidth-e.scrollbarYLeft-e.scrollbarYOuterWidth:o.left=e.scrollbarYLeft+t.scrollLeft,l.css(e.scrollbarYRail,o),l.css(e.scrollbarX,{left:e.scrollbarXLeft,width:e.scrollbarXWidth-e.railBorderXWidth}),l.css(e.scrollbarY,{top:e.scrollbarYTop,height:e.scrollbarYHeight-e.railBorderYWidth})}var i=r(2),l=r(4),s=r(0),a=r(3);t.exports=function(t){var e=s.get(t);e.containerWidth=t.clientWidth,e.containerHeight=t.clientHeight,e.contentWidth=t.scrollWidth,e.contentHeight=t.scrollHeight;var r;t.contains(e.scrollbarXRail)||(r=l.queryChildren(t,".ps__scrollbar-x-rail"),r.length>0&&r.forEach(function(t){l.remove(t)}),l.appendTo(e.scrollbarXRail,t)),t.contains(e.scrollbarYRail)||(r=l.queryChildren(t,".ps__scrollbar-y-rail"),r.length>0&&r.forEach(function(t){l.remove(t)}),l.appendTo(e.scrollbarYRail,t)),!e.settings.suppressScrollX&&e.containerWidth+e.settings.scrollXMarginOffset<e.contentWidth?(e.scrollbarXActive=!0,e.railXWidth=e.containerWidth-e.railXMarginWidth,e.railXRatio=e.containerWidth/e.railXWidth,e.scrollbarXWidth=o(e,i.toInt(e.railXWidth*e.containerWidth/e.contentWidth)),e.scrollbarXLeft=i.toInt((e.negativeScrollAdjustment+t.scrollLeft)*(e.railXWidth-e.scrollbarXWidth)/(e.contentWidth-e.containerWidth))):e.scrollbarXActive=!1,!e.settings.suppressScrollY&&e.containerHeight+e.settings.scrollYMarginOffset<e.contentHeight?(e.scrollbarYActive=!0,e.railYHeight=e.containerHeight-e.railYMarginHeight,e.railYRatio=e.containerHeight/e.railYHeight,e.scrollbarYHeight=o(e,i.toInt(e.railYHeight*e.containerHeight/e.contentHeight)),e.scrollbarYTop=i.toInt(t.scrollTop*(e.railYHeight-e.scrollbarYHeight)/(e.contentHeight-e.containerHeight))):e.scrollbarYActive=!1,e.scrollbarXLeft>=e.railXWidth-e.scrollbarXWidth&&(e.scrollbarXLeft=e.railXWidth-e.scrollbarXWidth),e.scrollbarYTop>=e.railYHeight-e.scrollbarYHeight&&(e.scrollbarYTop=e.railYHeight-e.scrollbarYHeight),n(t,e),e.scrollbarXActive?t.classList.add("ps--active-x"):(t.classList.remove("ps--active-x"),e.scrollbarXWidth=0,e.scrollbarXLeft=0,a(t,"left",0)),e.scrollbarYActive?t.classList.add("ps--active-y"):(t.classList.remove("ps--active-y"),e.scrollbarYHeight=0,e.scrollbarYTop=0,a(t,"top",0))}},function(t,e,r){"use strict";function o(t){var e,r=["ps--in-scrolling"];return e=void 0===t?["ps--x","ps--y"]:["ps--"+t],r.concat(e)}var n=r(4),i=e.toInt=function(t){return parseInt(t,10)||0};e.isEditable=function(t){return n.matches(t,"input,[contenteditable]")||n.matches(t,"select,[contenteditable]")||n.matches(t,"textarea,[contenteditable]")||n.matches(t,"button,[contenteditable]")},e.removePsClasses=function(t){for(var e=0;e<t.classList.length;e++){var r=t.classList[e];0===r.indexOf("ps-")&&t.classList.remove(r)}},e.outerWidth=function(t){return i(n.css(t,"width"))+i(n.css(t,"paddingLeft"))+i(n.css(t,"paddingRight"))+i(n.css(t,"borderLeftWidth"))+i(n.css(t,"borderRightWidth"))},e.startScrolling=function(t,e){for(var r=o(e),n=0;n<r.length;n++)t.classList.add(r[n])},e.stopScrolling=function(t,e){for(var r=o(e),n=0;n<r.length;n++)t.classList.remove(r[n])},e.env={isWebKit:"undefined"!=typeof document&&"WebkitAppearance"in document.documentElement.style,supportsTouch:"undefined"!=typeof window&&("ontouchstart"in window||window.DocumentTouch&&document instanceof window.DocumentTouch),supportsIePointer:"undefined"!=typeof window&&null!==window.navigator.msMaxTouchPoints}},function(t,e,r){"use strict";var o=r(0),n=function(t){var e=document.createEvent("Event");return e.initEvent(t,!0,!0),e};t.exports=function(t,e,r){if(void 0===t)throw"You must provide an element to the update-scroll function";if(void 0===e)throw"You must provide an axis to the update-scroll function";if(void 0===r)throw"You must provide a value to the update-scroll function";"top"===e&&r<=0&&(t.scrollTop=r=0,t.dispatchEvent(n("ps-y-reach-start"))),"left"===e&&r<=0&&(t.scrollLeft=r=0,t.dispatchEvent(n("ps-x-reach-start")));var i=o.get(t);"top"===e&&r>=i.contentHeight-i.containerHeight&&(r=i.contentHeight-i.containerHeight,r-t.scrollTop<=2?r=t.scrollTop:t.scrollTop=r,t.dispatchEvent(n("ps-y-reach-end"))),"left"===e&&r>=i.contentWidth-i.containerWidth&&(r=i.contentWidth-i.containerWidth,r-t.scrollLeft<=2?r=t.scrollLeft:t.scrollLeft=r,t.dispatchEvent(n("ps-x-reach-end"))),void 0===i.lastTop&&(i.lastTop=t.scrollTop),void 0===i.lastLeft&&(i.lastLeft=t.scrollLeft),"top"===e&&r<i.lastTop&&t.dispatchEvent(n("ps-scroll-up")),"top"===e&&r>i.lastTop&&t.dispatchEvent(n("ps-scroll-down")),"left"===e&&r<i.lastLeft&&t.dispatchEvent(n("ps-scroll-left")),"left"===e&&r>i.lastLeft&&t.dispatchEvent(n("ps-scroll-right")),"top"===e&&r!==i.lastTop&&(t.scrollTop=i.lastTop=r,t.dispatchEvent(n("ps-scroll-y"))),"left"===e&&r!==i.lastLeft&&(t.scrollLeft=i.lastLeft=r,t.dispatchEvent(n("ps-scroll-x")))}},function(t,e,r){"use strict";function o(t,e){return window.getComputedStyle(t)[e]}function n(t,e,r){return"number"==typeof r&&(r=r.toString()+"px"),t.style[e]=r,t}function i(t,e){for(var r in e){var o=e[r];"number"==typeof o&&(o=o.toString()+"px"),t.style[r]=o}return t}var l={};l.create=function(t,e){var r=document.createElement(t);return r.className=e,r},l.appendTo=function(t,e){return e.appendChild(t),t},l.css=function(t,e,r){return"object"==typeof e?i(t,e):void 0===r?o(t,e):n(t,e,r)},l.matches=function(t,e){return void 0!==t.matches?t.matches(e):t.msMatchesSelector(e)},l.remove=function(t){void 0!==t.remove?t.remove():t.parentNode&&t.parentNode.removeChild(t)},l.queryChildren=function(t,e){return Array.prototype.filter.call(t.childNodes,function(t){return l.matches(t,e)})},t.exports=l},function(t,e,r){r(28);var o=r(25)(r(7),r(26),null,null);t.exports=o.exports},function(t,e,r){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=r(5),n=r.n(o);e.default=n.a},function(t,e,r){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=r(10),n=r.n(o);e.default={name:"vue-perfect-scrollbar",props:{settings:{default:void 0},swicher:{type:Boolean,default:!0},tagname:{type:String,default:"section"}},methods:{scrollHanle:function(t){this.$emit(t.type,t)},update:function(){n.a.update(this.$el)},__init:function(){this.swicher&&(this._ps_inited?this.update(this.$el):(this._ps_inited=!0,n.a.initialize(this.$el,this.settings)))},__uninit:function(){n.a.destroy(this.$el),this._ps_inited=!1}},watch:{swicher:function(t){t&&!this._ps_inited&&this.__init(),!t&&this._ps_inited&&this.__uninit()},$route:function(){this.update()}},mounted:function(){this.__init()},updated:function(){this.$nextTick(this.update)},activated:function(){this.__init()},deactivated:function(){this.__uninit()},beforeDestroy:function(){this.__uninit()}}},function(t,e,r){e=t.exports=r(9)(),e.push([t.i,".ps{-ms-touch-action:auto;touch-action:auto;overflow:hidden!important;-ms-overflow-style:none}@supports (-ms-overflow-style:none){.ps{overflow:auto!important}}@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active){.ps{overflow:auto!important}}.ps.ps--active-x>.ps__scrollbar-x-rail,.ps.ps--active-y>.ps__scrollbar-y-rail{display:block;background-color:transparent}.ps.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail{background-color:#eee;opacity:.9}.ps.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail>.ps__scrollbar-x{background-color:#999;height:11px}.ps.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail{background-color:#eee;opacity:.9}.ps.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y{background-color:#999;width:11px}.ps>.ps__scrollbar-x-rail{display:none;position:absolute;opacity:0;transition:background-color .2s linear,opacity .2s linear;bottom:0;height:15px}.ps>.ps__scrollbar-x-rail>.ps__scrollbar-x{position:absolute;background-color:#aaa;border-radius:6px;transition:background-color .2s linear,height .2s linear,width .2s ease-in-out,border-radius .2s ease-in-out;bottom:2px;height:6px}.ps>.ps__scrollbar-x-rail:active>.ps__scrollbar-x,.ps>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x{height:11px}.ps>.ps__scrollbar-y-rail{display:none;position:absolute;opacity:0;transition:background-color .2s linear,opacity .2s linear;right:0;width:15px}.ps>.ps__scrollbar-y-rail>.ps__scrollbar-y{position:absolute;background-color:#aaa;border-radius:6px;transition:background-color .2s linear,height .2s linear,width .2s ease-in-out,border-radius .2s ease-in-out;right:2px;width:6px}.ps>.ps__scrollbar-y-rail:active>.ps__scrollbar-y,.ps>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y{width:11px}.ps:hover.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail{background-color:#eee;opacity:.9}.ps:hover.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail>.ps__scrollbar-x{background-color:#999;height:11px}.ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail{background-color:#eee;opacity:.9}.ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y{background-color:#999;width:11px}.ps:hover>.ps__scrollbar-x-rail,.ps:hover>.ps__scrollbar-y-rail{opacity:.6}.ps:hover>.ps__scrollbar-x-rail:hover{background-color:#eee;opacity:.9}.ps:hover>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x{background-color:#999}.ps:hover>.ps__scrollbar-y-rail:hover{background-color:#eee;opacity:.9}.ps:hover>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y{background-color:#999}.ps-container{position:relative}",""])},function(t,e){t.exports=function(){var t=[];return t.toString=function(){for(var t=[],e=0;e<this.length;e++){var r=this[e];r[2]?t.push("@media "+r[2]+"{"+r[1]+"}"):t.push(r[1])}return t.join("")},t.i=function(e,r){"string"==typeof e&&(e=[[null,e,""]]);for(var o={},n=0;n<this.length;n++){var i=this[n][0];"number"==typeof i&&(o[i]=!0)}for(n=0;n<e.length;n++){var l=e[n];"number"==typeof l[0]&&o[l[0]]||(r&&!l[2]?l[2]=r:r&&(l[2]="("+l[2]+") and ("+r+")"),t.push(l))}},t}},function(t,e,r){"use strict";t.exports=r(13)},function(t,e,r){"use strict";var o=function(t){this.element=t,this.events={}};o.prototype.bind=function(t,e){void 0===this.events[t]&&(this.events[t]=[]),this.events[t].push(e),this.element.addEventListener(t,e,!1)},o.prototype.unbind=function(t,e){var r=void 0!==e;this.events[t]=this.events[t].filter(function(o){return!(!r||o===e)||(this.element.removeEventListener(t,o,!1),!1)},this)},o.prototype.unbindAll=function(){for(var t in this.events)this.unbind(t)};var n=function(){this.eventElements=[]};n.prototype.eventElement=function(t){var e=this.eventElements.filter(function(e){return e.element===t})[0];return void 0===e&&(e=new o(t),this.eventElements.push(e)),e},n.prototype.bind=function(t,e,r){this.eventElement(t).bind(e,r)},n.prototype.unbind=function(t,e,r){this.eventElement(t).unbind(e,r)},n.prototype.unbindAll=function(){for(var t=0;t<this.eventElements.length;t++)this.eventElements[t].unbindAll()},n.prototype.once=function(t,e,r){var o=this.eventElement(t),n=function(t){o.unbind(e,n),r(t)};o.bind(e,n)},t.exports=n},function(t,e,r){"use strict";t.exports=function(){function t(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return t()+t()+"-"+t()+"-"+t()+"-"+t()+"-"+t()+t()+t()}}()},function(t,e,r){"use strict";var o=r(15),n=r(23),i=r(24);t.exports={initialize:n,update:i,destroy:o}},function(t,e,r){"use strict";t.exports=function(){return{handlers:["click-rail","drag-scrollbar","keyboard","wheel","touch"],maxScrollbarLength:null,minScrollbarLength:null,scrollXMarginOffset:0,scrollYMarginOffset:0,suppressScrollX:!1,suppressScrollY:!1,swipePropagation:!0,swipeEasing:!0,useBothWheelAxes:!1,wheelPropagation:!1,wheelSpeed:1,theme:"default"}}},function(t,e,r){"use strict";var o=r(2),n=r(4),i=r(0);t.exports=function(t){var e=i.get(t);e&&(e.event.unbindAll(),n.remove(e.scrollbarX),n.remove(e.scrollbarY),n.remove(e.scrollbarXRail),n.remove(e.scrollbarYRail),o.removePsClasses(t),i.remove(t))}},function(t,e,r){"use strict";function o(t,e){function r(t){return t.getBoundingClientRect()}var o=function(t){t.stopPropagation()};e.event.bind(e.scrollbarY,"click",o),e.event.bind(e.scrollbarYRail,"click",function(o){var n=o.pageY-window.pageYOffset-r(e.scrollbarYRail).top,s=n>e.scrollbarYTop?1:-1;l(t,"top",t.scrollTop+s*e.containerHeight),i(t),o.stopPropagation()}),e.event.bind(e.scrollbarX,"click",o),e.event.bind(e.scrollbarXRail,"click",function(o){var n=o.pageX-window.pageXOffset-r(e.scrollbarXRail).left,s=n>e.scrollbarXLeft?1:-1;l(t,"left",t.scrollLeft+s*e.containerWidth),i(t),o.stopPropagation()})}var n=r(0),i=r(1),l=r(3);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(r){var n=o+r*e.railXRatio,l=Math.max(0,e.scrollbarXRail.getBoundingClientRect().left)+e.railXRatio*(e.railXWidth-e.scrollbarXWidth);e.scrollbarXLeft=n<0?0:n>l?l:n;var s=i.toInt(e.scrollbarXLeft*(e.contentWidth-e.containerWidth)/(e.containerWidth-e.railXRatio*e.scrollbarXWidth))-e.negativeScrollAdjustment;c(t,"left",s)}var o=null,n=null,s=function(e){r(e.pageX-n),a(t),e.stopPropagation(),e.preventDefault()},u=function(){i.stopScrolling(t,"x"),e.event.unbind(e.ownerDocument,"mousemove",s)};e.event.bind(e.scrollbarX,"mousedown",function(r){n=r.pageX,o=i.toInt(l.css(e.scrollbarX,"left"))*e.railXRatio,i.startScrolling(t,"x"),e.event.bind(e.ownerDocument,"mousemove",s),e.event.once(e.ownerDocument,"mouseup",u),r.stopPropagation(),r.preventDefault()})}function n(t,e){function r(r){var n=o+r*e.railYRatio,l=Math.max(0,e.scrollbarYRail.getBoundingClientRect().top)+e.railYRatio*(e.railYHeight-e.scrollbarYHeight);e.scrollbarYTop=n<0?0:n>l?l:n;var s=i.toInt(e.scrollbarYTop*(e.contentHeight-e.containerHeight)/(e.containerHeight-e.railYRatio*e.scrollbarYHeight));c(t,"top",s)}var o=null,n=null,s=function(e){r(e.pageY-n),a(t),e.stopPropagation(),e.preventDefault()},u=function(){i.stopScrolling(t,"y"),e.event.unbind(e.ownerDocument,"mousemove",s)};e.event.bind(e.scrollbarY,"mousedown",function(r){n=r.pageY,o=i.toInt(l.css(e.scrollbarY,"top"))*e.railYRatio,i.startScrolling(t,"y"),e.event.bind(e.ownerDocument,"mousemove",s),e.event.once(e.ownerDocument,"mouseup",u),r.stopPropagation(),r.preventDefault()})}var i=r(2),l=r(4),s=r(0),a=r(1),c=r(3);t.exports=function(t){var e=s.get(t);o(t,e),n(t,e)}},function(t,e,r){"use strict";function o(t,e){function r(r,o){var n=t.scrollTop;if(0===r){if(!e.scrollbarYActive)return!1;if(0===n&&o>0||n>=e.contentHeight-e.containerHeight&&o<0)return!e.settings.wheelPropagation}var i=t.scrollLeft;if(0===o){if(!e.scrollbarXActive)return!1;if(0===i&&r<0||i>=e.contentWidth-e.containerWidth&&r>0)return!e.settings.wheelPropagation}return!0}var o=!1;e.event.bind(t,"mouseenter",function(){o=!0}),e.event.bind(t,"mouseleave",function(){o=!1});var l=!1;e.event.bind(e.ownerDocument,"keydown",function(c){if(!(c.isDefaultPrevented&&c.isDefaultPrevented()||c.defaultPrevented)){var u=i.matches(e.scrollbarX,":focus")||i.matches(e.scrollbarY,":focus");if(o||u){var p=document.activeElement?document.activeElement:e.ownerDocument.activeElement;if(p){if("IFRAME"===p.tagName)p=p.contentDocument.activeElement;else for(;p.shadowRoot;)p=p.shadowRoot.activeElement;if(n.isEditable(p))return}var d=0,f=0;switch(c.which){case 37:d=c.metaKey?-e.contentWidth:c.altKey?-e.containerWidth:-30;break;case 38:f=c.metaKey?e.contentHeight:c.altKey?e.containerHeight:30;break;case 39:d=c.metaKey?e.contentWidth:c.altKey?e.containerWidth:30;break;case 40:f=c.metaKey?-e.contentHeight:c.altKey?-e.containerHeight:-30;break;case 33:f=90;break;case 32:f=c.shiftKey?90:-90;break;case 34:f=-90;break;case 35:f=c.ctrlKey?-e.contentHeight:-e.containerHeight;break;case 36:f=c.ctrlKey?t.scrollTop:e.containerHeight;break;default:return}a(t,"top",t.scrollTop-f),a(t,"left",t.scrollLeft+d),s(t),l=r(d,f),l&&c.preventDefault()}}})}var n=r(2),i=r(4),l=r(0),s=r(1),a=r(3);t.exports=function(t){o(t,l.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(r,o){var n=t.scrollTop;if(0===r){if(!e.scrollbarYActive)return!1;if(0===n&&o>0||n>=e.contentHeight-e.containerHeight&&o<0)return!e.settings.wheelPropagation}var i=t.scrollLeft;if(0===o){if(!e.scrollbarXActive)return!1;if(0===i&&r<0||i>=e.contentWidth-e.containerWidth&&r>0)return!e.settings.wheelPropagation}return!0}function o(t){var e=t.deltaX,r=-1*t.deltaY;return void 0!==e&&void 0!==r||(e=-1*t.wheelDeltaX/6,r=t.wheelDeltaY/6),t.deltaMode&&1===t.deltaMode&&(e*=10,r*=10),e!==e&&r!==r&&(e=0,r=t.wheelDelta),t.shiftKey?[-r,-e]:[e,r]}function n(e,r){var o=t.querySelector("textarea:hover, select[multiple]:hover, .ps-child:hover");if(o){var n=window.getComputedStyle(o);if(![n.overflow,n.overflowX,n.overflowY].join("").match(/(scroll|auto)/))return!1;var i=o.scrollHeight-o.clientHeight;if(i>0&&!(0===o.scrollTop&&r>0||o.scrollTop===i&&r<0))return!0;var l=o.scrollLeft-o.clientWidth;if(l>0&&!(0===o.scrollLeft&&e<0||o.scrollLeft===l&&e>0))return!0}return!1}function s(s){var c=o(s),u=c[0],p=c[1];n(u,p)||(a=!1,e.settings.useBothWheelAxes?e.scrollbarYActive&&!e.scrollbarXActive?(p?l(t,"top",t.scrollTop-p*e.settings.wheelSpeed):l(t,"top",t.scrollTop+u*e.settings.wheelSpeed),a=!0):e.scrollbarXActive&&!e.scrollbarYActive&&(u?l(t,"left",t.scrollLeft+u*e.settings.wheelSpeed):l(t,"left",t.scrollLeft-p*e.settings.wheelSpeed),a=!0):(l(t,"top",t.scrollTop-p*e.settings.wheelSpeed),l(t,"left",t.scrollLeft+u*e.settings.wheelSpeed)),i(t),(a=a||r(u,p))&&(s.stopPropagation(),s.preventDefault()))}var a=!1;void 0!==window.onwheel?e.event.bind(t,"wheel",s):void 0!==window.onmousewheel&&e.event.bind(t,"mousewheel",s)}var n=r(0),i=r(1),l=r(3);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){e.event.bind(t,"scroll",function(){i(t)})}var n=r(0),i=r(1);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(){var t=window.getSelection?window.getSelection():document.getSelection?document.getSelection():"";return 0===t.toString().length?null:t.getRangeAt(0).commonAncestorContainer}function o(){c||(c=setInterval(function(){if(!i.get(t))return void clearInterval(c);s(t,"top",t.scrollTop+u.top),s(t,"left",t.scrollLeft+u.left),l(t)},50))}function a(){c&&(clearInterval(c),c=null),n.stopScrolling(t)}var c=null,u={top:0,left:0},p=!1;e.event.bind(e.ownerDocument,"selectionchange",function(){t.contains(r())?p=!0:(p=!1,a())}),e.event.bind(window,"mouseup",function(){p&&(p=!1,a())}),e.event.bind(window,"keyup",function(){p&&(p=!1,a())}),e.event.bind(window,"mousemove",function(e){if(p){var r={x:e.pageX,y:e.pageY},i={left:t.offsetLeft,right:t.offsetLeft+t.offsetWidth,top:t.offsetTop,bottom:t.offsetTop+t.offsetHeight};r.x<i.left+3?(u.left=-5,n.startScrolling(t,"x")):r.x>i.right-3?(u.left=5,n.startScrolling(t,"x")):u.left=0,r.y<i.top+3?(u.top=i.top+3-r.y<5?-5:-20,n.startScrolling(t,"y")):r.y>i.bottom-3?(u.top=r.y-i.bottom+3<5?5:20,n.startScrolling(t,"y")):u.top=0,0===u.top&&0===u.left?a():o()}})}var n=r(2),i=r(0),l=r(1),s=r(3);t.exports=function(t){o(t,i.get(t))}},function(t,e,r){"use strict";function o(t,e,r,o){function n(r,o){var n=t.scrollTop,i=t.scrollLeft,l=Math.abs(r),s=Math.abs(o);if(s>l){if(o<0&&n===e.contentHeight-e.containerHeight||o>0&&0===n)return!e.settings.swipePropagation}else if(l>s&&(r<0&&i===e.contentWidth-e.containerWidth||r>0&&0===i))return!e.settings.swipePropagation;return!0}function a(e,r){s(t,"top",t.scrollTop-r),s(t,"left",t.scrollLeft-e),l(t)}function c(){w=!0}function u(){w=!1}function p(t){return t.targetTouches?t.targetTouches[0]:t}function d(t){return(!t.pointerType||"pen"!==t.pointerType||0!==t.buttons)&&(!(!t.targetTouches||1!==t.targetTouches.length)||!(!t.pointerType||"mouse"===t.pointerType||t.pointerType===t.MSPOINTER_TYPE_MOUSE))}function f(t){if(d(t)){_=!0;var e=p(t);b.pageX=e.pageX,b.pageY=e.pageY,g=(new Date).getTime(),null!==y&&clearInterval(y),t.stopPropagation()}}function h(t){if(!_&&e.settings.swipePropagation&&f(t),!w&&_&&d(t)){var r=p(t),o={pageX:r.pageX,pageY:r.pageY},i=o.pageX-b.pageX,l=o.pageY-b.pageY;a(i,l),b=o;var s=(new Date).getTime(),c=s-g;c>0&&(m.x=i/c,m.y=l/c,g=s),n(i,l)&&(t.stopPropagation(),t.preventDefault())}}function v(){!w&&_&&(_=!1,e.settings.swipeEasing&&(clearInterval(y),y=setInterval(function(){return i.get(t)&&(m.x||m.y)?Math.abs(m.x)<.01&&Math.abs(m.y)<.01?void clearInterval(y):(a(30*m.x,30*m.y),m.x*=.8,void(m.y*=.8)):void clearInterval(y)},10)))}var b={},g=0,m={},y=null,w=!1,_=!1;r?(e.event.bind(window,"touchstart",c),e.event.bind(window,"touchend",u),e.event.bind(t,"touchstart",f),e.event.bind(t,"touchmove",h),e.event.bind(t,"touchend",v)):o&&(window.PointerEvent?(e.event.bind(window,"pointerdown",c),e.event.bind(window,"pointerup",u),e.event.bind(t,"pointerdown",f),e.event.bind(t,"pointermove",h),e.event.bind(t,"pointerup",v)):window.MSPointerEvent&&(e.event.bind(window,"MSPointerDown",c),e.event.bind(window,"MSPointerUp",u),e.event.bind(t,"MSPointerDown",f),e.event.bind(t,"MSPointerMove",h),e.event.bind(t,"MSPointerUp",v)))}var n=r(2),i=r(0),l=r(1),s=r(3);t.exports=function(t){if(n.env.supportsTouch||n.env.supportsIePointer){o(t,i.get(t),n.env.supportsTouch,n.env.supportsIePointer)}}},function(t,e,r){"use strict";var o=r(0),n=r(1),i={"click-rail":r(16),"drag-scrollbar":r(17),keyboard:r(18),wheel:r(19),touch:r(22),selection:r(21)},l=r(20);t.exports=function(t,e){t.classList.add("ps");var r=o.add(t,"object"==typeof e?e:{});t.classList.add("ps--theme_"+r.settings.theme),r.settings.handlers.forEach(function(e){i[e](t)}),l(t),n(t)}},function(t,e,r){"use strict";var o=r(2),n=r(4),i=r(0),l=r(1),s=r(3);t.exports=function(t){var e=i.get(t);e&&(e.negativeScrollAdjustment=e.isNegativeScroll?t.scrollWidth-t.clientWidth:0,n.css(e.scrollbarXRail,"display","block"),n.css(e.scrollbarYRail,"display","block"),e.railXMarginWidth=o.toInt(n.css(e.scrollbarXRail,"marginLeft"))+o.toInt(n.css(e.scrollbarXRail,"marginRight")),e.railYMarginHeight=o.toInt(n.css(e.scrollbarYRail,"marginTop"))+o.toInt(n.css(e.scrollbarYRail,"marginBottom")),n.css(e.scrollbarXRail,"display","none"),n.css(e.scrollbarYRail,"display","none"),l(t),s(t,"top",t.scrollTop),s(t,"left",t.scrollLeft),n.css(e.scrollbarXRail,"display",""),n.css(e.scrollbarYRail,"display",""))}},function(t,e){t.exports=function(t,e,r,o){var n,i=t=t||{},l=typeof t.default;"object"!==l&&"function"!==l||(n=t,i=t.default);var s="function"==typeof i?i.options:i;if(e&&(s.render=e.render,s.staticRenderFns=e.staticRenderFns),r&&(s._scopeId=r),o){var a=s.computed||(s.computed={});Object.keys(o).forEach(function(t){var e=o[t];a[t]=function(){return e}})}return{esModule:n,exports:i,options:s}}},function(t,e){t.exports={render:function(){var t=this,e=t.$createElement;return(t._self._c||e)(t.$props.tagname,{tag:"section",staticClass:"ps-container",on:{"~mouseover":function(e){t.update(e)},"ps-scroll-y":t.scrollHanle,"ps-scroll-x":t.scrollHanle,"ps-scroll-up":t.scrollHanle,"ps-scroll-down":t.scrollHanle,"ps-scroll-left":t.scrollHanle,"ps-scroll-right":t.scrollHanle,"ps-y-reach-start":t.scrollHanle,"ps-y-reach-end":t.scrollHanle,"ps-x-reach-start":t.scrollHanle,"ps-x-reach-end":t.scrollHanle}},[t._t("default")],2)},staticRenderFns:[]}},function(t,e){function r(t,e){for(var r=0;r<t.length;r++){var o=t[r],n=u[o.id];if(n){n.refs++;for(var i=0;i<n.parts.length;i++)n.parts[i](o.parts[i]);for(;i<o.parts.length;i++)n.parts.push(s(o.parts[i],e))}else{for(var l=[],i=0;i<o.parts.length;i++)l.push(s(o.parts[i],e));u[o.id]={id:o.id,refs:1,parts:l}}}}function o(t){for(var e=[],r={},o=0;o<t.length;o++){var n=t[o],i=n[0],l=n[1],s=n[2],a=n[3],c={css:l,media:s,sourceMap:a};r[i]?r[i].parts.push(c):e.push(r[i]={id:i,parts:[c]})}return e}function n(t,e){var r=f(),o=b[b.length-1];if("top"===t.insertAt)o?o.nextSibling?r.insertBefore(e,o.nextSibling):r.appendChild(e):r.insertBefore(e,r.firstChild),b.push(e);else{if("bottom"!==t.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");r.appendChild(e)}}function i(t){t.parentNode.removeChild(t);var e=b.indexOf(t);e>=0&&b.splice(e,1)}function l(t){var e=document.createElement("style");return e.type="text/css",n(t,e),e}function s(t,e){var r,o,n;if(e.singleton){var s=v++;r=h||(h=l(e)),o=a.bind(null,r,s,!1),n=a.bind(null,r,s,!0)}else r=l(e),o=c.bind(null,r),n=function(){i(r)};return o(t),function(e){if(e){if(e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap)return;o(t=e)}else n()}}function a(t,e,r,o){var n=r?"":o.css;if(t.styleSheet)t.styleSheet.cssText=g(e,n);else{var i=document.createTextNode(n),l=t.childNodes;l[e]&&t.removeChild(l[e]),l.length?t.insertBefore(i,l[e]):t.appendChild(i)}}function c(t,e){var r=e.css,o=e.media,n=e.sourceMap;if(o&&t.setAttribute("media",o),n&&(r+="\n/*# sourceURL="+n.sources[0]+" */",r+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(n))))+" */"),t.styleSheet)t.styleSheet.cssText=r;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(r))}}var u={},p=function(t){var e;return function(){return void 0===e&&(e=t.apply(this,arguments)),e}},d=p(function(){return/msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase())}),f=p(function(){return document.head||document.getElementsByTagName("head")[0]}),h=null,v=0,b=[];t.exports=function(t,e){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");e=e||{},void 0===e.singleton&&(e.singleton=d()),void 0===e.insertAt&&(e.insertAt="bottom");var n=o(t);return r(n,e),function(t){for(var i=[],l=0;l<n.length;l++){var s=n[l],a=u[s.id];a.refs--,i.push(a)}if(t){r(o(t),e)}for(var l=0;l<i.length;l++){var a=i[l];if(0===a.refs){for(var c=0;c<a.parts.length;c++)a.parts[c]();delete u[a.id]}}}};var g=function(){var t=[];return function(e,r){return t[e]=r,t.filter(Boolean).join("\n")}}()},function(t,e,r){var o=r(8);"string"==typeof o&&(o=[[t.i,o,""]]);r(27)(o,{});o.locals&&(t.exports=o.locals)}]);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 527 */
+/* 528 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_class_component__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_class_component__ = __webpack_require__(483);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_class_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_class_component__);
 /* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1_vue_class_component___default.a; });
 /* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_0_vue___default.a; });
@@ -81436,7 +81618,7 @@ function isPromise(obj) {
 
 
 /***/ }),
-/* 528 */
+/* 529 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84061,13 +84243,13 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 529 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(471);
+var content = __webpack_require__(472);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -84087,13 +84269,13 @@ if(false) {
 }
 
 /***/ }),
-/* 530 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(472);
+var content = __webpack_require__(473);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -84113,7 +84295,7 @@ if(false) {
 }
 
 /***/ }),
-/* 531 */
+/* 532 */
 /***/ (function(module, exports) {
 
 /**
@@ -84146,7 +84328,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 532 */
+/* 533 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -84155,7 +84337,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 533 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(246);

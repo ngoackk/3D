@@ -4,7 +4,7 @@
       <span class="title">LỊCH THI</span>
     </div>
     <div>
-      <span class="title">{{curr.Ho_ten}}</span>
+      <span class="title">{{user.Ho_ten}}</span>
     </div>
     <ag-grid-vue
       style="width: 100%; height: 100%;"
@@ -43,7 +43,7 @@ export default {
         suppressSizeToFit: true,
         width: 300
       },
-     
+
       {
         headerName: "Ngày thi",
         field: "Ngay_thi",
@@ -65,7 +65,6 @@ export default {
         filter: true,
         suppressSizeToFit: true
       }
-      
     ];
 
     // this.rowData = [
@@ -89,10 +88,10 @@ export default {
         alert(err);
       });
   },
-   computed: {
-    curr() {
-      return Users.getCurrent();
+  computed: {
+    user() {
+      return this.currentUser();
     }
-   }
+  }
 };
 </script>

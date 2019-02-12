@@ -21,7 +21,7 @@
           <p class="card-text">
             <span v-for="msd in myDB" :key="msd.ID">
               <div>
-                <span class="title">{{curr.Ho_ten}}:</span>
+                <span class="title">{{user.Ho_ten}}:</span>
                 {{msd.content}}
               </div>
 
@@ -37,8 +37,7 @@
   </div>
 </template>
 <script>
-
-import {Users} from "../apis/api";
+import { Users } from "../apis/api";
 export default {
   inject: ["currentUser"],
   result: [],
@@ -71,8 +70,8 @@ export default {
   },
 
   computed: {
-    curr() {
-      return  Users.getCurrent();
+    user() {
+      return this.currentUser();
     }
   }
 };

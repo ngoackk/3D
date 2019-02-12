@@ -1,20 +1,22 @@
 <template>
   <div>
-    <div class="title">Khảo sát</div>
+    <div class="title">KHẢO SÁT</div>
 
-    <div class="title">{{curr.Ho_ten}}</div>
+    <div class="title">{{user.Ho_ten}}</div>
   </div>
 </template>
 <script>
 import { Users } from "../apis/api";
+
 export default {
+  inject: ["currentUser"],
   data: function() {
     return { success: "Thành công" };
   },
 
   computed: {
-    curr() {
-      return Users.getCurrent();
+    user() {
+      return this.currentUser();
     }
   }
 };

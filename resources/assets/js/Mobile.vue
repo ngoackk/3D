@@ -4,23 +4,22 @@
 
 <script>
 export default {
-   provide() {
+  provide() {
     return {
-      currentUser: this.localUser      
-    }
-  },  
+      currentUser: this.localUser
+    };
+  },
   name: "app",
   methods: {
-    localUser(){
+    localUser() {
       let user = JSON.parse(localStorage.getItem("user"));
       user.avatar = "img/avatars/u2.png";
-      if(user.Image_Url != null && user.Image_Url.trim() != ""){
-        user.avatar = this.$Settings.BASEURL + user.Image_Url
+      if (user.Image_Url != null && user.Image_Url.trim() != "") {
+        user.avatar = this.$Settings.BASEURL + user.Image_Url;
       }
       return user;
     }
   }
-   
 };
 </script>
 

@@ -1,13 +1,14 @@
 export const Settings = {
-  BASEURL : "http://103.28.37.34:806",
-  TEST: "TEST STRING"
-}
+  BASEURL: "http://103.28.37.34:806",
+  TEST: "TEST STRING",
+  NOIMAGE: "img/avatars/u2.png"
+};
 export const Users = {
 
   studentLogin(crendential) {
     return new Promise((resolve, reject) => {
       //Vi du dung base url de thay the cac cho khai bao cung
-      var url = new URL(Settings.BASEURL+"/api/login"),
+      var url = new URL(Settings.BASEURL + "/api/login"),
         params = {
           userName: crendential.UserName, //  "60.58.01.02",
           password: crendential.Password, //"mhl9QmgbrLq8W8pV5u/lpQ==",
@@ -84,9 +85,9 @@ export const Users = {
   getCurrent() {
     // alert("Gọi được hàm từ Users");
     let user = JSON.parse(localStorage.getItem("user"));
-    user.avatar = "img/avatars/u2.png";
-    if(user.Image_Url != null && user.Image_Url.trim() != ""){
-      user.avatar = Settings.BASEURL + user.Image_Url
+    user.avatar = NOIMAGE;
+    if (user.Image_Url != null && user.Image_Url.trim() != "") {
+      user.avatar = Settings.BASEURL + user.Image_Url;
     }
     return user;
   },

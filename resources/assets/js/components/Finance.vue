@@ -4,7 +4,7 @@
       <span class="title">THÔNG TIN TÀI CHÍNH</span>
     </div>
     <div>
-      <span class="title">Sinh viên: {{currentName.name}}</span>
+      <span class="title">Sinh viên: {{user.Ho_ten}}</span>
     </div>
     <ag-grid-vue
       style="width: 100%; height: 100%;"
@@ -81,16 +81,6 @@ export default {
         suppressSizeToFit: true
       }
     ];
-
-    // this.rowData = [
-    //   { make: "Toyota", model: "Celica", price: 35000 },
-    //   { make: "Ford", model: "Mondeo", price: 32000 },
-    //   { make: "Porsche", model: "Boxter", price: 72000 }
-    // ];
-
-    // fetch("http://103.28.37.34:98/api/huyen")
-    //   .then(result => result.json())
-    //   .then(rowData => (this.rowData = rowData));
   },
 
   mounted() {
@@ -104,8 +94,8 @@ export default {
       });
   },
   computed: {
-    currentName() {
-      return { name: Users.getCurrent().Ho_ten };
+    user() {
+      return this.currentUser();
     }
   }
 };

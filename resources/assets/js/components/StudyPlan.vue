@@ -4,7 +4,7 @@
       <span class="title">LỊCH HỌC</span>
     </div>
     <div>
-      <span class="title">Sinh viên: {{curr.Ho_ten}}</span>
+      <span class="title">Sinh viên: {{user.Ho_ten}}</span>
     </div>
     <ag-grid-vue
       style="width: 100%; height: 100%;"
@@ -93,8 +93,8 @@ export default {
   },
 
   computed: {
-    curr() {
-      return Users.getCurrent();
+    user() {
+      return this.currentUser();
     }
   },
   mounted() {
