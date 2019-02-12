@@ -62950,6 +62950,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -62962,7 +62963,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       columnDefs: null,
       rowData: null,
-      bangdiem: [],
+      finance_sort: [],
       finance_detail: []
     };
   },
@@ -62972,30 +62973,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   beforeMount: function beforeMount() {
     this.columnDefs = [{
-      headerName: "Môn học",
-      field: "Ten_mon",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: true
-    }, {
       headerName: "Năm học",
       field: "nam_hoc",
       sortable: true,
       filter: true,
-      suppressSizeToFit: true,
-      width: 300
+      suppressSizeToFit: false
+
     }, {
       headerName: "Học kỳ",
       field: "Hoc_ky",
       sortable: true,
       filter: true,
-      suppressSizeToFit: true
-    }, {
-      headerName: "Số tiền phải nộp",
-      field: "So_tien_phai_nop",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: true
+      suppressSizeToFit: false
     }, {
       headerName: "Số tiền đã nộp",
       field: "So_tien_da_nop",
@@ -63003,7 +62992,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       filter: true,
       suppressSizeToFit: true
     }, {
-      headerName: "Còn thiếu",
+      headerName: "Số tiền miễn giảm",
+      field: "So_tien_mien_giam",
+      sortable: true,
+      filter: true,
+      suppressSizeToFit: true
+    }, {
+      headerName: "Số tiền nộp",
+      field: "So_tien_nop",
+      sortable: true,
+      filter: true,
+      suppressSizeToFit: true
+    }, {
+      headerName: "Số tiền trả lại",
+      field: "So_tien_tra_lai",
+      sortable: true,
+      filter: true,
+      suppressSizeToFit: true
+    }, {
+      headerName: "Số tiền thừa / thiếu",
       field: "Thieu_thua",
       sortable: true,
       filter: true,
@@ -63014,11 +63021,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     var _this = this;
 
     __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("Finance").then(function (points) {
-      _this.bangdiem = points;
-      _this.rowData = points;
-      console.log(points);
+      if (points.length > 0) _this.finance_sort = points[0];
+      if (points.length > 1) _this.finance_detail = points[1];
+
+      _this.rowData = _this.finance_sort;
     }).catch(function (err) {
-      alert(err);
+      console.error(err);
+      //alert(err);
     });
   },
 
@@ -63535,7 +63544,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].callServer("Notification").then(function (msgList) {
       _this.msg = msgList;
     }).catch(function (err) {
-      alert(err);
+      console.error(err);
+      // alert(err);
     });
   },
 
@@ -63764,7 +63774,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       _this.bangdiem = points;
       _this.rowData = points;
     }).catch(function (err) {
-      alert(err);
+      console.error(err);
+      //alert(err);
     });
   },
 
@@ -63886,7 +63897,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       _this.bangdiem = points;
       _this.rowData = points;
     }).catch(function (err) {
-      alert(err);
+      console.error(err);
+      //alert(err);
     });
   }
 });
@@ -64011,7 +64023,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       _this.bangdiem = points;
       _this.rowData = points;
     }).catch(function (err) {
-      alert(err);
+      console.error(err);
+      //alert(err);
     });
   },
 
@@ -64328,7 +64341,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__ = __webpack_require__(502);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg__);
-//
 //
 //
 //
@@ -64812,13 +64824,16 @@ var Hub = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
     //   variant: 'primary',
     //   text: 'NEW'
     // }
-  }, {
-    title: true,
-    name: 'Chương trình đào tạo'
-  }, {
-    title: true,
-    name: 'Đăng ký'
-  }, {
+  },
+  // {
+  //   title: true,
+  //   name: 'Chương trình đào tạo',
+  // },
+  // {
+  //   title: true,
+  //   name: 'Đăng ký',
+  // },
+  {
     title: true,
     name: 'Đánh giá'
   }, {
@@ -64854,29 +64869,45 @@ var Hub = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
     icon: 'fa fa-calendar-check-o'
 
   }, {
-    name: 'Tài khoản',
-    url: '/profile',
-    icon: 'fa fa-user'
+    name: 'Kết quả',
+    url: '/result',
+    icon: 'fa fa-trophy'
 
-  }, {
-    name: 'Mật khẩu',
-    url: '/change-pass',
-    icon: 'fa fa-key'
-
-  }, {
-    name: 'Đăng xuất',
-    url: '/pages/login',
-    icon: 'fa fa-key'
-
-  }, {
-    title: true,
-    name: 'Tài chính'
   }, {
     name: 'Thông tin tài chính',
     url: '/finance',
     icon: 'fa fa-money'
 
-  }, {
+  },
+  // {
+  //   name: 'Tài khoản',
+  //   url: '/profile',
+  //   icon: 'fa fa-user',
+
+  // },
+  // {
+  //   name: 'Mật khẩu',
+  //   url: '/change-pass',
+  //   icon: 'fa fa-key',
+
+  // },
+  // {
+  //   name: 'Đăng xuất',
+  //   url: '/pages/login',
+  //   icon: 'fa fa-key',
+
+  // },
+  // {
+  //   title: true,
+  //   name: 'Tài chính',
+  // },
+  // {
+  //   name: 'Thông tin tài chính',
+  //   url: '/finance',
+  //   icon: 'fa fa-money',
+
+  // },
+  {
     title: true,
     name: 'Dịch vụ'
   }, {
@@ -79950,7 +79981,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     attrs: {
       "columnDefs": _vm.columnDefs,
-      "rowData": _vm.rowData
+      "rowData": _vm.rowData,
+      "rowSelection": "multiple"
     }
   })], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -81442,15 +81474,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('SidebarFooter'), _vm._v(" "), _c('SidebarMinimizer')], 1), _vm._v(" "), _c('main', {
     staticClass: "main"
-  }, [_c('div', {
-    staticClass: "container-fluid"
-  }, [_c('router-view')], 1)]), _vm._v(" "), _c('AppAside', {
+  }, [_c('div', [_c('router-view')], 1)]), _vm._v(" "), _c('AppAside', {
     attrs: {
       "fixed": ""
     }
-  }, [_c('DefaultAside')], 1)], 1), _vm._v(" "), _c('TheFooter', [_c('div', [_vm._v("\n      Đại học Kiến trúc Hà Nội\n      "), _c('span', {
+  }, [_c('DefaultAside')], 1)], 1), _vm._v(" "), _c('TheFooter', [_c('div', [_c('span', {
     staticClass: "ml-1"
-  }, [_vm._v("© 2018 .")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("© 2019 .")])]), _vm._v(" "), _c('div', {
     staticClass: "ml-auto"
   }, [_c('span', {
     staticClass: "mr-1"

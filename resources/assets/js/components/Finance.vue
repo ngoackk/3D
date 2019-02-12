@@ -11,6 +11,7 @@
       class="ag-theme-balham"
       :columnDefs="columnDefs"
       :rowData="rowData"
+      rowSelection="multiple"
     ></ag-grid-vue>
   </div>
 </template>
@@ -27,8 +28,8 @@ export default {
     return {
       columnDefs: null,
       rowData: null,
-      bangdiem: [],
-      finance_detail:[]
+      finance_sort: [],
+      finance_detail: []
     };
   },
   components: {
@@ -37,19 +38,12 @@ export default {
   beforeMount() {
     this.columnDefs = [
       {
-        headerName: "Môn học",
-        field: "Ten_mon",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: true
-      },
-      {
         headerName: "Năm học",
         field: "nam_hoc",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true,
-        width: 300
+        suppressSizeToFit: false,
+        
       },
 
       {
@@ -57,16 +51,8 @@ export default {
         field: "Hoc_ky",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        suppressSizeToFit: false
       },
-      {
-        headerName: "Số tiền phải nộp",
-        field: "So_tien_phai_nop",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: true
-      },
-
       {
         headerName: "Số tiền đã nộp",
         field: "So_tien_da_nop",
@@ -75,7 +61,29 @@ export default {
         suppressSizeToFit: true
       },
       {
-        headerName: "Còn thiếu",
+        headerName: "Số tiền miễn giảm",
+        field: "So_tien_mien_giam",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      },
+
+      {
+        headerName: "Số tiền nộp",
+        field: "So_tien_nop",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      },
+      {
+        headerName: "Số tiền trả lại",
+        field: "So_tien_tra_lai",
+        sortable: true,
+        filter: true,
+        suppressSizeToFit: true
+      },
+      {
+        headerName: "Số tiền thừa / thiếu",
         field: "Thieu_thua",
         sortable: true,
         filter: true,
@@ -86,13 +94,14 @@ export default {
 
   mounted() {
     Users.callServer("Finance")
-      .then(points=> {
-        this.bangdiem = points;
-        this.rowData = points;
-        console.log(points);
+      .then(points => {
+        if (points.length > 0) this.finance_sort = points[0];
+        if (points.length > 1) this.finance_detail = points[1];
+
+        this.rowData = this.finance_sort;
       })
       .catch(err => {
-        console.error(err)
+        console.error(err);
         //alert(err);
       });
   },
