@@ -62962,7 +62962,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       columnDefs: null,
       rowData: null,
-      bangdiem: []
+      bangdiem: [],
+      finance_detail: []
     };
   },
 
@@ -63015,6 +63016,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("Finance").then(function (points) {
       _this.bangdiem = points;
       _this.rowData = points;
+      console.log(points);
     }).catch(function (err) {
       alert(err);
     });
@@ -63295,8 +63297,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__apis_api__ = __webpack_require__(21);
-//
-//
 //
 //
 //

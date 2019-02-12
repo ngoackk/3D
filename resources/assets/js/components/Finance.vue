@@ -27,7 +27,8 @@ export default {
     return {
       columnDefs: null,
       rowData: null,
-      bangdiem: []
+      bangdiem: [],
+      finance_detail:[]
     };
   },
   components: {
@@ -85,9 +86,10 @@ export default {
 
   mounted() {
     Users.callServer("Finance")
-      .then(points => {
+      .then(points=> {
         this.bangdiem = points;
         this.rowData = points;
+        console.log(points);
       })
       .catch(err => {
         alert(err);

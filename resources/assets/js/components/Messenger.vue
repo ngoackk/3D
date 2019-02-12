@@ -78,9 +78,7 @@
                   </span>
                 </p>
               </b-card>
-              
             </b-collapse>
-            
           </div>
         </div>
       </div>
