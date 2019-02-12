@@ -8,14 +8,14 @@ export default {
       //   text: 'NEW'
       // }
     },
-    {
-      title: true,
-      name: 'Chương trình đào tạo',
-    },
-    {
-      title: true,
-      name: 'Đăng ký',
-    },
+    // {
+    //   title: true,
+    //   name: 'Chương trình đào tạo',
+    // },
+    // {
+    //   title: true,
+    //   name: 'Đăng ký',
+    // },
     {
       title: true,
       name: 'Đánh giá',
@@ -59,26 +59,10 @@ export default {
 
     },
     {
-      name: 'Tài khoản',
-      url: '/profile',
-      icon: 'fa fa-user',
+      name: 'Kết quả',
+      url: '/result',
+      icon: 'fa fa-trophy',
 
-    },
-    {
-      name: 'Mật khẩu',
-      url: '/change-pass',
-      icon: 'fa fa-key',
-
-    },
-    {
-      name: 'Đăng xuất',
-      url: '/pages/login',
-      icon: 'fa fa-key',
-
-    },
-    {
-      title: true,
-      name: 'Tài chính',
     },
     {
       name: 'Thông tin tài chính',
@@ -86,6 +70,34 @@ export default {
       icon: 'fa fa-money',
 
     },
+    // {
+    //   name: 'Tài khoản',
+    //   url: '/profile',
+    //   icon: 'fa fa-user',
+
+    // },
+    // {
+    //   name: 'Mật khẩu',
+    //   url: '/change-pass',
+    //   icon: 'fa fa-key',
+
+    // },
+    // {
+    //   name: 'Đăng xuất',
+    //   url: '/pages/login',
+    //   icon: 'fa fa-key',
+
+    // },
+    // {
+    //   title: true,
+    //   name: 'Tài chính',
+    // },
+    // {
+    //   name: 'Thông tin tài chính',
+    //   url: '/finance',
+    //   icon: 'fa fa-money',
+
+    // },
     {
       title: true,
       name: 'Dịch vụ',

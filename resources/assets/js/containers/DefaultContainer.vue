@@ -43,7 +43,7 @@
       </AppSidebar>
       <main class="main">
         <!-- <Breadcrumb :list="list"/> -->
-        <div class="container-fluid">
+        <div class="container">
           <router-view></router-view>
         </div>
       </main>
