@@ -1,5 +1,10 @@
+import {
+  createCredentials
+} from "crypto";
+
 export const Settings = {
   BASEURL: "http://103.28.37.34:806",
+  // BASEURL: "https://tinchi.hau.edu.vn",
   TEST: "TEST STRING",
   NOIMAGE: "img/avatars/u2.png"
 };
@@ -27,6 +32,38 @@ export const Users = {
         reject(error);
       });
     });
+  },
+  postMessenger(crendential) {
+    var
+      token = localStorage.getItem("access_token"),
+      url = new URL(Settings.BASEURL + "/api/postmessenger?acccessToken=" + token),
+      params = {
+        title: crendential.title,
+        content: crendential.content,
+        receiverid: crendential.receiverid,
+        send_date: crendential.send_date,
+        deviceid: "ggsgfdgdg"
+      };
+
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+    alert(url);
+
+    fetch(url, {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    }).then(response => {
+      // resolve(response.json());
+      alert(JSON.stringify(response));
+      console.log(JSON.stringify(response));
+
+    }).catch(error => {
+      reject(error);
+    });
+
   },
 
 
@@ -90,7 +127,8 @@ export const Users = {
       user.avatar = Settings.BASEURL + user.Image_Url;
     }
     return user;
-  },
+  }
+
 
 };
 

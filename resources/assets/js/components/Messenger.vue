@@ -3,31 +3,32 @@
     <div>
       <span class="title">TIN NHẮN</span>
     </div>
+
     <div class="container">
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
           id="exampleInputGroup1"
           label="Tiêu đề:"
           label-for="exampleInput1"
-          description="Nhập tiêu đề ngắn gọn"
+          description="Nhập tiêu đề"
         >
           <b-form-input
             id="exampleInput1"
             type="text"
-            v-model="form.email"
+            v-model="form.title"
             required
-            placeholder="Nhập tiêu đề"
+            placeholder="Phải nhập tiêu đề"
           ></b-form-input>
         </b-form-group>
 
         <b-form-group id="exampleInputGroup2" label="Nội dung:" label-for="exampleInput2">
           <b-form-textarea
             id="exampleInput2"
-            v-model="form.name"
+            v-model="form.content"
             required
-            placeholder="Nhập nội dung"
+            placeholder="phải nhập nội dung"
             :rows="3"
-            :max-rows="6"
+            :max-rows="20"
           ></b-form-textarea>
         </b-form-group>
         <b-form-group id="exampleInputGroup3" label="Gửi tới:" label-for="exampleInput3">
@@ -93,10 +94,12 @@ export default {
   data() {
     return {
       msg: [],
+      msgToSend: [],
       msgDetail: {},
+      receiverlist: [],
       form: {
-        email: "",
-        name: "",
+        title: "",
+        content: "",
         food: null,
         checked: [],
         selected: "first"
@@ -134,6 +137,17 @@ export default {
         //alert("Lỗi phần dữ liệu Tin nhắn: " + err);
         this.$Hub.$emit("notification", { type: "error", msg: err });
       });
+
+    //Lấy danh sách người nhận messenger
+    Users.callServer("Receiverid")
+      .then(rList => {
+        this.receiverlist = rList;
+        console.log(this.receiverlist[0].Phong);
+      })
+      .catch(err => {
+        console.error(err);
+        //alert(err);
+      });
   },
 
   computed: {
@@ -148,19 +162,27 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
+
+      this.msgToSend = {};
+
       //alert(JSON.stringify(this.form));
       //Thu test gui tin nhan update js data
-      this.msg.push({
-        Tieude: this.form.email,
-        NgayGui: new Date(),
-        NguoiGui: this.Name
-      });
+      this.msgToSend = {
+        title: this.form.title,
+        content: this.form.content,
+        send_date: new Date(),
+        receiverid: this.receiverlist[0].ID_nguoi_nhan
+      };
+
+      alert(JSON.stringify(this.msgToSend));
+
+      Users.postMessenger(this.msgToSend);
     },
     onReset(evt) {
       evt.preventDefault();
       /* Reset our form values */
-      this.form.email = "";
-      this.form.name = "";
+      this.form.title = "";
+      this.form.content = "";
       this.form.food = null;
       this.form.checked = [];
       this.selected = "first";
