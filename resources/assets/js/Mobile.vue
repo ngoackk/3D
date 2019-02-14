@@ -13,7 +13,7 @@ export default {
   methods: {
     localUser() {
       let user = JSON.parse(localStorage.getItem("user"));
-      user.avatar = "img/avatars/u2.png";
+      user.avatar = "img/avatars/u1.png";
       if (user.Image_Url != null && user.Image_Url.trim() != "") {
         user.avatar = this.$Settings.BASEURL + user.Image_Url;
       }
@@ -68,5 +68,9 @@ export default {
   border-width: 1px;
   width: 100%;
   margin: 0px 0px 0px 0px;
+}
+
+.navlink {
+  font-family: Arial;
 }
 </style>

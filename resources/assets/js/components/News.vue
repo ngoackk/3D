@@ -4,17 +4,13 @@
       <span class="title">BẢN TIN</span>
     </div>
     <ul>
-      <li v-for="mss in msg" :key="mss.ID">
-          
-            <b-link v-b-toggle="mss.ID+''" >{{mss.Tieu_de}}</b-link>
-            <b-collapse :id="mss.ID+''" class="mt-2">
-              <b-card>
-                <p class="card-text" v-html="mss.Noi_dung" ></p>
-                
-              </b-card>
-            </b-collapse>
-          
-
+      <li role="tablist" v-for="mss in msg" :key="mss.ID">
+        <b-link role="tab" v-b-toggle="mss.ID+''">{{mss.Tieu_de}}</b-link>
+        <b-collapse :id="mss.ID+''" role="tabpanel1" accordion="my-accordion" class="mt-2">
+          <b-card>
+            <p class="card-text" v-html="mss.Noi_dung"></p>
+          </b-card>
+        </b-collapse>
       </li>
     </ul>
     <!-- <div>     
@@ -25,7 +21,7 @@
            </router-link>
         </li>
       </ul>
-    </div> -->
+    </div>-->
   </div>
 </template>
 <script>
@@ -45,8 +41,8 @@ export default {
       })
 
       .catch(err => {
-        console.error(err)
-       // alert(err);
+        console.error(err);
+        // alert(err);
       });
   },
 
@@ -54,6 +50,7 @@ export default {
     Name() {
       return this.currentUser()["Ho_ten"];
     }
-  }
+  },
+  methods: {}
 };
 </script>

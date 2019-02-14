@@ -13,25 +13,13 @@
         >
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg"/>
-      <!-- <b-navbar-nav class="d-md-down-none">
-        <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
-        <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
-        <b-nav-item class="px-3">Settings</b-nav-item>
-      </b-navbar-nav>-->
+
       <b-navbar-nav class="ml-auto">
         <div class="title">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</div>
 
-        <!-- <b-nav-item class="d-md-down-none">
-          <i class="icon-list"></i>
-        </b-nav-item>-->
-        <!-- <b-nav-item class="d-md-down-none">
-          <i class="icon-location-pin"></i>
-        </b-nav-item>-->
         <DefaultHeaderDropdownMsg/>
         <DefaultHeaderDropdownAccnt/>
       </b-navbar-nav>
-      <!-- <AsideToggler class="d-none d-lg-block" /> -->
-      <!--<AsideToggler class="d-lg-none" mobile />-->
     </AppHeader>
     <div class="app-body">
       <AppSidebar fixed>
@@ -54,7 +42,7 @@
     </div>
     <TheFooter>
       <!--footer-->
-      <div>    
+      <div>
         <span class="ml-1">&copy; 2019 .</span>
       </div>
       <div class="ml-auto">
@@ -84,9 +72,8 @@ import {
 import DefaultAside from "./DefaultAside";
 import DefaultHeaderDropdownAccnt from "./DefaultHeaderDropdownAccnt";
 import DefaultHeaderDropdownMsg from "./DefaultHeaderDropdownMsg";
- 
+
 export default {
-  
   name: "DefaultContainer",
   components: {
     AsideToggler,
@@ -110,18 +97,18 @@ export default {
       nav: nav.items
     };
   },
-  mounted(){
-    this.$Hub.$on("notification", data=>{
-      console.log("On Notification ", data)
-    }) 
+  mounted() {
+    this.$Hub.$on("notification", data => {
+      console.log("On Notification ", data);
+    });
   },
-  destroyed(){
-    this.$Hub.$off("notification")
+  destroyed() {
+    this.$Hub.$off("notification");
   },
   computed: {
     name() {
-      console.log("In thu bien global trong settings")
-      console.log(this.$Settings)
+      console.log("In thu bien global trong settings");
+      console.log(this.$Settings);
       return this.$route.name;
     },
     list() {

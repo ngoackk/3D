@@ -5,8 +5,8 @@ import {
 export const Settings = {
   BASEURL: "http://103.28.37.34:806",
   // BASEURL: "https://tinchi.hau.edu.vn",
-  TEST: "TEST STRING",
-  NOIMAGE: "img/avatars/u2.png"
+
+  NOIMAGE: "img/avatars/u1.png"
 };
 export const Users = {
 
@@ -21,6 +21,7 @@ export const Users = {
         };
       Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
       fetch(url, {
+
         method: "POST",
         headers: {
           'Accept': 'application/json',
@@ -34,39 +35,44 @@ export const Users = {
     });
   },
   postMessenger(crendential) {
-    var
-      token = localStorage.getItem("access_token"),
-      url = new URL(Settings.BASEURL + "/api/postmessenger?acccessToken=" + token),
-      params = {
-        title: crendential.title,
-        content: crendential.content,
-        receiverid: crendential.receiverid,
-        send_date: crendential.send_date,
-        deviceid: "ggsgfdgdg"
-      };
+    return new Promise((resolve, reject) => {
+      console.log(crendential);
+      var
+        token = localStorage.getItem("access_token"),
+        url = new URL(Settings.BASEURL + "/api/postmessenger?accessToken=" + token),
+        params = {
+          title: crendential.title,
+          content: crendential.content,
+          receiverid: crendential.receiverid,
+          send_date: crendential.send_date,
+          deviceid: "ggsgfdgdg"
+        };
 
-    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+      Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
-    alert(url);
+      //alert(url);
 
-    fetch(url, {
-      method: "POST",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
-    }).then(response => {
-      // resolve(response.json());
-      alert(JSON.stringify(response));
-      console.log(JSON.stringify(response));
+      fetch(url, {
+        method: "POST",
+        //body: JSON.stringify(params),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json; charset=utf-8'
+        }
+      }).then(response => {
+        resolve(response.json());
+        //alert(JSON.stringify(response));
+        console.log("Đã gửi tin nhắn cho nhà trường thành công", response);
 
-    }).catch(error => {
-      reject(error);
+      }).catch(error => {
+        reject(error);
+      });
     });
-
   },
 
-
+  sendform_test() {
+    alert("test form");
+  },
   getUserInfor() {
     return this.callServer("Profile");
 

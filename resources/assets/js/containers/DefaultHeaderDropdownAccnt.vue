@@ -47,15 +47,7 @@ export default {
     user() {
       return this.currentUser()
     }
-    // Img() {
-    //   if (this.currentUser() == null || this.currentUser().Image_Url == null) {
-    //     return { avatar: "img/avatars/u2.png" };
-    //   } else {
-    //     return {
-    //       avatar: this.$Settings.BASEURL + this.currentUser().Image_Url
-    //     };
-    //   }
-    // }
+    
   },
   // Hết phần computed
   methods: {
