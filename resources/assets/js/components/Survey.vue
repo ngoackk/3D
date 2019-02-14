@@ -3,7 +3,10 @@
     <div class="title">KHẢO SÁT</div>
 
     <div class="title">{{user.Ho_ten}}</div>
-    <div class="navlink">{{mess}} <a href="https://tinchi.hau.edu.vn">https://tinchi.hau.edu.vn</a> </div>
+    <div class="navlink">
+      {{mess}}
+      <a href="https://tinchi.hau.edu.vn">https://tinchi.hau.edu.vn</a>
+    </div>
   </div>
 </template>
 <script>
