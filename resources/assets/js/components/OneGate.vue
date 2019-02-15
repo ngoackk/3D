@@ -63,9 +63,7 @@ export default {
   },
 
   methods: {
-    getMsgById: function(msgID) {
-      // alert(msgID);
-    },
+    
     getDataById(id) {}
   },
 

@@ -35,7 +35,7 @@ export default {
   },
 
   mounted() {
-    Users.callServer("Notification")
+    Users.callServerApi("Notification")
       .then(msgList => {
         this.msg = msgList;
       })

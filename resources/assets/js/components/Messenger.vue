@@ -40,11 +40,16 @@
         <b-button type="reset" variant="danger">Làm lại</b-button>
       </b-form>
     </div>
+    <div class="space"></div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12" >
-
-          <div role="tablist" v-for="mss in msg" :key="mss.ID" class="blockquote-box blockquote-warning clearfix">
+        <div class="col-md-12">
+          <div
+            role="tablist"
+            v-for="mss in msg"
+            :key="mss.ID"
+            class="blockquote-box blockquote-warning clearfix"
+          >
             <div class="cycle pull-left">
               <img class="img-avatar" :src="user.avatar">
             </div>
@@ -103,9 +108,7 @@ export default {
         checked: [],
         selected: "first"
       },
-      departements: [
-        { value: null, text: '---Chọn---' },
-      ],
+      departements: [{ value: null, text: "---Chọn---" }],
       show: true
     };
   },
@@ -125,7 +128,7 @@ export default {
 
   methods: {
     loadDb() {
-      Users.callServer("Chat")
+      Users.callServerApi("Chat")
         .then(listThongTin => {
           this.msg = listThongTin;
 
@@ -136,7 +139,10 @@ export default {
                   this.$set(this.msgDetail, ms.ID + "", detail);
                 })
                 .catch(err => {
-                  this.$Hub.$emit("notification", { type: "error", msg: err });
+                  this.$Hub.$emit("Lỗi lấy thông tin CHAT", {
+                    type: "error",
+                    msg: err
+                  });
                 });
             });
           }
@@ -148,7 +154,7 @@ export default {
         });
 
       //Lấy danh sách người nhận messenger
-      Users.callServer("Receiverid")
+      Users.callServerApi("Receiverid")
         .then(rList => {
           console.log(rList);
           this.receiverlist = rList;
@@ -158,13 +164,14 @@ export default {
               value: obj.ID_nguoi_nhan
             });
           });
-          
         })
         .catch(err => {
           console.error(err);
           //alert(err);
         });
     },
+
+    //Xử lý khi bấm nút GỬI của FORM
     onSubmit(evt) {
       evt.preventDefault();
 
@@ -172,12 +179,12 @@ export default {
 
       //alert(JSON.stringify(this.form));
       //Thu test gui tin nhan update js data
-      
+
       this.msgToSend = {
         title: this.form.title,
         content: this.form.content,
         send_date: this.$moment().format("YYYY/MM/DD"),
-        receiverid: this.form.deptId//this.receiverlist[0].ID_nguoi_nhan
+        receiverid: this.form.deptId //this.receiverlist[0].ID_nguoi_nhan
       };
 
       // alert(JSON.stringify(this.msgToSend));
@@ -191,6 +198,8 @@ export default {
           console.error(err);
         });
     },
+
+    //Xử lý nếu ấn RESET của FORM
     onReset(evt) {
       if (evt) {
         evt.preventDefault();
@@ -211,15 +220,8 @@ export default {
     readMsgDetail(id) {
       return Users.getMsgDetail("Chat", id);
     },
-    getMsgById(msgID) {
-      Users.getMsgDetail("Chat", msgID).then(lsDetail => {
-        this.msgDetail = lsDetail;
-        //console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
-      });
-    },
 
     sendMsg() {
-      //alert("Đã gửi: " + msgToSend);
       this.$Hub.$emit("notification", {
         type: "success",
         msg: "Đã gửi : " + this.msgToSend

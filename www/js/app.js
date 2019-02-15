@@ -14990,7 +14990,9 @@ var Users = {
       fetch(url, {
 
         method: "POST",
+
         headers: {
+
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         }
@@ -15002,46 +15004,11 @@ var Users = {
     });
   },
   postMessenger: function postMessenger(crendential) {
+
     return this.callServerApi("postmessenger", crendential);
-    // return new Promise((resolve, reject) => {
-    //   console.log(crendential);
-    //   var
-    //     token = localStorage.getItem("access_token"),
-    //     url = new URL(Settings.BASEURL + "/api/postmessenger?accessToken=" + token),
-    //     params = {
-    //       title: crendential.title,
-    //       content: crendential.content,
-    //       receiverid: crendential.receiverid,
-    //       send_date: crendential.send_date,
-    //       deviceid: "ggsgfdgdg"
-    //     };
-
-    //   Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
-
-    //   //alert(url);
-
-    //   fetch(url, {
-    //     method: "POST",
-    //     //body: JSON.stringify(params),
-    //     headers: {
-    //       'Accept': 'application/json',
-    //       'Content-Type': 'application/json; charset=utf-8'
-    //     }
-    //   }).then(response => {
-    //     resolve(response.json());
-    //     //alert(JSON.stringify(response));
-    //     console.log("Đã gửi tin nhắn cho nhà trường thành công", response);
-
-    //   }).catch(error => {
-    //     reject(error);
-    //   });
-    // });
-  },
-  sendform_test: function sendform_test() {
-    alert("test form");
   },
   getUserInfor: function getUserInfor() {
-    return this.callServer("Profile");
+    return this.callServerApi("Profile");
   },
   getLearningPoint: function getLearningPoint() {
     return this.callServer("LearningPoints");
@@ -15072,20 +15039,25 @@ var Users = {
    * @param {Object} params javaScript Object define as {key, value} to send to server
    */
   callServerApi: function callServerApi(endpoint, params) {
+
     return new Promise(function (resolve, reject) {
       var token = localStorage.getItem("access_token");
       var parameters = {};
+      var url = {};
       if (token == null) reject({
-        "error": "you have no permission to access api!"
+        "error": "Bạn chưa đăng nhập hoặc không có quyền truy xuất thông tin!"
       });
       if (!endpoint) reject({
-        "error": "No endpoint to call!"
+        "error": "Chưa có tham số (Endpoint) gọi API !"
       });
       if (params) parameters = params;
       parameters.accessToken = token;
       url = new URL(Settings.BASEURL + "/api/" + endpoint), Object.keys(parameters).forEach(function (key) {
         return url.searchParams.append(key, parameters[key]);
       });
+
+      alert(JSON.stringify(url));
+
       fetch(url, {
         method: "POST",
         headers: {
@@ -15106,7 +15078,9 @@ var Users = {
       var token = localStorage.getItem("access_token");
       fetch(Settings.BASEURL + "/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
         method: "POST",
+
         headers: {
+
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         }
@@ -76847,7 +76821,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       sortable: true,
       filter: true,
       suppressSizeToFit: false
-
     }, {
       headerName: "Học kỳ",
       field: "Hoc_ky",
@@ -76889,7 +76862,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   mounted: function mounted() {
     var _this = this;
 
-    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("Finance").then(function (points) {
+    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("Finance").then(function (points) {
       if (points.length > 0) _this.finance_sort = points[0];
       if (points.length > 1) _this.finance_detail = points[1];
 
@@ -77264,6 +77237,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -77284,7 +77262,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
         checked: [],
         selected: "first"
       },
-      departements: [{ value: null, text: '---Chọn---' }],
+      departements: [{ value: null, text: "---Chọn---" }],
       show: true
     };
   },
@@ -77306,7 +77284,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
     loadDb: function loadDb() {
       var _this = this;
 
-      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("Chat").then(function (listThongTin) {
+      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("Chat").then(function (listThongTin) {
         _this.msg = listThongTin;
 
         if (_this.msg && _this.msg.length > 0) {
@@ -77314,7 +77292,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
             _this.readMsgDetail(ms.ID).then(function (detail) {
               _this.$set(_this.msgDetail, ms.ID + "", detail);
             }).catch(function (err) {
-              _this.$Hub.$emit("notification", { type: "error", msg: err });
+              _this.$Hub.$emit("Lỗi lấy thông tin CHAT", {
+                type: "error",
+                msg: err
+              });
             });
           });
         }
@@ -77324,7 +77305,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
       });
 
       //Lấy danh sách người nhận messenger
-      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("Receiverid").then(function (rList) {
+      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("Receiverid").then(function (rList) {
         console.log(rList);
         _this.receiverlist = rList;
         _this.receiverlist.forEach(function (obj) {
@@ -77338,6 +77319,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
         //alert(err);
       });
     },
+
+
+    //Xử lý khi bấm nút GỬI của FORM
     onSubmit: function onSubmit(evt) {
       var _this2 = this;
 
@@ -77364,6 +77348,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
         console.error(err);
       });
     },
+
+
+    //Xử lý nếu ấn RESET của FORM
     onReset: function onReset(evt) {
       var _this3 = this;
 
@@ -77386,16 +77373,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
     readMsgDetail: function readMsgDetail(id) {
       return __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].getMsgDetail("Chat", id);
     },
-    getMsgById: function getMsgById(msgID) {
-      var _this4 = this;
-
-      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].getMsgDetail("Chat", msgID).then(function (lsDetail) {
-        _this4.msgDetail = lsDetail;
-        //console.log("Dữ liệu tin nhắn chi tiết: ", this.msgDetail);
-      });
-    },
     sendMsg: function sendMsg() {
-      //alert("Đã gửi: " + msgToSend);
       this.$Hub.$emit("notification", {
         type: "success",
         msg: "Đã gửi : " + this.msgToSend
@@ -77449,7 +77427,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   mounted: function mounted() {
     var _this = this;
 
-    __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].callServer("Notification").then(function (msgList) {
+    __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].callServerApi("Notification").then(function (msgList) {
       _this.msg = msgList;
     }).catch(function (err) {
       console.error(err);
@@ -77534,9 +77512,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   methods: {
-    getMsgById: function getMsgById(msgID) {
-      // alert(msgID);
-    },
     getDataById: function getDataById(id) {}
   },
 
@@ -77679,7 +77654,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   mounted: function mounted() {
     var _this = this;
 
-    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("LearningPoints").then(function (points) {
+    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("LearningPoints").then(function (points) {
       _this.bangdiem = points;
       _this.rowData = points;
     }).catch(function (err) {
@@ -90977,7 +90952,7 @@ exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(77)();
-exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n.subject {\n  font-family: Arial;\n  font-weight: bold;\n}\n.img-avatar {\n  width: 30px;\n}\n.frame {\n  border-style: solid;\n  border-color: coral;\n  border-width: 1px;\n  width: 100%;\n  margin: 0px 0px 0px 0px;\n}\n.navlink {\n  font-family: Arial;\n}\n", ""]);
+exports.push([module.i, "\n.header {\n  background: #00b9f2;\n}\n.bgr_container {\n  background: #00b9f2;\n}\n.title_color {\n  color: #ffffff;\n  font-family: Arial;\n  font-size: 8pt;\n  font-weight: bold;\n}\n.btn main {\n  background: #c1ccd9;\n  margin: 0;\n  width: 100%;\n}\n.title {\n  font-family: Arial;\n  font-weight: bold;\n}\n.subject {\n  font-family: Arial;\n  font-weight: bold;\n}\n.img-avatar {\n  width: 30px;\n}\n.frame {\n  border-style: solid;\n  border-color: coral;\n  border-width: 1px;\n  width: 100%;\n  margin: 0px 0px 0px 0px;\n}\n.navlink {\n  font-family: Arial;\n}\n.navlink .space {\n    height: 10px;\n}\n", ""]);
 
 /***/ }),
 /* 570 */
@@ -102665,6 +102640,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "danger"
     }
   }, [_vm._v("Làm lại")])], 1) : _vm._e()], 1), _vm._v(" "), _c('div', {
+    staticClass: "space"
+  }), _vm._v(" "), _c('div', {
     staticClass: "container"
   }, [_c('div', {
     staticClass: "row"

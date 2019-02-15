@@ -23,7 +23,9 @@ export const Users = {
       fetch(url, {
 
         method: "POST",
+
         headers: {
+
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         }
@@ -35,47 +37,15 @@ export const Users = {
     });
   },
   postMessenger(crendential) {
+
+
     return this.callServerApi("postmessenger", crendential);
-    // return new Promise((resolve, reject) => {
-    //   console.log(crendential);
-    //   var
-    //     token = localStorage.getItem("access_token"),
-    //     url = new URL(Settings.BASEURL + "/api/postmessenger?accessToken=" + token),
-    //     params = {
-    //       title: crendential.title,
-    //       content: crendential.content,
-    //       receiverid: crendential.receiverid,
-    //       send_date: crendential.send_date,
-    //       deviceid: "ggsgfdgdg"
-    //     };
 
-    //   Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
-
-    //   //alert(url);
-
-    //   fetch(url, {
-    //     method: "POST",
-    //     //body: JSON.stringify(params),
-    //     headers: {
-    //       'Accept': 'application/json',
-    //       'Content-Type': 'application/json; charset=utf-8'
-    //     }
-    //   }).then(response => {
-    //     resolve(response.json());
-    //     //alert(JSON.stringify(response));
-    //     console.log("Đã gửi tin nhắn cho nhà trường thành công", response);
-
-    //   }).catch(error => {
-    //     reject(error);
-    //   });
-    // });
   },
 
-  sendform_test() {
-    alert("test form");
-  },
+
   getUserInfor() {
-    return this.callServer("Profile");
+    return this.callServerApi("Profile");
 
   },
   getLearningPoint() {
@@ -109,19 +79,24 @@ export const Users = {
    * @param {Object} params javaScript Object define as {key, value} to send to server
    */
   callServerApi(endpoint, params) {
+
     return new Promise((resolve, reject) => {
       let token = localStorage.getItem("access_token");
       let parameters = {};
+      let url = {};
       if (token == null) reject({
-        "error": "you have no permission to access api!"
+        "error": "Bạn chưa đăng nhập hoặc không có quyền truy xuất thông tin!"
       });
       if (!endpoint) reject({
-        "error": "No endpoint to call!"
+        "error": "Chưa có tham số (Endpoint) gọi API !"
       });
       if (params) parameters = params;
       parameters.accessToken = token;
       url = new URL(Settings.BASEURL + "/api/" + endpoint),
         Object.keys(parameters).forEach(key => url.searchParams.append(key, parameters[key]));
+
+      alert(JSON.stringify(url));
+
       fetch(url, {
           method: "POST",
           headers: {
@@ -145,7 +120,9 @@ export const Users = {
       let token = localStorage.getItem("access_token");
       fetch(Settings.BASEURL + "/api/" + url + "?accessToken=" + token + "&id=" + chatId, {
           method: "POST",
+
           headers: {
+
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           }

@@ -72,5 +72,9 @@ export default {
 
 .navlink {
   font-family: Arial;
+  .space
+  {
+    height: 10px;
+  }
 }
 </style>

@@ -42,8 +42,7 @@ export default {
         field: "nam_hoc",
         sortable: true,
         filter: true,
-        suppressSizeToFit: false,
-        
+        suppressSizeToFit: false
       },
 
       {
@@ -93,7 +92,7 @@ export default {
   },
 
   mounted() {
-    Users.callServer("Finance")
+    Users.callServerApi("Finance")
       .then(points => {
         if (points.length > 0) this.finance_sort = points[0];
         if (points.length > 1) this.finance_detail = points[1];

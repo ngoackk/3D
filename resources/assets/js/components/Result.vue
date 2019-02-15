@@ -64,13 +64,13 @@ export default {
   },
 
   mounted() {
-    Users.callServer("LearningPoints")
+    Users.callServerApi("LearningPoints")
       .then(points => {
         this.bangdiem = points;
         this.rowData = points;
       })
       .catch(err => {
-        console.error(err)
+        console.error(err);
         //alert(err);
       });
   },
