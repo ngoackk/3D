@@ -10,7 +10,7 @@ export const Settings = {
 };
 export const Users = {
 
-  studentLogin(crendential) {   
+  studentLogin(crendential) {
     return new Promise((resolve, reject) => {
       //Vi du dung base url de thay the cac cho khai bao cung
       var url = new URL(Settings.BASEURL + "/api/login"),
@@ -29,7 +29,7 @@ export const Users = {
         }
       }).then(response => {
         resolve(response.json());
-      }).catch(error => {
+      }).then(error => {
         reject(error);
       });
     });
@@ -103,38 +103,42 @@ export const Users = {
         });
     });
   },
-   /**
-    * 
-    * @param {String} endpoint api endpoint router in server
-    * @param {Object} params javaScript Object define as {key, value} to send to server
-    */
+  /**
+   * 
+   * @param {String} endpoint api endpoint router in server
+   * @param {Object} params javaScript Object define as {key, value} to send to server
+   */
   callServerApi(endpoint, params) {
-      return new Promise((resolve, reject) => {        
-        let token = localStorage.getItem("access_token");
-        let parameters = {};
-        if(token == null) reject({"error": "you have no permission to access api!"});
-        if(!endpoint) reject({"error": "No endpoint to call!"});
-        if(params) parameters = params; 
-        parameters.accessToken = token;
-        url = new URL(Settings.BASEURL + "/api/"+ endpoint),
-        Object.keys(parameters).forEach(key => url.searchParams.append(key, parameters[key]));
-        fetch(url, {
-            method: "POST",
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            }
-          })
-          .then(data => {
-            console.info("Call "+endpoint+" : thành công: ", data);
-            resolve(data.json());
-          })
-          .catch(error => {
-            console.error("Call "+endpoint+" : thất bại: ", error);
-            reject(error);
-          });
+    return new Promise((resolve, reject) => {
+      let token = localStorage.getItem("access_token");
+      let parameters = {};
+      if (token == null) reject({
+        "error": "you have no permission to access api!"
       });
-    },
+      if (!endpoint) reject({
+        "error": "No endpoint to call!"
+      });
+      if (params) parameters = params;
+      parameters.accessToken = token;
+      url = new URL(Settings.BASEURL + "/api/" + endpoint),
+        Object.keys(parameters).forEach(key => url.searchParams.append(key, parameters[key]));
+      fetch(url, {
+          method: "POST",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(data => {
+          console.info("Call " + endpoint + " : thành công: ", data);
+          resolve(data.json());
+        })
+        .catch(error => {
+          console.error("Call " + endpoint + " : thất bại: ", error);
+          reject(error);
+        });
+    });
+  },
 
   getMsgDetail(url, chatId) {
     return new Promise((resolve, reject) => {
