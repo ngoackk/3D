@@ -39,7 +39,7 @@ export default {
       { key: "nam_hoc", label: "Năm học" },
       { key: "Hoc_ky", label: "Học kỳ" },
       { key: "So_tien_da_nop", label: "Đã nộp" },
-      { key: "So_tien_nop", label: "Phải nộp" },
+      { key: "so_tien_phai_nop", label: "Phải nộp" },
       { key: "Thieu_thua", label: "Thừa thiếu" }
     ];
   },

@@ -76793,13 +76793,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -76817,7 +76810,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   components: {},
   beforeMount: function beforeMount() {
-    this.fields = [{ key: "nam_hoc", label: "Năm học" }, { key: "Hoc_ky", label: "Học kỳ" }, { key: "So_tien_da_nop", label: "Đã nộp" }, { key: "So_tien_nop", label: "Phải nộp" }, { key: "Thieu_thua", label: "Thừa thiếu" }];
+    this.fields = [{ key: "nam_hoc", label: "Năm học" }, { key: "Hoc_ky", label: "Học kỳ" }, { key: "So_tien_da_nop", label: "Đã nộp" }, { key: "so_tien_phai_nop", label: "Phải nộp" }, { key: "Thieu_thua", label: "Thừa thiếu" }];
   },
   mounted: function mounted() {
     var _this = this;
@@ -101820,18 +101813,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "small": "",
       "primary-key": _vm.id_sv
     }
-  })], 1), _vm._v(" "), _c('ag-grid-vue', {
-    staticClass: "ag-theme-balham",
-    staticStyle: {
-      "width": "100%",
-      "height": "100%"
-    },
-    attrs: {
-      "columnDefs": _vm.columnDefs,
-      "rowData": _vm.rowData,
-      "rowSelection": "multiple"
-    }
-  })], 1)
+  })], 1)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
