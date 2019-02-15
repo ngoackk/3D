@@ -5,7 +5,12 @@
     </div>
     <div>
       <div>
-        <b-table id="table-transition-example" :items="bangdiem" :fields="fields" striped small
+        <b-table
+          id="table-transition-example"
+          :items="bangdiem"
+          :fields="fields"
+          striped
+          small
           :primary-key="ID_mon"
         />
       </div>

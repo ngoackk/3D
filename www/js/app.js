@@ -76792,6 +76792,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -76802,60 +76812,73 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   inject: ["currentUser"],
   data: function data() {
     return {
-      columnDefs: null,
-      rowData: null,
+      // columnDefs: null,
+      // rowData: null,
       finance_sort: [],
-      finance_detail: []
+      finance_detail: [],
+      fields: []
     };
   },
 
   components: {
-    AgGridVue: __WEBPACK_IMPORTED_MODULE_0_ag_grid_vue__["AgGridVue"]
+    // AgGridVue
   },
   beforeMount: function beforeMount() {
-    this.columnDefs = [{
-      headerName: "Năm học",
-      field: "nam_hoc",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: false
-    }, {
-      headerName: "Học kỳ",
-      field: "Hoc_ky",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: false
-    }, {
-      headerName: "Số tiền đã nộp",
-      field: "So_tien_da_nop",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: true
-    }, {
-      headerName: "Số tiền miễn giảm",
-      field: "So_tien_mien_giam",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: true
-    }, {
-      headerName: "Số tiền nộp",
-      field: "So_tien_nop",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: true
-    }, {
-      headerName: "Số tiền trả lại",
-      field: "So_tien_tra_lai",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: true
-    }, {
-      headerName: "Số tiền thừa / thiếu",
-      field: "Thieu_thua",
-      sortable: true,
-      filter: true,
-      suppressSizeToFit: true
-    }];
+    this.fields = [{ key: "nam_hoc", label: "Năm học" }, { key: "Hoc_ky", label: "Học kỳ" }, { key: "So_tien_da_nop", label: "Đã nộp" }, { key: "So_tien_nop", label: "Phải nộp" }, { key: "Thieu_thua", label: "Thừa thiếu" }];
+    //,
+    //   (this.columnDefs = [
+    //     {
+    //       headerName: "Năm học",
+    //       field: "nam_hoc",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: false
+    //     },
+
+    //     {
+    //       headerName: "Học kỳ",
+    //       field: "Hoc_ky",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: false
+    //     },
+    //     {
+    //       headerName: "Số tiền đã nộp",
+    //       field: "So_tien_da_nop",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
+    //     {
+    //       headerName: "Số tiền miễn giảm",
+    //       field: "So_tien_mien_giam",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
+
+    //     {
+    //       headerName: "Số tiền nộp",
+    //       field: "So_tien_nop",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
+    //     {
+    //       headerName: "Số tiền trả lại",
+    //       field: "So_tien_tra_lai",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
+    //     {
+    //       headerName: "Số tiền thừa / thiếu",
+    //       field: "Thieu_thua",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     }
+    //   ]);
   },
   mounted: function mounted() {
     var _this = this;
@@ -77586,6 +77609,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__apis_api__ = __webpack_require__(26);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -101847,7 +101875,16 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v("Sinh viên: " + _vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
+  }, [_vm._v("Sinh viên: " + _vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('div', [_c('b-table', {
+    attrs: {
+      "id": "table-transition-example",
+      "items": _vm.finance_sort,
+      "fields": _vm.fields,
+      "striped": "",
+      "small": "",
+      "primary-key": _vm.id_sv
+    }
+  })], 1), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",

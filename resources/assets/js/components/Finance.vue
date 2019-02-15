@@ -6,6 +6,16 @@
     <div>
       <span class="title">Sinh viên: {{user.Ho_ten}}</span>
     </div>
+    <div>
+      <b-table
+        id="table-transition-example"
+        :items="finance_sort"
+        :fields="fields"
+        striped
+        small
+        :primary-key="id_sv"
+      />
+    </div>
     <ag-grid-vue
       style="width: 100%; height: 100%;"
       class="ag-theme-balham"
@@ -26,69 +36,78 @@ export default {
   inject: ["currentUser"],
   data() {
     return {
-      columnDefs: null,
-      rowData: null,
+     // columnDefs: null,
+     // rowData: null,
       finance_sort: [],
-      finance_detail: []
+      finance_detail: [],
+      fields: []
     };
   },
   components: {
-    AgGridVue
+   // AgGridVue
   },
   beforeMount() {
-    this.columnDefs = [
-      {
-        headerName: "Năm học",
-        field: "nam_hoc",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: false
-      },
+    (this.fields = [
+      { key: "nam_hoc", label: "Năm học" },
+      { key: "Hoc_ky", label: "Học kỳ" },
+      { key: "So_tien_da_nop", label: "Đã nộp" },
+      { key: "So_tien_nop", label: "Phải nộp" },
+      { key: "Thieu_thua", label: "Thừa thiếu" }
+     ])
+     //,
+    //   (this.columnDefs = [
+    //     {
+    //       headerName: "Năm học",
+    //       field: "nam_hoc",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: false
+    //     },
 
-      {
-        headerName: "Học kỳ",
-        field: "Hoc_ky",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: false
-      },
-      {
-        headerName: "Số tiền đã nộp",
-        field: "So_tien_da_nop",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: true
-      },
-      {
-        headerName: "Số tiền miễn giảm",
-        field: "So_tien_mien_giam",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: true
-      },
+    //     {
+    //       headerName: "Học kỳ",
+    //       field: "Hoc_ky",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: false
+    //     },
+    //     {
+    //       headerName: "Số tiền đã nộp",
+    //       field: "So_tien_da_nop",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
+    //     {
+    //       headerName: "Số tiền miễn giảm",
+    //       field: "So_tien_mien_giam",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
 
-      {
-        headerName: "Số tiền nộp",
-        field: "So_tien_nop",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: true
-      },
-      {
-        headerName: "Số tiền trả lại",
-        field: "So_tien_tra_lai",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: true
-      },
-      {
-        headerName: "Số tiền thừa / thiếu",
-        field: "Thieu_thua",
-        sortable: true,
-        filter: true,
-        suppressSizeToFit: true
-      }
-    ];
+    //     {
+    //       headerName: "Số tiền nộp",
+    //       field: "So_tien_nop",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
+    //     {
+    //       headerName: "Số tiền trả lại",
+    //       field: "So_tien_tra_lai",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     },
+    //     {
+    //       headerName: "Số tiền thừa / thiếu",
+    //       field: "Thieu_thua",
+    //       sortable: true,
+    //       filter: true,
+    //       suppressSizeToFit: true
+    //     }
+    //   ]);
   },
 
   mounted() {
