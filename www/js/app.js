@@ -77630,7 +77630,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   inject: ["currentUser"],
   data: function data() {
+
     return {
+
+      schoolyear: { schoolyear: "2017-2018" },
       columnDefs: null,
       rowData: null,
       bangdiem: []
@@ -77680,16 +77683,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       filter: true,
       suppressSizeToFit: true
     }];
-
-    // this.rowData = [
-    //   { make: "Toyota", model: "Celica", price: 35000 },
-    //   { make: "Ford", model: "Mondeo", price: 32000 },
-    //   { make: "Porsche", model: "Boxter", price: 72000 }
-    // ];
-
-    // fetch("http://103.28.37.34:98/api/huyen")
-    //   .then(result => result.json())
-    //   .then(rowData => (this.rowData = rowData));
   },
 
 
@@ -77701,7 +77694,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   mounted: function mounted() {
     var _this = this;
 
-    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("StudySchedule").then(function (points) {
+    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("StudySchedule", this.schoolyear).then(function (points) {
       _this.bangdiem = points;
       _this.rowData = points;
     }).catch(function (err) {
@@ -77784,6 +77777,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   inject: ["currentUser"],
   data: function data() {
     return {
+      schoolyear: { schoolyear: "2017-2018" },
       columnDefs: null,
       rowData: null,
       bangdiem: []
@@ -77820,21 +77814,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       filter: true,
       suppressSizeToFit: true
     }];
-
-    // this.rowData = [
-    //   { make: "Toyota", model: "Celica", price: 35000 },
-    //   { make: "Ford", model: "Mondeo", price: 32000 },
-    //   { make: "Porsche", model: "Boxter", price: 72000 }
-    // ];
-
-    // fetch("http://103.28.37.34:98/api/huyen")
-    //   .then(result => result.json())
-    //   .then(rowData => (this.rowData = rowData));
   },
   mounted: function mounted() {
     var _this = this;
 
-    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServer("ExamSchedule").then(function (points) {
+    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("ExamSchedule", this.schoolyear).then(function (points) {
       _this.bangdiem = points;
       _this.rowData = points;
     }).catch(function (err) {

@@ -24,7 +24,10 @@ export default {
 
   inject: ["currentUser"],
   data() {
+
     return {
+
+      schoolyear:{schoolyear:"2017-2018"},
       columnDefs: null,
       rowData: null,
       bangdiem: []
@@ -80,16 +83,6 @@ export default {
         suppressSizeToFit: true
       }
     ];
-
-    // this.rowData = [
-    //   { make: "Toyota", model: "Celica", price: 35000 },
-    //   { make: "Ford", model: "Mondeo", price: 32000 },
-    //   { make: "Porsche", model: "Boxter", price: 72000 }
-    // ];
-
-    // fetch("http://103.28.37.34:98/api/huyen")
-    //   .then(result => result.json())
-    //   .then(rowData => (this.rowData = rowData));
   },
 
   computed: {
@@ -98,13 +91,14 @@ export default {
     }
   },
   mounted() {
-    Users.callServer("StudySchedule")
+
+    Users.callServerApi("StudySchedule",this.schoolyear)
       .then(points => {
         this.bangdiem = points;
         this.rowData = points;
       })
       .catch(err => {
-         console.error(err)
+        console.error(err);
         //alert(err);
       });
   }
