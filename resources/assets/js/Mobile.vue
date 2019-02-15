@@ -72,9 +72,12 @@ export default {
 
 .navlink {
   font-family: Arial;
-  .space
-  {
-    height: 10px;
-  }
+}
+.space {
+  height: 10px;
+}
+
+table#table-transition-example .flip-list-move {
+  transition: transform 1s;
 }
 </style>

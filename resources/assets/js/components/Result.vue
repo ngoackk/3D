@@ -3,17 +3,17 @@
     <div>
       <span class="title">{{user.Ho_ten}}</span>
     </div>
-    <ag-grid-vue
-      style="width: 100%; height: 100%;"
-      class="ag-theme-balham"
-      :columnDefs="columnDefs"
-      :rowData="rowData"
-    ></ag-grid-vue>
+    <div>
+      <div>
+        <b-table id="table-transition-example" :items="bangdiem" :fields="fields" striped small
+          :primary-key="ID_mon"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import { AgGridVue } from "ag-grid-vue";
 import { Users, Data } from "../apis/api";
 
 export default {
@@ -22,45 +22,16 @@ export default {
   inject: ["currentUser"],
   data() {
     return {
-      columnDefs: null,
-      rowData: null,
-      bangdiem: []
+      bangdiem: [],
+      fields: []
     };
   },
-  components: {
-    AgGridVue
-  },
+  components: {},
   beforeMount() {
-    this.columnDefs = [
-      {
-        headerName: "Môn học",
-        field: "Ten_hoc_phan",
-        sortable: true,
-        filter: true
-      },
-      {
-        headerName: "Điểm chữ",
-        field: "Diem_chu",
-        sortable: true,
-        filter: true
-      },
-      {
-        headerName: "Số học trình",
-        field: "So_hoc_trinh",
-        sortable: true,
-        filter: true
-      }
+    this.fields = [
+      { key: "Ten_hoc_phan", label: "Tên học phần" },
+      { key: "Diem_chu", label: "Điểm" }
     ];
-
-    // this.rowData = [
-    //   { make: "Toyota", model: "Celica", price: 35000 },
-    //   { make: "Ford", model: "Mondeo", price: 32000 },
-    //   { make: "Porsche", model: "Boxter", price: 72000 }
-    // ];
-
-    // fetch("http://103.28.37.34:98/api/huyen")
-    //   .then(result => result.json())
-    //   .then(rowData => (this.rowData = rowData));
   },
 
   mounted() {
@@ -71,7 +42,6 @@ export default {
       })
       .catch(err => {
         console.error(err);
-        //alert(err);
       });
   },
 

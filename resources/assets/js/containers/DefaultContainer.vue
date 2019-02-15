@@ -43,7 +43,7 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <span class="ml-1">&copy; 2019 .</span>
+        <span class="ml-1">&copy; 2019.</span>
       </div>
       <div class="ml-auto">
         <span class="mr-1">Powered by</span>
