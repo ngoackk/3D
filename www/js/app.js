@@ -15056,8 +15056,6 @@ var Users = {
         return url.searchParams.append(key, parameters[key]);
       });
 
-      alert(JSON.stringify(url));
-
       fetch(url, {
         method: "POST",
         headers: {

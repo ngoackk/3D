@@ -95,7 +95,7 @@ export const Users = {
       url = new URL(Settings.BASEURL + "/api/" + endpoint),
         Object.keys(parameters).forEach(key => url.searchParams.append(key, parameters[key]));
 
-      alert(JSON.stringify(url));
+
 
       fetch(url, {
           method: "POST",
