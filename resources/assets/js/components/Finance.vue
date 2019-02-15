@@ -16,13 +16,6 @@
         :primary-key="id_sv"
       />
     </div>
-    <ag-grid-vue
-      style="width: 100%; height: 100%;"
-      class="ag-theme-balham"
-      :columnDefs="columnDefs"
-      :rowData="rowData"
-      rowSelection="multiple"
-    ></ag-grid-vue>
   </div>
 </template>
 
