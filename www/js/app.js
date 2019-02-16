@@ -77767,6 +77767,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -77777,7 +77788,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   inject: ["currentUser"],
   data: function data() {
     return {
-      schoolyear: { schoolyear: "2017-2018" },
+      schoolyear: {},
+      options: [],
+      selected: null,
       columnDefs: null,
       rowData: null,
       bangdiem: []
@@ -77816,20 +77829,48 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }];
   },
   mounted: function mounted() {
-    var _this = this;
-
-    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("ExamSchedule", this.schoolyear).then(function (points) {
-      _this.bangdiem = points;
-      _this.rowData = points;
-    }).catch(function (err) {
-      console.error(err);
-      //alert(err);
-    });
+    this.initYears(2000, 2100);
+    this.loadDB();
   },
 
   computed: {
     user: function user() {
       return this.currentUser();
+    }
+  },
+  methods: {
+    //Chuẩn bị năm học//
+    loadDB: function loadDB() {
+      var _this = this;
+
+      this.schoolyear.schoolyear = this.selected;
+
+      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("ExamSchedule", this.schoolyear).then(function (points) {
+        _this.bangdiem = points;
+        _this.rowData = points;
+      }).catch(function (err) {
+        console.error(err);
+      });
+    },
+
+
+    //==========Hàm chuẩn bị năm học cho select box================//
+    initYears: function initYears(yearmin, yearmax) {
+      this.options = [];
+
+      var tmpYear = new Date().getFullYear();
+      this.selected = tmpYear - 1 + "-" + tmpYear;
+
+      this.options.push({ value: null, text: "--Chọn năm học--" });
+
+      for (var i = 0; i < yearmax - yearmin; i++) {
+        this.options.push({
+          value: yearmin + i + "-" + (yearmin + i + 1),
+          text: yearmin + i + "-" + (yearmin + i + 1)
+        });
+      }
+
+      return this.options;
     }
   }
 });
@@ -102305,7 +102346,20 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
+  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('div', [_c('b-form-select', {
+    staticClass: "mt-3",
+    attrs: {
+      "options": _vm.options,
+      "size": "sm"
+    },
+    model: {
+      value: (_vm.selected),
+      callback: function($$v) {
+        _vm.selected = $$v
+      },
+      expression: "selected"
+    }
+  })], 1), _vm._v(" "), _c('div', [_c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
@@ -102315,7 +102369,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "columnDefs": _vm.columnDefs,
       "rowData": _vm.rowData
     }
-  })], 1)
+  })], 1)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
