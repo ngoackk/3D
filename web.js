@@ -5,6 +5,10 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 let axios = require('axios');
 const BASEURL = "http://103.28.37.34:806";
+let config = {
+  headers: { 'Content-Type': 'application/json'},
+  responseType: 'application/json'
+};
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
   'extended': 'true'
@@ -23,8 +27,8 @@ app.use(express.static('www'));
 app.post("/api/:endpoint", (req, res)=>{
   console.log(req.params)
   console.log(req.query) 
-   axios.post(BASEURL+ "/api/"+ req.params.endpoint, null,{params: req.query}).then(response=>{
-    res.status(200).end(response.data) 
+   axios.post(BASEURL+ "/api/"+ req.params.endpoint, config,{params: req.query}).then(response=>{
+    res.status(200).send(response.data) 
    }).catch(err=>{
     console.log(err);
     res.status(500).end(err) 
