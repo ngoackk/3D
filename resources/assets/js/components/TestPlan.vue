@@ -8,7 +8,7 @@
     </div>
     <div>
       <b-form-select
-       
+        @change="loadDB()"
         v-model="selected"
         :options="options"
         size="sm"
