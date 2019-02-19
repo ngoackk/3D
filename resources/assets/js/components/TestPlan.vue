@@ -7,14 +7,9 @@
       <span class="title">{{user.Ho_ten}}</span>
     </div>
     <div>
-      <b-form-select
-        @change="loadDB()"
-        v-model="selected"
-        :options="options"
-        size="sm"
-        class="mt-3"
-      />
+      <b-select v-model="selected" :options="options"></b-select>
     </div>
+
     <div>
       <ag-grid-vue
         style="width: 100%; height: 100%;"
@@ -41,7 +36,9 @@ export default {
       selected: null,
       columnDefs: null,
       rowData: null,
-      bangdiem: []
+      bangdiem: [],
+      tinhtrang: "",
+      count: 0
     };
   },
   components: {
@@ -84,7 +81,6 @@ export default {
 
   mounted() {
     this.initYears(2000, 2100);
-    this.loadDB();
   },
   computed: {
     user() {
@@ -93,13 +89,21 @@ export default {
   },
   methods: {
     //Chuẩn bị năm học//
-    loadDB() {
-      this.schoolyear.schoolyear = this.selected;
+
+    loadDB(selected) {
+      this.schoolyear.schoolyear = "2015-2016";
+
+      // console.log("Gọi hàm loadDB lần thứ: ", this.count);
+      //this.count++;
 
       Users.callServerApi("ExamSchedule", this.schoolyear)
         .then(points => {
-          this.bangdiem = points;
-          this.rowData = points;
+          if (points) {
+            this.bangdiem = points;
+            this.rowData = points;
+          } else {
+            this.tinhtrang = "Năm học bạn chọn không có dữ liệu";
+          }
         })
         .catch(err => {
           console.error(err);

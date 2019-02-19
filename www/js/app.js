@@ -14971,7 +14971,7 @@ module.exports = g;
 var Settings = {
   BASEURL: "http://103.28.37.34:806",
   // BASEURL: "https://tinchi.hau.edu.vn",
-
+  //BASEURL: "http://localhost:5000",
   NOIMAGE: "img/avatars/u1.png"
 };
 var Users = {
@@ -77773,11 +77773,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 
 
@@ -77793,7 +77788,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       selected: null,
       columnDefs: null,
       rowData: null,
-      bangdiem: []
+      bangdiem: [],
+      tinhtrang: "",
+      count: 0
     };
   },
 
@@ -77830,7 +77827,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   mounted: function mounted() {
     this.initYears(2000, 2100);
-    this.loadDB();
   },
 
   computed: {
@@ -77840,14 +77836,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   methods: {
     //Chuẩn bị năm học//
-    loadDB: function loadDB() {
+
+    loadDB: function loadDB(selected) {
       var _this = this;
 
-      this.schoolyear.schoolyear = this.selected;
+      this.schoolyear.schoolyear = "2015-2016";
+
+      // console.log("Gọi hàm loadDB lần thứ: ", this.count);
+      //this.count++;
 
       __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("ExamSchedule", this.schoolyear).then(function (points) {
-        _this.bangdiem = points;
-        _this.rowData = points;
+        if (points) {
+          _this.bangdiem = points;
+          _this.rowData = points;
+        } else {
+          _this.tinhtrang = "Năm học bạn chọn không có dữ liệu";
+        }
       }).catch(function (err) {
         console.error(err);
       });
@@ -102346,11 +102350,9 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('div', [_c('b-form-select', {
-    staticClass: "mt-3",
+  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('div', [_c('b-select', {
     attrs: {
-      "options": _vm.options,
-      "size": "sm"
+      "options": _vm.options
     },
     model: {
       value: (_vm.selected),
