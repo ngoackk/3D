@@ -77666,7 +77666,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("StudySchedule", this.schoolyear).then(function (points) {
         if (points) {
-
           _this.bangdiem = points;
           _this.rowData = points;
         } else {
