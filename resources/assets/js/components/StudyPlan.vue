@@ -116,7 +116,6 @@ export default {
       Users.callServerApi("StudySchedule", this.schoolyear)
         .then(points => {
           if (points) {
-            
             this.bangdiem = points;
             this.rowData = points;
           } else {
