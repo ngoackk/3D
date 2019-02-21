@@ -11,7 +11,7 @@
           :fields="fields"
           striped
           small
-          :primary-key="ID_mon"
+          
         />
       </div>
     </div>

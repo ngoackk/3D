@@ -89,18 +89,22 @@ export default {
       localStorage.removeItem("user");
     },
     login() {
+
+
+     
+
       Users.studentLogin({
-        //Role: this.Role,
+        
         UserName: this.UserName,
         Password: md5.base64(this.Password)
       })
         .then(response => {
-          // console.log(response);
+          
           if (response.isSuccess) {
             localStorage.setItem("access_token", response.message);
             Users.getUserInfor()
               .then(user => {
-                //console.log(user);
+               
                 localStorage.setItem("user", JSON.stringify(user));                
                 if (JSON.parse(localStorage.getItem("user") != null)) {
                   this.$router.push("/");

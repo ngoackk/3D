@@ -3,9 +3,14 @@
     <div>
       <span class="title">LỊCH HỌC</span>
     </div>
+
     <div>
-      <span class="title">Sinh viên: {{user.Ho_ten}}</span>
+      <b-form-select class="mt-3" v-model="selected" :options="options" @change="loadDB($event)"/>
     </div>
+
+    <!-- <div>
+      <b-table responsive striped :items="bangdiem" :fields="fields" small/>
+    </div>-->
     <ag-grid-vue
       style="width: 100%; height: 100%;"
       class="ag-theme-balham"
@@ -24,10 +29,10 @@ export default {
 
   inject: ["currentUser"],
   data() {
-
     return {
-
-      schoolyear:{schoolyear:"2017-2018"},
+      schoolyear: { schoolyear: null },
+      selected: null,
+      options: [],
       columnDefs: null,
       rowData: null,
       bangdiem: []
@@ -44,14 +49,15 @@ export default {
         sortable: true,
         filter: true,
         suppressSizeToFit: true,
-        width: 300
+        resizable: true,
+        suppressSizeToFit: true
       },
+
       {
-        headerName: "Tín chỉ",
-        field: "So_tin_chi",
+        headerName: "Đợt",
+        field: "Dot",
         sortable: true,
         filter: true,
-        width: 100,
         suppressSizeToFit: true
       },
       {
@@ -66,7 +72,7 @@ export default {
         field: "Thu",
         sortable: true,
         filter: true,
-        width: 70
+        suppressAutoSize: true
       },
       {
         headerName: "Phòng",
@@ -81,6 +87,14 @@ export default {
         sortable: true,
         filter: true,
         suppressSizeToFit: true
+      },
+      {
+        headerName: "Tín chỉ",
+        field: "So_tin_chi",
+        sortable: true,
+        filter: true,
+
+        suppressSizeToFit: true
       }
     ];
   },
@@ -91,16 +105,48 @@ export default {
     }
   },
   mounted() {
+    this.initYears(2000);
+    this.loadDB(this.selected);
+  },
 
-    Users.callServerApi("StudySchedule",this.schoolyear)
-      .then(points => {
-        this.bangdiem = points;
-        this.rowData = points;
-      })
-      .catch(err => {
-        console.error(err);
-        //alert(err);
-      });
+  methods: {
+    loadDB(selected) {
+      this.schoolyear.schoolyear = selected;
+
+      Users.callServerApi("StudySchedule", this.schoolyear)
+        .then(points => {
+          if (points) {
+            
+            this.bangdiem = points;
+            this.rowData = points;
+          } else {
+            this.tinhtrang = "Năm học bạn chọn không có dữ liệu";
+          }
+        })
+        .catch(err => {
+          console.error(err);
+        });
+    },
+
+    //==========Hàm chuẩn bị năm học cho select box================//
+    initYears(yearmin) {
+      this.options = [];
+
+      var tmpYear = new Date().getFullYear();
+      let yearmax = tmpYear;
+      this.selected = tmpYear - 1 + "-" + tmpYear;
+
+      this.options.push({ value: null, text: "--Chọn năm học--" });
+
+      for (var i = yearmin; i < yearmax; i++) {
+        this.options.push({
+          value: i + "-" + (i + 1),
+          text: i + "-" + (i + 1)
+        });
+      }
+
+      return this.options;
+    }
   }
 };
 </script>

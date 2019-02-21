@@ -7,14 +7,7 @@
       <span class="title">Sinh viên: {{user.Ho_ten}}</span>
     </div>
     <div>
-      <b-table
-        id="table-transition-example"
-        :items="finance_sort"
-        :fields="fields"
-        striped
-        small
-        :primary-key="id_sv"
-      />
+      <b-table id="table-transition-example" :items="finance_sort" :fields="fields" striped small/>
     </div>
   </div>
 </template>
@@ -36,7 +29,7 @@ export default {
   components: {},
   beforeMount() {
     this.fields = [
-      { key: "nam_hoc", label: "Năm học" },
+      { key: "nam_hoc", label: "Năm học" , sortable: true},
       { key: "Hoc_ky", label: "Học kỳ" },
       { key: "So_tien_da_nop", label: "Đã nộp" },
       { key: "so_tien_phai_nop", label: "Phải nộp" },

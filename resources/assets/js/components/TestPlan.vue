@@ -3,27 +3,26 @@
     <div>
       <span class="title">LỊCH THI</span>
     </div>
-    <div>
-      <span class="title">{{user.Ho_ten}}</span>
-    </div>
-    <div>
-      <b-select v-model="selected" :options="options"></b-select>
-    </div>
 
     <div>
-      <ag-grid-vue
-        style="width: 100%; height: 100%;"
-        class="ag-theme-balham"
-        :columnDefs="columnDefs"
-        :rowData="rowData"
-      ></ag-grid-vue>
+      <b-form-select class="mt-3" v-model="selected" :options="options" @change="loadDB($event)"/>
     </div>
+
+    <!-- <div>
+      <b-table responsive striped :items="bangdiem" :fields="fields" small/>
+    </div>-->
+    <ag-grid-vue
+      style="width: 100%; height: 100%;"
+      class="ag-theme-balham"
+      :columnDefs="columnDefs"
+      :rowData="rowData"
+    ></ag-grid-vue>
   </div>
 </template>
 
 <script>
-import { AgGridVue } from "ag-grid-vue";
 import { Users, Data } from "../apis/api";
+import { AgGridVue } from "ag-grid-vue";
 
 export default {
   name: "App",
@@ -31,13 +30,14 @@ export default {
   inject: ["currentUser"],
   data() {
     return {
-      schoolyear: {},
+      schoolyear: { schoolyear: null },
       options: [],
       selected: null,
       columnDefs: null,
       rowData: null,
       bangdiem: [],
       tinhtrang: "",
+      fields: [],
       count: 0
     };
   },
@@ -45,42 +45,59 @@ export default {
     AgGridVue
   },
   beforeMount() {
+    // this.fields = [
+    //   { key: "Ten_mon", label: "Môn học", sortable: true },
+    //   { key: "Hoc_ky", label: "Học kỳ" },
+
+    //   { key: "Ngay_thi", label: "Ngày thi", sortable: true },
+    //   { key: "Gio_thi", label: "Giờ thi" },
+    //   { key: "Ten_phong", label: "Phòng thi" },
+    //   { key: "so_bao_danh", label: "Số báo danh" }
+    // ];
     this.columnDefs = [
       {
-        headerName: "Tên môn học",
+        headerName: "Môn học",
         field: "Ten_mon",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true,
-        width: 300
-      },
+        width: 250,
+        resizable:true
 
+      },
       {
         headerName: "Ngày thi",
         field: "Ngay_thi",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        width: 100
       },
       {
         headerName: "Giờ thi",
         field: "Gio_thi",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        width: 100
       },
       {
-        headerName: "Phòng",
+        headerName: "Phòng thi",
         field: "Ten_phong",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        width: 200
+      },
+      {
+        headerName: "Số báo danh",
+        field: "so_bao_danh",
+        sortable: true,
+        filter: true,
+        width: 100
       }
     ];
   },
 
   mounted() {
-    this.initYears(2000, 2100);
+    this.initYears(2000);
+    this.loadDB(this.selected);
   },
   computed: {
     user() {
@@ -91,10 +108,7 @@ export default {
     //Chuẩn bị năm học//
 
     loadDB(selected) {
-      this.schoolyear.schoolyear = "2015-2016";
-
-      // console.log("Gọi hàm loadDB lần thứ: ", this.count);
-      //this.count++;
+      this.schoolyear.schoolyear = selected;
 
       Users.callServerApi("ExamSchedule", this.schoolyear)
         .then(points => {
@@ -111,18 +125,19 @@ export default {
     },
 
     //==========Hàm chuẩn bị năm học cho select box================//
-    initYears(yearmin, yearmax) {
+    initYears(yearmin) {
       this.options = [];
 
       var tmpYear = new Date().getFullYear();
+      let yearmax = tmpYear;
       this.selected = tmpYear - 1 + "-" + tmpYear;
 
       this.options.push({ value: null, text: "--Chọn năm học--" });
 
-      for (var i = 0; i < yearmax - yearmin; i++) {
+      for (var i = yearmin; i < yearmax; i++) {
         this.options.push({
-          value: yearmin + i + "-" + (yearmin + i + 1),
-          text: yearmin + i + "-" + (yearmin + i + 1)
+          value: i + "-" + (i + 1),
+          text: i + "-" + (i + 1)
         });
       }
 

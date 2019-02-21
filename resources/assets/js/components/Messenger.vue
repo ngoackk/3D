@@ -156,7 +156,7 @@ export default {
       //Lấy danh sách người nhận messenger
       Users.callServerApi("Receiverid")
         .then(rList => {
-          console.log(rList);
+          
           this.receiverlist = rList;
           this.receiverlist.forEach(obj => {
             this.departements.push({
@@ -167,7 +167,7 @@ export default {
         })
         .catch(err => {
           console.error(err);
-          //alert(err);
+          
         });
     },
 

@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "hau.namvietjsc.edu.vn"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "hau.namvietjsc.edu.vn"
     }
   },
   "dependent_plugins": {}

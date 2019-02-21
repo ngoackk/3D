@@ -14970,7 +14970,7 @@ module.exports = g;
 
 var Settings = {
   BASEURL: "http://103.28.37.34:806",
-  // BASEURL: "https://tinchi.hau.edu.vn",
+  //BASEURL: "https://tinchi.hau.edu.vn",
   //BASEURL: "http://localhost:5000",
   NOIMAGE: "img/avatars/u1.png"
 };
@@ -76786,13 +76786,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -76810,7 +76803,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   components: {},
   beforeMount: function beforeMount() {
-    this.fields = [{ key: "nam_hoc", label: "Năm học" }, { key: "Hoc_ky", label: "Học kỳ" }, { key: "So_tien_da_nop", label: "Đã nộp" }, { key: "so_tien_phai_nop", label: "Phải nộp" }, { key: "Thieu_thua", label: "Thừa thiếu" }];
+    this.fields = [{ key: "nam_hoc", label: "Năm học", sortable: true }, { key: "Hoc_ky", label: "Học kỳ" }, { key: "So_tien_da_nop", label: "Đã nộp" }, { key: "so_tien_phai_nop", label: "Phải nộp" }, { key: "Thieu_thua", label: "Thừa thiếu" }];
   },
   mounted: function mounted() {
     var _this = this;
@@ -77063,15 +77056,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       var _this = this;
 
       __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].studentLogin({
-        //Role: this.Role,
+
         UserName: this.UserName,
         Password: __WEBPACK_IMPORTED_MODULE_1_js_md5___default.a.base64(this.Password)
       }).then(function (response) {
-        // console.log(response);
+
         if (response.isSuccess) {
           localStorage.setItem("access_token", response.message);
           __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].getUserInfor().then(function (user) {
-            //console.log(user);
+
             localStorage.setItem("user", JSON.stringify(user));
             if (JSON.parse(localStorage.getItem("user") != null)) {
               _this.$router.push("/");
@@ -77256,7 +77249,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
 
       //Lấy danh sách người nhận messenger
       __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("Receiverid").then(function (rList) {
-        console.log(rList);
+
         _this.receiverlist = rList;
         _this.receiverlist.forEach(function (obj) {
           _this.departements.push({
@@ -77266,7 +77259,6 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
         });
       }).catch(function (err) {
         console.error(err);
-        //alert(err);
       });
     },
 
@@ -77408,62 +77400,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  name: "App",
   inject: ["currentUser"],
-  result: [],
 
   data: function data() {
-    return {
-      myDB: [{
-        id: 1,
-        title: "Thông báo nhận thủ tục thi",
-        content: "Thông báo của giáo vụ khoa về việc hoàn thiện hồ sơ thi học kỳ",
-        date: "26/11/2017 07:08:31"
-      }, {
-        id: 2,
-        title: "Hoàn thiện thủ tục nộp hồ sơ công chứng",
-        content: "Thông báo: Mời đến văn phòng khoa để lấy hồ sơ công chứng",
-        date: "28/11/2017 07:08:31"
-      }]
-    };
+    return { success: "Dịch vụ một cửa" };
   },
 
-  methods: {
-    getDataById: function getDataById(id) {}
-  },
+
+  methods: {},
 
   computed: {
     user: function user() {
@@ -77604,6 +77552,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ag_grid_vue__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ag_grid_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_ag_grid_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__apis_api__ = __webpack_require__(26);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
 //
 //
 //
@@ -77630,10 +77585,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   inject: ["currentUser"],
   data: function data() {
-
     return {
-
-      schoolyear: { schoolyear: "2017-2018" },
+      schoolyear: { schoolyear: null },
+      selected: null,
+      options: [],
       columnDefs: null,
       rowData: null,
       bangdiem: []
@@ -77644,19 +77599,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     AgGridVue: __WEBPACK_IMPORTED_MODULE_0_ag_grid_vue__["AgGridVue"]
   },
   beforeMount: function beforeMount() {
-    this.columnDefs = [{
+    this.columnDefs = [_defineProperty({
       headerName: "Tên học phần",
       field: "TenMonTC",
       sortable: true,
       filter: true,
       suppressSizeToFit: true,
-      width: 300
-    }, {
-      headerName: "Tín chỉ",
-      field: "So_tin_chi",
+      resizable: true
+    }, "suppressSizeToFit", true), {
+      headerName: "Đợt",
+      field: "Dot",
       sortable: true,
       filter: true,
-      width: 100,
       suppressSizeToFit: true
     }, {
       headerName: "Lớp",
@@ -77669,7 +77623,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       field: "Thu",
       sortable: true,
       filter: true,
-      width: 70
+      suppressAutoSize: true
     }, {
       headerName: "Phòng",
       field: "Phong",
@@ -77682,6 +77636,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       sortable: true,
       filter: true,
       suppressSizeToFit: true
+    }, {
+      headerName: "Tín chỉ",
+      field: "So_tin_chi",
+      sortable: true,
+      filter: true,
+
+      suppressSizeToFit: true
     }];
   },
 
@@ -77692,15 +77653,50 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
   },
   mounted: function mounted() {
-    var _this = this;
+    this.initYears(2000);
+    this.loadDB(this.selected);
+  },
 
-    __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("StudySchedule", this.schoolyear).then(function (points) {
-      _this.bangdiem = points;
-      _this.rowData = points;
-    }).catch(function (err) {
-      console.error(err);
-      //alert(err);
-    });
+
+  methods: {
+    loadDB: function loadDB(selected) {
+      var _this = this;
+
+      this.schoolyear.schoolyear = selected;
+
+      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("StudySchedule", this.schoolyear).then(function (points) {
+        if (points) {
+
+          _this.bangdiem = points;
+          _this.rowData = points;
+        } else {
+          _this.tinhtrang = "Năm học bạn chọn không có dữ liệu";
+        }
+      }).catch(function (err) {
+        console.error(err);
+      });
+    },
+
+
+    //==========Hàm chuẩn bị năm học cho select box================//
+    initYears: function initYears(yearmin) {
+      this.options = [];
+
+      var tmpYear = new Date().getFullYear();
+      var yearmax = tmpYear;
+      this.selected = tmpYear - 1 + "-" + tmpYear;
+
+      this.options.push({ value: null, text: "--Chọn năm học--" });
+
+      for (var i = yearmin; i < yearmax; i++) {
+        this.options.push({
+          value: i + "-" + (i + 1),
+          text: i + "-" + (i + 1)
+        });
+      }
+
+      return this.options;
+    }
   }
 });
 
@@ -77747,10 +77743,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ag_grid_vue__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ag_grid_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_ag_grid_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__apis_api__ = __webpack_require__(26);
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__apis_api__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ag_grid_vue__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ag_grid_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ag_grid_vue__);
 //
 //
 //
@@ -77783,50 +77778,68 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   inject: ["currentUser"],
   data: function data() {
     return {
-      schoolyear: {},
+      schoolyear: { schoolyear: null },
       options: [],
       selected: null,
       columnDefs: null,
       rowData: null,
       bangdiem: [],
       tinhtrang: "",
+      fields: [],
       count: 0
     };
   },
 
   components: {
-    AgGridVue: __WEBPACK_IMPORTED_MODULE_0_ag_grid_vue__["AgGridVue"]
+    AgGridVue: __WEBPACK_IMPORTED_MODULE_1_ag_grid_vue__["AgGridVue"]
   },
   beforeMount: function beforeMount() {
+    // this.fields = [
+    //   { key: "Ten_mon", label: "Môn học", sortable: true },
+    //   { key: "Hoc_ky", label: "Học kỳ" },
+
+    //   { key: "Ngay_thi", label: "Ngày thi", sortable: true },
+    //   { key: "Gio_thi", label: "Giờ thi" },
+    //   { key: "Ten_phong", label: "Phòng thi" },
+    //   { key: "so_bao_danh", label: "Số báo danh" }
+    // ];
     this.columnDefs = [{
-      headerName: "Tên môn học",
+      headerName: "Môn học",
       field: "Ten_mon",
       sortable: true,
       filter: true,
-      suppressSizeToFit: true,
-      width: 300
+      width: 250,
+      resizable: true
+
     }, {
       headerName: "Ngày thi",
       field: "Ngay_thi",
       sortable: true,
       filter: true,
-      suppressSizeToFit: true
+      width: 100
     }, {
       headerName: "Giờ thi",
       field: "Gio_thi",
       sortable: true,
       filter: true,
-      suppressSizeToFit: true
+      width: 100
     }, {
-      headerName: "Phòng",
+      headerName: "Phòng thi",
       field: "Ten_phong",
       sortable: true,
       filter: true,
-      suppressSizeToFit: true
+      width: 200
+    }, {
+      headerName: "Số báo danh",
+      field: "so_bao_danh",
+      sortable: true,
+      filter: true,
+      width: 100
     }];
   },
   mounted: function mounted() {
-    this.initYears(2000, 2100);
+    this.initYears(2000);
+    this.loadDB(this.selected);
   },
 
   computed: {
@@ -77840,12 +77853,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     loadDB: function loadDB(selected) {
       var _this = this;
 
-      this.schoolyear.schoolyear = "2015-2016";
+      this.schoolyear.schoolyear = selected;
 
-      // console.log("Gọi hàm loadDB lần thứ: ", this.count);
-      //this.count++;
-
-      __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("ExamSchedule", this.schoolyear).then(function (points) {
+      __WEBPACK_IMPORTED_MODULE_0__apis_api__["b" /* Users */].callServerApi("ExamSchedule", this.schoolyear).then(function (points) {
         if (points) {
           _this.bangdiem = points;
           _this.rowData = points;
@@ -77859,18 +77869,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
     //==========Hàm chuẩn bị năm học cho select box================//
-    initYears: function initYears(yearmin, yearmax) {
+    initYears: function initYears(yearmin) {
       this.options = [];
 
       var tmpYear = new Date().getFullYear();
+      var yearmax = tmpYear;
       this.selected = tmpYear - 1 + "-" + tmpYear;
 
       this.options.push({ value: null, text: "--Chọn năm học--" });
 
-      for (var i = 0; i < yearmax - yearmin; i++) {
+      for (var i = yearmin; i < yearmax; i++) {
         this.options.push({
-          value: yearmin + i + "-" + (yearmin + i + 1),
-          text: yearmin + i + "-" + (yearmin + i + 1)
+          value: i + "-" + (i + 1),
+          text: i + "-" + (i + 1)
         });
       }
 
@@ -101545,9 +101556,24 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
-    staticClass: "title"
-  }, [_vm._v("Sinh viên: " + _vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('ag-grid-vue', {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('b-form-select', {
+    staticClass: "mt-3",
+    attrs: {
+      "options": _vm.options
+    },
+    on: {
+      "change": function($event) {
+        _vm.loadDB($event)
+      }
+    },
+    model: {
+      value: (_vm.selected),
+      callback: function($$v) {
+        _vm.selected = $$v
+      },
+      expression: "selected"
+    }
+  })], 1), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
@@ -101584,8 +101610,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "items": _vm.bangdiem,
       "fields": _vm.fields,
       "striped": "",
-      "small": "",
-      "primary-key": _vm.ID_mon
+      "small": ""
     }
   })], 1)])])
 },staticRenderFns: []}
@@ -101839,8 +101864,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "items": _vm.finance_sort,
       "fields": _vm.fields,
       "striped": "",
-      "small": "",
-      "primary-key": _vm.id_sv
+      "small": ""
     }
   })], 1)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -102229,63 +102253,11 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
-    attrs: {
-      "role": "tablist"
-    }
-  }, [_c('b-card', {
-    staticClass: "mb-1",
-    attrs: {
-      "no-body": ""
-    }
-  }, _vm._l((_vm.myDB), function(m) {
-    return _c('b-card-header', {
-      key: m.id,
-      staticClass: "p-1",
-      attrs: {
-        "header-tag": "header",
-        "role": "tab"
-      }
-    }, [_c('b-btn', {
-      directives: [{
-        name: "b-toggle",
-        rawName: "v-b-toggle.collapse1",
-        modifiers: {
-          "collapse1": true
-        }
-      }],
-      attrs: {
-        "block": "",
-        "variant": "info",
-        "id": "btnContent"
-      },
-      on: {
-        "click": function($event) {
-          _vm.getDataById(m.id)
-        }
-      }
-    }, [_vm._v(_vm._s(m.title))])], 1)
-  }), 1), _vm._v(" "), _c('b-collapse', {
-    attrs: {
-      "accordion": "myva",
-      "id": "collapse1",
-      "role": "tabpanel"
-    }
-  }, [_c('b-card-body', [_c('p', {
-    staticClass: "card-text"
-  }, _vm._l((_vm.myDB), function(msd) {
-    return _c('span', {
-      key: msd.ID
-    }, [_c('div', [_c('span', {
-      staticClass: "title"
-    }, [_vm._v(_vm._s(_vm.user.Ho_ten) + ":")]), _vm._v("\n              " + _vm._s(msd.content) + "\n            ")]), _vm._v(" "), _c('div', [_c('span', {
-      staticClass: "title"
-    }, [_vm._v("Ngày:")]), _vm._v("\n              " + _vm._s(msd.date) + "\n            ")])])
-  }), 0)])], 1)], 1)])
+  return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('span', {
+  return _c('div', [_c('div', [_c('span', {
     staticClass: "title"
-  }, [_vm._v("DỊCH VỤ MỘT CỬA")])])
+  }, [_vm._v("DỊCH VỤ MỘT CỬA")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -102348,11 +102320,15 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('span', {
-    staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.user.Ho_ten))])]), _vm._v(" "), _c('div', [_c('b-select', {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', [_c('b-form-select', {
+    staticClass: "mt-3",
     attrs: {
       "options": _vm.options
+    },
+    on: {
+      "change": function($event) {
+        _vm.loadDB($event)
+      }
     },
     model: {
       value: (_vm.selected),
@@ -102361,7 +102337,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "selected"
     }
-  })], 1), _vm._v(" "), _c('div', [_c('ag-grid-vue', {
+  })], 1), _vm._v(" "), _c('ag-grid-vue', {
     staticClass: "ag-theme-balham",
     staticStyle: {
       "width": "100%",
@@ -102371,7 +102347,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "columnDefs": _vm.columnDefs,
       "rowData": _vm.rowData
     }
-  })], 1)])
+  })], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span', {
     staticClass: "title"
