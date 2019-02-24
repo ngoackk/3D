@@ -3,22 +3,22 @@ import {
 } from "crypto";
 
 export const Settings = {
-  BASEURL: "http://103.28.37.34:806",
-  //BASEURL: "https://tinchi.hau.edu.vn",
+  //BASEURL: "http://103.28.37.34:806",
+  BASEURL: "https://tinchi.hau.edu.vn",
   //BASEURL: "http://localhost:5000",
   NOIMAGE: "img/avatars/u1.png"
 };
 export const Users = {
 
-  studentLogin(crendential) {
+  studentLogin(params) {
     return new Promise((resolve, reject) => {
       //Vi du dung base url de thay the cac cho khai bao cung
-      var url = new URL(Settings.BASEURL + "/api/login"),
-        params = {
-          userName: crendential.UserName, //  "60.58.01.02",
-          password: crendential.Password, //"mhl9QmgbrLq8W8pV5u/lpQ==",
-          deviceid: "ggsgfdgdg"
-        };
+      var url = new URL(Settings.BASEURL + "/api/login");
+      // params = {
+      //   userName: crendential.UserName, //  "60.58.01.02",
+      //   password: crendential.Password, //"mhl9QmgbrLq8W8pV5u/lpQ==",
+      //   deviceid: "ggsgfdgdg"
+      // };
       Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
       fetch(url, {
 

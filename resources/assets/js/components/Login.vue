@@ -19,7 +19,7 @@
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Tài khoản"
-          >          
+          >
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Mật khẩu</label>
@@ -37,9 +37,9 @@
         </div>
         <button @click="login" class="btn btn-primary btn-block">Đăng nhập</button>
       </form>
-        <div class="text-center">
-          <button v-b-modal.modal1 class="btn btn-link">[Quên mật khẩu sinh viên]</button>
-        
+      <div class="text-center">
+        <button v-b-modal.modal1 class="btn btn-link">[Quên mật khẩu sinh viên]</button>
+
         <b-modal id="modal1" centered title="Lấy lại mật khẩu">
           <p
             class="my-4"
@@ -53,13 +53,11 @@
             >Lấy lại mật khẩu</b-btn>
           </div>
         </b-modal>
-          </div>
+      </div>
     </div>
     <nav class="navbar bg-white fixed-bottom">
       <ul class="nav">
-        <li class="nav-item">
-           &copy; 2018 
-        </li>
+        <li class="nav-item">&copy; 2018</li>
       </ul>
       <ul class="nav justify-content-end">
         <li class="nav-item">NAMVIET.JSC</li>
@@ -68,61 +66,66 @@
   </div>
 </template>
 <script>
+import Vue from "vue";
 import { Users, Data } from "../apis/api";
 import md5 from "js-md5";
 export default {
   data() {
     return {
-      //Role: 0,
       UserName: "",
-      Password: "",      
+      Password: "",
       rememberme: false,
-      DeviceId: "",
+      DeviceId: ""
     };
   },
   mounted() {
     this.logout();
-  },  
+  },
   methods: {
     logout() {
       localStorage.removeItem("access_token");
       localStorage.removeItem("user");
     },
     login() {
-
-
-     
-
+      // Theo tài liệu hướng dẫn của vue-cordova them chiếu tất cả qua biến Vue.cordova.{plugin name}
+      // Lưu ý 1 số plugin không còn chạy trên cordova android platform 7 phải chuyển platform android sang 6.4.0
       Users.studentLogin({
-        
-        UserName: this.UserName,
-        Password: md5.base64(this.Password)
+        userName: this.UserName,
+        password: md5.base64(this.Password),
+        deviceid:
+          Vue.cordova.device && Vue.cordova.device.uuid
+            ? Vue.cordova.device.uuid
+            : "ggsgfdgdg"
       })
         .then(response => {
-          
           if (response.isSuccess) {
             localStorage.setItem("access_token", response.message);
             Users.getUserInfor()
               .then(user => {
-               
-                localStorage.setItem("user", JSON.stringify(user));                
+                localStorage.setItem("user", JSON.stringify(user));
                 if (JSON.parse(localStorage.getItem("user") != null)) {
                   this.$router.push("/");
                 }
               })
               .catch(err => {
-                this.$notify({ group: "alerts", text: this.$t("users.sessions.valid") });
+                this.$notify({
+                  group: "alerts",
+                  text: this.$t("users.sessions.valid")
+                });
                 console.error(err);
               });
           } else {
-            this.$notify({ group: "alerts", text: this.$t("users.sessions.valid") });
+            this.$notify({
+              group: "alerts",
+              text: this.$t("users.sessions.valid")
+            });
             console.error(response);
           }
         })
         .catch(error => {
           console.error(error);
         });
-    },    
+    }
   }
 };
 </script>

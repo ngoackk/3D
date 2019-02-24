@@ -50,7 +50,7 @@ export default {
         filter: true,
         suppressSizeToFit: true,
         resizable: true,
-        suppressSizeToFit: true
+        width: 350
       },
 
       {
@@ -58,43 +58,42 @@ export default {
         field: "Dot",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        width: 70
       },
       {
         headerName: "Lớp",
         field: "Ky_hieu_lop_tc",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        width: 100
       },
       {
         headerName: "Thứ",
         field: "Thu",
         sortable: true,
         filter: true,
-        suppressAutoSize: true
+        width: 100
       },
       {
         headerName: "Phòng",
         field: "Phong",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        width: 150
       },
       {
         headerName: "Tiết",
         field: "Tiet",
         sortable: true,
         filter: true,
-        suppressSizeToFit: true
+        width: 70
       },
       {
         headerName: "Tín chỉ",
         field: "So_tin_chi",
         sortable: true,
         filter: true,
-
-        suppressSizeToFit: true
+        width: 100
       }
     ];
   },
@@ -104,6 +103,8 @@ export default {
       return this.currentUser();
     }
   },
+
+  //====================MOUNTED====================
   mounted() {
     this.initYears(2000);
     this.loadDB(this.selected);

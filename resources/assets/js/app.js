@@ -9,8 +9,12 @@ import BootstrapVue from 'bootstrap-vue';
 import App from './Mobile';
 import router from './router';
 import store from '../js/store';
-import {Settings} from '../js/apis/api'
+import {
+  Settings
+} from '../js/apis/api'
 import Hub from '../js/apis/hub'
+import VueCordova from 'vue-cordova'
+Vue.use(VueCordova)
 
 // todo
 // cssVars()
@@ -21,6 +25,13 @@ Vue.prototype.$Settings = Settings;
 Vue.prototype.$Hub = Hub;
 /* eslint-disable no-new */
 window.onload = function () {
+  // Chỉ nạp plugin khi chạy trên device, trên web không chạy
+  if (window.location.protocol === 'file:' || window.location.port === '5000') {
+    var cordovaScript = document.createElement('script')
+    cordovaScript.setAttribute('type', 'text/javascript')
+    cordovaScript.setAttribute('src', 'cordova.js')
+    document.body.appendChild(cordovaScript)
+  }
   new Vue({
     //el: '#app',
     router,

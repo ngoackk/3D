@@ -3,6 +3,7 @@
     <div>
       <span class="title">DỊCH VỤ MỘT CỬA</span>
     </div>
+    <div>Thông báo kết quả hồ sơ công tác một cửa</div>
   </div>
 </template>
 <script>
