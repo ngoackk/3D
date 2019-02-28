@@ -95,7 +95,7 @@ export default {
         deviceid:
           Vue.cordova.device && Vue.cordova.device.uuid
             ? Vue.cordova.device.uuid
-            : "ggsgfdgdg"
+            : "DEVICE_UUID"
       })
         .then(response => {
           if (response.isSuccess) {
@@ -110,14 +110,14 @@ export default {
               .catch(err => {
                 this.$notify({
                   group: "alerts",
-                  text: this.$t("users.sessions.valid")
+                  text: "Lỗi khi đăng nhập"
                 });
                 console.error(err);
               });
           } else {
             this.$notify({
               group: "alerts",
-              text: this.$t("users.sessions.valid")
+              text: "Lỗi khi đăng nhập"
             });
             console.error(response);
           }
