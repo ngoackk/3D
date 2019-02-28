@@ -5,40 +5,47 @@
     </div>
 
     <div class="container">
-      <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-        <b-form-group id="exampleInputGroup1" label="Tiêu đề:" label-for="exampleInput1">
-          <b-form-input
-            id="exampleInput1"
-            type="text"
-            v-model="form.title"
-            required
-            placeholder="Phải nhập tiêu đề"
-          ></b-form-input>
-        </b-form-group>
+      <!-- Open to send Messenger -->
+      <div>
+        <b-button v-b-toggle.idMessenger variant="primary" size="sm">Gửi tin nhắn</b-button>
+        <b-collapse id="idMessenger" class="mt-2">
+          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+            <b-form-group id="bTieuDe" label="Tiêu đề:" label-for="idTitle">
+              <b-form-input
+                id="idTitle"
+                type="text"
+                v-model="form.title"
+                required
+                placeholder="Phải nhập tiêu đề"
+              ></b-form-input>
+            </b-form-group>
 
-        <b-form-group id="exampleInputGroup2" label="Nội dung:" label-for="exampleInput2">
-          <b-form-textarea
-            id="exampleInput2"
-            v-model="form.content"
-            required
-            placeholder="phải nhập nội dung"
-            :rows="3"
-            :max-rows="20"
-          ></b-form-textarea>
-        </b-form-group>
-        <b-form-group id="exampleInputGroup3" label="Gửi tới:" label-for="exampleInput3">
-          <b-form-select id="exampleInput3" :options="departements" required v-model="form.deptId"></b-form-select>
-        </b-form-group>
-        <b-form-group id="exampleGroup4">
-          <b-form-radio-group v-model="form.selected" id="exampleChecks">
-            <b-form-radio value="first">Hỏi đáp</b-form-radio>
-            <b-form-radio value="second">Góp ý</b-form-radio>
-            <b-form-radio value="third">Báo lỗi</b-form-radio>
-          </b-form-radio-group>
-        </b-form-group>
-        <b-button variant="primary" type="submit">Gửi</b-button>
-        <b-button type="reset" variant="danger">Làm lại</b-button>
-      </b-form>
+            <b-form-group id="noidung" label="Nội dung:" label-for="idContent">
+              <b-form-textarea
+                id="idContent"
+                v-model="form.content"
+                required
+                placeholder="phải nhập nội dung"
+                :rows="3"
+                :max-rows="20"
+              ></b-form-textarea>
+            </b-form-group>
+            <b-form-group id="guitoi" label="Gửi tới:" label-for="idSelect">
+              <b-form-select id="idSelect" :options="departements" required v-model="form.deptId"></b-form-select>
+            </b-form-group>
+            <b-form-group id="gopy">
+              <b-form-radio-group v-model="form.selected" id="idCheck">
+                <b-form-radio value="first">Hỏi đáp</b-form-radio>
+                <b-form-radio value="second">Góp ý</b-form-radio>
+                <b-form-radio value="third">Báo lỗi</b-form-radio>
+              </b-form-radio-group>
+            </b-form-group>
+            <b-button variant="primary" type="submit">Gửi</b-button>
+            <b-button type="reset" variant="danger">Làm lại</b-button>
+          </b-form>
+        </b-collapse>
+        <!------------------->
+      </div>
     </div>
     <div class="space"></div>
     <div class="container">
@@ -156,7 +163,6 @@ export default {
       //Lấy danh sách người nhận messenger
       Users.callServerApi("Receiverid")
         .then(rList => {
-          
           this.receiverlist = rList;
           this.receiverlist.forEach(obj => {
             this.departements.push({
@@ -167,7 +173,6 @@ export default {
         })
         .catch(err => {
           console.error(err);
-          
         });
     },
 

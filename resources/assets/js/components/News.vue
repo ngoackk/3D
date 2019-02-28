@@ -13,15 +13,7 @@
         </b-collapse>
       </li>
     </ul>
-    <!-- <div>     
-      <ul>
-        <li v-for="mss in msg" :key="mss.ID">
-           <router-link :to="'/news/'+ mss.ID">
-             {{mss.Tieu_de}}
-           </router-link>
-        </li>
-      </ul>
-    </div>-->
+   
   </div>
 </template>
 <script>

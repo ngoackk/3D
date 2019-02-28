@@ -77202,6 +77202,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -77266,7 +77273,6 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
 
       //Lấy danh sách người nhận messenger
       __WEBPACK_IMPORTED_MODULE_1__apis_api__["b" /* Users */].callServerApi("Receiverid").then(function (rList) {
-
         _this.receiverlist = rList;
         _this.receiverlist.forEach(function (obj) {
           _this.departements.push({
@@ -77348,14 +77354,6 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__apis_api__ = __webpack_require__(26);
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -78065,7 +78063,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     AppSidebar: __WEBPACK_IMPORTED_MODULE_1__coreui_vue__["c" /* Sidebar */],
     AppAside: __WEBPACK_IMPORTED_MODULE_1__coreui_vue__["d" /* Aside */],
     TheFooter: __WEBPACK_IMPORTED_MODULE_1__coreui_vue__["e" /* Footer */],
-    // Breadcrumb,
     DefaultAside: __WEBPACK_IMPORTED_MODULE_2__DefaultAside___default.a,
     DefaultHeaderDropdownAccnt: __WEBPACK_IMPORTED_MODULE_3__DefaultHeaderDropdownAccnt___default.a,
     DefaultHeaderDropdownMsg: __WEBPACK_IMPORTED_MODULE_4__DefaultHeaderDropdownMsg___default.a,
@@ -102722,6 +102719,23 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "container"
+  }, [_c('div', [_c('b-button', {
+    directives: [{
+      name: "b-toggle",
+      rawName: "v-b-toggle.idMessenger",
+      modifiers: {
+        "idMessenger": true
+      }
+    }],
+    attrs: {
+      "variant": "primary",
+      "size": "sm"
+    }
+  }, [_vm._v("Gửi tin nhắn")]), _vm._v(" "), _c('b-collapse', {
+    staticClass: "mt-2",
+    attrs: {
+      "id": "idMessenger"
+    }
   }, [(_vm.show) ? _c('b-form', {
     on: {
       "submit": _vm.onSubmit,
@@ -102729,13 +102743,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-group', {
     attrs: {
-      "id": "exampleInputGroup1",
+      "id": "bTieuDe",
       "label": "Tiêu đề:",
-      "label-for": "exampleInput1"
+      "label-for": "idTitle"
     }
   }, [_c('b-form-input', {
     attrs: {
-      "id": "exampleInput1",
+      "id": "idTitle",
       "type": "text",
       "required": "",
       "placeholder": "Phải nhập tiêu đề"
@@ -102749,13 +102763,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
-      "id": "exampleInputGroup2",
+      "id": "noidung",
       "label": "Nội dung:",
-      "label-for": "exampleInput2"
+      "label-for": "idContent"
     }
   }, [_c('b-form-textarea', {
     attrs: {
-      "id": "exampleInput2",
+      "id": "idContent",
       "required": "",
       "placeholder": "phải nhập nội dung",
       "rows": 3,
@@ -102770,13 +102784,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
-      "id": "exampleInputGroup3",
+      "id": "guitoi",
       "label": "Gửi tới:",
-      "label-for": "exampleInput3"
+      "label-for": "idSelect"
     }
   }, [_c('b-form-select', {
     attrs: {
-      "id": "exampleInput3",
+      "id": "idSelect",
       "options": _vm.departements,
       "required": ""
     },
@@ -102789,11 +102803,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
-      "id": "exampleGroup4"
+      "id": "gopy"
     }
   }, [_c('b-form-radio-group', {
     attrs: {
-      "id": "exampleChecks"
+      "id": "idCheck"
     },
     model: {
       value: (_vm.form.selected),
@@ -102824,7 +102838,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "reset",
       "variant": "danger"
     }
-  }, [_vm._v("Làm lại")])], 1) : _vm._e()], 1), _vm._v(" "), _c('div', {
+  }, [_vm._v("Làm lại")])], 1) : _vm._e()], 1)], 1)]), _vm._v(" "), _c('div', {
     staticClass: "space"
   }), _vm._v(" "), _c('div', {
     staticClass: "container"

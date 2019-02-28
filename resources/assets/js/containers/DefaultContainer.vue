@@ -81,7 +81,6 @@ export default {
     AppSidebar,
     AppAside,
     TheFooter,
-    // Breadcrumb,
     DefaultAside,
     DefaultHeaderDropdownAccnt,
     DefaultHeaderDropdownMsg,
