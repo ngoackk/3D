@@ -30,6 +30,8 @@
         "cheerio": "^0.19.0",
         "cordova-android": "^7.1.4",
         "cordova-browser": "^5.0.4",
+        "cordova-plugin-camera": "^4.0.3",
+        "cordova-plugin-contacts": "^3.0.1",
         "cordova-plugin-device": "^2.0.2",
         "cordova-plugin-whitelist": "1",
         "core-js": "^2.6.0",
@@ -64,7 +66,9 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-device": {}
+            "cordova-plugin-device": {},
+            "cordova-plugin-camera": {},
+            "cordova-plugin-contacts": {}
         },
         "platforms": [
             "android",

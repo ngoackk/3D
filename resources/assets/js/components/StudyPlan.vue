@@ -8,9 +8,7 @@
       <b-form-select class="mt-3" v-model="selected" :options="options" @change="loadDB($event)"/>
     </div>
 
-    <!-- <div>
-      <b-table responsive striped :items="bangdiem" :fields="fields" small/>
-    </div>-->
+    
     <ag-grid-vue
       style="width: 100%; height: 100%;"
       class="ag-theme-balham"

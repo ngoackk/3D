@@ -3,8 +3,8 @@ import {
 } from "crypto";
 
 export const Settings = {
-  //BASEURL: "http://103.28.37.34:806",
-  BASEURL: "https://tinchi.hau.edu.vn",
+  BASEURL: "http://103.28.37.34:806",
+  //BASEURL: "https://tinchi.hau.edu.vn",
   //BASEURL: "http://localhost:5000",
   NOIMAGE: "img/avatars/u1.png"
 };

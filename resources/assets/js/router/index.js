@@ -19,7 +19,7 @@ import News from '../components/News';
 import Inform from '../components/inform';
 import ChangePass from '../components/ChangePass';
 import Result from '../components/Result';
-// import Sales from '../components/Sales';
+import Vr from '../components/Vr';
 
 
 // Views - Pages
@@ -36,7 +36,7 @@ import {
 Vue.use(Router);
 
 export default new Router({
-  mode: 'hash', // https://router.vuejs.org/api/#mode
+  mode: 'hash',
   linkActiveClass: 'open active',
   scrollBehavior: () => ({
     y: 0
@@ -53,6 +53,11 @@ export default new Router({
           component: Home
         },
 
+        {
+          path: 'vr',
+          name: 'Vr',
+          component: Vr
+        },
         {
           path: 'messenger',
           name: 'Messenger',
